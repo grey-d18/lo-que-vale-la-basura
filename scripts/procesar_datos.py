@@ -131,10 +131,11 @@ distritos = pd.DataFrame({
 
 disp = pd.read_csv(ORIGINALES / "minam_disposicion_final.csv", sep=";", encoding="latin-1", dtype={"UBIGEO": str})
 disp = pd.DataFrame({"ubigeo": disp.UBIGEO.str.zfill(6), "anio": disp.ANIO,
-                     "dispuesto_adecuado_t": disp.RESIDUOS_MUNICIPALES_DISPUESTOS})
-# En 2019 y 2021 la fuente reporta cero en todo el país: no hay dato, no es que nada se dispusiera bien
-anios_vacios = disp.groupby("anio").dispuesto_adecuado_t.sum().loc[lambda s: s == 0].index
-disp.loc[disp.anio.isin(anios_vacios), "dispuesto_adecuado_t"] = None
+                     "dispuesto_adecuado_t": disp.DISPOSICION_FINAL_ADECUADA})
+# Según los metadatos, DISPOSICION_FINAL_ADECUADA es lo que va a rellenos sanitarios u otra infraestructura
+# ambientalmente segura (t/año). RESIDUOS_MUNICIPALES_DISPUESTOS es otra cosa y viene vacía en 2019 y 2021.
+# Los valores de 2021 son idénticos a los de 2022 en los 1890 distritos: parecen copiados, así que 2021 queda sin dato.
+disp.loc[disp.anio == 2021, "dispuesto_adecuado_t"] = None
 distritos = distritos.merge(disp, on=["ubigeo", "anio"], how="left").sort_values(["anio", "ubigeo"])
 distritos["reporta_valorizacion"] = distritos.valorizado_t > 0
 guardar(distritos, "peru_distritos")
@@ -199,8 +200,9 @@ comercio = pd.DataFrame({
     "anio": comtrade.period.astype(int),
     "flujo": comtrade.flowCode.map({"X": "Exportación", "M": "Importación"}),
     "partida_hs": comtrade.cmdCode.astype(str),
-    "valor_usd": comtrade.primaryValue,
+    "valor_usd": comtrade.primaryValue,  # FOB en exportaciones, CIF en importaciones; socio = Mundo
     "toneladas": comtrade.netWgt / 1000,
+    "peso_estimado": comtrade.isNetWgtEstimated.astype(bool),  # Comtrade marca los pesos que estimó
 })
 comercio["material"] = comercio.partida_hs.map(MATERIALES)
 comercio["usd_por_kg"] = (comercio.valor_usd / (comercio.toneladas * 1000)).where(comercio.toneladas > 0)

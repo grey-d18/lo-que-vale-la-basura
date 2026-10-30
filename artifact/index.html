@@ -207,7 +207,7 @@
       <article class="lv-kpi">
         <p class="lv-kpi-label">El Perú valorizó en <span data-draw="param-anio">—</span></p>
         <p class="lv-kpi-value"><span data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where-tpl="anio={anio}" data-fmt="pct2">—</span></p>
-        <p class="lv-kpi-note">de sus residuos municipales inorgánicos</p>
+        <p class="lv-kpi-note">de sus residuos municipales: solo cuenta inorgánicos valorizados</p>
       </article>
       <article class="lv-kpi">
         <p class="lv-kpi-label">Distritos que reportan reciclaje</p>
@@ -215,9 +215,9 @@
         <p class="lv-kpi-note"><b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos</p>
       </article>
       <article class="lv-kpi is-yellow">
-        <p class="lv-kpi-label">Botaderos registrados</p>
+        <p class="lv-kpi-label">Áreas degradadas por basura</p>
         <p class="lv-kpi-value"><span data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</span></p>
-        <p class="lv-kpi-note"><b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> con quema de basura (OEFA)</p>
+        <p class="lv-kpi-note"><b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> con quema de residuos (inventario OEFA)</p>
       </article>
       <article class="lv-kpi">
         <p class="lv-kpi-label">Recicladores informales en el Perú</p>
@@ -225,7 +225,7 @@
         <p class="lv-kpi-note">frente a <b data-draw="valor" data-source="mundo_paises" data-field="trabajadores_formales" data-where="iso3=PER" data-fmt="int">—</b> trabajadores formales</p>
       </article>
       <article class="lv-kpi is-yellow">
-        <p class="lv-kpi-label">Reciclaje en el mundo</p>
+        <p class="lv-kpi-label">Basura recogida para reciclar en el mundo</p>
         <p class="lv-kpi-value"><span data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</span></p>
         <p class="lv-kpi-note">América Latina: <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b> · Perú: <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b></p>
       </article>
@@ -246,17 +246,17 @@
         <div>
           <p class="lv-scale">Escala mundial</p>
           <h2 class="lv-act-title">A dónde va la basura</h2>
-          <p class="lv-intro">Cada país reporta qué parte de su basura recicla, entierra en rellenos o deja en botaderos a cielo abierto, y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal.</p>
+          <p class="lv-intro">Cada país reporta qué parte de su basura se recoge para reciclar, se entierra en rellenos o deja en botaderos a cielo abierto, y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal.</p>
         </div>
       </div>
       <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
-        <p>El mundo recicla el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de su basura. América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: la región que menos recicla. El Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
+        <p>El mundo recicla el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de su basura municipal para reciclarla, según los países que reportan el dato. América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: el promedio más bajo entre las regiones. El Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
       </div>
       <div class="lv-filters" role="group" aria-label="Filtros del mundo">
         <span class="lv-filters-tag">Explora</span>
         <label>Indicador
           <select class="lv-ctl-ind-mundo" id="f-ind-mundo">
-            <option value="reciclaje">Reciclaje (% de la basura)</option>
+            <option value="reciclaje">Recogido para reciclar (% de la basura)</option>
             <option value="botadero">Botaderos a cielo abierto (%)</option>
             <option value="comp_plastico">Plástico en la basura (%)</option>
             <option value="comp_papel_carton">Papel y cartón en la basura (%)</option>
@@ -294,11 +294,11 @@
         <div>
           <p class="lv-scale">Escala nacional</p>
           <h2 class="lv-act-title">El Perú: casi no se recicla, o no se registra</h2>
-          <p class="lv-intro">Las municipalidades reportan al Ministerio del Ambiente cuánta basura generan, cuánta valorizan y dónde la disponen. Las cifras son bajas, la mayoría de distritos no reporta nada y miles de botaderos siguen activos.</p>
+          <p class="lv-intro">Las municipalidades reportan al Ministerio del Ambiente cuánta basura generan, cuánta valorizan y dónde la disponen. Las cifras son bajas, la mayoría de distritos no reporta valorización y OEFA tiene registradas más de dos mil áreas degradadas por basura.</p>
         </div>
       </div>
       <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
-        <p>En <span data-draw="param-anio">—</span>, el Perú valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where-tpl="anio={anio}" data-fmt="pct2">—</b> de sus residuos inorgánicos, y solo <b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos reportaron alguna valorización.</p>
+        <p>En <span data-draw="param-anio">—</span>, el Perú valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where-tpl="anio={anio}" data-fmt="pct2">—</b> de sus residuos municipales (contando solo inorgánicos valorizados: papel, cartón, vidrio, plástico, tetra brik y metales), y solo <b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos reportaron alguna valorización.</p>
       </div>
       <div class="lv-filters" role="group" aria-label="Filtros del Perú">
         <span class="lv-filters-tag">Explora</span>
@@ -307,10 +307,10 @@
         </label>
         <label>Indicador del mapa
           <select class="lv-ctl-ind-peru" id="f-ind-peru">
-            <option value="pct_valorizado">Residuos inorgánicos valorizados (%)</option>
+            <option value="pct_valorizado">Valorizado (% de los residuos municipales)</option>
             <option value="pct_distritos_que_valorizan">Distritos que reportan valorización (%)</option>
-            <option value="pct_dispuesto_adecuado">Basura dispuesta en sitio adecuado (%)</option>
-            <option value="botaderos">Botaderos registrados (OEFA)</option>
+            <option value="pct_dispuesto_adecuado">Disposición final adecuada (%)</option>
+            <option value="botaderos">Áreas degradadas por basura (OEFA)</option>
           </select>
         </label>
         <label>Departamento
@@ -319,7 +319,7 @@
       </div>
       <div class="lv-grid">
         <figure class="lv-card" id="mapa-peru">
-          <h3 class="lv-card-title"><span class="lv-indp-name" data-ind="pct_valorizado">Residuos inorgánicos valorizados</span><span class="lv-indp-name" data-ind="pct_distritos_que_valorizan" hidden>Distritos que reportan valorización</span><span class="lv-indp-name" data-ind="pct_dispuesto_adecuado" hidden>Basura dispuesta en sitio adecuado</span><span class="lv-indp-name" data-ind="botaderos" hidden>Botaderos registrados</span> por departamento</h3>
+          <h3 class="lv-card-title"><span class="lv-indp-name" data-ind="pct_valorizado">Residuos municipales valorizados</span><span class="lv-indp-name" data-ind="pct_distritos_que_valorizan" hidden>Distritos que reportan valorización</span><span class="lv-indp-name" data-ind="pct_dispuesto_adecuado" hidden>Disposición final adecuada</span><span class="lv-indp-name" data-ind="botaderos" hidden>Áreas degradadas por basura</span> por departamento</h3>
           <p class="lv-card-note">Haz clic en un departamento para ver su detalle.</p>
           <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-peru" data-source="peru_departamentos peru_mapa"></div>
@@ -329,11 +329,11 @@
             <div class="lv-detail-head"><span class="lv-detail-name" data-draw="param-dep">—</span><span class="lv-card-note">en <span data-draw="param-anio">—</span></span></div>
             <dl>
               <dt>Residuos municipales generados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="generado_t" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="tons">—</span></dd>
-              <dt>Residuos inorgánicos valorizados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="valorizado_t" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="tons">—</span></dd>
+              <dt>Inorgánicos valorizados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="valorizado_t" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="tons">—</span></dd>
               <dt>Porcentaje valorizado</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_valorizado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct2">—</span></dd>
               <dt>Distritos que reportan valorización</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="distritos_que_valorizan" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> de <span data-draw="valor" data-source="peru_departamentos" data-field="distritos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span></dd>
-              <dt>Dispuesto en sitio adecuado</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct1">—</span></dd>
-              <dt>Botaderos registrados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="botaderos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> (<span data-draw="valor" data-source="peru_departamentos" data-field="botaderos_con_quema" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> con quema)</dd>
+              <dt>Disposición final adecuada</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct1">—</span></dd>
+              <dt>Áreas degradadas (OEFA)</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="botaderos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> (<span data-draw="valor" data-source="peru_departamentos" data-field="botaderos_con_quema" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> con quema)</dd>
             </dl>
           </article>
           <figure class="lv-card" id="serie">
@@ -343,7 +343,7 @@
           </figure>
         </div>
         <figure class="lv-card lv-wide" id="botaderos">
-          <h3 class="lv-card-title">Botaderos por departamento</h3>
+          <h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3>
           <p class="lv-card-note">Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
           <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
@@ -428,7 +428,7 @@
     <section class="lv-act" id="reflexion">
       <div class="lv-reflect">
         <h2 class="lv-act-title">Reflexión</h2>
-        <p>En un contexto de fuerte contaminación, con miles de botaderos y basura que se quema, el reciclaje es urgente. Los residuos no son solo un problema: también tienen valor, como muestra el mercado de la chatarra.</p>
+        <p>En un contexto de fuerte contaminación, con más de dos mil áreas degradadas por basura y residuos que se queman, el reciclaje es urgente. Los residuos no son solo un problema: también tienen valor, como muestra el mercado de la chatarra.</p>
         <p>Ese valor hoy lo sostienen, en buena parte, personas que trabajan en la informalidad. Trabajar de la mano con recicladores y chatarreros, y no en su contra, puede ayudar a la vez a reciclar más, a reducir la pobreza y a mejorar las condiciones de vida de los sectores más vulnerables.</p>
       </div>
     </section>
@@ -436,8 +436,8 @@
     <section class="lv-act" id="hallazgos">
       <div class="lv-act-head"><div><p class="lv-scale">En resumen</p><h2 class="lv-act-title">Tres hallazgos</h2></div></div>
       <ol class="lv-findings">
-        <li><span class="lv-find-num">1</span><span class="lv-find-title">Oficialmente, el Perú casi no recicla</span>En 2024 se valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where="anio=2024" data-fmt="pct2">—</b> de los residuos municipales inorgánicos y solo el <b data-draw="valor" data-source="peru_nacional" data-field="pct_distritos_que_valorizan" data-where="anio=2024" data-fmt="pct0">—</b> de los distritos reportó alguna valorización. Según el Banco Mundial, el Perú recicla el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>, frente al <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b> de América Latina.</li>
-        <li><span class="lv-find-num">2</span><span class="lv-find-title">Mucha basura termina en botaderos</span>OEFA registra <b data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</b> botaderos, y en <b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> se quema basura. La Libertad reporta <b data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where="departamento=LA%20LIBERTAD&amp;anio=2024" data-fmt="pct0">—</b> de disposición adecuada en 2024, y El Milagro figura entre los botaderos con quema.</li>
+        <li><span class="lv-find-num">1</span><span class="lv-find-title">Oficialmente, el Perú casi no recicla</span>En 2024 se valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where="anio=2024" data-fmt="pct2">—</b> de los residuos municipales (solo se registran inorgánicos valorizados) y solo el <b data-draw="valor" data-source="peru_nacional" data-field="pct_distritos_que_valorizan" data-where="anio=2024" data-fmt="pct0">—</b> de los distritos reportó alguna valorización. Según el Banco Mundial, el Perú recoge para reciclar el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>, frente al <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b> de América Latina.</li>
+        <li><span class="lv-find-num">2</span><span class="lv-find-title">Mucha basura termina en botaderos</span>OEFA tiene inventariadas <b data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</b> áreas degradadas por residuos, y en <b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> se quema basura. La Libertad reporta <b data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where="departamento=LA%20LIBERTAD&amp;anio=2024" data-fmt="pct0">—</b> de disposición final adecuada en 2024 (MINAM no le registra ningún relleno sanitario en 2019–2024), y El Milagro figura entre los botaderos con quema.</li>
         <li><span class="lv-find-num">3</span><span class="lv-find-title">El reciclaje real lo mueve un circuito informal</span>Hay <b data-draw="valor" data-source="mundo_paises" data-field="recicladores_informales" data-where="iso3=PER" data-fmt="int">—</b> recicladores informales en el Perú. Los metales, que más valen por kilo, los mueven sobre todo los chatarreros: en 2024 el Perú exportó <b data-draw="valor" data-source="peru_comercio_reciclables" data-field="valor_usd" data-where="material=Cobre&amp;flujo=Exportaci%C3%B3n&amp;anio=2024" data-fmt="musd">—</b> en chatarra de cobre e importó <b data-draw="valor" data-source="peru_comercio_reciclables" data-field="valor_usd" data-where="material=Hierro%20y%20acero&amp;flujo=Importaci%C3%B3n&amp;anio=2024" data-fmt="musd">—</b> en chatarra de hierro y acero.</li>
       </ol>
     </section>
@@ -448,8 +448,8 @@
         <article class="lv-card">
           <h3 class="lv-card-title">Cómo se construyeron los indicadores</h3>
           <ul>
-            <li><b>Porcentaje valorizado:</b> residuos inorgánicos valorizados entre residuos municipales generados, sumando los distritos de cada departamento.</li>
-            <li><b>Disposición adecuada:</b> residuos dispuestos en relleno sanitario entre residuos generados. En 2019 y 2021 la fuente reporta cero en todo el país, así que se trató como dato faltante.</li>
+            <li><b>Porcentaje valorizado:</b> residuos inorgánicos valorizados (papel, cartón, vidrio, plástico, tetra brik y metales, según los metadatos de MINAM) entre todos los residuos municipales generados, sumando los distritos de cada departamento. Los orgánicos valorizados no entran, así que el porcentaje es un piso.</li>
+            <li><b>Disposición final adecuada:</b> columna DISPOSICION_FINAL_ADECUADA (toneladas llevadas a rellenos sanitarios u otra infraestructura ambientalmente segura) entre residuos municipales generados. Los valores de 2021 son idénticos a los de 2022 en los 1890 distritos, así que 2021 se trató como dato faltante.</li>
             <li><b>Promedios regionales del mundo:</b> ponderados por las toneladas que genera cada país.</li>
             <li><b>Precio de exportación:</b> valor entre peso neto de lo que exporta el Perú en cada partida arancelaria (cobre 7404, aluminio 7602, hierro y acero 7204, papel y cartón 4707, plástico 3915, vidrio 7001).</li>
             <li><b>Precios locales y descripción del circuito:</b> etnografía en dos locales de acopio de El Porvenir, con observación participante y entrevistas.</li>
@@ -471,8 +471,9 @@
         <article class="lv-card lv-wide">
           <h3 class="lv-card-title">Limitaciones</h3>
           <ul>
+            <li>El inventario de OEFA reúne áreas degradadas por residuos para recuperarlas o reconvertirlas, incorporadas entre 2018 y 2024; no dice cuáles siguen recibiendo basura hoy.</li>
             <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
-            <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Pocos países reportan botaderos o recicladores informales.</li>
+            <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Su “reciclaje” es lo que se recoge para reciclar, no lo que se termina reciclando. Pocos países reportan botaderos o recicladores informales, así que los promedios regionales dependen de pocos países (se indica cuántos). El dato del Perú (0,93 %, 2022) viene de SIGERSOL, la misma fuente que los datos de MINAM; la cifra de 53 000 recicladores informales es de WIEGO (2021).</li>
             <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros.</li>
             <li>Los precios de campo vienen de dos locales de una zona de Trujillo y no representan a todo el país.</li>
           </ul>
@@ -490,8 +491,8 @@
 <script>
 // ---------- Cálculo: total de botaderos del país ----------
 dash.calc('botaderos_total', {
-  title: 'Botaderos registrados en el Perú',
-  description: 'Suma de botaderos y de botaderos con quema de todos los departamentos (inventario OEFA, igual cada año).',
+  title: 'Áreas degradadas por residuos en el Perú',
+  description: 'Suma de áreas degradadas y de las que tienen quema de residuos en todos los departamentos (inventario OEFA 2018–2024, igual cada año).',
   inputs: ['peru_departamentos'],
   fn: (peru_departamentos) => {
     const ultimo = Math.max(...peru_departamentos.map((d) => Number(d.anio)));
@@ -525,13 +526,13 @@ const F = {
   tc: (v) => d3.format('.2f')(v),
 };
 const IND_MUNDO = {
-  reciclaje: { label: 'Reciclaje', unit: '%' }, botadero: { label: 'Botaderos a cielo abierto', unit: '%' },
+  reciclaje: { label: 'Recogido para reciclar', unit: '%' }, botadero: { label: 'Botaderos a cielo abierto', unit: '%' },
   comp_plastico: { label: 'Plástico', unit: '%' }, comp_papel_carton: { label: 'Papel y cartón', unit: '%' },
   comp_metal: { label: 'Metal', unit: '%' }, kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' },
 };
 const IND_PERU = {
   pct_valorizado: { label: 'Valorizado', unit: '%' }, pct_distritos_que_valorizan: { label: 'Distritos que reportan', unit: '%' },
-  pct_dispuesto_adecuado: { label: 'Disposición adecuada', unit: '%' }, botaderos: { label: 'Botaderos', unit: '' },
+  pct_dispuesto_adecuado: { label: 'Disposición final adecuada', unit: '%' }, botaderos: { label: 'Áreas degradadas', unit: '' },
 };
 const fmtInd = (v, unit) => (v === null ? 'sin dato' : unit === '%' ? d3.format('.2f')(v) + '%' : unit === '' ? d3.format(',')(v) : d3.format('.2f')(v) + unit);
 const parseWhere = (w) => (w || '').split('&').filter(Boolean).map((kv) => kv.split('=').map(decodeURIComponent));
@@ -864,7 +865,7 @@ dash.draw('botaderos', (el) => {
   g.append('text').attr('x', (d) => x(num(d.botaderos)) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', 12)
     .attr('fill', tok('--lv-ink')).attr('font-weight', (d) => (sel(d) ? 700 : 400)).text((d) => d3.format(',')(num(d.botaderos)));
   g.append('rect').attr('width', w).attr('height', rowH).attr('fill', 'transparent').style('cursor', 'pointer')
-    .on('mousemove', (ev, d) => tip.show(ev, capital(d.departamento), [`${d3.format(',')(num(d.botaderos))} botaderos`, `${d3.format(',')(num(d.botaderos_con_quema))} con quema de basura`, 'Clic para elegirlo']))
+    .on('mousemove', (ev, d) => tip.show(ev, capital(d.departamento), [`${d3.format(',')(num(d.botaderos))} áreas degradadas`, `${d3.format(',')(num(d.botaderos_con_quema))} con quema de residuos`, 'Clic para elegirlo']))
     .on('mouseleave', () => tip.hide())
     .on('click', (ev, d) => dash.setParams({ dep: d.departamento }));
 });
