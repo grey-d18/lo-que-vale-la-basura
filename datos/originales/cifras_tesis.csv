@@ -1,0 +1,6 @@
+clave,valor,valor_max,unidad,descripcion
+recicladores_identificados,40,,personas,"Recicladores identificados como clientes de dos locales de acopio de El Porvenir y en recorridos por la zona"
+chatarreros_identificados,20,,personas,"Chatarreros identificados como clientes de dos locales de acopio de El Porvenir y en recorridos por la zona"
+reciclador_ingreso_viaje,4,7,soles,"Ganancia por viaje de un reciclador adulto mayor (seudónimo Jorge)"
+reciclador_ingreso_dia,20,35,soles,"Ingreso diario habitual de un reciclador adulto mayor (seudónimo Jorge)"
+chatarrero_ingreso_dia,30,200,soles,"Ganancia diaria de un chatarrero: desde S/ 30 hasta S/ 100 o 200 en un buen día, con capital diario propio"

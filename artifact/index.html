@@ -1,0 +1,977 @@
+<meta name="dash-one-writer">
+<style>
+/* Concepto: una portada verde oscuro con acentos mostaza, indicadores arriba y tres actos (mundo, Perú, circuitos) en secciones claras. */
+.lv {
+  --lv-ink: #17231b;
+  --lv-ink-2: #4b5a4f;
+  --lv-muted: #6f7a71;
+  --lv-page: #f6f4ea;
+  --lv-panel: #fffdf6;
+  --lv-line: #e3e0cf;
+  --lv-green: #2f7d4a;
+  --lv-green-deep: #1f3d2b;
+  --lv-yellow: #d29a00;
+  --lv-yellow-soft: #fbefc4;
+  --lv-mustard: #f2c230;
+  --lv-cream: #f6f1dc;
+  --lv-bar-muted: #cfcbb6;
+  --lv-nodata: #ebe8d8;
+  --lv-seq-lo: #e4f1d9;
+  --lv-seq-hi: #1d5a30;
+  --lv-on-accent: #ffffff;
+  --lv-on-mustard: #17231b;
+  color: var(--lv-ink);
+  background: var(--lv-page);
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--cds-font-size-body);
+  line-height: 1.6;
+  border-radius: var(--cds-radius);
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .lv {
+    --lv-ink: #eef0e6;
+    --lv-ink-2: #c3c9bd;
+    --lv-muted: #9aa398;
+    --lv-page: #111712;
+    --lv-panel: #1b221c;
+    --lv-line: #2c352d;
+    --lv-green: #5cb572;
+    --lv-green-deep: #13261b;
+    --lv-yellow: #e0ab1f;
+    --lv-yellow-soft: #3a3215;
+    --lv-mustard: #f2c230;
+    --lv-cream: #f6f1dc;
+    --lv-bar-muted: #4a544b;
+    --lv-nodata: #29312a;
+    --lv-seq-lo: #1f4229;
+    --lv-seq-hi: #b9e2a4;
+    --lv-on-accent: #0f1410;
+    --lv-on-mustard: #17231b;
+  }
+}
+:root[data-theme="dark"] .lv {
+  --lv-ink: #eef0e6;
+  --lv-ink-2: #c3c9bd;
+  --lv-muted: #9aa398;
+  --lv-page: #111712;
+  --lv-panel: #1b221c;
+  --lv-line: #2c352d;
+  --lv-green: #5cb572;
+  --lv-green-deep: #13261b;
+  --lv-yellow: #e0ab1f;
+  --lv-yellow-soft: #3a3215;
+  --lv-mustard: #f2c230;
+  --lv-cream: #f6f1dc;
+  --lv-bar-muted: #4a544b;
+  --lv-nodata: #29312a;
+  --lv-seq-lo: #1f4229;
+  --lv-seq-hi: #b9e2a4;
+  --lv-on-accent: #0f1410;
+  --lv-on-mustard: #17231b;
+}
+
+.lv .lv-hero { background: var(--lv-green-deep); color: var(--lv-cream); padding: var(--cds-pad-xl) var(--cds-pad-lg) calc(var(--cds-pad-xl) * 1.4); position: relative; }
+.lv .lv-hero::after { content: ""; position: absolute; right: -6rem; top: -6rem; width: 22rem; height: 22rem; border-radius: 50%; background: radial-gradient(circle, rgba(242, 194, 48, .26), rgba(242, 194, 48, 0) 70%); pointer-events: none; }
+.lv .lv-chip { display: inline-block; background: var(--lv-mustard); color: var(--lv-on-mustard); font-weight: 700; font-size: var(--cds-font-size-caption); letter-spacing: .08em; text-transform: uppercase; border-radius: 999px; padding: .2rem .75rem; margin: 0 0 var(--cds-gap-md); }
+.lv .lv-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 var(--cds-gap-md); text-wrap: balance; }
+.lv .lv-title em { font-style: normal; color: var(--lv-mustard); }
+.lv .lv-question { font-size: clamp(1.1rem, 2.2vw, 1.4rem); max-width: 48rem; margin: 0 0 var(--cds-gap-sm); font-weight: 500; text-wrap: balance; }
+.lv .lv-lede { max-width: 44rem; margin: 0 0 var(--cds-gap-lg); opacity: .85; }
+.lv .lv-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md); margin: 0; }
+.lv .lv-facts div { border-top: 2px solid var(--lv-mustard); padding-top: var(--cds-pad-xs); min-width: 0; }
+.lv .lv-facts dt { font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; opacity: .75; font-weight: 600; }
+.lv .lv-facts dd { margin: .15rem 0 0; font-size: var(--cds-font-size-caption); }
+
+.lv .lv-body { padding: 0 var(--cds-pad-lg) var(--cds-pad-xl); }
+.lv .lv-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); margin: calc(var(--cds-pad-xl) * -0.9) 0 var(--cds-gap-lg); position: relative; z-index: 1; }
+.lv .lv-kpi { background: var(--lv-panel); border: 1px solid var(--lv-line); border-top: 5px solid var(--lv-green); border-radius: var(--cds-radius); padding: var(--cds-pad-md); min-width: 0; }
+.lv .lv-kpi.is-yellow { border-top-color: var(--lv-yellow); }
+.lv .lv-kpi-label { margin: 0; font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; }
+.lv .lv-kpi-value { margin: .3rem 0 .2rem; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: 2.3rem; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.lv .lv-kpi-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--lv-muted); }
+.lv .lv-kpi-note b { font-weight: 600; color: var(--lv-ink-2); }
+
+.lv .lv-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); margin: 0 0 var(--cds-gap-xl); }
+.lv .lv-nav button { font: inherit; font-size: var(--cds-font-size-caption); font-weight: 600; color: var(--lv-ink-2); background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: 999px; padding: .35rem .9rem; cursor: pointer; }
+.lv .lv-nav button:hover { background: var(--lv-yellow-soft); color: var(--lv-ink); }
+.lv .lv-nav button:focus-visible, .lv select:focus-visible { outline: 3px solid var(--lv-mustard); outline-offset: 1px; }
+.lv .lv-nav .lv-num { display: inline-grid; place-items: center; width: 1.25rem; height: 1.25rem; border-radius: 50%; background: var(--lv-green); color: var(--lv-on-accent); font-size: .7rem; margin-right: .35rem; }
+
+.lv .lv-act { margin: 0 0 calc(var(--cds-pad-xl) * 1.6); scroll-margin-top: 1rem; }
+.lv .lv-act-head { display: flex; gap: var(--cds-gap-md); align-items: flex-start; margin: 0 0 var(--cds-gap-md); }
+.lv .lv-act-num { flex: none; width: 3rem; height: 3rem; border-radius: 50%; background: var(--lv-mustard); color: var(--lv-on-mustard); display: grid; place-items: center; font-family: var(--font-anthropic-serif); font-size: 1.5rem; }
+.lv .lv-scale { margin: 0; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .1em; color: var(--lv-green); font-weight: 700; }
+.lv .lv-act-title { margin: .1rem 0 .3rem; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: clamp(1.7rem, 3.4vw, 2.3rem); line-height: 1.15; text-wrap: balance; }
+.lv .lv-intro { margin: 0; color: var(--lv-ink-2); max-width: 46rem; }
+
+.lv .lv-key { display: flex; gap: var(--cds-gap-md); align-items: flex-start; background: var(--lv-yellow-soft); border-radius: var(--cds-radius); padding: var(--cds-pad-md); margin: 0 0 var(--cds-gap-md); max-width: 54rem; }
+.lv .lv-key-tag { flex: none; font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 800; background: var(--lv-yellow); color: var(--lv-on-mustard); border-radius: 6px; padding: .2rem .5rem; margin-top: .2rem; }
+.lv .lv-key p { margin: 0; font-weight: 500; font-size: 1.05rem; }
+
+.lv .lv-filters { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--cds-gap-md); background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); margin: 0 0 var(--cds-gap-md); }
+.lv .lv-filters-tag { align-self: center; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: var(--lv-green); }
+.lv .lv-filters label { display: flex; flex-direction: column; gap: .2rem; font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; min-width: 0; }
+.lv select { font: inherit; font-size: var(--cds-font-size-body); font-weight: 400; color: var(--lv-ink); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 8px; padding: .4rem .6rem; min-width: 12rem; max-width: 100%; cursor: pointer; }
+
+.lv .lv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.lv .lv-wide { grid-column: 1 / -1; }
+.lv .lv-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+.lv .lv-card { background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin: 0; min-width: 0; }
+.lv .lv-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
+.lv .lv-card-note { margin: .2rem 0 var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--lv-muted); }
+.lv .lv-chart { position: relative; width: 100%; min-height: 18rem; }
+.lv .lv-chart.is-tall { min-height: 26rem; }
+.lv .lv-chart svg { display: block; overflow: visible; }
+.lv .lv-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); margin: 0 0 var(--cds-gap-sm); }
+.lv .lv-sw { display: inline-block; width: .7rem; height: .7rem; border-radius: 3px; margin-right: .35rem; vertical-align: -.05rem; }
+.lv .lv-sw.is-green { background: var(--lv-green); }
+.lv .lv-sw.is-yellow { background: var(--lv-yellow); }
+.lv .lv-sw.is-muted { background: var(--lv-bar-muted); }
+.lv .lv-sw.is-dot { border-radius: 50%; }
+.lv .lv-sw.is-diamond { transform: rotate(45deg) scale(.85); border-radius: 1px; }
+.lv .lv-hint { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); margin: var(--cds-gap-sm) 0 0; }
+.lv .lv-warn { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); background: var(--lv-yellow-soft); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); margin: var(--cds-gap-sm) 0 0; }
+
+.lv .lv-tip { position: absolute; pointer-events: none; z-index: 5; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); color: var(--lv-ink); max-width: 16rem; line-height: 1.4; }
+.lv .lv-tip-head { color: var(--cds-text-secondary); font-weight: 600; }
+
+.lv .lv-actors { list-style: none; padding: 0; margin: var(--cds-gap-sm) 0 0; display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.lv .lv-actors li { background: var(--lv-page); border-left: 4px solid var(--lv-green); border-radius: 0 var(--cds-radius) var(--cds-radius) 0; padding: var(--cds-pad-sm) var(--cds-pad-md); }
+.lv .lv-actors li.is-vulnerable { border-left-color: var(--lv-yellow); }
+.lv .lv-actor-name { display: block; font-weight: 700; margin-bottom: .1rem; }
+.lv .lv-tag { display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; background: var(--lv-yellow); color: var(--lv-on-mustard); border-radius: 999px; padding: .05rem .5rem; margin-left: .4rem; vertical-align: .1rem; }
+.lv .lv-sub { margin: calc(var(--cds-pad-xl) * 1.1) 0 .3rem; font-size: 1.3rem; font-weight: 600; display: flex; align-items: center; gap: .6rem; }
+.lv .lv-sub::before { content: ""; width: 6px; height: 1.3rem; border-radius: 3px; background: var(--lv-green); }
+.lv .lv-par { color: var(--lv-ink-2); max-width: 46rem; margin: 0 0 var(--cds-gap-md); }
+
+.lv .lv-detail dl { display: grid; grid-template-columns: 1fr auto; gap: .45rem var(--cds-gap-md); margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-body); }
+.lv .lv-detail dt { color: var(--lv-ink-2); }
+.lv .lv-detail dd { margin: 0; text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lv .lv-detail-head { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap; }
+.lv .lv-detail-name { font-family: var(--font-anthropic-serif); font-size: 1.6rem; }
+
+.lv .lv-table-box { overflow-x: auto; }
+.lv .lv-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); }
+.lv .lv-table th, .lv .lv-table td { padding: .5rem .6rem; border-bottom: 1px solid var(--lv-line); text-align: left; white-space: nowrap; }
+.lv .lv-table th { color: var(--lv-ink-2); font-weight: 700; font-size: var(--cds-font-size-caption); }
+.lv .lv-table .is-num { text-align: right; font-variant-numeric: tabular-nums; }
+.lv .lv-table tr.is-thesis td { font-weight: 700; background: var(--lv-yellow-soft); }
+
+.lv .lv-reflect { background: var(--lv-green-deep); color: var(--lv-cream); border-radius: var(--cds-radius); padding: var(--cds-pad-xl); border-left: 8px solid var(--lv-mustard); }
+.lv .lv-reflect .lv-act-title { color: var(--lv-mustard); margin-top: 0; }
+.lv .lv-reflect p { font-size: 1.1rem; max-width: 46rem; }
+
+.lv .lv-findings { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: var(--cds-gap-md); }
+.lv .lv-findings li { background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.lv .lv-findings .lv-find-num { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--lv-green); color: var(--lv-on-accent); font-weight: 800; margin-bottom: var(--cds-gap-sm); }
+.lv .lv-findings .lv-find-title { display: block; font-size: 1.1rem; font-weight: 700; margin-bottom: .3rem; }
+
+.lv .lv-method ul { padding-left: 1.1rem; margin: var(--cds-gap-sm) 0 0; }
+.lv .lv-method li { margin-bottom: .35rem; }
+.lv .lv-foot { border-top: 1px solid var(--lv-line); padding-top: var(--cds-pad-md); font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); }
+.lv .lv-foot p { margin: .2rem 0; }
+.lv a { color: var(--lv-green); }
+.lv .lv-hero a { color: var(--lv-mustard); }
+
+.lv .lv-fail { display: flex; align-items: center; justify-content: center; gap: .4rem; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.lv .lv-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.lv [data-dash-source-state=empty] { color: transparent; }
+.lv [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+@media (max-width: 40rem) {
+  .lv .lv-hero { padding: var(--cds-pad-lg) var(--cds-pad-md) calc(var(--cds-pad-xl) * 1.4); }
+  .lv .lv-body { padding: 0 var(--cds-pad-md) var(--cds-pad-lg); }
+  .lv select { min-width: 0; width: 100%; }
+  .lv .lv-filters label { flex: 1 1 100%; }
+  .lv .lv-key { flex-direction: column; gap: .4rem; }
+  .lv .lv-reflect { padding: var(--cds-pad-lg); }
+}
+</style>
+
+<div class="lv">
+  <header class="lv-hero" id="inicio">
+    <p class="lv-chip">Reciclaje · botaderos · circuitos informales</p>
+    <h1 class="lv-title">Lo que vale <em>la basura</em></h1>
+    <p class="lv-question">¿Cuánto de lo que se recicla en el Perú registran las cifras oficiales, y quiénes sostienen el reciclaje que no se ve?</p>
+    <p class="lv-lede">La basura contamina cuando termina en botaderos, pero también tiene valor: plástico, papel, cartón y metales se pueden recuperar. Este tablero recorre el problema en tres escalas: el mundo, el Perú y los circuitos informales de reciclaje que estudié en Trujillo.</p>
+    <dl class="lv-facts">
+      <div><dt>Cobertura</dt><dd>Todos los países con dato · todos los distritos del Perú · Trujillo (El Porvenir y Florencia de Mora)</dd></div>
+      <div><dt>Periodo</dt><dd>Perú 2019–2024 · comercio 2015–2024 · mundo: último año que reporta cada país</dd></div>
+      <div><dt>Fuentes</dt><dd>Banco Mundial (What a Waste 3.0), MINAM–SIGERSOL, OEFA, UN Comtrade y trabajo de campo de tesis</dd></div>
+    </dl>
+  </header>
+
+  <div class="lv-body">
+    <section class="lv-kpis" id="indicadores" aria-label="Indicadores principales">
+      <article class="lv-kpi">
+        <p class="lv-kpi-label">El Perú valorizó en <span data-draw="param-anio">—</span></p>
+        <p class="lv-kpi-value"><span data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where-tpl="anio={anio}" data-fmt="pct2">—</span></p>
+        <p class="lv-kpi-note">de sus residuos municipales inorgánicos</p>
+      </article>
+      <article class="lv-kpi">
+        <p class="lv-kpi-label">Distritos que reportan reciclaje</p>
+        <p class="lv-kpi-value"><span data-draw="valor" data-source="peru_nacional" data-field="pct_distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="pct0">—</span></p>
+        <p class="lv-kpi-note"><b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos</p>
+      </article>
+      <article class="lv-kpi is-yellow">
+        <p class="lv-kpi-label">Botaderos registrados</p>
+        <p class="lv-kpi-value"><span data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</span></p>
+        <p class="lv-kpi-note"><b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> con quema de basura (OEFA)</p>
+      </article>
+      <article class="lv-kpi">
+        <p class="lv-kpi-label">Recicladores informales en el Perú</p>
+        <p class="lv-kpi-value"><span data-draw="valor" data-source="mundo_paises" data-field="recicladores_informales" data-where="iso3=PER" data-fmt="int">—</span></p>
+        <p class="lv-kpi-note">frente a <b data-draw="valor" data-source="mundo_paises" data-field="trabajadores_formales" data-where="iso3=PER" data-fmt="int">—</b> trabajadores formales</p>
+      </article>
+      <article class="lv-kpi is-yellow">
+        <p class="lv-kpi-label">Reciclaje en el mundo</p>
+        <p class="lv-kpi-value"><span data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</span></p>
+        <p class="lv-kpi-note">América Latina: <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b> · Perú: <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b></p>
+      </article>
+    </section>
+
+    <nav class="lv-nav" aria-label="Secciones">
+      <button type="button" data-go="mundo"><span class="lv-num">1</span>El mundo</button>
+      <button type="button" data-go="peru"><span class="lv-num">2</span>El Perú</button>
+      <button type="button" data-go="circuitos"><span class="lv-num">3</span>Circuitos informales</button>
+      <button type="button" data-go="reflexion">Reflexión y hallazgos</button>
+      <button type="button" data-go="metodo">Metodología y fuentes</button>
+    </nav>
+
+    <!-- ACTO 1 -->
+    <section class="lv-act" id="mundo">
+      <div class="lv-act-head">
+        <span class="lv-act-num" aria-hidden="true">1</span>
+        <div>
+          <p class="lv-scale">Escala mundial</p>
+          <h2 class="lv-act-title">A dónde va la basura</h2>
+          <p class="lv-intro">Cada país reporta qué parte de su basura recicla, entierra en rellenos o deja en botaderos a cielo abierto, y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal.</p>
+        </div>
+      </div>
+      <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
+        <p>El mundo recicla el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de su basura. América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: la región que menos recicla. El Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
+      </div>
+      <div class="lv-filters" role="group" aria-label="Filtros del mundo">
+        <span class="lv-filters-tag">Explora</span>
+        <label>Indicador
+          <select class="lv-ctl-ind-mundo" id="f-ind-mundo">
+            <option value="reciclaje">Reciclaje (% de la basura)</option>
+            <option value="botadero">Botaderos a cielo abierto (%)</option>
+            <option value="comp_plastico">Plástico en la basura (%)</option>
+            <option value="comp_papel_carton">Papel y cartón en la basura (%)</option>
+            <option value="comp_metal">Metal en la basura (%)</option>
+            <option value="kg_persona_dia">Basura por persona (kg al día)</option>
+          </select>
+        </label>
+        <label>Región del ranking
+          <select id="f-region" data-draw="ctl-region" data-source="mundo_paises" aria-label="Región del ranking"></select>
+        </label>
+      </div>
+      <div class="lv-grid">
+        <figure class="lv-card lv-wide" id="mapa-mundo">
+          <h3 class="lv-card-title"><span class="lv-ind-name" data-ind="reciclaje">Reciclaje</span><span class="lv-ind-name" data-ind="botadero" hidden>Botaderos a cielo abierto</span><span class="lv-ind-name" data-ind="comp_plastico" hidden>Plástico en la basura</span><span class="lv-ind-name" data-ind="comp_papel_carton" hidden>Papel y cartón en la basura</span><span class="lv-ind-name" data-ind="comp_metal" hidden>Metal en la basura</span><span class="lv-ind-name" data-ind="kg_persona_dia" hidden>Basura por persona</span> por país</h3>
+          <p class="lv-card-note">Último año que reporta cada país. En gris, países sin dato.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-mundo" data-source="mundo_paises mundo_mapa"></div>
+        </figure>
+        <figure class="lv-card" id="ranking">
+          <h3 class="lv-card-title">Ranking: <span data-draw="param-region">—</span></h3>
+          <p class="lv-card-note">Los 20 valores más altos de la región elegida. El Perú, en verde, cuando está en ella.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="ranking" data-source="mundo_paises"></div>
+        </figure>
+        <figure class="lv-card" id="regiones">
+          <h3 class="lv-card-title">Reciclaje por región</h3>
+          <p class="lv-card-note">Promedio ponderado por las toneladas que genera cada país. Entre paréntesis, cuántos países reportan el dato.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="regiones" data-source="mundo_regiones"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ACTO 2 -->
+    <section class="lv-act" id="peru">
+      <div class="lv-act-head">
+        <span class="lv-act-num" aria-hidden="true">2</span>
+        <div>
+          <p class="lv-scale">Escala nacional</p>
+          <h2 class="lv-act-title">El Perú: casi no se recicla, o no se registra</h2>
+          <p class="lv-intro">Las municipalidades reportan al Ministerio del Ambiente cuánta basura generan, cuánta valorizan y dónde la disponen. Las cifras son bajas, la mayoría de distritos no reporta nada y miles de botaderos siguen activos.</p>
+        </div>
+      </div>
+      <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
+        <p>En <span data-draw="param-anio">—</span>, el Perú valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where-tpl="anio={anio}" data-fmt="pct2">—</b> de sus residuos inorgánicos, y solo <b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos reportaron alguna valorización.</p>
+      </div>
+      <div class="lv-filters" role="group" aria-label="Filtros del Perú">
+        <span class="lv-filters-tag">Explora</span>
+        <label>Año
+          <select id="f-anio" data-draw="ctl-anio" data-source="peru_nacional" aria-label="Año"></select>
+        </label>
+        <label>Indicador del mapa
+          <select class="lv-ctl-ind-peru" id="f-ind-peru">
+            <option value="pct_valorizado">Residuos inorgánicos valorizados (%)</option>
+            <option value="pct_distritos_que_valorizan">Distritos que reportan valorización (%)</option>
+            <option value="pct_dispuesto_adecuado">Basura dispuesta en sitio adecuado (%)</option>
+            <option value="botaderos">Botaderos registrados (OEFA)</option>
+          </select>
+        </label>
+        <label>Departamento
+          <select id="f-dep" data-draw="ctl-dep" data-source="peru_departamentos" aria-label="Departamento"></select>
+        </label>
+      </div>
+      <div class="lv-grid">
+        <figure class="lv-card" id="mapa-peru">
+          <h3 class="lv-card-title"><span class="lv-indp-name" data-ind="pct_valorizado">Residuos inorgánicos valorizados</span><span class="lv-indp-name" data-ind="pct_distritos_que_valorizan" hidden>Distritos que reportan valorización</span><span class="lv-indp-name" data-ind="pct_dispuesto_adecuado" hidden>Basura dispuesta en sitio adecuado</span><span class="lv-indp-name" data-ind="botaderos" hidden>Botaderos registrados</span> por departamento</h3>
+          <p class="lv-card-note">Haz clic en un departamento para ver su detalle.</p>
+          <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-peru" data-source="peru_departamentos peru_mapa"></div>
+        </figure>
+        <div class="lv-stack">
+          <article class="lv-card lv-detail" id="detalle">
+            <div class="lv-detail-head"><span class="lv-detail-name" data-draw="param-dep">—</span><span class="lv-card-note">en <span data-draw="param-anio">—</span></span></div>
+            <dl>
+              <dt>Residuos municipales generados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="generado_t" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="tons">—</span></dd>
+              <dt>Residuos inorgánicos valorizados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="valorizado_t" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="tons">—</span></dd>
+              <dt>Porcentaje valorizado</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_valorizado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct2">—</span></dd>
+              <dt>Distritos que reportan valorización</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="distritos_que_valorizan" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> de <span data-draw="valor" data-source="peru_departamentos" data-field="distritos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span></dd>
+              <dt>Dispuesto en sitio adecuado</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct1">—</span></dd>
+              <dt>Botaderos registrados</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="botaderos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> (<span data-draw="valor" data-source="peru_departamentos" data-field="botaderos_con_quema" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> con quema)</dd>
+            </dl>
+          </article>
+          <figure class="lv-card" id="serie">
+            <h3 class="lv-card-title">Residuos valorizados, 2019–2024</h3>
+            <p class="lv-card-note">Porcentaje de los residuos municipales generados. El departamento elegido frente al promedio del Perú.</p>
+            <div class="lv-chart dash-skeleton" data-draw="serie" data-source="peru_nacional peru_departamentos"></div>
+          </figure>
+        </div>
+        <figure class="lv-card lv-wide" id="botaderos">
+          <h3 class="lv-card-title">Botaderos por departamento</h3>
+          <p class="lv-card-note">Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
+          <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ACTO 3 -->
+    <section class="lv-act" id="circuitos">
+      <div class="lv-act-head">
+        <span class="lv-act-num" aria-hidden="true">3</span>
+        <div>
+          <p class="lv-scale">Escala local · Trujillo</p>
+          <h2 class="lv-act-title">Los circuitos informales de reciclaje</h2>
+          <p class="lv-intro">Lo que las cifras oficiales no registran lo mueve un circuito de recicladores de a pie, chatarreros y acopiadores. Recuperan todos los materiales: papel, cartón, plástico, vidrio y metales. Así funciona en El Porvenir y Florencia de Mora, según mi trabajo de campo.</p>
+        </div>
+      </div>
+      <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
+        <p>En el Perú hay <b data-draw="valor" data-source="mundo_paises" data-field="recicladores_informales" data-where="iso3=PER" data-fmt="int">—</b> recicladores informales frente a <b data-draw="valor" data-source="mundo_paises" data-field="trabajadores_formales" data-where="iso3=PER" data-fmt="int">—</b> trabajadores formales del sector. El reciclaje que sí ocurre depende de ellos.</p>
+      </div>
+      <div class="lv-grid">
+        <article class="lv-card" id="actores">
+          <h3 class="lv-card-title">Quiénes sostienen el circuito</h3>
+          <p class="lv-card-note">Trabajo de campo en dos locales de acopio de El Porvenir. Los nombres de la tesis son seudónimos.</p>
+          <ul class="lv-actors">
+            <li class="is-vulnerable"><span class="lv-actor-name">Recicladores de a pie <span class="lv-tag">más vulnerables</span></span>Recogen papel, cartón, plástico y botellas en la calle o de vecinos que los guardan para ellos. Un reciclador adulto mayor gana entre S/ <b data-draw="valor" data-source="cifras_tesis" data-field="valor" data-where="clave=reciclador_ingreso_viaje" data-fmt="int">—</b> y <b data-draw="valor" data-source="cifras_tesis" data-field="valor_max" data-where="clave=reciclador_ingreso_viaje" data-fmt="int">—</b> por viaje, y entre S/ <b data-draw="valor" data-source="cifras_tesis" data-field="valor" data-where="clave=reciclador_ingreso_dia" data-fmt="int">—</b> y <b data-draw="valor" data-source="cifras_tesis" data-field="valor_max" data-where="clave=reciclador_ingreso_dia" data-fmt="int">—</b> al día. Asume las caídas de precio.</li>
+            <li><span class="lv-actor-name">Chatarreros</span>Recorren la ciudad en moto carguera y compran artefactos, chatarra y metales. Ganan desde S/ <b data-draw="valor" data-source="cifras_tesis" data-field="valor" data-where="clave=chatarrero_ingreso_dia" data-fmt="int">—</b> hasta S/ <b data-draw="valor" data-source="cifras_tesis" data-field="valor_max" data-where="clave=chatarrero_ingreso_dia" data-fmt="int">—</b> en un buen día, pero necesitan capital diario y pagan combustible y el alquiler de la moto.</li>
+            <li><span class="lv-actor-name">Acopiadores</span>Compran, pesan y clasifican el material en sus locales, y lo venden por volumen a intermediarios y empresas.</li>
+          </ul>
+          <p class="lv-hint">En la zona de estudio identifiqué al menos <b data-draw="valor" data-source="cifras_tesis" data-field="valor" data-where="clave=recicladores_identificados" data-fmt="int">—</b> recicladores y <b data-draw="valor" data-source="cifras_tesis" data-field="valor" data-where="clave=chatarreros_identificados" data-fmt="int">—</b> chatarreros.</p>
+        </article>
+        <figure class="lv-card" id="informales">
+          <h3 class="lv-card-title">Recicladores informales en América Latina</h3>
+          <p class="lv-card-note">Países con dato en What a Waste 3.0: muy pocos países lo reportan en todo el mundo.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="informales" data-source="mundo_paises"></div>
+        </figure>
+      </div>
+
+      <h3 class="lv-sub">Los metales, el material del chatarrero</h3>
+      <p class="lv-par">No todo material vale lo mismo. Un kilo de chatarra de cobre se exporta a un precio muchas veces mayor que un kilo de cartón. Por eso los metales se mueven sobre todo por los chatarreros, que además saben desarmar un artefacto para vender cada metal por separado.</p>
+      <div class="lv-filters" role="group" aria-label="Filtros de comercio">
+        <span class="lv-filters-tag">Explora</span>
+        <label>Material
+          <select id="f-material" data-draw="ctl-material" data-source="peru_comercio_reciclables" aria-label="Material"></select>
+        </label>
+      </div>
+      <div class="lv-grid">
+        <figure class="lv-card" id="precio-material">
+          <h3 class="lv-card-title">Precio de exportación por material, 2024</h3>
+          <p class="lv-card-note">Dólares por kilo de material reciclable exportado desde el Perú. El material elegido, en verde.</p>
+          <div class="lv-chart dash-skeleton" data-draw="precio-material" data-source="peru_comercio_reciclables"></div>
+        </figure>
+        <figure class="lv-card" id="comercio">
+          <h3 class="lv-card-title">Comercio de <span data-draw="param-material">—</span> reciclable</h3>
+          <p class="lv-card-note">Millones de dólares por año, exportaciones e importaciones del Perú.</p>
+          <p class="lv-legend"><span><span class="lv-sw is-green"></span>Exportación</span><span><span class="lv-sw is-yellow"></span>Importación</span></p>
+          <div class="lv-chart dash-skeleton" data-draw="comercio" data-source="peru_comercio_reciclables"></div>
+        </figure>
+        <figure class="lv-card lv-wide" id="precios">
+          <h3 class="lv-card-title">¿Cuánto recibe quien recolecta?</h3>
+          <p class="lv-card-note">Precio que paga el acopiador en Trujillo frente al precio de exportación de 2024, en soles por kilo (tipo de cambio <span data-draw="valor" data-source="precios_comparados" data-field="tipo_cambio" data-row="0" data-fmt="tc">—</span>).</p>
+          <p class="lv-legend"><span><span class="lv-sw is-green is-dot"></span>Lo que paga el acopiador (mínimo y máximo)</span><span><span class="lv-sw is-yellow is-diamond"></span>Precio de exportación</span></p>
+          <div class="lv-chart dash-skeleton" data-draw="precios" data-source="precios_comparados"></div>
+          <p class="lv-warn">Esta comparación es una pista, no una conclusión. El precio de exportación es de material ya clasificado y embalado, incluye transporte e intermediarios y es de otro año. La tesis estudió la parte informal del circuito, no la cadena de valor completa: queda como invitación a investigar y a compartir información.</p>
+        </figure>
+      </div>
+
+      <h3 class="lv-sub">Trujillo en las cifras oficiales</h3>
+      <figure class="lv-card" id="trujillo">
+        <h3 class="lv-card-title">Distritos de la provincia de Trujillo en <span data-draw="param-anio">—</span></h3>
+        <p class="lv-card-note">Residuos municipales generados, valorizados y dispuestos en sitio adecuado según SIGERSOL. Resaltados, los distritos de la tesis.</p>
+        <div class="lv-table-box">
+          <table class="lv-table" data-source="trujillo_distritos" data-row-key="distrito,anio">
+            <thead><tr><th data-field="distrito">Distrito</th><th class="is-num" data-field="generado_t">Generado (t)</th><th class="is-num" data-field="valorizado_t">Valorizado (t)</th><th class="is-num" data-field="pct_valorizado">% valorizado</th><th class="is-num" data-field="dispuesto_adecuado_t">Disposición adecuada (t)</th></tr></thead>
+            <tbody data-draw="tabla-trujillo"></tbody>
+          </table>
+        </div>
+        <p class="lv-hint">El botadero El Milagro (Huanchaco), que recibía la basura de la ciudad, figura en el inventario de OEFA como botadero con quema de residuos. En 2023 la población que SIGERSOL asigna a El Porvenir cae a casi la mitad y la de Florencia de Mora casi se duplica: es un cambio de la fuente, no de la realidad.</p>
+      </figure>
+    </section>
+
+    <section class="lv-act" id="reflexion">
+      <div class="lv-reflect">
+        <h2 class="lv-act-title">Reflexión</h2>
+        <p>En un contexto de fuerte contaminación, con miles de botaderos y basura que se quema, el reciclaje es urgente. Los residuos no son solo un problema: también tienen valor, como muestra el mercado de la chatarra.</p>
+        <p>Ese valor hoy lo sostienen, en buena parte, personas que trabajan en la informalidad. Trabajar de la mano con recicladores y chatarreros, y no en su contra, puede ayudar a la vez a reciclar más, a reducir la pobreza y a mejorar las condiciones de vida de los sectores más vulnerables.</p>
+      </div>
+    </section>
+
+    <section class="lv-act" id="hallazgos">
+      <div class="lv-act-head"><div><p class="lv-scale">En resumen</p><h2 class="lv-act-title">Tres hallazgos</h2></div></div>
+      <ol class="lv-findings">
+        <li><span class="lv-find-num">1</span><span class="lv-find-title">Oficialmente, el Perú casi no recicla</span>En 2024 se valorizó el <b data-draw="valor" data-source="peru_nacional" data-field="pct_valorizado" data-where="anio=2024" data-fmt="pct2">—</b> de los residuos municipales inorgánicos y solo el <b data-draw="valor" data-source="peru_nacional" data-field="pct_distritos_que_valorizan" data-where="anio=2024" data-fmt="pct0">—</b> de los distritos reportó alguna valorización. Según el Banco Mundial, el Perú recicla el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>, frente al <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b> de América Latina.</li>
+        <li><span class="lv-find-num">2</span><span class="lv-find-title">Mucha basura termina en botaderos</span>OEFA registra <b data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</b> botaderos, y en <b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> se quema basura. La Libertad reporta <b data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where="departamento=LA%20LIBERTAD&amp;anio=2024" data-fmt="pct0">—</b> de disposición adecuada en 2024, y El Milagro figura entre los botaderos con quema.</li>
+        <li><span class="lv-find-num">3</span><span class="lv-find-title">El reciclaje real lo mueve un circuito informal</span>Hay <b data-draw="valor" data-source="mundo_paises" data-field="recicladores_informales" data-where="iso3=PER" data-fmt="int">—</b> recicladores informales en el Perú. Los metales, que más valen por kilo, los mueven sobre todo los chatarreros: en 2024 el Perú exportó <b data-draw="valor" data-source="peru_comercio_reciclables" data-field="valor_usd" data-where="material=Cobre&amp;flujo=Exportaci%C3%B3n&amp;anio=2024" data-fmt="musd">—</b> en chatarra de cobre e importó <b data-draw="valor" data-source="peru_comercio_reciclables" data-field="valor_usd" data-where="material=Hierro%20y%20acero&amp;flujo=Importaci%C3%B3n&amp;anio=2024" data-fmt="musd">—</b> en chatarra de hierro y acero.</li>
+      </ol>
+    </section>
+
+    <section class="lv-act lv-method" id="metodo">
+      <div class="lv-act-head"><div><p class="lv-scale">Cómo se hizo</p><h2 class="lv-act-title">Metodología, fuentes y limitaciones</h2></div></div>
+      <div class="lv-grid">
+        <article class="lv-card">
+          <h3 class="lv-card-title">Cómo se construyeron los indicadores</h3>
+          <ul>
+            <li><b>Porcentaje valorizado:</b> residuos inorgánicos valorizados entre residuos municipales generados, sumando los distritos de cada departamento.</li>
+            <li><b>Disposición adecuada:</b> residuos dispuestos en relleno sanitario entre residuos generados. En 2019 y 2021 la fuente reporta cero en todo el país, así que se trató como dato faltante.</li>
+            <li><b>Promedios regionales del mundo:</b> ponderados por las toneladas que genera cada país.</li>
+            <li><b>Precio de exportación:</b> valor entre peso neto de lo que exporta el Perú en cada partida arancelaria (cobre 7404, aluminio 7602, hierro y acero 7204, papel y cartón 4707, plástico 3915, vidrio 7001).</li>
+            <li><b>Precios locales y descripción del circuito:</b> etnografía en dos locales de acopio de El Porvenir, con observación participante y entrevistas.</li>
+          </ul>
+        </article>
+        <article class="lv-card">
+          <h3 class="lv-card-title">Fuentes</h3>
+          <ul>
+            <li><a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, licencia CC BY 4.0</li>
+            <li><a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM, valorización de residuos sólidos por distrito</a></li>
+            <li><a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM, disposición final adecuada de residuos sólidos</a></li>
+            <li><a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos</a></li>
+            <li><a href="https://comtradeplus.un.org/">UN Comtrade</a>, comercio exterior del Perú</li>
+            <li><a href="https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=PE">Banco Mundial, tipo de cambio oficial</a></li>
+            <li>Rodriguez Coronel, G. Tesis de licenciatura en Antropología, PUCP (en curso).</li>
+            <li>Mapas: <a href="https://www.naturalearthdata.com/">Natural Earth</a> y <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a></li>
+          </ul>
+        </article>
+        <article class="lv-card lv-wide">
+          <h3 class="lv-card-title">Limitaciones</h3>
+          <ul>
+            <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
+            <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Pocos países reportan botaderos o recicladores informales.</li>
+            <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros.</li>
+            <li>Los precios de campo vienen de dos locales de una zona de Trujillo y no representan a todo el país.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <footer class="lv-foot">
+      <p>Greicy Rodriguez Coronel · Tarea 3, Python Intermedio · <a href="https://github.com/grey-d18/lo-que-vale-la-basura">Repositorio en GitHub</a></p>
+      <p>Código bajo MIT; contenido de la tesis bajo CC BY-NC-ND 4.0. Tablero hecho con apoyo de Claude.</p>
+    </footer>
+  </div>
+</div>
+
+<script>
+// ---------- Cálculo: total de botaderos del país ----------
+dash.calc('botaderos_total', {
+  title: 'Botaderos registrados en el Perú',
+  description: 'Suma de botaderos y de botaderos con quema de todos los departamentos (inventario OEFA, igual cada año).',
+  inputs: ['peru_departamentos'],
+  fn: (peru_departamentos) => {
+    const ultimo = Math.max(...peru_departamentos.map((d) => Number(d.anio)));
+    const filas = peru_departamentos.filter((d) => Number(d.anio) === ultimo);
+    return [{
+      botaderos: filas.reduce((s, d) => s + Number(d.botaderos), 0),
+      con_quema: filas.reduce((s, d) => s + Number(d.botaderos_con_quema), 0),
+    }];
+  },
+});
+
+// ---------- Utilidades ----------
+const lvRoot = () => document.querySelector('.lv') || document.documentElement;
+const tok = (name) => getComputedStyle(lvRoot()).getPropertyValue(name).trim();
+const P = () => {
+  const p = dash.params();
+  return {
+    anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Hierro y acero',
+    indMundo: p.ind_mundo ?? 'reciclaje', region: p.region ?? 'América Latina y el Caribe', indPeru: p.ind_peru ?? 'pct_valorizado',
+  };
+};
+const num = (v) => (v === null || v === undefined || v === '' ? null : Number(v));
+const capital = (t) => String(t).toLowerCase().replace(/(^|\s)\S/g, (l) => l.toUpperCase()).replace(/ (De|Del|Y) /g, (m) => m.toLowerCase());
+const F = {
+  pct2: (v) => d3.format('.2f')(v) + '%',
+  pct1: (v) => d3.format('.1f')(v) + '%',
+  pct0: (v) => d3.format('.0f')(v) + '%',
+  int: (v) => d3.format(',.0f')(v),
+  tons: (v) => d3.format(',.0f')(v) + ' t',
+  musd: (v) => 'US$ ' + d3.format(',.0f')(v / 1e6) + ' millones',
+  tc: (v) => d3.format('.2f')(v),
+};
+const IND_MUNDO = {
+  reciclaje: { label: 'Reciclaje', unit: '%' }, botadero: { label: 'Botaderos a cielo abierto', unit: '%' },
+  comp_plastico: { label: 'Plástico', unit: '%' }, comp_papel_carton: { label: 'Papel y cartón', unit: '%' },
+  comp_metal: { label: 'Metal', unit: '%' }, kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' },
+};
+const IND_PERU = {
+  pct_valorizado: { label: 'Valorizado', unit: '%' }, pct_distritos_que_valorizan: { label: 'Distritos que reportan', unit: '%' },
+  pct_dispuesto_adecuado: { label: 'Disposición adecuada', unit: '%' }, botaderos: { label: 'Botaderos', unit: '' },
+};
+const fmtInd = (v, unit) => (v === null ? 'sin dato' : unit === '%' ? d3.format('.2f')(v) + '%' : unit === '' ? d3.format(',')(v) : d3.format('.2f')(v) + unit);
+const parseWhere = (w) => (w || '').split('&').filter(Boolean).map((kv) => kv.split('=').map(decodeURIComponent));
+const matchRow = (rows, where) => rows.find((r) => where.every(([k, v]) => String(r[k]) === v));
+const enc = (v) => encodeURIComponent(String(v));
+const textWidth = (() => {
+  const ctx = document.createElement('canvas').getContext('2d');
+  return (t, size = 12) => { ctx.font = `${size}px system-ui, sans-serif`; return ctx.measureText(String(t)).width * 1.08; };
+})();
+
+function statusOf(ids) {
+  const st = ids.map((id) => dash.data(id).status);
+  if (st.every((s) => s === 'ok')) return 'ok';
+  if (st.some((s) => s === 'error' || s === 'missing')) return 'error';
+  return 'loading';
+}
+function chartState(el, ids) {
+  const s = statusOf(ids);
+  if (s === 'ok') { el.classList.remove('dash-skeleton'); return true; }
+  el.replaceChildren();
+  if (s === 'error') {
+    el.classList.remove('dash-skeleton');
+    const f = document.createElement('div'); f.className = 'lv-fail'; f.textContent = 'No se pudo cargar'; el.append(f);
+  } else el.classList.add('dash-skeleton');
+  return false;
+}
+function makeTip(el) {
+  const t = document.createElement('div'); t.className = 'lv-tip'; t.hidden = true; el.append(t);
+  return {
+    show(event, head, lines) {
+      t.replaceChildren();
+      const h = document.createElement('div'); h.className = 'lv-tip-head'; h.textContent = head; t.append(h);
+      lines.forEach((l) => { const d = document.createElement('div'); d.textContent = l; t.append(d); });
+      t.hidden = false;
+      const box = el.getBoundingClientRect();
+      const x = event.clientX - box.left, y = event.clientY - box.top;
+      const w = t.offsetWidth, hgt = t.offsetHeight;
+      t.style.left = Math.max(0, Math.min(x + 12, box.width - w)) + 'px';
+      t.style.top = Math.max(0, y - hgt - 10 < 0 ? y + 14 : y - hgt - 10) + 'px';
+    },
+    hide() { t.hidden = true; },
+  };
+}
+// d3 espera los anillos exteriores en sentido horario: se corrige si el polígono cubre más de medio globo
+function geoFeature(geometria, props) {
+  const f = { type: 'Feature', properties: props, geometry: geometria };
+  if (d3.geoArea(f) > 2 * Math.PI) {
+    const rev = (polys) => polys.map((rings) => rings.map((r) => r.slice().reverse()));
+    f.geometry = geometria.type === 'Polygon'
+      ? { type: 'Polygon', coordinates: rev([geometria.coordinates])[0] }
+      : { type: 'MultiPolygon', coordinates: rev(geometria.coordinates) };
+  }
+  return f;
+}
+function legendRamp(svg, x, y, w, max, unit, color) {
+  const id = 'lv-grad-' + Math.random().toString(36).slice(2, 8);
+  const g = svg.append('linearGradient').attr('id', id);
+  d3.range(0, 1.01, 0.25).forEach((t) => g.append('stop').attr('offset', t).attr('stop-color', color(t * max)));
+  const leg = svg.append('g').attr('transform', `translate(${x},${y})`);
+  leg.append('rect').attr('width', w).attr('height', 8).attr('rx', 4).attr('fill', `url(#${id})`);
+  leg.append('text').attr('y', 22).attr('fill', tok('--lv-muted')).attr('font-size', 11).text('0');
+  leg.append('text').attr('x', w).attr('y', 22).attr('text-anchor', 'end').attr('fill', tok('--lv-muted')).attr('font-size', 11).text(fmtInd(max, unit));
+}
+function hbars(el, rows, opts) {
+  // Barras horizontales: rows = [{label, value, color, bold, tip: [head, lines]}]
+  const w = el.clientWidth || 500;
+  const size = 12;
+  const left = Math.min(w * 0.45, d3.max(rows, (r) => textWidth(r.label, size)) + 10);
+  const right = d3.max(rows, (r) => textWidth(opts.fmt(r.value), size)) + 12;
+  const rowH = opts.rowH ?? 22;
+  const h = rows.length * rowH + 8;
+  const x = d3.scaleLinear([0, d3.max(rows, (r) => r.value) || 1], [left, w - right]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  const tip = makeTip(el);
+  const g = svg.selectAll('g.r').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
+  g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+    .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', (d) => (d.bold ? tok('--lv-ink') : tok('--lv-ink-2')))
+    .text((d) => d.label);
+  g.append('rect').attr('x', left).attr('y', 3).attr('height', rowH - 6).attr('rx', 3)
+    .attr('width', (d) => Math.max(1, x(d.value) - left)).attr('fill', (d) => d.color);
+  g.append('text').attr('x', (d) => x(d.value) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', size)
+    .attr('fill', tok('--lv-ink')).attr('font-weight', (d) => (d.bold ? 700 : 400)).text((d) => opts.fmt(d.value));
+  g.append('rect').attr('x', 0).attr('width', w).attr('height', rowH).attr('fill', 'transparent')
+    .style('cursor', opts.onClick ? 'pointer' : 'default')
+    .on('mousemove', (ev, d) => tip.show(ev, d.tip[0], d.tip[1]))
+    .on('mouseleave', () => tip.hide())
+    .on('click', (ev, d) => opts.onClick && opts.onClick(d));
+}
+function lines(el, series, opts) {
+  // Líneas: series = [{name, color, points: [{x, y}], strong}]
+  const w = el.clientWidth || 500;
+  const h = 260;
+  const endW = d3.max(series, (s) => textWidth(s.name, 12)) + 14;
+  const all = series.flatMap((s) => s.points);
+  const yMax = d3.max(all, (p) => p.y) || 1;
+  const yTicks = d3.scaleLinear([0, yMax], [0, 1]).nice().ticks(4);
+  const left = d3.max(yTicks, (t) => textWidth(opts.fmtAxis(t), 11)) + 10;
+  const x = d3.scaleLinear(d3.extent(all, (p) => p.x), [left, w - endW]);
+  const y = d3.scaleLinear([0, d3.max(yTicks)], [h - 28, 12]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  svg.append('g').selectAll('line').data(yTicks).join('line').attr('x1', left).attr('x2', w - endW).attr('y1', y).attr('y2', y)
+    .attr('stroke', tok('--lv-line'));
+  svg.append('g').selectAll('text').data(yTicks).join('text').attr('x', left - 6).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end')
+    .attr('font-size', 11).attr('fill', tok('--lv-muted')).text(opts.fmtAxis);
+  const years = [...new Set(all.map((p) => p.x))].sort();
+  const step = Math.ceil(years.length / Math.max(2, Math.floor((w - left - endW) / 48)));
+  svg.append('g').selectAll('text').data(years.filter((_, i) => i % step === 0)).join('text').attr('x', x).attr('y', h - 8).attr('text-anchor', 'middle')
+    .attr('font-size', 11).attr('fill', tok('--lv-muted')).text((d) => d);
+  const line = d3.line().defined((p) => p.y !== null).x((p) => x(p.x)).y((p) => y(p.y));
+  const ends = [];
+  series.forEach((s) => {
+    svg.append('path').attr('d', line(s.points)).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2)
+      .attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    svg.append('g').selectAll('circle').data(s.points.filter((p) => p.y !== null)).join('circle')
+      .attr('cx', (p) => x(p.x)).attr('cy', (p) => y(p.y)).attr('r', 4).attr('fill', s.color).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
+    const last = s.points.filter((p) => p.y !== null).at(-1);
+    if (last) ends.push({ s, y: y(last.y), x: x(last.x) });
+  });
+  ends.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+  ends.forEach((e) => svg.append('text').attr('x', e.x + 8).attr('y', e.y).attr('dy', '0.35em').attr('font-size', 12)
+    .attr('font-weight', e.s.strong ? 700 : 400).attr('fill', e.s.strong ? tok('--lv-ink') : tok('--lv-ink-2')).text(e.s.name));
+  const tip = makeTip(el);
+  const rule = svg.append('line').attr('y1', 12).attr('y2', h - 28).attr('stroke', tok('--lv-bar-muted')).attr('stroke-dasharray', '3 3').attr('opacity', 0);
+  svg.append('rect').attr('x', left).attr('y', 0).attr('width', Math.max(1, w - endW - left)).attr('height', h).attr('fill', 'transparent')
+    .on('mousemove', (ev) => {
+      const [mx] = d3.pointer(ev);
+      const xv = years.reduce((a, b) => (Math.abs(x(b) - mx) < Math.abs(x(a) - mx) ? b : a));
+      rule.attr('x1', x(xv)).attr('x2', x(xv)).attr('opacity', 1);
+      tip.show(ev, String(xv), series.map((s) => {
+        const p = s.points.find((q) => q.x === xv);
+        return `${s.name}: ${p && p.y !== null ? opts.fmtTip(p.y) : 'sin dato'}`;
+      }));
+    })
+    .on('mouseleave', () => { rule.attr('opacity', 0); tip.hide(); });
+}
+
+// ---------- Valores sueltos (indicadores y cifras en el texto) ----------
+dash.draw('valor', (el) => {
+  const src = el.dataset.source;
+  const p = P();
+  if (el.dataset.whereTpl) {
+    el.setAttribute('data-where', el.dataset.whereTpl.replace('{anio}', enc(p.anio)).replace('{dep}', enc(p.dep)).replace('{material}', enc(p.material)));
+  }
+  const d = dash.data(src);
+  if (d.status !== 'ok') { el.textContent = '—'; return; }
+  const row = el.dataset.row !== undefined ? d.data[Number(el.dataset.row)] : matchRow(d.data, parseWhere(el.getAttribute('data-where')));
+  const v = row ? num(row[el.dataset.field]) : null;
+  el.textContent = v === null || Number.isNaN(v) ? 'sin dato' : F[el.dataset.fmt](v);
+});
+dash.draw('param-anio', (el) => { el.textContent = String(P().anio); });
+dash.draw('param-dep', (el) => { el.textContent = capital(P().dep); });
+dash.draw('param-material', (el) => { el.textContent = P().material.toLowerCase(); });
+dash.draw('param-region', (el) => { el.textContent = P().region === 'Mundo' ? 'todo el mundo' : P().region; });
+
+// ---------- Controles cuyas opciones vienen de los datos ----------
+function fillSelect(sel, options, value, param) {
+  sel.replaceChildren(...options.map(([v, t]) => new Option(t, v)));
+  sel.value = String(value);
+  sel.onchange = () => dash.setParams({ [param]: param === 'anio' ? Number(sel.value) : sel.value });
+}
+dash.draw('ctl-region', (sel) => {
+  const d = dash.data('mundo_paises');
+  const regs = d.status === 'ok' ? [...new Set(d.data.map((r) => r.region))].sort() : [];
+  fillSelect(sel, [['Mundo', 'Todo el mundo'], ...regs.map((r) => [r, r])], P().region, 'region');
+});
+dash.draw('ctl-anio', (sel) => {
+  const d = dash.data('peru_nacional');
+  const ys = d.status === 'ok' ? d.data.map((r) => Number(r.anio)).sort((a, b) => b - a) : [];
+  fillSelect(sel, ys.map((y) => [y, y]), P().anio, 'anio');
+});
+dash.draw('ctl-dep', (sel) => {
+  const d = dash.data('peru_departamentos');
+  const deps = d.status === 'ok' ? [...new Set(d.data.map((r) => r.departamento))].sort() : [];
+  fillSelect(sel, deps.map((x) => [x, capital(x)]), P().dep, 'dep');
+});
+dash.draw('ctl-material', (sel) => {
+  const d = dash.data('peru_comercio_reciclables');
+  const ms = d.status === 'ok' ? [...new Set(d.data.map((r) => r.material))].sort() : [];
+  fillSelect(sel, ms.map((m) => [m, m]), P().material, 'material');
+});
+
+// ---------- Acto 1 ----------
+dash.draw('mapa-mundo', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['mundo_paises', 'mundo_mapa'])) return;
+  const p = P();
+  const ind = IND_MUNDO[p.indMundo];
+  const vals = new Map(dash.data('mundo_paises').data.map((r) => [r.iso3, r]));
+  const w = el.clientWidth || 800;
+  const h = Math.round(w * 0.5);
+  const feats = dash.data('mundo_mapa').data
+    .filter((r) => r.iso3 !== 'ATA')
+    .map((r) => geoFeature(typeof r.geometria === 'string' ? JSON.parse(r.geometria) : r.geometria, { iso3: r.iso3, nombre: r.nombre }));
+  const proj = d3.geoNaturalEarth1().fitExtent([[0, 4], [w, h - 34]], { type: 'FeatureCollection', features: feats });
+  const path = d3.geoPath(proj);
+  const max = d3.max([...vals.values()], (r) => num(r[p.indMundo])) || 1;
+  const color = (v) => d3.interpolateRgb(tok('--lv-seq-lo'), tok('--lv-seq-hi'))(Math.sqrt(v / max));
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  const tip = makeTip(el);
+  svg.append('g').selectAll('path').data(feats).join('path').attr('d', path)
+    .attr('fill', (f) => { const v = num(vals.get(f.properties.iso3)?.[p.indMundo]); return v === null ? tok('--lv-nodata') : color(v); })
+    .attr('stroke', (f) => (f.properties.iso3 === 'PER' ? tok('--lv-ink') : tok('--lv-panel'))).attr('stroke-width', (f) => (f.properties.iso3 === 'PER' ? 1.6 : 0.5))
+    .on('mousemove', (ev, f) => {
+      const r = vals.get(f.properties.iso3);
+      const v = r ? num(r[p.indMundo]) : null;
+      tip.show(ev, f.properties.nombre, [`${ind.label}: ${fmtInd(v, ind.unit)}`, r && r.anio_dato ? `Dato del año ${r.anio_dato}` : 'Sin dato en What a Waste']);
+    })
+    .on('mouseleave', () => tip.hide());
+  legendRamp(svg, 8, h - 26, Math.min(220, w * 0.4), max, ind.unit, color);
+});
+
+dash.draw('ranking', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['mundo_paises'])) return;
+  const p = P();
+  const ind = IND_MUNDO[p.indMundo];
+  const rows = dash.data('mundo_paises').data
+    .filter((r) => num(r[p.indMundo]) !== null && (p.region === 'Mundo' || r.region === p.region))
+    .sort((a, b) => num(b[p.indMundo]) - num(a[p.indMundo])).slice(0, 20)
+    .map((r) => ({
+      label: r.pais, value: num(r[p.indMundo]), bold: r.iso3 === 'PER',
+      color: r.iso3 === 'PER' ? tok('--lv-green') : tok('--lv-bar-muted'),
+      tip: [r.pais, [`${ind.label}: ${fmtInd(num(r[p.indMundo]), ind.unit)}`, `Dato del año ${r.anio_dato ?? 's/f'}`]],
+    }));
+  hbars(el, rows, { fmt: (v) => fmtInd(v, ind.unit), rowH: 20 });
+});
+
+dash.draw('regiones', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['mundo_regiones'])) return;
+  const rows = dash.data('mundo_regiones').data.filter((r) => num(r.reciclaje) !== null)
+    .sort((a, b) => num(b.reciclaje) - num(a.reciclaje))
+    .map((r) => {
+      const alc = r.region === 'América Latina y el Caribe';
+      return {
+        label: `${r.region} (${r.n_reciclaje})`, value: num(r.reciclaje), bold: alc || r.region === 'Mundo',
+        color: alc ? tok('--lv-yellow') : r.region === 'Mundo' ? tok('--lv-green') : tok('--lv-bar-muted'),
+        tip: [r.region, [`Reciclaje: ${d3.format('.1f')(num(r.reciclaje))}%`, `${r.n_reciclaje} países con dato`]],
+      };
+    });
+  hbars(el, rows, { fmt: (v) => d3.format('.1f')(v) + '%', rowH: 30 });
+});
+
+// ---------- Acto 2 ----------
+dash.draw('mapa-peru', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['peru_departamentos', 'peru_mapa'])) return;
+  const p = P();
+  const ind = IND_PERU[p.indPeru];
+  const rows = new Map(dash.data('peru_departamentos').data.filter((r) => Number(r.anio) === p.anio).map((r) => [r.departamento, r]));
+  const feats = dash.data('peru_mapa').data.map((r) => geoFeature(typeof r.geometria === 'string' ? JSON.parse(r.geometria) : r.geometria, { dep: r.departamento }));
+  const w = el.clientWidth || 500;
+  const h = Math.min(560, Math.round(w * 1.3));
+  const proj = d3.geoMercator().fitExtent([[4, 4], [w - 4, h - 36]], { type: 'FeatureCollection', features: feats });
+  const path = d3.geoPath(proj);
+  const max = d3.max([...rows.values()], (r) => num(r[p.indPeru])) || 1;
+  const color = (v) => d3.interpolateRgb(tok('--lv-seq-lo'), tok('--lv-seq-hi'))(v / max);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  const tip = makeTip(el);
+  svg.append('g').selectAll('path').data(feats.sort((a, b) => (a.properties.dep === p.dep) - (b.properties.dep === p.dep))).join('path').attr('d', path)
+    .attr('fill', (f) => { const v = num(rows.get(f.properties.dep)?.[p.indPeru]); return v === null ? tok('--lv-nodata') : color(v); })
+    .attr('stroke', (f) => (f.properties.dep === p.dep ? tok('--lv-yellow') : tok('--lv-panel')))
+    .attr('stroke-width', (f) => (f.properties.dep === p.dep ? 3 : 0.8))
+    .style('cursor', 'pointer')
+    .on('mousemove', (ev, f) => {
+      const r = rows.get(f.properties.dep);
+      tip.show(ev, capital(f.properties.dep), [`${ind.label}: ${fmtInd(r ? num(r[p.indPeru]) : null, ind.unit)}`, 'Clic para ver el detalle']);
+    })
+    .on('mouseleave', () => tip.hide())
+    .on('click', (ev, f) => dash.setParams({ dep: f.properties.dep }));
+  if ([...rows.values()].some((r) => num(r[p.indPeru]) !== null)) legendRamp(svg, 8, h - 26, Math.min(200, w * 0.5), max, ind.unit, color);
+});
+
+dash.draw('serie', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['peru_nacional', 'peru_departamentos'])) return;
+  const p = P();
+  const nac = dash.data('peru_nacional').data.map((r) => ({ x: Number(r.anio), y: num(r.pct_valorizado) })).sort((a, b) => a.x - b.x);
+  const dep = dash.data('peru_departamentos').data.filter((r) => r.departamento === p.dep)
+    .map((r) => ({ x: Number(r.anio), y: num(r.pct_valorizado) })).sort((a, b) => a.x - b.x);
+  lines(el, [
+    { name: 'Perú', color: tok('--lv-bar-muted'), points: nac },
+    { name: capital(p.dep), color: tok('--lv-green'), points: dep, strong: true },
+  ], { fmtAxis: (v) => d3.format('.1f')(v) + '%', fmtTip: (v) => d3.format('.2f')(v) + '%' });
+});
+
+dash.draw('botaderos', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['peru_departamentos'])) return;
+  const p = P();
+  const data = dash.data('peru_departamentos').data;
+  const ultimo = d3.max(data, (r) => Number(r.anio));
+  const rows = data.filter((r) => Number(r.anio) === ultimo && num(r.botaderos) > 0).sort((a, b) => num(b.botaderos) - num(a.botaderos));
+  const w = el.clientWidth || 800;
+  const rowH = 20;
+  const left = d3.max(rows, (r) => textWidth(capital(r.departamento), 12)) + 10;
+  const right = 40;
+  const h = rows.length * rowH + 8;
+  const x = d3.scaleLinear([0, d3.max(rows, (r) => num(r.botaderos))], [left, w - right]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  const tip = makeTip(el);
+  const g = svg.selectAll('g').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
+  const sel = (d) => d.departamento === p.dep;
+  g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12)
+    .attr('font-weight', (d) => (sel(d) ? 700 : 400)).attr('fill', (d) => (sel(d) ? tok('--lv-ink') : tok('--lv-ink-2'))).text((d) => capital(d.departamento));
+  g.append('rect').attr('x', left).attr('y', 3).attr('height', rowH - 6).attr('rx', 3)
+    .attr('width', (d) => Math.max(0, x(num(d.botaderos) - num(d.botaderos_con_quema)) - left - 1)).attr('fill', tok('--lv-green'));
+  g.append('rect').attr('x', (d) => x(num(d.botaderos) - num(d.botaderos_con_quema)) + 1).attr('y', 3).attr('height', rowH - 6).attr('rx', 3)
+    .attr('width', (d) => Math.max(0, x(num(d.botaderos)) - x(num(d.botaderos) - num(d.botaderos_con_quema)) - 1)).attr('fill', tok('--lv-yellow'));
+  g.append('text').attr('x', (d) => x(num(d.botaderos)) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', 12)
+    .attr('fill', tok('--lv-ink')).attr('font-weight', (d) => (sel(d) ? 700 : 400)).text((d) => d3.format(',')(num(d.botaderos)));
+  g.append('rect').attr('width', w).attr('height', rowH).attr('fill', 'transparent').style('cursor', 'pointer')
+    .on('mousemove', (ev, d) => tip.show(ev, capital(d.departamento), [`${d3.format(',')(num(d.botaderos))} botaderos`, `${d3.format(',')(num(d.botaderos_con_quema))} con quema de basura`, 'Clic para elegirlo']))
+    .on('mouseleave', () => tip.hide())
+    .on('click', (ev, d) => dash.setParams({ dep: d.departamento }));
+});
+
+// ---------- Acto 3 ----------
+dash.draw('informales', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['mundo_paises'])) return;
+  const rows = dash.data('mundo_paises').data
+    .filter((r) => num(r.recicladores_informales) !== null && r.region === 'América Latina y el Caribe')
+    .sort((a, b) => num(b.recicladores_informales) - num(a.recicladores_informales))
+    .map((r) => ({
+      label: r.pais, value: num(r.recicladores_informales), bold: r.iso3 === 'PER',
+      color: r.iso3 === 'PER' ? tok('--lv-green') : tok('--lv-bar-muted'),
+      tip: [r.pais, [`${d3.format(',')(num(r.recicladores_informales))} recicladores informales`].concat(num(r.trabajadores_formales) !== null ? [`${d3.format(',')(num(r.trabajadores_formales))} trabajadores formales`] : [])],
+    }));
+  hbars(el, rows, { fmt: (v) => d3.format(',')(v), rowH: 32 });
+});
+
+dash.draw('precio-material', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['peru_comercio_reciclables'])) return;
+  const p = P();
+  const data = dash.data('peru_comercio_reciclables').data;
+  const ultimo = d3.max(data, (r) => Number(r.anio));
+  const rows = data.filter((r) => r.flujo === 'Exportación' && Number(r.anio) === ultimo && num(r.usd_por_kg) !== null)
+    .sort((a, b) => num(b.usd_por_kg) - num(a.usd_por_kg))
+    .map((r) => ({
+      label: r.material, value: num(r.usd_por_kg), bold: r.material === p.material,
+      color: r.material === p.material ? tok('--lv-green') : tok('--lv-seq-lo'),
+      tip: [r.material, [`US$ ${d3.format('.2f')(num(r.usd_por_kg))} por kilo`, `${d3.format(',.0f')(num(r.toneladas))} toneladas exportadas en ${ultimo}`]],
+    }));
+  hbars(el, rows, { fmt: (v) => 'US$ ' + d3.format('.2f')(v), rowH: 36, onClick: (d) => dash.setParams({ material: d.label }) });
+});
+
+dash.draw('comercio', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['peru_comercio_reciclables'])) return;
+  const p = P();
+  const data = dash.data('peru_comercio_reciclables').data.filter((r) => r.material === p.material);
+  const serie = (flujo) => data.filter((r) => r.flujo === flujo).map((r) => ({ x: Number(r.anio), y: num(r.valor_usd) === null ? null : num(r.valor_usd) / 1e6 })).sort((a, b) => a.x - b.x);
+  lines(el, [
+    { name: 'Exportación', color: tok('--lv-green'), points: serie('Exportación'), strong: true },
+    { name: 'Importación', color: tok('--lv-yellow'), points: serie('Importación'), strong: true },
+  ].filter((s) => s.points.length), { fmtAxis: (v) => 'US$ ' + d3.format(',.0f')(v) + ' M', fmtTip: (v) => 'US$ ' + d3.format(',.1f')(v) + ' millones' });
+});
+
+dash.draw('precios', (el) => {
+  el.replaceChildren();
+  if (!chartState(el, ['precios_comparados'])) return;
+  const rows = dash.data('precios_comparados').data;
+  const w = el.clientWidth || 800;
+  const rowH = 46;
+  const left = Math.min(w * 0.4, d3.max(rows, (r) => textWidth(r.material, 12)) + 12);
+  const right = 70;
+  const h = rows.length * rowH + 30;
+  const max = d3.max(rows, (r) => Math.max(num(r.exportacion_soles_kg), num(r.precio_max_soles_kg)));
+  const x = d3.scaleLinear([0, max], [left, w - right]).nice();
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  const ticks = x.ticks(Math.max(2, Math.floor((w - left - right) / 70)));
+  svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', 0).attr('y2', h - 22).attr('stroke', tok('--lv-line'));
+  svg.append('g').selectAll('text').data(ticks).join('text').attr('x', x).attr('y', h - 6).attr('text-anchor', 'middle').attr('font-size', 11)
+    .attr('fill', tok('--lv-muted')).text((t) => 'S/ ' + d3.format('.0f')(t));
+  const tip = makeTip(el);
+  const g = svg.selectAll('g.r').data(rows).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * rowH + rowH / 2})`);
+  g.append('text').attr('x', left - 10).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', tok('--lv-ink-2')).text((d) => d.material);
+  g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.exportacion_soles_kg))).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 2);
+  g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.precio_max_soles_kg))).attr('stroke', tok('--lv-green')).attr('stroke-width', 6).attr('stroke-linecap', 'round');
+  g.append('circle').attr('cx', (d) => x(num(d.precio_min_soles_kg))).attr('r', 6).attr('fill', tok('--lv-green')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
+  g.append('circle').attr('cx', (d) => x(num(d.precio_max_soles_kg))).attr('r', 6).attr('fill', tok('--lv-green')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
+  g.append('path').attr('d', d3.symbol(d3.symbolDiamond, 110)).attr('transform', (d) => `translate(${x(num(d.exportacion_soles_kg))},0)`)
+    .attr('fill', tok('--lv-yellow')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
+  g.append('text').attr('x', (d) => x(num(d.exportacion_soles_kg)) + 10).attr('dy', '0.35em').attr('font-size', 12).attr('fill', tok('--lv-ink'))
+    .text((d) => 'S/ ' + d3.format('.2f')(num(d.exportacion_soles_kg)));
+  g.append('rect').attr('x', 0).attr('y', -rowH / 2).attr('width', w).attr('height', rowH).attr('fill', 'transparent')
+    .on('mousemove', (ev, d) => tip.show(ev, d.material, [
+      `Paga el acopiador: S/ ${d3.format('.2f')(num(d.precio_min_soles_kg))} a ${d3.format('.2f')(num(d.precio_max_soles_kg))} por kilo`,
+      `Exportación 2024: S/ ${d3.format('.2f')(num(d.exportacion_soles_kg))} (US$ ${d3.format('.2f')(num(d.usd_por_kg))})`,
+      `Quien recolecta recibe entre ${d3.format('.0f')(num(d.pct_min_del_precio_exportacion))}% y ${d3.format('.0f')(num(d.pct_max_del_precio_exportacion))}% de ese precio`,
+    ]))
+    .on('mouseleave', () => tip.hide());
+});
+
+dash.draw('tabla-trujillo', (tbody) => {
+  tbody.replaceChildren();
+  const d = dash.data('trujillo_distritos');
+  if (d.status !== 'ok') return;
+  const p = P();
+  const tesis = ['EL PORVENIR', 'FLORENCIA DE MORA'];
+  d.data.filter((r) => Number(r.anio) === p.anio).sort((a, b) => num(b.generado_t) - num(a.generado_t)).forEach((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = `${enc(r.distrito)},${enc(r.anio)}`;
+    if (tesis.includes(r.distrito)) tr.className = 'is-thesis';
+    const cells = [
+      [capital(r.distrito), ''],
+      [d3.format(',.0f')(num(r.generado_t)), 'is-num'],
+      [d3.format(',.0f')(num(r.valorizado_t)), 'is-num'],
+      [num(r.pct_valorizado) === null ? 'sin dato' : d3.format('.2f')(num(r.pct_valorizado)) + '%', 'is-num'],
+      [num(r.dispuesto_adecuado_t) === null ? 'sin dato' : d3.format(',.0f')(num(r.dispuesto_adecuado_t)), 'is-num'],
+    ];
+    cells.forEach(([t, c]) => { const td = document.createElement('td'); td.textContent = t; if (c) td.className = c; tr.append(td); });
+    tbody.append(tr);
+  });
+});
+
+// ---------- Controles fijos, nombres de indicador y navegación ----------
+document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
+document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_peru: s.value })));
+document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
+  const target = document.getElementById(b.dataset.go);
+  if (target) { target.scrollIntoView({ behavior: 'smooth' }); dash.setLink(target.id); }
+}));
+let lvLinked = false;
+dash.onData(() => {
+  const p = P();
+  document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => { s.value = p.indMundo; });
+  document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => { s.value = p.indPeru; });
+  document.querySelectorAll('.lv-ind-name').forEach((s) => { s.hidden = s.dataset.ind !== p.indMundo; });
+  document.querySelectorAll('.lv-indp-name').forEach((s) => { s.hidden = s.dataset.ind !== p.indPeru; });
+  const deps = dash.data('peru_departamentos');
+  const sinDato = deps.status === 'ok' && deps.data.filter((r) => Number(r.anio) === p.anio).every((r) => num(r[p.indPeru]) === null);
+  document.querySelectorAll('.lv-no-data-note').forEach((n) => { n.hidden = !sinDato; });
+  if (!lvLinked && deps.status === 'ok') {
+    lvLinked = true;
+    const named = document.getElementById(location.hash.slice(1));
+    if (named) named.scrollIntoView();
+  }
+});
+</script>
