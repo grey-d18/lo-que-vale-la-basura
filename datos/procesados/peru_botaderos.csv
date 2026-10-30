@@ -1,0 +1,2120 @@
+departamento,provincia,distrito,nombre,quema,categoria,anio_incorporacion
+AMAZONAS,BAGUA,BAGUA,Botadero Sector La Curva-Pasamayito,False,Recuperación,2018
+AMAZONAS,BAGUA,IMAZA,Botadero de Imaza,False,Recuperación,2018
+AMAZONAS,BONGARA,FLORIDA,Botadero de Florida,False,Recuperación,2018
+AMAZONAS,BONGARA,JAZAN,Botadero Sector Ñull,False,Recuperación,2018
+AMAZONAS,BONGARA,JUMBILLA,Botadero Sector Tayaloma,False,Recuperación,2018
+AMAZONAS,BONGARA,JUMBILLA,Botadero S/N,False,Recuperación,2018
+AMAZONAS,BONGARA,JUMBILLA,Botadero Chiliquín,False,Recuperación,2018
+AMAZONAS,BONGARA,SHIPASBAMBA,Botadero Sector Huarangopata,False,Recuperación,2018
+AMAZONAS,BONGARA,VALERA,Botadero de Valera,False,Recuperación,2018
+AMAZONAS,BONGARA,YAMBRASBAMBA,Botadero de Yambrasbamba,False,Recuperación,2018
+AMAZONAS,BONGARA,YAMBRASBAMBA,Botadero Sector El Mirador,True,Recuperación,2024
+AMAZONAS,CHACHAPOYAS,BALSAS,Botadero de Balsas,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHACHAPOYAS,Botadero Quebrada El Atajo,True,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHACHAPOYAS,Botadero Soloco,False,Reconversión,2018
+AMAZONAS,CHACHAPOYAS,CHACHAPOYAS,Botadero Pongomia,False,Recuperación,2022
+AMAZONAS,CHACHAPOYAS,CHETO,Botadero de Cheto 1,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHETO,Botadero Queminas,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHILIQUIN,Botadero Chiliquín,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHILIQUIN,Botadero Chiliquín,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,CHUQUIBAMBA,Botadero de Chuquibamba,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,LA JALCA,Botadero Sector Timbul,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,LEIMEBAMBA,Botadero de Leimebamba,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,LEVANTO,Botadero de Levanto,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,MAGDALENA,Botadero de Magdalena,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,MARISCAL CASTILLA,Botadero Mariscal Castilla,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,MONTEVIDEO,Botadero Montevideo,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,OLLEROS,Botadero Olleros N° 1,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,OLLEROS,Botadero Olleros N° 2,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,OLLEROS,Botadero Olleros N° 3,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,OLLEROS,Botadero Llambujsha,False,Recuperación,2024
+AMAZONAS,CHACHAPOYAS,OLLEROS,Botadero Sector Sillaconca,False,Recuperación,2024
+AMAZONAS,CHACHAPOYAS,QUINJALCA,Botadero Quinjalca,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,QUINJALCA,Botadero Asunción,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,QUINJALCA,Botadero de Granada,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,SAN FRANCISCO DE DAGUAS,Botadero de Municipal,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,SAN FRANCISCO DE DAGUAS,Botadero de Molinopampa,False,Recuperación,2018
+AMAZONAS,CHACHAPOYAS,SAN ISIDRO DE MAINO,Botadero de San Isidro del Maino,False,Recuperación,2018
+AMAZONAS,CONDORCANQUI,EL CENEPA,Botadero Sector Pongo Ronsoco,False,Recuperación,2018
+AMAZONAS,CONDORCANQUI,EL CENEPA,Botadero Huampani,False,Recuperación,2024
+AMAZONAS,CONDORCANQUI,NIEVA,Botadero Nuevo Siasmi-3 Unidos,False,Recuperación,2018
+AMAZONAS,CONDORCANQUI,NIEVA,Botadero Parcela Tarrillo,False,Recuperación,2024
+AMAZONAS,CONDORCANQUI,NIEVA,Botadero Sector Tayuntsa,False,Recuperación,2024
+AMAZONAS,CONDORCANQUI,RIO SANTIAGO,Botadero Aeropuerto CN Villa Gonzalo,False,Recuperación,2018
+AMAZONAS,LUYA,CAMPORREDONDO,Botadero Chongoyape,False,Recuperación,2018
+AMAZONAS,LUYA,COCABAMBA,Botadero de Cocabamba,False,Recuperación,2018
+AMAZONAS,LUYA,COLCAMAR,Botadero de Colcamar,False,Recuperación,2018
+AMAZONAS,LUYA,LONGUITA,Botadero de Longuita,False,Recuperación,2018
+AMAZONAS,LUYA,LONYA CHICO,Botadero de Lonya Chico,False,Recuperación,2018
+AMAZONAS,LUYA,LONYA CHICO,Botadero de Inguilpata,False,Recuperación,2018
+AMAZONAS,LUYA,LONYA CHICO,Botadero de Conila,False,Recuperación,2018
+AMAZONAS,LUYA,LUYA,Botadero Sector El Ayal-Lamud,True,Recuperación,2018
+AMAZONAS,LUYA,LUYA,Botadero de Luya,False,Recuperación,2018
+AMAZONAS,LUYA,LUYA,Botadero de Luya Viejo,False,Recuperación,2018
+AMAZONAS,LUYA,LUYA,Botadero de Trita,True,Recuperación,2018
+AMAZONAS,LUYA,MARIA,Botaderos María,False,Recuperación,2018
+AMAZONAS,LUYA,OCALLI,Botadero La Lagunita,False,Recuperación,2018
+AMAZONAS,LUYA,OCUMAL,Botadero El Morochal,False,Recuperación,2018
+AMAZONAS,LUYA,PISUQUIA,Botadero de Pisuquia,False,Recuperación,2018
+AMAZONAS,LUYA,PROVIDENCIA,Botadero S/N,False,Recuperación,2018
+AMAZONAS,LUYA,PROVIDENCIA,Botadero Municipal (Providencia),False,Recuperación,2025
+AMAZONAS,LUYA,SAN CRISTOBAL,Botadero de San Cristóbal,False,Recuperación,2021
+AMAZONAS,LUYA,SAN FRANCISCO DE YESO,Botadero de San Francisco del Yeso,False,Recuperación,2018
+AMAZONAS,LUYA,SAN JERONIMO,Botadero Sector Beshuatan,False,Recuperación,2018
+AMAZONAS,LUYA,SAN JUAN DE LOPECANCHA,Botadero de San Juan de Lopecancha,False,Recuperación,2018
+AMAZONAS,LUYA,SANTA CATALINA,Botadero de Santa Catalina,False,Recuperación,2018
+AMAZONAS,LUYA,SANTO TOMAS,Botadero de Santo Tomas,True,Recuperación,2018
+AMAZONAS,LUYA,TINGO,Botadero de Tingo,True,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,CHIRIMOTO,Botadero Omia 2,False,Recuperación,2024
+AMAZONAS,RODRIGUEZ DE MENDOZA,CHIRIMOTO,Botadero del anexo de Zarumilla,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,COCHAMAL,Botadero Olleros,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,COCHAMAL,Botadero Sector Franco,False,Recuperación,2021
+AMAZONAS,RODRIGUEZ DE MENDOZA,HUAMBO,Botadero Huambo,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,LIMABAMBA,Botadero de Limabamba,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,LONGAR,Botadero de Longar,True,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,MILPUC,Botadero Milpuc,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,OMIA,Botadero Omia,True,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,SAN NICOLAS,Botadero Sector Pueblo Alto,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,SANTA ROSA,Botadero de Santa Rosa,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,SANTA ROSA,Botadero Sector San Francisco,False,Recuperación,2024
+AMAZONAS,RODRIGUEZ DE MENDOZA,TOTORA,Botadero Zona Rural,False,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,TOTORA,Botadero Punto 2,True,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,TOTORA,Botadero Punto 1,True,Recuperación,2018
+AMAZONAS,RODRIGUEZ DE MENDOZA,TOTORA,Botadero La Vuelta,False,Recuperación,2026
+AMAZONAS,UTCUBAMBA,BAGUA GRANDE,Botadero Los Rollos Sector Jaguanga,False,Recuperación,2018
+AMAZONAS,UTCUBAMBA,CAJARURO,Botadero de Cajaruro,False,Recuperación,2018
+AMAZONAS,UTCUBAMBA,CUMBA,Botadero de Cumba,False,Recuperación,2018
+AMAZONAS,UTCUBAMBA,JAMALCA,Botadero La Caldera,False,Recuperación,2018
+AMAZONAS,UTCUBAMBA,LONYA GRANDE,Botadero de Lonya Grande,False,Recuperación,2018
+AMAZONAS,UTCUBAMBA,LONYA GRANDE,Botadero controlado del distrito de Lonya Grande,False,Recuperación,2024
+AMAZONAS,UTCUBAMBA,YAMON,Botadero Sector El Palto,False,Recuperación,2024
+ANCASH,AIJA,AIJA,Botadero Canchinchan,False,Recuperación,2018
+ANCASH,AIJA,CORIS,Botadero Sector Shapallu,True,Recuperación,2018
+ANCASH,AIJA,HUACLLAN,Botadero Sector Killiwi,False,Recuperación,2018
+ANCASH,AIJA,LA MERCED,Botadero Fundo Mishihueta,False,Recuperación,2018
+ANCASH,AIJA,SUCCHA,Botadero Mariash,False,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,ACZO,Botadero Quebrada Pasamaito,True,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,ACZO,Botadero Quebrada Mojonrumi-Arashpaña,True,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,CHACCHO,Botadero Quebrada Canlla,True,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,CHINGAS,Botadero Sector Aeropuerto,False,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,LLAMELLIN,Botadero Jancush,True,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,MIRGAS,Botadero Sector de Tinyarajra,False,Recuperación,2018
+ANCASH,ANTONIO RAYMONDI,MIRGAS,Botadero Sector Andasco,False,Recuperación,2024
+ANCASH,ASUNCION,CHACAS,Botadero Sector Tacshacuna,True,Recuperación,2018
+ANCASH,BOLOGNESI,ABELARDO PARDO LEZAMETA,Botadero Sector Sango Frio-El Remate,True,Recuperación,2018
+ANCASH,BOLOGNESI,ANTONIO RAYMONDI,Botadero Quebrada Huinchus,True,Recuperación,2018
+ANCASH,BOLOGNESI,AQUIA,Botadero San Miguel,False,Recuperación,2018
+ANCASH,BOLOGNESI,AQUIA,Botadero Tallenga,False,Recuperación,2022
+ANCASH,BOLOGNESI,CANIS,Botadero Quebrada Ainas,False,Recuperación,2018
+ANCASH,BOLOGNESI,CHIQUIAN,Botadero Upayacu,True,Recuperación,2018
+ANCASH,BOLOGNESI,COLQUIOC,Botadero Sector Callun,False,Reconversión,2018
+ANCASH,BOLOGNESI,HUALLANCA,Botadero Sector de Ucrucacha,False,Recuperación,2018
+ANCASH,BOLOGNESI,HUALLANCA,Botadero Sector Ventosilla,False,Recuperación,2024
+ANCASH,BOLOGNESI,HUASTA,Botadero de Winson,False,Recuperación,2018
+ANCASH,BOLOGNESI,HUAYLLACAYAN,Botadero Quebrada de Cruzpata,True,Recuperación,2018
+ANCASH,BOLOGNESI,MANGAS,Botadero Sector Campo Santo,True,Recuperación,2018
+ANCASH,BOLOGNESI,MANGAS,Botadero Sector Pukarrumi,True,Recuperación,2018
+ANCASH,BOLOGNESI,PACLLON,Botadero Sector de Alcupampa,False,Recuperación,2018
+ANCASH,BOLOGNESI,PACLLON,Botadero Ahusana,True,Reconversión,2022
+ANCASH,BOLOGNESI,SAN MIGUEL DE CORPANQUI,Botadero Sector Antichacra,False,Recuperación,2018
+ANCASH,BOLOGNESI,TICLLOS,Botadero Huacatac-Quincha Pata,False,Recuperación,2018
+ANCASH,CARHUAZ,AMASHCA,Botadero Sector Onque-Mare,False,Recuperación,2018
+ANCASH,CARHUAZ,ANTA,Botadero Sector Chilca,False,Recuperación,2018
+ANCASH,CARHUAZ,ANTA,Botadero Sector Allparumi,False,Recuperación,2018
+ANCASH,CARHUAZ,PARIAHUANCA,Botadero Sector Minaspucro,False,Recuperación,2018
+ANCASH,CARHUAZ,SAN MIGUEL DE ACO,Botadero Sector Percashca,False,Recuperación,2018
+ANCASH,CARHUAZ,SHILLA,Botadero Sector de Margash,False,Recuperación,2018
+ANCASH,CARHUAZ,YUNGAR,Botadero Sector Yungar,False,Recuperación,2018
+ANCASH,CARLOS FERMIN FITZCARRALD,SAN LUIS,Botadero Ampash,False,Recuperación,2018
+ANCASH,CARLOS FERMIN FITZCARRALD,SAN NICOLAS,Botadero Quebrada Ichic Catcash,True,Recuperación,2018
+ANCASH,CARLOS FERMIN FITZCARRALD,YAUYA,Botadero Sector San José de Chacuascancha,False,Recuperación,2018
+ANCASH,CASMA,BUENA VISTA ALTA,Botadero Iquichalcan,False,Recuperación,2018
+ANCASH,CASMA,BUENA VISTA ALTA,Botadero Pampa Colorada,True,Recuperación,2018
+ANCASH,CASMA,BUENA VISTA ALTA,Botadero Huanchuy,False,Recuperación,2018
+ANCASH,CASMA,CASMA,Botadero Antival,True,Recuperación,2018
+ANCASH,CASMA,CASMA,Botadero de óvalo Playa Tortuga,True,Recuperación,2024
+ANCASH,CASMA,COMANDANTE NOEL,Botadero La Carbonera,True,Recuperación,2018
+ANCASH,CASMA,YAUTAN,Botadero Cruz Punta,True,Recuperación,2018
+ANCASH,CORONGO,ACO,Botadero Sector Cruzirca,True,Recuperación,2018
+ANCASH,CORONGO,BAMBAS,Botadero Los Lloques,False,Recuperación,2018
+ANCASH,CORONGO,BAMBAS,Botadero Sector Pilancon,False,Recuperación,2025
+ANCASH,CORONGO,CORONGO,Botadero Llacllacan,True,Recuperación,2018
+ANCASH,CORONGO,CUSCA,Botadero Quebrada Huayaracra,True,Recuperación,2018
+ANCASH,CORONGO,LA PAMPA,Botadero Quebrada Huampish,True,Recuperación,2018
+ANCASH,CORONGO,YANAC,Botadero Quebrada Picha Jirca,True,Recuperación,2018
+ANCASH,CORONGO,YANAC,Botadero Kushparinan,False,Recuperación,2024
+ANCASH,CORONGO,YUPAN,Botadero Trintis,True,Recuperación,2018
+ANCASH,HUARAZ,COCHABAMBA,Botadero Municipal,True,Recuperación,2018
+ANCASH,HUARAZ,COLCABAMBA,Botadero Cementerio,False,Recuperación,2018
+ANCASH,HUARAZ,HUANCHAY,Botadero Santa Cruz,True,Recuperación,2018
+ANCASH,HUARAZ,INDEPENDENCIA,Botadero Sector Carhuash Jirca,False,Recuperación,2018
+ANCASH,HUARAZ,JANGAS,Botadero Sector Punku,False,Recuperación,2018
+ANCASH,HUARAZ,OLLEROS,Botadero de Canrey Grande,False,Recuperación,2018
+ANCASH,HUARAZ,PAMPAS GRANDE,Botadero Sector Jama,True,Recuperación,2018
+ANCASH,HUARAZ,PARIACOTO,Botadero Sector Incun Punta,False,Recuperación,2018
+ANCASH,HUARAZ,PIRA,Botadero Sector Cruz Punta,False,Recuperación,2018
+ANCASH,HUARAZ,TARICA,Botadero Shallash,False,Recuperación,2021
+ANCASH,HUARI,ANRA,Botadero de Huaroyapampa,False,Recuperación,2018
+ANCASH,HUARI,CAJAY,Botadero Pucyush,False,Recuperación,2018
+ANCASH,HUARI,CHAVIN DE HUANTAR,Botadero Complejo Arqueológico de Agush / Sector Vilcabamba,False,Recuperación,2018
+ANCASH,HUARI,CHAVIN DE HUANTAR,Botadero Centro Ecológico Shanpon,False,Recuperación,2022
+ANCASH,HUARI,HUACACHI,Botadero Quebrada Alkuragra,True,Recuperación,2018
+ANCASH,HUARI,HUACCHIS,Botadero Sector Progreso,False,Recuperación,2018
+ANCASH,HUARI,HUACCHIS,Botadero Tzacacruz,False,Recuperación,2018
+ANCASH,HUARI,HUACHIS,Botadero Sector Molino Rag-Ra,False,Recuperación,2018
+ANCASH,HUARI,HUANTAR,Botadero De Huantar,False,Recuperación,2021
+ANCASH,HUARI,HUARI,Botadero Centro Ecológico Huanchac,False,Recuperación,2018
+ANCASH,HUARI,MASIN,Botadero Sector Ricodo,False,Recuperación,2018
+ANCASH,HUARI,PAUCAS,Botadero de Rontoy,False,Recuperación,2018
+ANCASH,HUARI,PONTO,Botadero Sector Pajarin,False,Recuperación,2018
+ANCASH,HUARI,RAHUAPAMPA,Botadero Sector Gargahuain,False,Recuperación,2018
+ANCASH,HUARI,RAPAYAN,Botadero Quebrada Tranca,True,Recuperación,2018
+ANCASH,HUARI,SAN MARCOS,Botadero Sector Chuchusmina,False,Recuperación,2018
+ANCASH,HUARI,SAN PEDRO DE CHANA,Botadero Quebrada Mitscka,True,Recuperación,2018
+ANCASH,HUARI,UCO,Botadero Sector Araj,False,Recuperación,2018
+ANCASH,HUARMEY,COCHAPETI,Botadero Yanque,True,Recuperación,2018
+ANCASH,HUARMEY,CULEBRAS,Botadero S/N,True,Recuperación,2018
+ANCASH,HUARMEY,HUARMEY,Botadero Municipal de Huarmey,True,Recuperación,2018
+ANCASH,HUARMEY,HUAYAN,Botadero Allhuill,False,Recuperación,2018
+ANCASH,HUARMEY,MALVAS,Botadero El Chorro,True,Recuperación,2018
+ANCASH,HUAYLAS,HUALLANCA,Botadero Sector de Cullashpunru,False,Recuperación,2018
+ANCASH,HUAYLAS,HUALLANCA,Botadero Sector de Gribaltar,False,Recuperación,2018
+ANCASH,HUAYLAS,HUATA,Botadero Sector Matipuquio,False,Recuperación,2018
+ANCASH,HUAYLAS,HUAYLAS,Botadero de Curcuy,False,Recuperación,2021
+ANCASH,HUAYLAS,MATO,Botadero Sector Parpacoto,False,Recuperación,2018
+ANCASH,HUAYLAS,PAMPAROMAS,Botadero Sector China Pamparanan,False,Recuperación,2018
+ANCASH,HUAYLAS,PUEBLO LIBRE,Botadero Sector Catucancha,False,Recuperación,2018
+ANCASH,HUAYLAS,SANTA CRUZ,Botadero Sector de Mirasanta,False,Recuperación,2018
+ANCASH,HUAYLAS,YURACMARCA,Botadero Sector Quihuay,True,Recuperación,2018
+ANCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMAN BARRON,Botadero Quebrada Pullao,False,Recuperación,2018
+ANCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMAN BARRON,Botadero Pampachacra,False,Recuperación,2026
+ANCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMAN BARRON,Botadero Machi,False,Recuperación,2026
+ANCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMAN BARRON,Botadero Pumpa,False,Recuperación,2026
+ANCASH,MARISCAL LUZURIAGA,FIDEL OLIVAS ESCUDERO,Botadero Barrio Rayan,True,Recuperación,2018
+ANCASH,MARISCAL LUZURIAGA,FIDEL OLIVAS ESCUDERO,Botadero Huayraj,False,Recuperación,2026
+ANCASH,MARISCAL LUZURIAGA,LLUMPA,Botadero Sector Ruquiash Pampa,False,Recuperación,2018
+ANCASH,MARISCAL LUZURIAGA,MUSGA,Botadero Pacosbamba,False,Recuperación,2018
+ANCASH,MARISCAL LUZURIAGA,MUSGA,Botadero Sector Condorsenga,False,Recuperación,2018
+ANCASH,OCROS,ACAS,Botadero Sector Callacocha,True,Recuperación,2018
+ANCASH,OCROS,CAJAMARQUILLA,Botadero Sector Ashaujirca,False,Recuperación,2018
+ANCASH,OCROS,CARHUAPAMPA,Botadero Quebrada Minaspunta,True,Recuperación,2018
+ANCASH,OCROS,COCHAS,Botadero Quebrada Cabrillas,True,Recuperación,2018
+ANCASH,OCROS,CONGAS,Botadero Cardumpampa Peana-Sector Mirache,False,Recuperación,2018
+ANCASH,OCROS,LLIPA,Botadero de Hualturajra,False,Recuperación,2018
+ANCASH,OCROS,LLIPA,Botadero de Arenacoto,False,Recuperación,2018
+ANCASH,OCROS,LLIPA,Botadero Aucallei (Aucallay),False,Recuperación,2026
+ANCASH,OCROS,OCROS,Botadero Sector Ayar,True,Recuperación,2018
+ANCASH,OCROS,SAN PEDRO,Botadero Sector Allpamanca,False,Recuperación,2018
+ANCASH,OCROS,SANTIAGO DE CHILCAS,Botadero de Pushpushjuran,False,Recuperación,2018
+ANCASH,PALLASCA,CABANA,Botadero Huacoloma-Manantial Amarillo,True,Recuperación,2018
+ANCASH,PALLASCA,CONCHUCOS,Botadero Sector Chaupirca,False,Recuperación,2024
+ANCASH,PALLASCA,HUACASCHUQUE,Botadero Las Panisaras,False,Recuperación,2018
+ANCASH,PALLASCA,HUANDOVAL,Botadero Allicama,False,Recuperación,2018
+ANCASH,PALLASCA,LACABAMBA,Botadero Cabiña,True,Recuperación,2018
+ANCASH,PALLASCA,LACABAMBA,Botadero Sector Cumbal,False,Recuperación,2018
+ANCASH,PALLASCA,PALLASCA,Botadero La Playa,False,Recuperación,2018
+ANCASH,PALLASCA,PAMPAS,Botadero Combaque,False,Recuperación,2018
+ANCASH,PALLASCA,SANTA ROSA,Botadero Ticahuas,True,Recuperación,2018
+ANCASH,PALLASCA,TAUCA,Botadero Calaballe,False,Recuperación,2018
+ANCASH,POMABAMBA,PAROBAMBA,Botadero Sector Chacpa,False,Recuperación,2018
+ANCASH,POMABAMBA,POMABAMBA,Botadero Kircabamba,True,Recuperación,2018
+ANCASH,POMABAMBA,QUINUABAMBA,Botadero Sector de Rupey Rajra,False,Recuperación,2018
+ANCASH,POMABAMBA,QUINUABAMBA,Botadero Mayracucho,False,Recuperación,2026
+ANCASH,RECUAY,CATAC,Botadero de Aquirma,False,Recuperación,2018
+ANCASH,RECUAY,COTAPARACO,Botadero Paltachacra,False,Recuperación,2018
+ANCASH,RECUAY,HUAYLLAPAMPA,Botadero Sector Carachuco,False,Recuperación,2018
+ANCASH,RECUAY,LLACLLIN,Botadero Sector de Sillacaca,False,Recuperación,2018
+ANCASH,RECUAY,MARCA,Botadero Chinchiguas,False,Recuperación,2018
+ANCASH,RECUAY,PAMPAS CHICO,Botadero Sector del Cementerio-Hualla,False,Recuperación,2018
+ANCASH,RECUAY,PARARIN,Botadero Sector Pucacruz,True,Recuperación,2018
+ANCASH,RECUAY,TAPACOCHA,Botadero Quebrada Shallalla,False,Recuperación,2018
+ANCASH,RECUAY,TICAPAMPA,Botadero Centro Ecológico Chuyan,False,Recuperación,2018
+ANCASH,SANTA,CACERES DEL PERU,Botadero Sector Pisin Alto,True,Recuperación,2018
+ANCASH,SANTA,CHIMBOTE,Botadero Municipal-Coishco,True,Recuperación,2018
+ANCASH,SANTA,MACATE,Botadero El Mirador,False,Recuperación,2018
+ANCASH,SANTA,MORO,Botadero Asentamiento Humano Nuevo Moro,True,Recuperación,2018
+ANCASH,SANTA,NEPENA,Botadero Solivin,True,Recuperación,2018
+ANCASH,SANTA,NUEVO CHIMBOTE,Botadero Pampa la Carbonera,False,Recuperación,2018
+ANCASH,SANTA,SAMANCO,Botadero La Boquita,True,Recuperación,2018
+ANCASH,SANTA,SANTA,Botadero Huamanchacate,True,Recuperación,2018
+ANCASH,SIHUAS,ACOBAMBA,Botadero Quebrada Los Ojitos,True,Recuperación,2018
+ANCASH,SIHUAS,ALFONSO UGARTE,Botadero Quebrada Viscerro Yacu,False,Recuperación,2018
+ANCASH,SIHUAS,CASHAPAMPA,Botadero Sector Shecshe,True,Recuperación,2018
+ANCASH,SIHUAS,CHINGALPO,Botadero Quebrada Zenga,True,Recuperación,2018
+ANCASH,SIHUAS,HUAYLLABAMBA,Botadero Maraybamba Abajo,False,Recuperación,2018
+ANCASH,SIHUAS,HUAYLLABAMBA,Botadero Sector Huanchi,False,Recuperación,2018
+ANCASH,SIHUAS,QUICHES,Botadero Sector Auyubamba,False,Recuperación,2018
+ANCASH,SIHUAS,RAGASH,Botadero Sector Sogoranra,True,Recuperación,2018
+ANCASH,SIHUAS,SAN JUAN,Botadero Puca Rumi,False,Recuperación,2023
+ANCASH,SIHUAS,SICSIBAMBA,Botadero Sector Estrellapampa,True,Recuperación,2018
+ANCASH,YUNGAY,MANCOS,Botadero Huellac,False,Recuperación,2018
+ANCASH,YUNGAY,MATACOTO,Botadero Sector Tinco,False,Recuperación,2018
+ANCASH,YUNGAY,QUILLO,Botadero Sector Huantaruran,False,Recuperación,2018
+ANCASH,YUNGAY,RANRAHIRCA,Botadero Sector Monte Bello,False,Recuperación,2018
+ANCASH,YUNGAY,SHUPLUY,Botadero Sector Arshuachanan,False,Recuperación,2018
+ANCASH,YUNGAY,YANAMA,Botadero Sector de Cochaucro,False,Recuperación,2018
+ANCASH,YUNGAY,YUNGAY,Botadero Collcapampa,False,Recuperación,2018
+ANCASH,YUNGAY,YUNGAY,Botadero de Tarash Uran,False,Recuperación,2018
+APURIMAC,ABANCAY,ABANCAY,Botadero Quitasol Imponeda,False,Recuperación,2018
+APURIMAC,ABANCAY,ABANCAY,Botadero Panamericana 01,False,Recuperación,2024
+APURIMAC,ABANCAY,ABANCAY,Botadero Imponeda Abancay,False,Recuperación,2024
+APURIMAC,ABANCAY,ABANCAY,Botadero Pachachaca,False,Recuperación,2024
+APURIMAC,ABANCAY,CHACOCHE,Botadero Chaccocerca,True,Recuperación,2018
+APURIMAC,ABANCAY,CHACOCHE,Botadero Huaranginayoc,True,Recuperación,2022
+APURIMAC,ABANCAY,CIRCA,Botadero Huayrachina,False,Recuperación,2018
+APURIMAC,ABANCAY,CURAHUASI,Botadero Uchupata,False,Recuperación,2018
+APURIMAC,ABANCAY,HUANIPACA,Botadero Pacpiri,False,Recuperación,2018
+APURIMAC,ABANCAY,HUANIPACA,Botadero Mutcapata,False,Recuperación,2022
+APURIMAC,ABANCAY,LAMBRAMA,Botadero Paspaccata,False,Recuperación,2018
+APURIMAC,ABANCAY,LAMBRAMA,Botadero Tanccama,False,Recuperación,2022
+APURIMAC,ABANCAY,LAMBRAMA,Botadero Chocchopesana Lambrama,False,Recuperación,2024
+APURIMAC,ABANCAY,PICHIRHUA,Botadero S/N,False,Recuperación,2018
+APURIMAC,ABANCAY,PICHIRHUA,Botadero Yura Yurac,False,Recuperación,2022
+APURIMAC,ABANCAY,SAN PEDRO DE CACHORA,Botadero Huilcayoc,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,ANDARAPA,Botadero en el Sector Puituc,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,CHIARA,Botadero Chaupiorcco,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,HUANCARAMA,Botadero en el Sector Quishuarpampa,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,HUANCARAY,Botadero Quishue,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,HUANCARAY,Botadero S/N,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,HUANCARAY,Botadero Puca Puca,False,Recuperación,2023
+APURIMAC,ANDAHUAYLAS,HUAYANA,Botadero Curapahuaycu,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,JOSE MARIA ARGUEDAS,Botadero Kiñuaccasa,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,JOSE MARIA ARGUEDAS,Botadero Anccasillayoc,False,Recuperación,2021
+APURIMAC,ANDAHUAYLAS,KAQUIABAMBA,Botadero Chachaspucro,True,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,KAQUIABAMBA,Botadero Tierracaliente,False,Recuperación,2025
+APURIMAC,ANDAHUAYLAS,KISHUARA,Botadero Huarraccopata,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,PAMPACHIRI,Botadero Paltalloza,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,POMACOCHA,Botadero Chuñupucro,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,SAN JERONIMO,Botadero San José,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,SAN MIGUEL DE CHACCRAMPA,Botadero Puncapata,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,SANTA MARIA DE CHICMO,Botadero Yuraccurva,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,TUMAY HUARACA,Botadero Jalabamba,False,Recuperación,2018
+APURIMAC,ANDAHUAYLAS,TURPO,Botadero Comunpampa,False,Recuperación,2018
+APURIMAC,ANTABAMBA,ANTABAMBA,Botadero Tahuata,False,Recuperación,2018
+APURIMAC,ANTABAMBA,EL ORO,Botadero Chaonapata,False,Recuperación,2018
+APURIMAC,ANTABAMBA,HUAQUIRCA,Botadero Ccantuspata,False,Recuperación,2018
+APURIMAC,ANTABAMBA,JUAN ESPINOZA MEDRANO,Botadero Jalajala,False,Recuperación,2018
+APURIMAC,ANTABAMBA,JUAN ESPINOZA MEDRANO,Botadero Ccauricho,False,Reconversión,2018
+APURIMAC,ANTABAMBA,OROPESA,Botadero Cruz Mocco,False,Recuperación,2018
+APURIMAC,ANTABAMBA,OROPESA,Botadero Sachaqata,False,Recuperación,2022
+APURIMAC,ANTABAMBA,PACHACONAS,Botadero Yanama,False,Recuperación,2018
+APURIMAC,ANTABAMBA,SABAINO,Botadero Checcollone,False,Recuperación,2018
+APURIMAC,AYMARAES,CAPAYA,Botadero Municipal,False,Recuperación,2018
+APURIMAC,AYMARAES,CARAYBAMBA,Botadero Llancuchaccuni,True,Recuperación,2018
+APURIMAC,AYMARAES,CHALHUANCA,Botadero Molle,False,Recuperación,2018
+APURIMAC,AYMARAES,CHALHUANCA,Botadero Ccoyoruna,False,Recuperación,2021
+APURIMAC,AYMARAES,CHAPIMARCA,Botadero S/N,False,Recuperación,2018
+APURIMAC,AYMARAES,COLCABAMBA,Botadero Soccosocco,False,Recuperación,2018
+APURIMAC,AYMARAES,COTARUSE,Botadero Wichinccase,False,Recuperación,2018
+APURIMAC,AYMARAES,COTARUSE,Botadero Sanchihua,False,Recuperación,2022
+APURIMAC,AYMARAES,IHUAYLLO,Botadero Ccollurpascca,False,Recuperación,2018
+APURIMAC,AYMARAES,JUSTO APU SAHUARAURA,Botadero Pasercca,False,Recuperación,2018
+APURIMAC,AYMARAES,LUCRE,Botadero Pumaya,False,Recuperación,2018
+APURIMAC,AYMARAES,POCOHUANCA,Botadero Huamanchino,False,Recuperación,2018
+APURIMAC,AYMARAES,SAN JUAN DE CHACNA,Botadero Yanama,False,Recuperación,2018
+APURIMAC,AYMARAES,SANAYCA,Botadero Huanupata,False,Recuperación,2025
+APURIMAC,AYMARAES,SANAYCA,Botadero Municipal,False,Recuperación,2018
+APURIMAC,AYMARAES,SORAYA,Botadero Municipal,False,Recuperación,2018
+APURIMAC,AYMARAES,TAPAIRIHUA,Botadero Pateonccata,False,Recuperación,2018
+APURIMAC,AYMARAES,TAPAIRIHUA,Botadero Chiccllahuito,False,Recuperación,2024
+APURIMAC,AYMARAES,TINTAY,Botadero Violinpata,False,Recuperación,2018
+APURIMAC,AYMARAES,TINTAY,Botadero Tollccahhua,False,Recuperación,2023
+APURIMAC,AYMARAES,TORAYA,Botadero Tunasccata,False,Recuperación,2018
+APURIMAC,AYMARAES,YANACA,Botadero Chocloccata,False,Recuperación,2018
+APURIMAC,CHINCHEROS,CHINCHEROS,Botadero Pongoro,False,Recuperación,2018
+APURIMAC,CHINCHEROS,COCHARCAS,Botadero Cantiria,False,Recuperación,2018
+APURIMAC,CHINCHEROS,HUACCANA,Botadero en el Sector Huachibamba,False,Recuperación,2018
+APURIMAC,CHINCHEROS,LOS CHANKAS,Botadero Salla,False,Recuperación,2018
+APURIMAC,CHINCHEROS,OCOBAMBA,Botadero en el Sector Ayhuan,False,Recuperación,2018
+APURIMAC,CHINCHEROS,OCOBAMBA,Botadero Tupac Amaru,False,Recuperación,2025
+APURIMAC,CHINCHEROS,ONGOY,Botadero en el Sector Chiucca,True,Recuperación,2018
+APURIMAC,CHINCHEROS,RANRACANCHA,Botadero Ccelloplaga,False,Recuperación,2018
+APURIMAC,CHINCHEROS,URANMARCA,Botadero Anccasillay,False,Recuperación,2018
+APURIMAC,CHINCHEROS,URANMARCA,Botadero Tuminhuaycco y Manchana,False,Recuperación,2021
+APURIMAC,COTABAMBAS,CHALLHUAHUACHO,Botadero Saccsahuillca,False,Recuperación,2018
+APURIMAC,COTABAMBAS,CHALLHUAHUACHO,Botadero Ccarayhuacho,False,Recuperación,2023
+APURIMAC,COTABAMBAS,COTABAMBAS,Botadero Pucapuca,False,Recuperación,2018
+APURIMAC,COTABAMBAS,COTABAMBAS,Botadero Sector de Cconchapallana,False,Recuperación,2022
+APURIMAC,COTABAMBAS,COYLLURQUI,Botadero Puccarumy,False,Recuperación,2018
+APURIMAC,COTABAMBAS,COYLLURQUI,Botadero Pamputa,False,Recuperación,2026
+APURIMAC,COTABAMBAS,HAQUIRA,Botadero Piancalla,False,Recuperación,2018
+APURIMAC,COTABAMBAS,MARA,Botadero Ñanñaypata,False,Recuperación,2018
+APURIMAC,COTABAMBAS,TAMBOBAMBA,Botadero Racaypata,False,Recuperación,2018
+APURIMAC,GRAU,CURASCO,Botadero Tumacunca,False,Recuperación,2018
+APURIMAC,GRAU,CURASCO,Botadero Kanchakancha,False,Recuperación,2025
+APURIMAC,GRAU,CURPAHUASI,Botadero Rayampata,False,Recuperación,2018
+APURIMAC,GRAU,CURPAHUASI,Botadero Uyrumpa,False,Recuperación,2022
+APURIMAC,GRAU,GAMARRA,Botadero Atún Sanjamocco,True,Recuperación,2018
+APURIMAC,GRAU,HUAYLLATI,Botadero Callaccasa,True,Recuperación,2018
+APURIMAC,GRAU,HUAYLLATI,Botadero Ayatulluyoq,False,Recuperación,2024
+APURIMAC,GRAU,MAMARA,Botadero Ccarapichipay,False,Recuperación,2024
+APURIMAC,GRAU,MAMARA,Botadero Canterea,True,Recuperación,2018
+APURIMAC,GRAU,MICAELA BASTIDAS,Botadero Huanquil,False,Recuperación,2018
+APURIMAC,GRAU,PATAYPAMPA,Botadero Wiscachayoc,False,Recuperación,2018
+APURIMAC,GRAU,PROGRESO,Botadero Mullahuacho,True,Recuperación,2018
+APURIMAC,GRAU,PROGRESO,Botadero Accoccasa 1,False,Recuperación,2024
+APURIMAC,GRAU,SAN ANTONIO,Botadero Sullocminas,False,Recuperación,2018
+APURIMAC,GRAU,SAN ANTONIO,Botadero Hallkimoqo,False,Recuperación,2025
+APURIMAC,GRAU,SANTA ROSA,Botadero Chaupiurco,False,Recuperación,2018
+APURIMAC,GRAU,TURPAY,Botadero Parccaypata,False,Recuperación,2018
+APURIMAC,GRAU,VILCABAMBA,Botadero Cconcorpata,False,Recuperación,2018
+APURIMAC,GRAU,VIRUNDO,Botadero Minashuaycco,True,Recuperación,2018
+AREQUIPA,AREQUIPA,ALTO SELVA ALEGRE,Botadero Huatanay,True,Recuperación,2018
+AREQUIPA,AREQUIPA,ALTO SELVA ALEGRE,Botadero Ameasa Los Ángeles,False,Recuperación,2021
+AREQUIPA,AREQUIPA,CAYMA,Botadero Pampa de Condormico,True,Recuperación,2021
+AREQUIPA,AREQUIPA,CERRO COLORADO,Botadero Pampa la Estrella y El Hueco,False,Recuperación,2018
+AREQUIPA,AREQUIPA,LA JOYA,Botadero S/N (Zona Palca),True,Recuperación,2018
+AREQUIPA,AREQUIPA,LA JOYA,Botadero S/N,False,Recuperación,2021
+AREQUIPA,AREQUIPA,MARIANO MELGAR,Botadero Zorro Negro,True,Recuperación,2018
+AREQUIPA,AREQUIPA,MARIANO MELGAR,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,MIRAFLORES,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,PAUCARPATA,Botadero El Cebollar,True,Recuperación,2018
+AREQUIPA,AREQUIPA,POCSI,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,POLOBAYA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,POLOBAYA,Botadero S/N (Sector siete vueltas),True,Recuperación,2025
+AREQUIPA,AREQUIPA,QUEQUENA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,AREQUIPA,SAN JUAN DE TARUCANI,Botadero S/N,False,Recuperación,2018
+AREQUIPA,AREQUIPA,SANTA ISABEL DE SIGUAS,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,SANTA ISABEL DE SIGUAS,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,SANTA RITA DE SIGUAS,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,VITOR,Botadero S/N,True,Recuperación,2018
+AREQUIPA,AREQUIPA,VITOR,Botadero S/N (Vitor),True,Recuperación,2023
+AREQUIPA,AREQUIPA,YURA,Botadero Pampa Ispampa,False,Recuperación,2018
+AREQUIPA,AREQUIPA,YURA,Botadero Quebrada Honda,False,Reconversión,2018
+AREQUIPA,AREQUIPA,YURA,Botadero sector Real Progreso y Pascana,False,Recuperación,2021
+AREQUIPA,AREQUIPA,YURA,Botadero Quebrada El Cuico,False,Recuperación,2021
+AREQUIPA,CAMANA,MARIANO NICOLAS VALCARCEL,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAMANA,MARIANO NICOLAS VALCARCEL,Botadero Municipal (Mariano Nicolas Valcarcel),True,Recuperación,2024
+AREQUIPA,CAMANA,OCONA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAMANA,QUILCA,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,CAMANA,QUILCA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CARAVELI,ATICO,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,BELLA UNION,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,BELLA UNION,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CARAVELI,CAHUACHO,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CARAVELI,CARAVELI,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,CARAVELI,CHALA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CARAVELI,CHAPARRA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,CHAPARRA,Botadero S/N (Chaparra),False,Recuperación,2022
+AREQUIPA,CARAVELI,HUANUHUANU,Botadero S/N (Huanu Huanu),True,Recuperación,2026
+AREQUIPA,CARAVELI,HUANUHUANU,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,JAQUI,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,LOMAS,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CARAVELI,QUICACHA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,YAUCA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CARAVELI,YAUCA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,ANDAGUA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,APLAO,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,CASTILLA,AYO,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,CHACHAS,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,HUANCARQUI,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,MACHAGUAY,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,ORCOPAMPA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CASTILLA,ORCOPAMPA,Botadero S/N (Orcopampa),False,Recuperación,2022
+AREQUIPA,CASTILLA,PAMPACOLCA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CASTILLA,TIPAN,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CASTILLA,UNON,Botadero Municipal,False,Recuperación,2018
+AREQUIPA,CASTILLA,URACA,Botadero Sector Alto San Francisco,True,Recuperación,2018
+AREQUIPA,CASTILLA,VIRACO,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,ACHOMA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,ACHOMA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,ACHOMA,Área temporal de disposición final de residuos sólidos (Botadero Municipal),False,Recuperación,2025
+AREQUIPA,CAYLLOMA,CABANACONDE,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,CALLALLI,Botadero Culuyo,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,CAYLLOMA,Botadero de Caylloma,False,Recuperación,2026
+AREQUIPA,CAYLLOMA,COPORAQUE,Botadero Municipal Chusñapampa,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,HUAMBO,Botadero Sector Matadero,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,HUANCA,Botadero Quebrada del Murco,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,ICHUPAMPA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,LARI,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,LLUTA,Botadero Pampa Blanca,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,LLUTA,Botadero S/N (Lluta),False,Recuperación,2022
+AREQUIPA,CAYLLOMA,MACA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,MADRIGAL,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,MAJES,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,SAN ANTONIO DE CHUCA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,SAN ANTONIO DE CHUCA,Botadero Yrulaca,True,Recuperación,2025
+AREQUIPA,CAYLLOMA,SIBAYO,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,TAPAY,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CAYLLOMA,TISCO,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CAYLLOMA,TUTI,Botadero Hipo,True,Recuperación,2018
+AREQUIPA,CONDESUYOS,ANDARAY,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,CONDESUYOS,ANDARAY,Botadero Municipal,False,Recuperación,2018
+AREQUIPA,CONDESUYOS,CAYARANI,Botadero S/N,False,Recuperación,2018
+AREQUIPA,CONDESUYOS,CHICHAS,Botadero SN (Chichas),False,Recuperación,2025
+AREQUIPA,CONDESUYOS,CHUQUIBAMBA,Botadero Municipal,False,Recuperación,2018
+AREQUIPA,CONDESUYOS,IRAY,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CONDESUYOS,RIO GRANDE,Botadero S/N,True,Recuperación,2018
+AREQUIPA,CONDESUYOS,RIO GRANDE,Botadero S/N (Rio Grande),True,Recuperación,2022
+AREQUIPA,ISLAY,COCACHACRA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,ISLAY,COCACHACRA,Botadero Municipal,True,Recuperación,2021
+AREQUIPA,ISLAY,DEAN VALDIVIA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,ISLAY,ISLAY,Botadero S/N,False,Recuperación,2018
+AREQUIPA,ISLAY,MEJIA,Botadero S/N,True,Recuperación,2018
+AREQUIPA,ISLAY,MOLLENDO,Botadero Municipal,False,Recuperación,2018
+AREQUIPA,ISLAY,PUNTA DE BOMBON,Botadero S/N,False,Recuperación,2018
+AREQUIPA,ISLAY,PUNTA DE BOMBON,Botadero S/N (Punta de Bombón),True,Recuperación,2023
+AREQUIPA,LA UNION,ALCA,Botadero S/N,False,Recuperación,2018
+AREQUIPA,LA UNION,ALCA,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,LA UNION,CHARCANA,Botadero Municipal,False,Recuperación,2018
+AREQUIPA,LA UNION,COTAHUASI,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,LA UNION,PUYCA,Botadero Sector Challán,True,Recuperación,2026
+AREQUIPA,LA UNION,SAYLA,Botadero Municipal,True,Recuperación,2018
+AREQUIPA,LA UNION,TAURIA,Botadero Cari Cari,False,Recuperación,2022
+AREQUIPA,LA UNION,TOMEPAMPA,Botadero S/N-Tomepampa,True,Recuperación,2026
+AREQUIPA,LA UNION,TORO,Botadero S/N,False,Recuperación,2018
+AYACUCHO,CANGALLO,CANGALLO,Botadero Paticucho,False,Recuperación,2018
+AYACUCHO,CANGALLO,CHUSCHI,Botadero Puchcoyacu-Chilcapucro,False,Recuperación,2018
+AYACUCHO,CANGALLO,MARIA PARADO DE BELLIDO,Botadero Inchancca Huayco,False,Recuperación,2018
+AYACUCHO,CANGALLO,PARAS,Botadero Torohuichccana,False,Recuperación,2018
+AYACUCHO,CANGALLO,TOTOS,Botadero Cabitochayoq,False,Recuperación,2018
+AYACUCHO,HUAMANGA,ACOCRO,Botadero Seccelambras,False,Recuperación,2018
+AYACUCHO,HUAMANGA,ACOCRO,Botadero Trigoloma,False,Recuperación,2023
+AYACUCHO,HUAMANGA,ACOCRO,Botadero Pampamarca-Aguidachupa,False,Recuperación,2025
+AYACUCHO,HUAMANGA,ACOCRO,Botadero Seccelambras 2,False,Recuperación,2025
+AYACUCHO,HUAMANGA,ACOS VINCHOS,Botadero Municipal,False,Recuperación,2018
+AYACUCHO,HUAMANGA,ACOS VINCHOS,Botadero Huaychao,False,Recuperación,2018
+AYACUCHO,HUAMANGA,AYACUCHO,Botadero Huamanpampa,False,Recuperación,2018
+AYACUCHO,HUAMANGA,CHIARA,Botadero Inyalla,False,Recuperación,2018
+AYACUCHO,HUAMANGA,CHIARA,Botadero Manallasacc,False,Recuperación,2022
+AYACUCHO,HUAMANGA,CHIARA,Botadero Inuyasha Alta,False,Recuperación,2022
+AYACUCHO,HUAMANGA,CHIARA,Botadero Sachabamba,False,Recuperación,2024
+AYACUCHO,HUAMANGA,OCROS,Botadero Masotewayqo,False,Recuperación,2023
+AYACUCHO,HUAMANGA,OCROS,Botadero Ccoracha,False,Recuperación,2018
+AYACUCHO,HUAMANGA,PACAYCASA,Botadero Tawaqocha,True,Recuperación,2022
+AYACUCHO,HUAMANGA,QUINUA,Botadero Ccatillos,False,Recuperación,2018
+AYACUCHO,HUAMANGA,SAN JOSE DE TICLLAS,Botadero Purapampa,False,Recuperación,2018
+AYACUCHO,HUAMANGA,SANTIAGO DE PISCHA,Botadero Huancoura,False,Recuperación,2022
+AYACUCHO,HUAMANGA,SANTIAGO DE PISCHA,Botadero Qayarpachi,False,Recuperación,2023
+AYACUCHO,HUAMANGA,SOCOS,Botadero Chilca Pucro,False,Recuperación,2018
+AYACUCHO,HUAMANGA,SOCOS,Botadero Accoccasa,False,Recuperación,2022
+AYACUCHO,HUAMANGA,TAMBILLO,Botadero Uchuycruz Mollepampa,False,Recuperación,2018
+AYACUCHO,HUAMANGA,TAMBILLO,Botadero Comunhuaccta,False,Recuperación,2018
+AYACUCHO,HUAMANGA,TAMBILLO,Botadero Cuytupata,False,Recuperación,2022
+AYACUCHO,HUAMANGA,TAMBILLO,Botadero Uchuycruz 2,False,Recuperación,2023
+AYACUCHO,HUAMANGA,VINCHOS,Botadero Condoraypata,False,Recuperación,2018
+AYACUCHO,HUANCA SANCOS,CARAPO,Botadero Tantarcucho,False,Recuperación,2018
+AYACUCHO,HUANCA SANCOS,CARAPO,Botadero Portacruz,False,Recuperación,2022
+AYACUCHO,HUANCA SANCOS,SACSAMARCA,Botadero Qaycupuncu,False,Recuperación,2018
+AYACUCHO,HUANCA SANCOS,SANCOS,Botadero Toro Potrero,False,Recuperación,2018
+AYACUCHO,HUANCA SANCOS,SANTIAGO DE LUCANAMARCA,Botadero Pampa 3 de Abril,False,Reconversión,2018
+AYACUCHO,HUANTA,AYAHUANCO,Botadero Sector Kichkillay Wayqo,False,Recuperación,2018
+AYACUCHO,HUANTA,AYAHUANCO,Botadero Sabilapampa I,False,Reconversión,2023
+AYACUCHO,HUANTA,CANAYRE,Botadero en el Sector Pacifico,True,Recuperación,2018
+AYACUCHO,HUANTA,CANAYRE,Botadero en el Sector Pacífico II,False,Recuperación,2023
+AYACUCHO,HUANTA,CHACA,Botadero de Chaca,True,Recuperación,2026
+AYACUCHO,HUANTA,HUAMANGUILLA,Botadero Vega,False,Recuperación,2018
+AYACUCHO,HUANTA,IGUAIN,Botadero Antarumi Alta,True,Recuperación,2018
+AYACUCHO,HUANTA,LLOCHEGUA,Botadero La Playa,False,Recuperación,2021
+AYACUCHO,HUANTA,LLOCHEGUA,Botadero Fundo Santa Ana,False,Recuperación,2023
+AYACUCHO,HUANTA,LURICOCHA,Botadero Izcutacucc,False,Recuperación,2018
+AYACUCHO,HUANTA,SANTILLANA,Botadero Sector Parccaypata,False,Recuperación,2018
+AYACUCHO,HUANTA,SIVIA,Botadero Sector Quimtipiriqui,False,Recuperación,2018
+AYACUCHO,HUANTA,UCHURACCAY,Botadero Sector Cementerio,False,Recuperación,2018
+AYACUCHO,HUANTA,UCHURACCAY,Botadero de Tahuaccocha,False,Recuperación,2022
+AYACUCHO,LA MAR,ANCHIHUAY,Botadero Torrembino Pampa Hermosa,False,Recuperación,2018
+AYACUCHO,LA MAR,ANCHIHUAY,Botadero Itasaisaylla,False,Recuperación,2026
+AYACUCHO,LA MAR,ANCO,Botadero Sector Puca Puca,True,Recuperación,2018
+AYACUCHO,LA MAR,ANCO,Botadero Arwimayo,False,Recuperación,2018
+AYACUCHO,LA MAR,ANCO,Botadero Pacopamba,False,Recuperación,2024
+AYACUCHO,LA MAR,ANCO,Botadero Chiquintirca,False,Recuperación,2024
+AYACUCHO,LA MAR,AYNA,Botadero Machente,True,Recuperación,2018
+AYACUCHO,LA MAR,AYNA,Botadero en el sector Aurora Alta,True,Recuperación,2021
+AYACUCHO,LA MAR,CHILCAS,Botadero Sector Motoypucro,True,Recuperación,2018
+AYACUCHO,LA MAR,CHUNGUI,Botadero Soccospata,False,Recuperación,2018
+AYACUCHO,LA MAR,CHUNGUI,Botadero Waqontohuaycco,False,Recuperación,2018
+AYACUCHO,LA MAR,LUIS CARRANZA,Botadero en el Sector Chispipata,True,Recuperación,2018
+AYACUCHO,LA MAR,NINABAMBA,Botadero en el Sector Talavera,False,Recuperación,2025
+AYACUCHO,LA MAR,SAMUGARI,Botadero en el Sector Saluriaco,False,Recuperación,2018
+AYACUCHO,LA MAR,SAMUGARI,Botadero Piriato Zorza,False,Recuperación,2018
+AYACUCHO,LA MAR,SAMUGARI,Botadero Saluriaco,False,Recuperación,2018
+AYACUCHO,LA MAR,SAMUGARI,Botadero Pichiwilca Alta,False,Recuperación,2024
+AYACUCHO,LA MAR,SANTA ROSA,Botadero Controlado en el Sector Simariva,False,Recuperación,2018
+AYACUCHO,LA MAR,TAMBO,Botadero de Chamanapata,True,Recuperación,2018
+AYACUCHO,LA MAR,UNION PROGRESO,Botadero Sandaripata,False,Recuperación,2024
+AYACUCHO,LUCANAS,AUCARA,Botadero Tipinayocc,True,Recuperación,2018
+AYACUCHO,LUCANAS,AUCARA,Botadero El Monte,False,Recuperación,2018
+AYACUCHO,LUCANAS,CARMEN SALCEDO,Botadero Caballoputo,False,Recuperación,2018
+AYACUCHO,LUCANAS,CARMEN SALCEDO,Botadero Huasaputo,False,Recuperación,2018
+AYACUCHO,LUCANAS,CHAVINA,Botadero Accencha,False,Recuperación,2018
+AYACUCHO,LUCANAS,CHIPAO,Botadero Mallqui,False,Recuperación,2018
+AYACUCHO,LUCANAS,HUAC-HUAS,Botadero Ranracalle,False,Recuperación,2018
+AYACUCHO,LUCANAS,HUAC-HUAS,Botadero Paccpamuccu,False,Recuperación,2018
+AYACUCHO,LUCANAS,LEONCIO PRADO,Botadero Toro Muerto,True,Recuperación,2018
+AYACUCHO,LUCANAS,LLAUTA,Botadero Cashuaca,False,Recuperación,2018
+AYACUCHO,LUCANAS,LUCANAS,Botadero Achachi,False,Recuperación,2018
+AYACUCHO,LUCANAS,OCANA,Botadero El Mesón,True,Recuperación,2018
+AYACUCHO,LUCANAS,OTOCA,Botadero Piedralejo,True,Recuperación,2018
+AYACUCHO,LUCANAS,PUQUIO,Botadero Pali,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAISA,Botadero Chillcalli,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAN CRISTOBAL,Botadero Ccechccalla,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAN JUAN,Botadero Ccatumpampa,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAN JUAN,Botadero Utec,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAN PEDRO,Botadero Huansupata,False,Recuperación,2018
+AYACUCHO,LUCANAS,SAN PEDRO,Botadero Chinchecca,False,Recuperación,2024
+AYACUCHO,LUCANAS,SAN PEDRO DE PALCO,Botadero Cementerio,True,Recuperación,2018
+AYACUCHO,LUCANAS,SANCOS,Botadero Ccantaccocha,False,Recuperación,2018
+AYACUCHO,LUCANAS,SANTA LUCIA,Botadero Chaquillay,True,Recuperación,2018
+AYACUCHO,PARINACOCHAS,CHUMPI,Botadero Tantarccasa,False,Recuperación,2018
+AYACUCHO,PARINACOCHAS,CORONEL CASTANEDA,Botadero Ajochiuchi,True,Recuperación,2018
+AYACUCHO,PARINACOCHAS,PACAPAUSA,Botadero Pucca Ccata,False,Recuperación,2018
+AYACUCHO,PARINACOCHAS,PULLO,Botadero Sector Convento,False,Recuperación,2018
+AYACUCHO,PARINACOCHAS,PUYUSCA,Botadero Puchcco Yacu,False,Recuperación,2018
+AYACUCHO,PARINACOCHAS,UPAHUACHO,Botadero Huancallani,True,Recuperación,2018
+AYACUCHO,PARINACOCHAS,UPAHUACHO,Botadero San Roque,False,Recuperación,2025
+AYACUCHO,PAUCAR DEL SARA SARA,COLTA,Botadero Quchimachay,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,CORCULLA,Botadero Huao,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,CORCULLA,Botadero Chanchaura,True,Recuperación,2025
+AYACUCHO,PAUCAR DEL SARA SARA,LAMPA,Botadero Yuraq Yuraq,False,Recuperación,2025
+AYACUCHO,PAUCAR DEL SARA SARA,LAMPA,Botadero Pelotanapampa,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,MARCABAMBA,Botadero Pacocolla,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,OYOLO,Botadero Choccalle,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,PARARCA,Botadero Cuñica,False,Recuperación,2025
+AYACUCHO,PAUCAR DEL SARA SARA,PARARCA,Botadero Puqkunta,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,PAUSA,Botadero Patapampa,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,SAN JAVIER DE ALPABAMBA,Botadero Tua,False,Recuperación,2025
+AYACUCHO,PAUCAR DEL SARA SARA,SAN JAVIER DE ALPABAMBA,Botadero Santopampa,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,SAN JOSE DE USHUA,Botadero Pallccapampa,False,Recuperación,2018
+AYACUCHO,PAUCAR DEL SARA SARA,SAN JOSE DE USHUA,Botadero Salliscca,False,Recuperación,2025
+AYACUCHO,SUCRE,BELEN,Botadero Ranrapata,False,Recuperación,2018
+AYACUCHO,SUCRE,BELEN,Botadero Paltaq,True,Recuperación,2018
+AYACUCHO,SUCRE,CHILCAYOC,Botadero Tastacucho,False,Recuperación,2018
+AYACUCHO,SUCRE,HUACANA,Botadero Hamccao,False,Recuperación,2018
+AYACUCHO,SUCRE,MORCOLLA,Botadero Cruzpata 1,False,Recuperación,2025
+AYACUCHO,SUCRE,MORCOLLA,Botadero Trancapampa,True,Recuperación,2018
+AYACUCHO,SUCRE,PAICO,Botadero Hurasara,False,Recuperación,2026
+AYACUCHO,SUCRE,QUEROBAMBA,Botadero Almapampa,True,Recuperación,2018
+AYACUCHO,SUCRE,SAN PEDRO DE LARCAY,Botadero Putungo,False,Recuperación,2018
+AYACUCHO,SUCRE,SAN PEDRO DE LARCAY,Botadero Condorillo,False,Recuperación,2026
+AYACUCHO,SUCRE,SAN SALVADOR DE QUIJE,Botadero Chachaspata,True,Recuperación,2018
+AYACUCHO,SUCRE,SANTIAGO DE PAUCARAY,Botadero Huito,True,Recuperación,2018
+AYACUCHO,SUCRE,SANTIAGO DE PAUCARAY,Botadero Linda Llocce,False,Recuperación,2023
+AYACUCHO,VICTOR FAJARDO,ALCAMENCA,Botadero Ancapa Tiyanan,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,APONGO,Botadero Curva Chulisciana,True,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,APONGO,Botadero Ayhuacca,False,Recuperación,2023
+AYACUCHO,VICTOR FAJARDO,ASQUIPATA,Botadero Irapata,True,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,CANARIA,Botadero Taca,False,Recuperación,2022
+AYACUCHO,VICTOR FAJARDO,CANARIA,Botadero Raccaya,False,Recuperación,2022
+AYACUCHO,VICTOR FAJARDO,CANARIA,Botadero Parisa,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,CAYARA,Botadero Quinsahuaycco,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,COLCA,Botadero Pilluchu,False,Recuperación,2024
+AYACUCHO,VICTOR FAJARDO,HUAMANQUIQUIA,Botadero Ajoschacra,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,HUAMANQUIQUIA,Botadero Huayllapampa,False,Recuperación,2023
+AYACUCHO,VICTOR FAJARDO,HUANCAPI,Botadero Virgenpata,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,HUANCAPI,Botadero Huancaraylla,False,Recuperación,2024
+AYACUCHO,VICTOR FAJARDO,SARHUA,Botadero Pucahuaycco,False,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,VILCANCHOS,Botadero Mollepucro,True,Recuperación,2018
+AYACUCHO,VICTOR FAJARDO,VILCANCHOS,Botadero Tiucapampa,False,Recuperación,2023
+AYACUCHO,VILCAS HUAMAN,ACCOMARCA,Botadero Municipal,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,CARHUANCA,Botadero Muyumuyu,False,Recuperación,2024
+AYACUCHO,VILCAS HUAMAN,CARHUANCA,Botadero Seccllaycucho,True,Recuperación,2024
+AYACUCHO,VILCAS HUAMAN,CONCEPCION,Botadero Putacc,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,CONCEPCION,Botadero Leqlespata,False,Recuperación,2023
+AYACUCHO,VILCAS HUAMAN,HUAMBALPA,Botadero Leccleja Pampa,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,HUAMBALPA,Botadero Tara Wayqo,False,Recuperación,2023
+AYACUCHO,VILCAS HUAMAN,INDEPENDENCIA,Botadero Huarojoyocc,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,SAURAMA,Botadero Chakiqocha,False,Recuperación,2023
+AYACUCHO,VILCAS HUAMAN,VILCAS HUAMAN,Botadero Sector de Pacchapampa,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,VISCHONGO,Botadero Artesapucro,False,Recuperación,2018
+AYACUCHO,VILCAS HUAMAN,VISCHONGO,Botadero Pomacocha,False,Recuperación,2022
+AYACUCHO,VILCAS HUAMAN,VISCHONGO,Botadero Ccachubamba,False,Recuperación,2022
+CAJAMARCA,CAJABAMBA,CACHACHI,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CAJABAMBA,CAJABAMBA,Botadero Ñuñubamba,False,Recuperación,2018
+CAJAMARCA,CAJABAMBA,CAJABAMBA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CAJABAMBA,CAJABAMBA,Botadero Nuñumabamba,False,Recuperación,2023
+CAJAMARCA,CAJABAMBA,CONDEBAMBA,Botadero Los Quengos,False,Recuperación,2024
+CAJAMARCA,CAJABAMBA,SITACOCHA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,ASUNCION,Botadero Sector Pampa El Torno,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,ASUNCION,Botadero Caserío Huabal,False,Recuperación,2024
+CAJAMARCA,CAJAMARCA,CAJAMARCA,Botadero de Shudal,False,Recuperación,2021
+CAJAMARCA,CAJAMARCA,CAJAMARCA,Botadero Agomarca,False,Recuperación,2021
+CAJAMARCA,CAJAMARCA,CHETILLA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,COSPAN,Botadero Sector San Bartolo,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,COSPAN,Botadero Sector El Obelisco,False,Recuperación,2025
+CAJAMARCA,CAJAMARCA,ENCANADA,Botadero Rodapuquio-Caserio Lloptarapampa,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,JESUS,Botadero Caserío Chuco,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,LOS BANOS DEL INCA,Botadero Puylucana,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,MAGDALENA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CAJAMARCA,MAGDALENA,Botadero SN (Magdalena),True,Recuperación,2022
+CAJAMARCA,CAJAMARCA,MAGDALENA,Botadero S/N (Del Mirme),False,Recuperación,2023
+CAJAMARCA,CAJAMARCA,SAN JUAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,CELENDIN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,CHUMUCH,Botadero Sector Las Rosas,False,Recuperación,2018
+CAJAMARCA,CELENDIN,CORTEGANA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,CORTEGANA,Botadero Sector El Común,False,Recuperación,2026
+CAJAMARCA,CELENDIN,HUASMIN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,JORGE CHAVEZ,Botadero Sector Huashaco,False,Recuperación,2018
+CAJAMARCA,CELENDIN,JORGE CHAVEZ,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,LA LIBERTAD DE PALLAN,Botadero La Aviación,False,Recuperación,2018
+CAJAMARCA,CELENDIN,MIGUEL IGLESIAS,Botadero Coriorco,False,Recuperación,2018
+CAJAMARCA,CELENDIN,OXAMARCA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,SOROCHUCO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,SUCRE,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,UTCO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CELENDIN,UTCO,Botadero Municipal de Utco,False,Recuperación,2026
+CAJAMARCA,CHOTA,ANGUIA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,ANGUIA,Botadero Pampa Grande,False,Recuperación,2026
+CAJAMARCA,CHOTA,CHADIN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHALAMARCA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHALAMARCA,Botadero Tierra Negra,False,Recuperación,2025
+CAJAMARCA,CHOTA,CHIGUIRIP,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHIMBAN,Botadero Carretera 1,True,Recuperación,2018
+CAJAMARCA,CHOTA,CHIMBAN,Botadero Carretera 3,True,Recuperación,2018
+CAJAMARCA,CHOTA,CHIMBAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHIMBAN,Botadero La Chillua,False,Recuperación,2026
+CAJAMARCA,CHOTA,CHOROPAMPA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHOTA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,CHOTA,Botadero Pingobamba Alta,False,Recuperación,2023
+CAJAMARCA,CHOTA,CHOTA,Botadero II Pingobamba Alto,False,Recuperación,2023
+CAJAMARCA,CHOTA,COCHABAMBA,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,CHOTA,CONCHAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,HUAMBOS,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,LAJAS,Botadero Cantera El Chirimoyo,False,Recuperación,2018
+CAJAMARCA,CHOTA,LLAMA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,MIRACOSTA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,PACCHA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,PACCHA,Botadero Paccha Baja,False,Recuperación,2025
+CAJAMARCA,CHOTA,PION,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,PION,Botadero Municipal,False,Recuperación,2018
+CAJAMARCA,CHOTA,PION,Botadero La Pirca,False,Recuperación,2026
+CAJAMARCA,CHOTA,QUEROCOTO,Botadero Sector El Mirador,False,Recuperación,2018
+CAJAMARCA,CHOTA,QUEROCOTO,Botadero Los Vientos,False,Recuperación,2021
+CAJAMARCA,CHOTA,SAN JUAN DE LICUPIS,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,SAN JUAN DE LICUPIS,Botadero El Rejo,True,Recuperación,2022
+CAJAMARCA,CHOTA,TACABAMBA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CHOTA,TACABAMBA,Botadero La Legua,False,Recuperación,2024
+CAJAMARCA,CHOTA,TACABAMBA,Botadero La Pucara,False,Recuperación,2025
+CAJAMARCA,CHOTA,TOCMOCHE,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CONTUMAZA,CHILETE,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CONTUMAZA,CONTUMAZA,Botadero Pampa El Carbón,False,Recuperación,2018
+CAJAMARCA,CONTUMAZA,CUPISNIQUE,Botadero Municipal (Cruz Chiquita),True,Recuperación,2018
+CAJAMARCA,CONTUMAZA,SAN BENITO,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,CONTUMAZA,SAN BENITO,Botadero El Muro,True,Recuperación,2026
+CAJAMARCA,CONTUMAZA,SANTA CRUZ DE TOLEDO,Botadero Fila El Romero,False,Recuperación,2018
+CAJAMARCA,CONTUMAZA,TANTARICA,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,CONTUMAZA,TANTARICA,Botadero Salitre,True,Recuperación,2026
+CAJAMARCA,CONTUMAZA,TANTARICA,Botadero Catán,True,Recuperación,2026
+CAJAMARCA,CONTUMAZA,YONAN,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,CUTERVO,CALLAYUC,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,CALLAYUC,Botadero Los Pinos,False,Recuperación,2024
+CAJAMARCA,CUTERVO,CHOROS,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,CUTERVO,CUJILLO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,CUJILLO,Botadero Sector El Puntacho,True,Recuperación,2024
+CAJAMARCA,CUTERVO,CUTERVO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,PIMPINGOS,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,QUEROCOTILLO,Botadero Municipal,True,Recuperación,2018
+CAJAMARCA,CUTERVO,QUEROCOTILLO,Botadero Limapampa,False,Recuperación,2024
+CAJAMARCA,CUTERVO,SAN ANDRES DE CUTERVO,Botadero La Pucarilla,False,Recuperación,2018
+CAJAMARCA,CUTERVO,SAN ANDRES DE CUTERVO,Botadero Sector Las Arenitas-Chonta Cruz,False,Recuperación,2025
+CAJAMARCA,CUTERVO,SAN JUAN DE CUTERVO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,SAN LUIS DE LUCMA,Botadero Tierra Amarilla-Caserío El Tambillo,False,Recuperación,2018
+CAJAMARCA,CUTERVO,SAN LUIS DE LUCMA,Botadero S/N (Lucma),False,Recuperación,2025
+CAJAMARCA,CUTERVO,SANTA CRUZ,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,SANTA CRUZ,Botadero La Fila,True,Recuperación,2024
+CAJAMARCA,CUTERVO,SANTO DOMINGO DE LA CAPILLA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,CUTERVO,SANTO DOMINGO DE LA CAPILLA,Botadero Santa Rita,False,Recuperación,2024
+CAJAMARCA,CUTERVO,SANTO TOMAS,Botadero El Roble,False,Recuperación,2026
+CAJAMARCA,CUTERVO,SOCOTA,Botadero Sector Salamanca,True,Recuperación,2018
+CAJAMARCA,CUTERVO,TORIBIO CASANOVA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,HUALGAYOC,BAMBAMARCA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,HUALGAYOC,BAMBAMARCA,Botadero S/N (Cuñacales Alto),False,Recuperación,2021
+CAJAMARCA,HUALGAYOC,BAMBAMARCA,Botadero Shihua,False,Recuperación,2022
+CAJAMARCA,HUALGAYOC,BAMBAMARCA,Botadero Uñigán Chala,False,Recuperación,2023
+CAJAMARCA,HUALGAYOC,CHUGUR,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,HUALGAYOC,CHUGUR,Botadero Chencho,False,Recuperación,2022
+CAJAMARCA,HUALGAYOC,CHUGUR,Botadero Pampa Grande,False,Recuperación,2022
+CAJAMARCA,HUALGAYOC,CHUGUR,Botadero Chencho Sector Los Gentiles,False,Recuperación,2023
+CAJAMARCA,HUALGAYOC,HUALGAYOC,Botadero Sector Molinopampa,False,Recuperación,2018
+CAJAMARCA,JAEN,BELLAVISTA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,CHONTALI,Botadero Municipal,True,Recuperación,2018
+CAJAMARCA,JAEN,COLASAY,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,COLASAY,Botadero Joronga,False,Recuperación,2026
+CAJAMARCA,JAEN,COLASAY,Botadero Chunchuquillo,False,Recuperación,2026
+CAJAMARCA,JAEN,HUABAL,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,JAEN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,LAS PIRIAS,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,POMAHUACA,Botadero Municipal lugar denominado Piedra Grande,False,Recuperación,2018
+CAJAMARCA,JAEN,POMAHUACA,Botadero Sector Pichina,False,Recuperación,2024
+CAJAMARCA,JAEN,PUCARA,Botadero Municipal,False,Recuperación,2018
+CAJAMARCA,JAEN,SALLIQUE,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,SAN FELIPE,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,SAN FELIPE,Botadero Sector Zapote,True,Recuperación,2021
+CAJAMARCA,JAEN,SAN FELIPE,Botadero Sector Alambe,False,Recuperación,2021
+CAJAMARCA,JAEN,SAN FELIPE,Botadero Sector Carrizal Alto,False,Recuperación,2024
+CAJAMARCA,JAEN,SAN JOSE DEL ALTO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,JAEN,SAN JOSE DEL ALTO,Botadero Cruce Loma La Cera,False,Recuperación,2026
+CAJAMARCA,JAEN,SANTA ROSA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,HUARANGO,Botadero Cigarro de Oro,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,HUARANGO,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,LA COIPA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,NAMBALLE,Botadero Sector Huarangal,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,SAN IGNACIO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,SAN JOSE DE LOURDES,Botadero Cercado de Tabaconas,False,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,SAN JOSE DE LOURDES,Botadero Municipal lugar denominado Los Carchucos,True,Recuperación,2018
+CAJAMARCA,SAN IGNACIO,SAN JOSE DE LOURDES,Botadero Sector La Loma,False,Recuperación,2026
+CAJAMARCA,SAN MARCOS,CHANCAY,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,EDUARDO VILLANUEVA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,GREGORIO PITA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,ICHOCAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,JOSE MANUEL QUIROZ,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MARCOS,JOSE SABOGAL,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,PEDRO GALVEZ,Botadero Chiclayito-Tirimarca,False,Recuperación,2018
+CAJAMARCA,SAN MARCOS,PEDRO GALVEZ,Botadero Celda Transitoria Sector Palenque,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,BOLIVAR,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,BOLIVAR,Botadero cercano al caserío San José,True,Recuperación,2022
+CAJAMARCA,SAN MIGUEL,CATILLUC,Botadero La Conga,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,EL PRADO,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,LA FLORIDA,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,NANCHOC,Botadero zona Maychil de la Comunidad de Maychil,False,Recuperación,2022
+CAJAMARCA,SAN MIGUEL,NANCHOC,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,NANCHOC,Botadero de Nanchoc,True,Recuperación,2026
+CAJAMARCA,SAN MIGUEL,NIEPOS,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,SAN GREGORIO,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,SAN MIGUEL,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,SAN MIGUEL,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,SAN SILVESTRE DE COCHAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,TONGOD,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN MIGUEL,UNION AGUA BLANCA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN PABLO,SAN BERNARDINO,Botadero S/N,False,Recuperación,2021
+CAJAMARCA,SAN PABLO,SAN BERNARDINO,Botadero Laberia Paredones,False,Recuperación,2018
+CAJAMARCA,SAN PABLO,SAN BERNARDINO,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SAN PABLO,SAN LUIS,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SAN PABLO,TUMBADEN,Botadero Las Flores,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,ANDABAMBA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,CATACHE,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,CHANCAY BANOS,Botadero SN,True,Recuperación,2022
+CAJAMARCA,SANTA CRUZ,CHANCAY BANOS,Botadero Sector Shinguiloma,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,LA ESPERANZA,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,NINABAMBA,Botadero Los Pinos,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,NINABAMBA,Botadero La Playa (Ninabamba),True,Recuperación,2025
+CAJAMARCA,SANTA CRUZ,PULAN,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,PULAN,Botadero La Florida,False,Recuperación,2022
+CAJAMARCA,SANTA CRUZ,SANTA CRUZ,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,SAUCEPAMPA,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,SEXI,Botadero S/N,True,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,UTICYACU,Botadero S/N,False,Recuperación,2018
+CAJAMARCA,SANTA CRUZ,YAUYUCAN,Botadero S/N,False,Recuperación,2018
+CUSCO,ACOMAYO,ACOMAYO,Botadero Huaynapata,False,Recuperación,2018
+CUSCO,ACOMAYO,ACOMAYO,Botadero Torrechayoc,False,Recuperación,2021
+CUSCO,ACOMAYO,ACOS,Botadero Cachipata Tinco,False,Recuperación,2018
+CUSCO,ACOMAYO,MOSOC LLACTA,Botadero Singuña Huaycco,False,Recuperación,2018
+CUSCO,ACOMAYO,POMACANCHI,Botadero Machumarangate,False,Recuperación,2018
+CUSCO,ACOMAYO,RONDOCAN,Botadero Cirhuelayoc Huaycco,True,Recuperación,2018
+CUSCO,ACOMAYO,SANGARARA,Botadero Umasiri-Gallo-Kacca,False,Recuperación,2018
+CUSCO,ANTA,ANCAHUASI,Botadero San Marcos,False,Recuperación,2018
+CUSCO,ANTA,ANTA,Botadero Callpitocasa,False,Recuperación,2018
+CUSCO,ANTA,ANTA,Botadero Kehuar,False,Recuperación,2021
+CUSCO,ANTA,CACHIMAYO,Botadero San Agustín,False,Recuperación,2018
+CUSCO,ANTA,CHINCHAYPUJIO,Botadero Millimicti,True,Recuperación,2018
+CUSCO,ANTA,CHINCHAYPUJIO,Botadero Concahuaylla,False,Recuperación,2024
+CUSCO,ANTA,CHINCHAYPUJIO,Botadero Pitillihuaypata,False,Recuperación,2024
+CUSCO,ANTA,HUAROCONDO,Botadero Paropiso,False,Recuperación,2018
+CUSCO,ANTA,HUAROCONDO,Botadero Simacancha,False,Recuperación,2023
+CUSCO,ANTA,LIMATAMBO,Botadero Quichiorqo,False,Recuperación,2018
+CUSCO,ANTA,LIMATAMBO,Botadero Qellomolleyoc,False,Recuperación,2022
+CUSCO,ANTA,MOLLEPATA,Botadero Pisonaypata,False,Recuperación,2018
+CUSCO,ANTA,ZURITE,Botadero Jachin,False,Recuperación,2018
+CUSCO,CALCA,CALCA,Botadero Ccaytupampa,False,Recuperación,2018
+CUSCO,CALCA,CALCA,Botadero de Campanachayoq,False,Recuperación,2018
+CUSCO,CALCA,COYA,Botadero de Macay,True,Recuperación,2018
+CUSCO,CALCA,LARES,Botadero Pantiyoc,False,Recuperación,2018
+CUSCO,CALCA,PISAC,Botadero Matara-Ayaquira,False,Recuperación,2018
+CUSCO,CALCA,SAN SALVADOR,Botadero Paco Pata,False,Recuperación,2018
+CUSCO,CALCA,TARAY,Botadero Huchuy Paullochayoc,False,Recuperación,2018
+CUSCO,CALCA,YANATILE,Botadero Alto Arenal,True,Reconversión,2018
+CUSCO,CANAS,CHECCA,Botadero Chaqueña,False,Recuperación,2018
+CUSCO,CANAS,CHECCA,Botadero Cunsa Cunsa,False,Recuperación,2021
+CUSCO,CANAS,KUNTURKANKI,Botadero Puccacca,False,Recuperación,2018
+CUSCO,CANAS,KUNTURKANKI,Botadero Huancolluse,False,Recuperación,2021
+CUSCO,CANAS,KUNTURKANKI,Botadero Kirkohuaraca,False,Recuperación,2021
+CUSCO,CANAS,KUNTURKANKI,Botadero Apacheta 1,False,Recuperación,2023
+CUSCO,CANAS,LANGUI,Botadero Antahuayco,False,Recuperación,2018
+CUSCO,CANAS,LAYO,Botadero Callejón Pampa,False,Recuperación,2018
+CUSCO,CANAS,LAYO,Botadero Pujalista Apacheta,False,Recuperación,2026
+CUSCO,CANAS,PAMPAMARCA,Botadero de Hantapampa,True,Recuperación,2018
+CUSCO,CANAS,QUEHUE,Botadero Janansaya-Lluscapampa,False,Recuperación,2018
+CUSCO,CANAS,TUPAC AMARU,Botadero Aceroncca-Barrio Pampachiri,False,Recuperación,2018
+CUSCO,CANAS,TUPAC AMARU,Botadero de Apacheta,False,Recuperación,2018
+CUSCO,CANAS,YANAOCA,Botadero de RRSS de la Comunidad de Qquechaqquechua,False,Recuperación,2023
+CUSCO,CANCHIS,CHECACUPE,Botadero Tafiales pampa,False,Recuperación,2018
+CUSCO,CANCHIS,CHECACUPE,Botadero Mal Paso,False,Recuperación,2018
+CUSCO,CANCHIS,CHECACUPE,Botadero Kulawapata,False,Recuperación,2024
+CUSCO,CANCHIS,COMBAPATA,Botadero Molino Huasa,False,Recuperación,2018
+CUSCO,CANCHIS,MARANGANI,Botadero Rumicruz,False,Recuperación,2018
+CUSCO,CANCHIS,MARANGANI,Botadero Sayripampa,False,Recuperación,2025
+CUSCO,CANCHIS,MARANGANI,Botadero Accokunka,False,Recuperación,2025
+CUSCO,CANCHIS,PITUMARCA,Botadero Qquentiyo,True,Recuperación,2018
+CUSCO,CANCHIS,SAN PABLO,Botadero Cachipamapa,True,Recuperación,2018
+CUSCO,CANCHIS,SAN PEDRO,Botadero Cachicachipampa,False,Recuperación,2018
+CUSCO,CANCHIS,SICUANI,Botadero Choquechallocpata o Chacuchayocpata,False,Recuperación,2018
+CUSCO,CANCHIS,TINTA,Botadero Cachicachi,True,Recuperación,2018
+CUSCO,CHUMBIVILCAS,CAPACMARCA,Botadero de Labosorqqo,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,CHAMACA,Botadero de Jahuankiri,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,COLQUEMARCA,Botadero de Perccabamba,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,LIVITACA,Botadero Sector Tacomocco,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,LLUSCO,Botadero de Ccancahui Pampa,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,QUINOTA,Botadero de Tunyo Maranserayocpata,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,SANTO TOMAS,Botadero de Hatunpata,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,SANTO TOMAS,Botadero Huisayuyo Campanuta,False,Recuperación,2023
+CUSCO,CHUMBIVILCAS,VELILLE,Botadero Sector Llasaqchahuana,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,VELILLE,Botadero Sañopalla,False,Recuperación,2018
+CUSCO,CHUMBIVILCAS,VELILLE,Botadero Casa Blanca,False,Recuperación,2025
+CUSCO,CUSCO,POROY,Botadero de Hatumpampa,True,Recuperación,2018
+CUSCO,CUSCO,SAN SEBASTIAN,Botadero San Antonio,False,Recuperación,2021
+CUSCO,CUSCO,SANTIAGO,Botadero de Jaquira,False,Recuperación,2018
+CUSCO,ESPINAR,ALTO PICHIGUA,Botadero Alto Pichigua,False,Recuperación,2018
+CUSCO,ESPINAR,ALTO PICHIGUA,Botadero Accocunca,False,Recuperación,2023
+CUSCO,ESPINAR,CONDOROMA,Botadero Sector de Ichuccollo,False,Recuperación,2018
+CUSCO,ESPINAR,COPORAQUE,Botadero San Pedro de la Comunidad Campesina de Tacrara,True,Recuperación,2018
+CUSCO,ESPINAR,COPORAQUE,Botadero Nuevo Tacrara,False,Recuperación,2024
+CUSCO,ESPINAR,ESPINAR,Botadero Antaccollana,False,Recuperación,2018
+CUSCO,ESPINAR,OCORURO,Botadero Sector Trapiche,False,Recuperación,2018
+CUSCO,ESPINAR,PALLPATA,Botadero Antacama,False,Recuperación,2018
+CUSCO,ESPINAR,PICHIGUA,Botadero Minas Quincay,False,Recuperación,2018
+CUSCO,ESPINAR,SUYCKUTAMBO,Botadero Sector de Chaquimayo,False,Recuperación,2018
+CUSCO,LA CONVENCION,CIELO PUNCO,Botadero Pucaccacca,False,Recuperación,2026
+CUSCO,LA CONVENCION,ECHARATI,Botadero Alto Ivanqui,False,Reconversión,2022
+CUSCO,LA CONVENCION,ECHARATI,Botadero Kiteni,False,Reconversión,2022
+CUSCO,LA CONVENCION,ECHARATI,Botadero Ccochayoc,False,Reconversión,2018
+CUSCO,LA CONVENCION,ECHARATI,Área degradada de Inquilhuato,False,Recuperación,2023
+CUSCO,LA CONVENCION,ECHARATI,Botadero Alto Rosalinas,False,Recuperación,2023
+CUSCO,LA CONVENCION,ECHARATI,Botadero de Cachingari,True,Recuperación,2024
+CUSCO,LA CONVENCION,ECHARATI,Botadero de Alto Pachiri,False,Recuperación,2024
+CUSCO,LA CONVENCION,ECHARATI,Botadero de Pangoa,False,Recuperación,2024
+CUSCO,LA CONVENCION,ECHARATI,Botadero de Poyentimari,False,Recuperación,2024
+CUSCO,LA CONVENCION,ECHARATI,Área degradada por Residuos Sólidos Ivochote,False,Recuperación,2025
+CUSCO,LA CONVENCION,ECHARATI,Área degradada por residuos sólidos de la comunidad Nativa de Koribeni,False,Recuperación,2025
+CUSCO,LA CONVENCION,HUAYOPATA,Botadero Tunaschayoc,False,Recuperación,2018
+CUSCO,LA CONVENCION,INKAWASI,Botadero Municipal,False,Recuperación,2018
+CUSCO,LA CONVENCION,KIMBIRI,Botadero Controlado en el Sector Alto Sampantuari,True,Recuperación,2018
+CUSCO,LA CONVENCION,KIMBIRI,Área de Mejoramiento y ampliación del servicio de limpieza pública en la zona de Kimbiri y centros poblados del distrito de Kimbiri La Convención-Cusco,False,Reconversión,2023
+CUSCO,LA CONVENCION,KUMPIRUSHIATO,Botadero Municipal Simentohato,False,Recuperación,2023
+CUSCO,LA CONVENCION,KUMPIRUSHIATO,Botadero Municipal Manatarushiato,False,Recuperación,2023
+CUSCO,LA CONVENCION,MANITEA,Botadero Qorichayocc,False,Recuperación,2024
+CUSCO,LA CONVENCION,MEGANTONI,Botadero de la Comunidad Nativa de Miaria,True,Reconversión,2022
+CUSCO,LA CONVENCION,MEGANTONI,Botadero ubicado en la Comunidad Nativa de Megantoni,False,Recuperación,2018
+CUSCO,LA CONVENCION,MEGANTONI,Área Degradada por residuos sólidos de la CCNN Camisea,False,Recuperación,2022
+CUSCO,LA CONVENCION,MEGANTONI,Botadero de la comunidad Nativa de Camisea cercano a la Comisaria,False,Recuperación,2023
+CUSCO,LA CONVENCION,MEGANTONI,Botadero de la comunidad Nativa de Shivankoreni,True,Recuperación,2023
+CUSCO,LA CONVENCION,MEGANTONI,Área degradada por residuos sólidos Las Palmeras,False,Recuperación,2023
+CUSCO,LA CONVENCION,MEGANTONI,Área degradada por residuos sólidos de CCNN Nueva Vida,False,Recuperación,2023
+CUSCO,LA CONVENCION,MEGANTONI,Área degradada por Residuos Sólidos de la Comunidad Nativa de Cashiriari,False,Recuperación,2025
+CUSCO,LA CONVENCION,MEGANTONI,Área Degradada por residuos sólidos Chinguriato,False,Recuperación,2026
+CUSCO,LA CONVENCION,MEGANTONI,Área Degradada de la Comunidad Nativa de Sensa,False,Recuperación,2026
+CUSCO,LA CONVENCION,OCOBAMBA,Botadero Antibamba,False,Recuperación,2018
+CUSCO,LA CONVENCION,OCOBAMBA,Botadero S/N,False,Recuperación,2018
+CUSCO,LA CONVENCION,PICHARI,Botadero Controlado en el Sector San Martín de Otari,False,Recuperación,2018
+CUSCO,LA CONVENCION,QUELLOUNO,Botadero Molemotello,False,Recuperación,2018
+CUSCO,LA CONVENCION,QUELLOUNO,Botadero Tunasmoco,False,Reconversión,2021
+CUSCO,LA CONVENCION,SANTA ANA,Botadero Tiobamba,False,Recuperación,2018
+CUSCO,LA CONVENCION,SANTA TERESA,Botadero de Sebadillayoc,False,Recuperación,2018
+CUSCO,LA CONVENCION,VILCABAMBA,Botadero San Martín,False,Recuperación,2018
+CUSCO,LA CONVENCION,VILCABAMBA,Botadero Sector Lamaypampa,False,Recuperación,2018
+CUSCO,LA CONVENCION,VILLA KINTIARINA,Botadero Sector Villa Sol,False,Recuperación,2023
+CUSCO,LA CONVENCION,VILLA VIRGEN,Botadero controlado Florida Alta,False,Reconversión,2023
+CUSCO,PARURO,ACCHA,Botadero Machaqhuaypata,False,Recuperación,2018
+CUSCO,PARURO,CCAPI,Botadero Sector Capuliyoq,False,Recuperación,2018
+CUSCO,PARURO,HUANOQUITE,Botadero Incahui Pampa,False,Recuperación,2018
+CUSCO,PARURO,OMACHA,Botadero Antallaje Jatta,False,Recuperación,2018
+CUSCO,PARURO,PACCARITAMBO,Botadero Acuira,False,Recuperación,2018
+CUSCO,PARURO,PARURO,Botadero de Pumapampa,False,Recuperación,2018
+CUSCO,PARURO,PARURO,Botadero Maqtapujio,False,Recuperación,2021
+CUSCO,PARURO,PILLPINTO,Botadero de Huancapata,False,Recuperación,2018
+CUSCO,PARURO,YAURISQUE,Botadero Cusibamba,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,CAICAY,Botadero Wacaayu-Wachana,True,Recuperación,2018
+CUSCO,PAUCARTAMBO,CHALLABAMBA,Botadero Ccollota,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,COLQUEPATA,Botadero de Altoserranuyoc,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,COLQUEPATA,Botadero Juchuipata,True,Recuperación,2018
+CUSCO,PAUCARTAMBO,HUANCARANI,Botadero Limpoccocha-Queuñacancha,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,KOSNIPATA,Botadero Villa de María,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,KOSNIPATA,Botadero Aguas Santas,False,Recuperación,2021
+CUSCO,PAUCARTAMBO,KOSNIPATA,Botadero Primavera,False,Recuperación,2022
+CUSCO,PAUCARTAMBO,PAUCARTAMBO,Botadero Lluscapata,False,Recuperación,2018
+CUSCO,PAUCARTAMBO,PAUCARTAMBO,Botadero Manzanares,False,Recuperación,2021
+CUSCO,QUISPICANCHI,ANDAHUAYLILLAS,Botadero Chippta,False,Recuperación,2018
+CUSCO,QUISPICANCHI,CAMANTI,Botadero Arazá,False,Recuperación,2018
+CUSCO,QUISPICANCHI,CAMANTI,Botadero Palcamayo,False,Reconversión,2022
+CUSCO,QUISPICANCHI,CCARHUAYO,Botadero Paccollo,False,Recuperación,2018
+CUSCO,QUISPICANCHI,CCATCCA,Botadero Andayaque,False,Recuperación,2022
+CUSCO,QUISPICANCHI,CUSIPATA,Botadero Ccollpapata,False,Recuperación,2018
+CUSCO,QUISPICANCHI,CUSIPATA,Botadero Cuncacancha,False,Recuperación,2022
+CUSCO,QUISPICANCHI,HUARO,Botadero Haciendapata,False,Recuperación,2018
+CUSCO,QUISPICANCHI,LUCRE,Botadero Sinwaran,False,Reconversión,2018
+CUSCO,QUISPICANCHI,LUCRE,Botadero Pinagua,False,Recuperación,2018
+CUSCO,QUISPICANCHI,MARCAPATA,Botadero Ccachubamba,False,Recuperación,2018
+CUSCO,QUISPICANCHI,OCONGATE,Botadero Polvorín-Lequepata,False,Reconversión,2018
+CUSCO,QUISPICANCHI,QUIQUIJANA,Botadero Rakaypata,False,Recuperación,2018
+CUSCO,QUISPICANCHI,QUIQUIJANA,Botadero Cerro Curi,False,Recuperación,2021
+CUSCO,QUISPICANCHI,QUIQUIJANA,Botadero Condenaduyoc,False,Recuperación,2024
+CUSCO,QUISPICANCHI,URCOS,Botadero de Oxabamba,False,Recuperación,2018
+CUSCO,QUISPICANCHI,URCOS,Botadero Cerro Wiracochan-Sector Qochayoqpata,False,Recuperación,2023
+CUSCO,URUBAMBA,MARAS,Botadero de Jahuayccollay,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,ACOBAMBA,Botadero Mollebamba,False,Reconversión,2018
+HUANCAVELICA,ACOBAMBA,ANDABAMBA,Botadero Yaulipampa,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,ANTA,Botadero Ccatunpata,True,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,CAJA,Botadero Acco,False,Recuperación,2024
+HUANCAVELICA,ACOBAMBA,MARCAS,Botadero Quebrada Añaswacra,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,MARCAS,Botadero ubicado en el Sector denominado Allpaccocha,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,PAUCARA,Botadero Sector Huaytapampa,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,POMACOCHA,Botadero ubicado en el lugar denominado Sector Chorrillo Huaycco,False,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,POMACOCHA,Botadero Sector Secclla,False,Recuperación,2022
+HUANCAVELICA,ACOBAMBA,ROSARIO,Botadero Tantarcancha Huayco,False,Recuperación,2023
+HUANCAVELICA,ACOBAMBA,ROSARIO,Botadero ubicado en el lugar denominado Quinuatarpuna / Ccalapata,True,Recuperación,2018
+HUANCAVELICA,ACOBAMBA,ROSARIO,Botadero Huachaypampa-Llipllina,False,Recuperación,2022
+HUANCAVELICA,ANGARAES,ANCHONGA,Botadero Acantilado en el Sector denominado Ccarahuayuna,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,ANCHONGA,Botadero Sector Palerca,False,Recuperación,2023
+HUANCAVELICA,ANGARAES,CALLANMARCA,Botadero Sector Santuchayocc,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,CHINCHO,Botadero lugar denominado Jasiwaccta,True,Recuperación,2018
+HUANCAVELICA,ANGARAES,CONGALLA,Botadero Cornetapata,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,CONGALLA,Botadero Aleluya,True,Recuperación,2021
+HUANCAVELICA,ANGARAES,CONGALLA,Botadero Cunyacc,False,Recuperación,2023
+HUANCAVELICA,ANGARAES,HUANCA-HUANCA,Botadero Acantilado 2: Sector Denominado Ccinganlincca,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,HUANCA-HUANCA,Botadero Acantilado 1: Sector denominado Accomaccmana,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,HUANCA-HUANCA,Botadero Carhuaccpampa,True,Recuperación,2023
+HUANCAVELICA,ANGARAES,HUAYLLAY GRANDE,Botadero Acantilado en el Sector denominado San Pedro,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,JULCAMARCA,Botadero Muyurina-San Cristóbal,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,LIRCAY,Botadero Allccosayanan,False,Reconversión,2018
+HUANCAVELICA,ANGARAES,SANTO TOMAS DE PATA,Botadero Carhuapampa-Mollecucho,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,SANTO TOMAS DE PATA,Botadero Sector Pichuspata,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,SECCLLA,Botadero Huayao,False,Recuperación,2018
+HUANCAVELICA,ANGARAES,SECCLLA,Botadero Tantarcancha Huayco 2,False,Recuperación,2024
+HUANCAVELICA,CASTROVIRREYNA,ARMA,Botadero Sector Arapa,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,ARMA,Botadero Sector Cerro Paquisca,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,AURAHUA,Botadero Acco,False,Recuperación,2022
+HUANCAVELICA,CASTROVIRREYNA,CAPILLAS,Botadero Sector Azafrán,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,CASTROVIRREYNA,Botadero Sector Chalhuanca,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,CHUPAMARCA,Botadero sector Anta,True,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,CHUPAMARCA,Botadero Llactahuaycco,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,CHUPAMARCA,Botadero Sector Monte Monte,True,Recuperación,2022
+HUANCAVELICA,CASTROVIRREYNA,COCAS,Botadero Hatun Occo,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,COCAS,Botadero Sector Auyunco,True,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,HUACHOS,Botadero Huajintay-Condormarca,False,Reconversión,2018
+HUANCAVELICA,CASTROVIRREYNA,HUAMATAMBO,Botadero Sector Rio Seco,True,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,MOLLEPAMPA,Botadero Sector Lucma,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,MOLLEPAMPA,Botadero Paticucho,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,SAN JUAN,Botadero Sector Guindasniyo,True,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,SAN JUAN,Botadero San Juan,False,Recuperación,2025
+HUANCAVELICA,CASTROVIRREYNA,SANTA ANA,Botadero lugar denominado Accoccasa,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,TANTARA,Botadero Sector Ccanccaullo,True,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,TICRAPO,Botadero Sector Lanriapata,False,Recuperación,2018
+HUANCAVELICA,CASTROVIRREYNA,TICRAPO,Botadero Sector Ahuanacruz,False,Reconversión,2025
+HUANCAVELICA,CHURCAMPA,ANCO,Botadero Sector Humaconca,True,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,ANCO,Botadero Ocros Bajo,False,Recuperación,2022
+HUANCAVELICA,CHURCAMPA,CHURCAMPA,Botadero Chilcapucro,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,COSME,Botadero Ichupata,True,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,EL CARMEN,Botadero Sector Huaranccapata,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,EL CARMEN,Botadero Chamanapata,False,Recuperación,2023
+HUANCAVELICA,CHURCAMPA,LA MERCED,Botadero Sector Sayarillo,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,LOCROJA,Botadero Sector Chicabamba,True,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,PACHAMARCA,Botadero Barrio Texas,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,PAUCARBAMBA,Botadero Ñuñuurqo,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,PAUCARBAMBA,Botadero Mamachapampa,True,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,SAN MIGUEL DE MAYOCC,Botadero Yanarumi,False,Recuperación,2018
+HUANCAVELICA,CHURCAMPA,SAN PEDRO DE CORIS,Botadero Tantarhuayco,True,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,ACOBAMBILLA,Botadero Sector Huayllapampa,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,ACOBAMBILLA,Botadero del distrito de Acobambilla,False,Recuperación,2022
+HUANCAVELICA,HUANCAVELICA,ACORIA,Botadero Sector Urpay,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,ASCENSION,Botadero Ranracucho,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,CONAYCA,Botadero Sector Piscco Pucyo,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,CUENCA,Botadero Sector Corunya,True,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,CUENCA,Botadero Sector Accotupe,True,Recuperación,2022
+HUANCAVELICA,HUANCAVELICA,HUACHOCOLPA,Botadero Paraje Pirata Comunidad Campesina de Huachocolpa,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,HUANCAVELICA,Botadero Huayllachay-Pampachacra,True,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,HUANDO,Botadero Sector Hualhuas,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,HUANDO,Botadero ubicado en el barrio Huayhuas,False,Recuperación,2023
+HUANCAVELICA,HUANCAVELICA,HUAYLLAHUARA,Botadero Sector Chocco Pampa,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,LARIA,Botadero Sector Uchcupuro,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,LARIA,Botadero Armahuaycco,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,MANTA,Botadero Sector Puccacocha,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,MARISCAL CACERES,Botadero ubicado en el lugar denominado Pampaccocha,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,MOYA,Botadero Unchul,True,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,NUEVO OCCORO,Botadero ubicado en el Barrio Centro,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,NUEVO OCCORO,Botadero del Sector Pampahuasi,True,Recuperación,2024
+HUANCAVELICA,HUANCAVELICA,PALCA,Botadero Sector Horno Cucho,True,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,PILCHACA,Botadero Marayniyocc,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,PILCHACA,Botadero Tomapata,False,Reconversión,2018
+HUANCAVELICA,HUANCAVELICA,VILCA,Botadero Paraje Ranrapata,False,Recuperación,2018
+HUANCAVELICA,HUANCAVELICA,YAULI,Botadero Nueva Esperanza,False,Recuperación,2024
+HUANCAVELICA,HUANCAVELICA,YAULI,Botadero Kunturpa Qawanan,False,Recuperación,2026
+HUANCAVELICA,HUAYTARA,AYAVI,Botadero Av. Los Libertadores-Cercado Aniso,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,CORDOVA,Botadero Sector Los Blancos,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,HUAYACUNDO ARMA,Botadero ubicado en el lugar denominado Aguasanta-Yaaccero,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,HUAYACUNDO ARMA,Botadero Municipal Acco,False,Recuperación,2025
+HUANCAVELICA,HUAYTARA,HUAYTARA,Botadero Caracol,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,LARAMARCA,Botadero Sector Quillco,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,LARAMARCA,Botadero 1: Lugar Ubicado en el Sector Pucarumi,True,Recuperación,2018
+HUANCAVELICA,HUAYTARA,OCOYO,Botadero Cruz Pata,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,PILPICHACA,Botadero Sector Chupa Bado,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,QUERCO,Botadero Sallamocco,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,QUITO-ARMA,Botadero Sector Ccollccapampa,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SAN ANTONIO DE CUSICANCHA,Botadero Sector Pauccaro,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SAN FRANCISCO DE SANGAYAICO,Botadero Sector Pantacca,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SAN ISIDRO,Botadero S/N,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SANTIAGO DE CHOCORVOS,Botadero Manian,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SANTIAGO DE QUIRAHUARA,Botadero Lloccepata,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,SANTO DOMINGO DE CAPILLAS,Botadero Huayai-Anexo Huañacancha,False,Recuperación,2018
+HUANCAVELICA,HUAYTARA,TAMBO,Botadero S/N,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,ACOSTAMBO,Botadero Sector Yanarumi,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,ACOSTAMBO,Botadero Sector Chamana,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,ANDAYMARCA,Botadero de Umacunka,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,ANDAYMARCA,Botadero Huayraccasa,True,Recuperación,2025
+HUANCAVELICA,TAYACAJA,COCHABAMBA,Botadero Songonaq,False,Recuperación,2023
+HUANCAVELICA,TAYACAJA,COCHABAMBA,Botadero Uchuyranra,False,Recuperación,2025
+HUANCAVELICA,TAYACAJA,COLCABAMBA,Botadero Sector Chacas Alto,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,DANIEL HERNANDEZ,Botadero Corral y Leccles Pampa,False,Recuperación,2024
+HUANCAVELICA,TAYACAJA,HUACHOCOLPA,Botadero Sector Mataccocha,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,HUARIBAMBA,Botadero Sector Chullincuy,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,HUARIBAMBA,Botadero Melchorpampa,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,PAMPAS,Botadero Hatunpampa,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,PAZOS,Botadero Sector Molinohuaycco,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,PICHOS,Botadero Vacacorral,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,QUISHUAR,Botadero en el Sector Soroche,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,QUISHUAR,Botadero Uchcupata,False,Recuperación,2024
+HUANCAVELICA,TAYACAJA,SALCABAMBA,Botadero Tambillacasa,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,SALCABAMBA,Botadero Chillcamojo,False,Recuperación,2026
+HUANCAVELICA,TAYACAJA,SALCAHUASI,Botadero Sector Uchuyccaparina,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,SAN MARCOS DE ROCCHAC,Botadero S/N,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,SANTIAGO DE TUCUMA,Botadero de Moronquiyoc,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,SURCUBAMBA,Botadero de Cornetillo,False,Recuperación,2018
+HUANCAVELICA,TAYACAJA,TINTAY PUNCU,Botadero Sector Aychahuarcuna,True,Recuperación,2018
+HUANCAVELICA,TAYACAJA,TINTAY PUNCU,Botadero Legles,False,Recuperación,2023
+HUANUCO,AMBO,CAYNA,Botadero Escalón,False,Recuperación,2018
+HUANUCO,AMBO,CAYNA,Botadero Utagayna,False,Recuperación,2021
+HUANUCO,AMBO,COLPAS,Botadero Quebrada Yapanacuy,True,Recuperación,2018
+HUANUCO,AMBO,CONCHAMARCA,Botadero Cruz Punta,False,Recuperación,2018
+HUANUCO,AMBO,HUACAR,Botadero Huacaspata,False,Recuperación,2018
+HUANUCO,AMBO,HUACAR,Botadero Yana Rumi,False,Recuperación,2021
+HUANUCO,AMBO,SAN FRANCISCO,Botadero Ongoy,False,Recuperación,2018
+HUANUCO,AMBO,SAN RAFAEL,Botadero Uchuc Huariaca,False,Recuperación,2018
+HUANUCO,AMBO,TOMAY KICHWA,Botadero Quichqui,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,CHUQUIS,Botadero Choqueragra,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,CHUQUIS,Botadero Rambrayacu,False,Recuperación,2024
+HUANUCO,DOS DE MAYO,LA UNION,Botadero Pachachaca,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,LA UNION,Botadero Municipal de Guellaycancha,False,Recuperación,2025
+HUANUCO,DOS DE MAYO,MARIAS,Botadero Curipunta,False,Recuperación,2026
+HUANUCO,DOS DE MAYO,PACHAS,Botadero Agoucro,True,Recuperación,2018
+HUANUCO,DOS DE MAYO,QUIVILLA,Botadero Muchinga,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,QUIVILLA,Botadero Lucmapata,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,RIPAN,Botadero Quishuar/Shengua/Ullucpata,True,Recuperación,2018
+HUANUCO,DOS DE MAYO,SHUNQUI,Botadero Huancarumi,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,SHUNQUI,Botadero Jucho de Shunqui,False,Recuperación,2023
+HUANUCO,DOS DE MAYO,SHUNQUI,Botadero Anta Tuna de Shunqui,False,Recuperación,2023
+HUANUCO,DOS DE MAYO,SILLAPATA,Botadero Gochachakis,False,Recuperación,2018
+HUANUCO,DOS DE MAYO,YANAS,Botadero Casharragra Pucapampa,False,Recuperación,2018
+HUANUCO,HUACAYBAMBA,CANCHABAMBA,Botadero Shiracapatak,False,Recuperación,2018
+HUANUCO,HUACAYBAMBA,COCHABAMBA,Botadero Agua Rica,False,Recuperación,2018
+HUANUCO,HUACAYBAMBA,HUACAYBAMBA,Botadero Matacaballo,True,Recuperación,2018
+HUANUCO,HUACAYBAMBA,PINRA,Botadero Santa Rosa,False,Recuperación,2018
+HUANUCO,HUAMALIES,ARANCAY,Botadero Sector Muchkacoto,False,Recuperación,2018
+HUANUCO,HUAMALIES,CHAVIN DE PARIARCA,Botadero Sector Huamanpampa,True,Recuperación,2018
+HUANUCO,HUAMALIES,JACAS GRANDE,Botadero Tauriyoj,False,Recuperación,2018
+HUANUCO,HUAMALIES,JACAS GRANDE,Botadero Piquimachay,False,Recuperación,2023
+HUANUCO,HUAMALIES,JIRCAN,Botadero Sector Wischasmachay,False,Recuperación,2018
+HUANUCO,HUAMALIES,MIRAFLORES,Botadero Sacayhua,False,Recuperación,2018
+HUANUCO,HUAMALIES,MIRAFLORES,Botadero Gauguiz,False,Recuperación,2023
+HUANUCO,HUAMALIES,MONZON,Botadero Chaupiyacu,False,Recuperación,2021
+HUANUCO,HUAMALIES,MONZON,Botadero Chipaco,False,Recuperación,2021
+HUANUCO,HUAMALIES,MONZON,Botadero San Benito,False,Recuperación,2018
+HUANUCO,HUAMALIES,PUNCHAO,Botadero Sector Zanja,True,Recuperación,2018
+HUANUCO,HUAMALIES,PUNOS,Botadero Potgaragra,False,Recuperación,2018
+HUANUCO,HUAMALIES,SINGA,Botadero Pucarramrash,True,Recuperación,2018
+HUANUCO,HUAMALIES,TANTAMAYO,Botadero Markajuahuan,False,Recuperación,2018
+HUANUCO,HUANUCO,CHINCHAO,Botadero Villa Sol,False,Recuperación,2018
+HUANUCO,HUANUCO,CHINCHAO,Botadero de Tungra Baja,False,Recuperación,2025
+HUANUCO,HUANUCO,CHURUBAMBA,Botadero Galloragra,False,Recuperación,2018
+HUANUCO,HUANUCO,CHURUBAMBA,Botadero Sector Chinchobamba,False,Recuperación,2026
+HUANUCO,HUANUCO,HUANUCO,Botadero Chilepampa,False,Recuperación,2018
+HUANUCO,HUANUCO,HUANUCO,Ex Botadero de Marabamba,False,Recuperación,2022
+HUANUCO,HUANUCO,MARGOS,Botadero Huaychaugoto,False,Recuperación,2018
+HUANUCO,HUANUCO,MARGOS,Botadero Chinchanpata,False,Recuperación,2026
+HUANUCO,HUANUCO,QUISQUI (KICHKI),Botadero Chirimoya Pampa,False,Recuperación,2018
+HUANUCO,HUANUCO,SAN FRANCISCO DE CAYRAN,Botadero Higuscancha,False,Recuperación,2018
+HUANUCO,HUANUCO,SAN FRANCISCO DE SAN CAYRAN,Botadero Cunyaq,False,Recuperación,2023
+HUANUCO,HUANUCO,SAN PABLO DE PILLAO,Botadero San Pablo de Pillao,False,Recuperación,2025
+HUANUCO,HUANUCO,SAN PEDRO DE CHAULAN,Botadero Parash Pampa,False,Recuperación,2018
+HUANUCO,HUANUCO,SANTA MARIA DEL VALLE,Botadero Santa María del Valle,False,Recuperación,2018
+HUANUCO,HUANUCO,YACUS,Botadero Mujinete,False,Recuperación,2018
+HUANUCO,HUANUCO,YARUMAYO,Botadero Jatun Loma,True,Recuperación,2018
+HUANUCO,LAURICOCHA,BANOS,Botadero Cochambra,True,Recuperación,2018
+HUANUCO,LAURICOCHA,JESUS,Botadero Makanin,True,Recuperación,2018
+HUANUCO,LAURICOCHA,JESUS,Botadero Purupampa,False,Recuperación,2018
+HUANUCO,LAURICOCHA,JESUS,Botadero Cruzpunta,False,Recuperación,2018
+HUANUCO,LAURICOCHA,JIVIA,Botadero Huampón,False,Recuperación,2018
+HUANUCO,LAURICOCHA,QUEROPALCA,Botadero Toctochaca,False,Recuperación,2018
+HUANUCO,LAURICOCHA,QUEROPALCA,Botadero Curupata,False,Recuperación,2023
+HUANUCO,LAURICOCHA,RONDOS,Botadero Ucro Pampa,False,Recuperación,2018
+HUANUCO,LAURICOCHA,SAN FRANCISCO DE ASIS,Botadero Yanatini,True,Recuperación,2018
+HUANUCO,LAURICOCHA,SAN MIGUEL DE CAURI,Botadero Chauli,False,Recuperación,2025
+HUANUCO,LEONCIO PRADO,DANIEL ALOMIA ROBLES,Botadero Arroyo Grande,False,Recuperación,2018
+HUANUCO,LEONCIO PRADO,JOSE CRESPO Y CASTILLO,Botadero Las Mercedes,False,Recuperación,2018
+HUANUCO,LEONCIO PRADO,JOSE CRESPO Y CASTILLO,Botadero Nuevo Copal,False,Recuperación,2021
+HUANUCO,LEONCIO PRADO,PUCAYACU,Botadero Pucayacu,False,Recuperación,2018
+HUANUCO,LEONCIO PRADO,PUEBLO NUEVO,Botadero La Esperanza,False,Recuperación,2025
+HUANUCO,LEONCIO PRADO,RUPA-RUPA,Botadero La Moyuna,True,Recuperación,2018
+HUANUCO,LEONCIO PRADO,SANTO DOMINGO DE ANDA,Botadero Cerro Azul,False,Recuperación,2025
+HUANUCO,MARANON,CHOLON,Botadero Garhuacruz,False,Recuperación,2018
+HUANUCO,MARANON,CHOLON,Botadero Sinchi Roca,False,Recuperación,2025
+HUANUCO,MARANON,HUACRACHUCO,Botadero Sector Huambo,True,Recuperación,2018
+HUANUCO,MARANON,HUACRACHUCO,Botadero Pumachupay,False,Recuperación,2021
+HUANUCO,MARANON,LA MORADA,Botadero Municipal La Morada,False,Recuperación,2025
+HUANUCO,MARANON,SAN BUENAVENTURA,Botadero Quebrada Ramos Capilla,False,Recuperación,2018
+HUANUCO,MARANON,SANTA ROSA DE ALTO YANAJANCA,Botadero Santa Rosa de Alto Yanajanca,False,Recuperación,2025
+HUANUCO,PACHITEA,CHAGLLA,Botadero Azul Cucho,True,Recuperación,2018
+HUANUCO,PACHITEA,PANAO,Botadero Once Amigos,False,Recuperación,2018
+HUANUCO,PACHITEA,PANAO,Botadero Mesapampa,True,Recuperación,2021
+HUANUCO,PACHITEA,PANAO,Botadero de Molino-Once Amigos,False,Recuperación,2025
+HUANUCO,PACHITEA,UMARI,Botadero Llampoloma,False,Recuperación,2018
+HUANUCO,PUERTO INCA,CODO DEL POZUZO,Botadero Isleria,False,Recuperación,2018
+HUANUCO,PUERTO INCA,CODO DEL POZUZO,Botadero Municipal Alto Mashoca,False,Recuperación,2024
+HUANUCO,PUERTO INCA,HONORIA,Botadero Laureano Alfonso,False,Recuperación,2018
+HUANUCO,PUERTO INCA,HONORIA,Botadero Municipal de Honoria,False,Recuperación,2024
+HUANUCO,PUERTO INCA,PUERTO INCA,Botadero Puerto Inca,True,Recuperación,2018
+HUANUCO,PUERTO INCA,TOURNAVISTA,Botadero Las Lomas,False,Recuperación,2018
+HUANUCO,PUERTO INCA,YUYAPICHIS,Botadero La Loma,False,Recuperación,2018
+HUANUCO,YAROWILCA,APARICIO POMARES,Botadero Shaywua,False,Recuperación,2018
+HUANUCO,YAROWILCA,CAHUAC,Botadero Santa Rosa,False,Reconversión,2018
+HUANUCO,YAROWILCA,CHACABAMBA,Botadero Chacabamba,True,Recuperación,2018
+HUANUCO,YAROWILCA,CHAVINILLO,Botadero Cascón,False,Recuperación,2018
+HUANUCO,YAROWILCA,CHORAS,Botadero Tranca,False,Recuperación,2018
+HUANUCO,YAROWILCA,JACAS CHICO,Botadero Chogripaqui,False,Recuperación,2018
+HUANUCO,YAROWILCA,OBAS,Botadero San Pedro de Quilo,False,Recuperación,2018
+HUANUCO,YAROWILCA,PAMPAMARCA,Botadero Pacay,False,Recuperación,2022
+HUANUCO,YAROWILCA,PAMPAMARCA,Botadero Azuljircan,False,Recuperación,2018
+ICA,CHINCHA,ALTO LARAN,Botadero Sector Chichicama,True,Recuperación,2018
+ICA,CHINCHA,CHAVIN,Botadero S/N,False,Recuperación,2018
+ICA,CHINCHA,CHAVIN,Botadero SN (Chavin),True,Recuperación,2026
+ICA,CHINCHA,EL CARMEN,Botadero Pampa del Carmen,False,Recuperación,2018
+ICA,CHINCHA,PUEBLO NUEVO,Botadero Sector Pampa de Ñoco,True,Recuperación,2018
+ICA,CHINCHA,SAN JUAN DE YANAC,Botadero S/N,False,Recuperación,2018
+ICA,CHINCHA,SAN PEDRO DE HUACARPANA,Botadero S/N,False,Recuperación,2018
+ICA,CHINCHA,SAN PEDRO DE HUACARPANA,Botadero Municipal,False,Recuperación,2018
+ICA,ICA,LA TINGUINA,Botadero Sector Lomo Largo,True,Recuperación,2018
+ICA,ICA,OCUCAJE,Botadero Sector Chiquerillo,True,Recuperación,2025
+ICA,ICA,SAN JOSE DE LOS MOLINOS,Botadero Sector El Boquerón,False,Recuperación,2018
+ICA,ICA,SAN JUAN BAUTISTA,Botadero Centro Poblado El Olivo,False,Recuperación,2018
+ICA,ICA,SANTIAGO,Botadero Las Antenas,False,Recuperación,2018
+ICA,ICA,SANTIAGO,Botadero Altura del Km 352.5 Carretera Panamericana Sur,False,Recuperación,2018
+ICA,ICA,SANTIAGO,Botadero altura del Km 344 Carretera Panamericana Sur,False,Recuperación,2018
+ICA,ICA,YAUCA DEL ROSARIO,Botadero Centro Poblado de Santuario,False,Recuperación,2018
+ICA,ICA,YAUCA DEL ROSARIO,Botadero altura de Km 5 Trayecto Ica-Pampahuasi,False,Recuperación,2018
+ICA,ICA,YAUCA DEL ROSARIO,Botadero Municipal,True,Recuperación,2018
+ICA,ICA,YAUCA DEL ROSARIO,Botadero Municipal,True,Recuperación,2018
+ICA,ICA,YAUCA DEL ROSARIO,Botadero Santuario,True,Recuperación,2022
+ICA,ICA,YAUCA DEL ROSARIO,Botadero Casa Blanca,False,Recuperación,2023
+ICA,NASCA,CHANGUILLO,Botadero S/N,True,Recuperación,2018
+ICA,NASCA,EL INGENIO,Botadero Centro Poblado El Estudiante,True,Recuperación,2018
+ICA,NASCA,MARCONA,Botadero Sector Orcona,False,Recuperación,2018
+ICA,NASCA,NASCA,Botadero Sector Cerrillo mancha verde,True,Recuperación,2018
+ICA,NASCA,NASCA,Botadero Municipal centro Poblado Orcona-Sector El Trigal II,True,Recuperación,2023
+ICA,NASCA,VISTA ALEGRE,Botadero Sector Las Lomas,True,Recuperación,2018
+ICA,PALPA,LLIPATA,Botadero altura del Km 413.5 Carretera Panamerica Sur,True,Recuperación,2018
+ICA,PALPA,RIO GRANDE,Botadero Sector El Pernil,True,Recuperación,2018
+ICA,PALPA,RIO GRANDE,Botadero Sector La Isla,True,Recuperación,2018
+ICA,PALPA,SANTA CRUZ,Botadero S/N,True,Recuperación,2018
+ICA,PALPA,TIBILLO,Botadero Sector Chochoca,True,Recuperación,2018
+ICA,PISCO,HUANCANO,Botadero altura del Km 70 Carretera Libertadores Wari,False,Recuperación,2018
+ICA,PISCO,HUMAY,Botadero S/N,True,Recuperación,2018
+ICA,PISCO,INDEPENDENCIA,Botadero Sector Lomas de Cabeza,True,Recuperación,2018
+ICA,PISCO,PARACAS,Botadero altura del Km 9.5 Carretera Santana Chiri,True,Recuperación,2018
+ICA,PISCO,SAN ANDRES,Botadero Fundo Santa Martha,True,Recuperación,2018
+ICA,PISCO,SAN ANDRES,Botadero S/N,True,Recuperación,2018
+ICA,PISCO,SAN CLEMENTE,Botadero Sector Caucato,True,Recuperación,2018
+ICA,PISCO,TUPAC AMARU INCA,Botadero Sector Pampa de Ocas,True,Recuperación,2018
+JUNIN,CHANCHAMAYO,CHANCHAMAYO,Botadero Sector Pampa Michi,False,Recuperación,2018
+JUNIN,CHANCHAMAYO,PERENE,Botadero Cerro Gavilán,False,Recuperación,2018
+JUNIN,CHANCHAMAYO,PICHANAQUI,Botadero Alto Kimiriki,False,Reconversión,2018
+JUNIN,CHANCHAMAYO,SAN LUIS DE SHUARO,Botadero Puñizas,False,Recuperación,2018
+JUNIN,CHANCHAMAYO,SAN LUIS DE SHUARO,Botadero Municipal Pampa Rica,False,Recuperación,2021
+JUNIN,CHANCHAMAYO,SAN RAMON,Botadero San Juan de Tulumayo,False,Reconversión,2018
+JUNIN,CHANCHAMAYO,VITOC,Botadero Piedra Blanca,False,Recuperación,2018
+JUNIN,CHUPACA,AHUAC,Botadero Alanya,False,Recuperación,2018
+JUNIN,CHUPACA,CHONGOS BAJO,Botadero Chongos Bajo,False,Recuperación,2022
+JUNIN,CHUPACA,HUACHAC,Botadero Municipal,False,Recuperación,2018
+JUNIN,CHUPACA,HUAMANCACA CHICO,Botadero Paraje Huascan,False,Reconversión,2018
+JUNIN,CHUPACA,HUAMANCACA CHICO,Botadero Común,False,Recuperación,2018
+JUNIN,CHUPACA,SAN JUAN DE JARPA,Botadero Huntaypampa,True,Recuperación,2018
+JUNIN,CHUPACA,SAN JUAN DE JARPA,Botadero La Quebrada Jarpa,False,Recuperación,2022
+JUNIN,CHUPACA,YANACANCHA,Botadero Centro,False,Recuperación,2018
+JUNIN,CONCEPCION,ACO,Botadero Machairon,False,Recuperación,2018
+JUNIN,CONCEPCION,ANDAMARCA,Botadero Sector Yialula,False,Recuperación,2018
+JUNIN,CONCEPCION,ANDAMARCA,Botadero Verde Pampa,False,Recuperación,2021
+JUNIN,CONCEPCION,ANDAMARCA,Botadero Cuchos Loma,False,Recuperación,2026
+JUNIN,CONCEPCION,CHAMBARA,Botadero Lamblaspuquio,True,Recuperación,2018
+JUNIN,CONCEPCION,COCHAS,Botadero Salviapata,False,Recuperación,2018
+JUNIN,CONCEPCION,COMAS,Botadero Malcopata/Paraje Illpa,False,Recuperación,2018
+JUNIN,CONCEPCION,HEROINAS TOLEDO,Botadero Mushcapata,False,Recuperación,2022
+JUNIN,CONCEPCION,MANZANARES,Botadero Mata Cruz,True,Recuperación,2018
+JUNIN,CONCEPCION,MARISCAL CASTILLA,Botadero Tiripata,False,Recuperación,2018
+JUNIN,CONCEPCION,MATAHUASI,Botadero Huamanhuaca,True,Recuperación,2018
+JUNIN,CONCEPCION,MITO,Botadero Barrio Junín,False,Recuperación,2018
+JUNIN,CONCEPCION,ORCOTUNA,Botadero La Isla,False,Recuperación,2018
+JUNIN,CONCEPCION,SAN JOSE DE QUERO,Botadero Chicche Corral,False,Recuperación,2018
+JUNIN,CONCEPCION,SANTA ROSA DE OCOPA,Botadero Aylapampa,False,Recuperación,2018
+JUNIN,HUANCAYO,CARHUACALLANGA,Botadero Carhuacallanga,True,Recuperación,2018
+JUNIN,HUANCAYO,CHACAPAMPA,Botadero S/N,False,Recuperación,2018
+JUNIN,HUANCAYO,CHACAPAMPA,Botadero Carahuayo,False,Recuperación,2025
+JUNIN,HUANCAYO,CHICCHE,Botadero paraje Condorey,False,Recuperación,2025
+JUNIN,HUANCAYO,CHILCA,Botadero Barrio Progreso,False,Recuperación,2018
+JUNIN,HUANCAYO,CHILCA,Botadero Mayopampa,False,Recuperación,2023
+JUNIN,HUANCAYO,CHONGOS ALTO,Botadero Paraje Santa Rosa,False,Reconversión,2018
+JUNIN,HUANCAYO,CHUPURO,Botadero Paraje Playa Hermosa,False,Recuperación,2018
+JUNIN,HUANCAYO,COLCA,Botadero Paraje Alfacorral,False,Recuperación,2018
+JUNIN,HUANCAYO,EL TAMBO,Botadero El Edén,False,Recuperación,2021
+JUNIN,HUANCAYO,EL TAMBO,Botadero La Mejorada,False,Recuperación,2018
+JUNIN,HUANCAYO,EL TAMBO,Botadero El Porvenir,False,Recuperación,2018
+JUNIN,HUANCAYO,EL TAMBO,Botadero Agua de las Virgenes,False,Recuperación,2021
+JUNIN,HUANCAYO,HUACRAPUQUIO,Botadero Cerro Cuchimachay,False,Reconversión,2018
+JUNIN,HUANCAYO,HUACRAPUQUIO,Botadero Tucushatana,False,Recuperación,2025
+JUNIN,HUANCAYO,HUALHUAS,Botadero Paraje Chauca,False,Recuperación,2018
+JUNIN,HUANCAYO,HUANCAN,Botadero Barrio Mantaro,False,Recuperación,2018
+JUNIN,HUANCAYO,HUANCAN,Botadero Sector Mayopampa,False,Recuperación,2024
+JUNIN,HUANCAYO,HUASICANCHA,Botadero Santa Rosa,True,Recuperación,2018
+JUNIN,HUANCAYO,HUAYUCACHI,Botadero Cerro San Cristóbal,True,Recuperación,2018
+JUNIN,HUANCAYO,INGENIO,Botadero Sector Rumichaca,False,Recuperación,2018
+JUNIN,HUANCAYO,PARIAHUANCA,Botadero Sector Chuyas,False,Recuperación,2025
+JUNIN,HUANCAYO,PARIAHUANCA,Botadero en el Sector Lampa (Borde de una Carretera),False,Recuperación,2018
+JUNIN,HUANCAYO,PILCOMAYO,Botadero Municipal,False,Recuperación,2018
+JUNIN,HUANCAYO,PUCARA,Botadero Sector Cochabamba,False,Recuperación,2022
+JUNIN,HUANCAYO,PUCARA,Botadero Retamal,False,Recuperación,2018
+JUNIN,HUANCAYO,QUICHUAY,Botadero Torrio,False,Reconversión,2018
+JUNIN,HUANCAYO,SAN AGUSTIN,Botadero Sector Coyllor,True,Recuperación,2021
+JUNIN,HUANCAYO,SAN JERONIMO DE TUNAN,Botadero Mayopata,False,Recuperación,2018
+JUNIN,HUANCAYO,SANO,Botadero Paraje Cruzpata,False,Recuperación,2018
+JUNIN,HUANCAYO,SANO,Botadero Barrio Pampa,False,Recuperación,2018
+JUNIN,HUANCAYO,SAPALLANGA,Botadero Paraje Iscocusana,True,Recuperación,2018
+JUNIN,HUANCAYO,SICAYA,Botadero Patancoto,True,Recuperación,2018
+JUNIN,HUANCAYO,SICAYA,Botadero El Molino,False,Recuperación,2021
+JUNIN,HUANCAYO,VIQUES,Botadero Sector Playa Hermosa,False,Recuperación,2024
+JUNIN,JAUJA,ACOLLA,Botadero Paraje Shunta,False,Recuperación,2018
+JUNIN,JAUJA,APATA,Botadero Huamantanga,False,Recuperación,2018
+JUNIN,JAUJA,ATAURA,Botadero Sector Lucle,True,Recuperación,2021
+JUNIN,JAUJA,CANCHAYLLO,Botadero Juchapata,False,Recuperación,2018
+JUNIN,JAUJA,CURICACA,Botadero Anchipampa,False,Recuperación,2018
+JUNIN,JAUJA,HUAMALI,Botadero Paraje Derecho,False,Recuperación,2018
+JUNIN,JAUJA,HUARIPAMPA,Botadero Challhua,True,Recuperación,2018
+JUNIN,JAUJA,HUARIPAMPA,Botadero Sector Isla Grande,False,Recuperación,2025
+JUNIN,JAUJA,HUERTAS,Botadero detrás del Cementerio 1,False,Recuperación,2025
+JUNIN,JAUJA,JANJAILLO,Botadero Chapacamino,False,Recuperación,2018
+JUNIN,JAUJA,JANJAILLO,Botadero Rirpa,False,Recuperación,2025
+JUNIN,JAUJA,JULCAN,Botadero Purijrumi (Tinyajcucho),False,Recuperación,2018
+JUNIN,JAUJA,LEONOR ORDONEZ,Botadero Puente Comunal,False,Recuperación,2025
+JUNIN,JAUJA,LLOCLLAPAMPA,"Botadero Yacupata, Cuncupuro, Desamparados",False,Recuperación,2018
+JUNIN,JAUJA,LLOCLLAPAMPA,Área de disposición final del distrito de Llocllapampa,False,Reconversión,2024
+JUNIN,JAUJA,MASMA,Botadero Sector Quishuarnioc,False,Recuperación,2022
+JUNIN,JAUJA,MASMA CHICCHE,Area de disposicion final de RRSS de la Municipalidad distrital de Masma Chicche,False,Recuperación,2024
+JUNIN,JAUJA,MONOBAMBA,Botadero Barrio Santa Rosa,False,Recuperación,2018
+JUNIN,JAUJA,MONOBAMBA,Botadero Sector Culipampa,False,Reconversión,2023
+JUNIN,JAUJA,MUQUI,Botadero Cementerio de Muqui,True,Reconversión,2018
+JUNIN,JAUJA,MUQUIYAUYO,Botadero Sector Palo Seco,False,Recuperación,2018
+JUNIN,JAUJA,PACA,Botadero Incañan,False,Recuperación,2018
+JUNIN,JAUJA,PACCHA,Botadero Culujo,False,Recuperación,2018
+JUNIN,JAUJA,PACCHA,Botadero Mito Pasana,False,Recuperación,2024
+JUNIN,JAUJA,PARCO,Botadero Mesapata,False,Recuperación,2024
+JUNIN,JAUJA,RICRAN,Botadero Uyuncuy,False,Recuperación,2021
+JUNIN,JAUJA,SAN LORENZO,Botadero La Isla,False,Recuperación,2018
+JUNIN,JAUJA,SAN LORENZO,Botadero San Lorenzo,False,Recuperación,2025
+JUNIN,JAUJA,SAN PEDRO DE CHUNAN,Botadero S/N,False,Recuperación,2018
+JUNIN,JAUJA,SAUSA,Botadero Macón,False,Recuperación,2018
+JUNIN,JAUJA,SAUSA,Botadero Yauyos Paraje Macón,False,Recuperación,2018
+JUNIN,JAUJA,SAUSA,Botadero Luli Isla,False,Recuperación,2024
+JUNIN,JAUJA,SINCOS,Botadero Sector Pirámide,False,Recuperación,2022
+JUNIN,JAUJA,TUNAN MARCA,Botadero Trocha Carrozable Hacia Pomacancha,False,Recuperación,2018
+JUNIN,JAUJA,TUNAN MARCA,Botadero Paraje Churriapampa,True,Recuperación,2025
+JUNIN,JAUJA,YAULI,Botadero Paraje Juñash,False,Recuperación,2024
+JUNIN,JUNIN,CARHUAMAYO,Botadero Estancia Acerocancha,False,Recuperación,2018
+JUNIN,JUNIN,JUNIN,Botadero Pampa Victoria,False,Recuperación,2018
+JUNIN,JUNIN,ONDORES,Botadero Ayac,False,Recuperación,2018
+JUNIN,JUNIN,ULCUMAYO,Botadero Paraje Canrullan,False,Recuperación,2018
+JUNIN,SATIPO,MAZAMARI-PANGOA,Botadero Sector Sonomoro,False,Recuperación,2018
+JUNIN,SATIPO,MAZAMARI-PANGOA,Botadero Centro Ecoturístico de Protección Ambiental,False,Reconversión,2018
+JUNIN,SATIPO,MAZAMARI-PANGOA,Botadero Fundo El Labriego,False,Recuperación,2018
+JUNIN,SATIPO,PAMPA HERMOSA,Botadero La Cumbre,False,Recuperación,2018
+JUNIN,SATIPO,RIO NEGRO,Botadero La Rinconada,False,Recuperación,2018
+JUNIN,SATIPO,RIO NEGRO,Botadero La Paz,False,Recuperación,2018
+JUNIN,SATIPO,RIO TAMBO,Botadero Sector Vankori,False,Recuperación,2018
+JUNIN,SATIPO,RIO TAMBO,Botadero Puerto Ocopa,False,Recuperación,2018
+JUNIN,SATIPO,RIO TAMBO,Botadero Napati,False,Recuperación,2025
+JUNIN,SATIPO,RIO TAMBO,Botadero Valle Esmeralda,False,Recuperación,2025
+JUNIN,SATIPO,RIO TAMBO,Botadero Selva de Oro,False,Recuperación,2025
+JUNIN,SATIPO,RIO TAMBO,Área Degradada por residuos sólidos municipales Aoti,False,Recuperación,2026
+JUNIN,SATIPO,VIZCATAN DEL ENE,Botadero de Amazonas-Vizcatán del Ene,False,Recuperación,2023
+JUNIN,TARMA,ACOBAMBA,Botadero Yacujochana,False,Reconversión,2018
+JUNIN,TARMA,HUARICOLCA,Botadero de Anjush (Época de Lluvias),False,Recuperación,2018
+JUNIN,TARMA,HUARICOLCA,Botadero Sector Chuc Chun Chanca,False,Recuperación,2024
+JUNIN,TARMA,HUASAHUASI,Botadero Paraje San Juan Pata,False,Recuperación,2018
+JUNIN,TARMA,LA UNION,Botadero Sector Lutia 2,False,Recuperación,2018
+JUNIN,TARMA,PALCA,Botadero Municipal,False,Recuperación,2018
+JUNIN,TARMA,SAN PEDRO DE CAJAS,Botadero Muchanacusha,False,Recuperación,2018
+JUNIN,TARMA,SAN PEDRO DE CAJAS,Botadero S/N,False,Recuperación,2021
+JUNIN,TARMA,TAPO,Botadero Chaprinca,False,Recuperación,2018
+JUNIN,TARMA,TARMA,Botadero tarma,False,Recuperación,2026
+JUNIN,YAULI,CHACAPALPA,Botadero Mal Viento y Jaranaco,False,Reconversión,2018
+JUNIN,YAULI,HUAY-HUAY,Botadero Uñuc Machay,False,Recuperación,2018
+JUNIN,YAULI,LA OROYA,Botadero Huaripuquio,False,Recuperación,2018
+JUNIN,YAULI,MARCAPOMACOCHA,Botadero Huachac,False,Recuperación,2018
+JUNIN,YAULI,MOROCOCHA,Botadero Alpamina,False,Reconversión,2018
+JUNIN,YAULI,PACCHA,Botadero Masajcancha,False,Recuperación,2018
+JUNIN,YAULI,SANTA BARBARA DE CARHUACAYAN,Botadero Yanapaccha,False,Recuperación,2018
+JUNIN,YAULI,SANTA ROSA DE SACCO,Botadero Ticlacancha,False,Recuperación,2018
+JUNIN,YAULI,SUITUCANCHA,Botadero Rosa Cruz,False,Recuperación,2018
+JUNIN,YAULI,YAULI,Botadero Cuchihuasi,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,ASCOPE,Botadero La Calera,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,CASA GRANDE,Botadero Roma,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,CHICAMA,Botadero Sausal,True,Recuperación,2025
+LA LIBERTAD,ASCOPE,CHICAMA,Botadero Pozo Uno-Cartavio,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,CHICAMA,Botadero Sector El Cerro,False,Recuperación,2018
+LA LIBERTAD,ASCOPE,CHOCOPE,Botadero Sector Careaga,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,MAGDALENA DE CAO,Botadero Sector El Brujo,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,MAGDALENA DE CAO,Botadero Sector Playa La Boacana,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,MAGDALENA DE CAO,Botadero Municipal Sector Nuevo Ticmar,True,Recuperación,2023
+LA LIBERTAD,ASCOPE,PAIJAN,Botadero Sector La Hormiguita,True,Recuperación,2018
+LA LIBERTAD,ASCOPE,RAZURI,Botadero Nuevo Malabrigo,False,Recuperación,2018
+LA LIBERTAD,ASCOPE,SANTIAGO DE CAO,Botadero Las Huertas,True,Recuperación,2025
+LA LIBERTAD,BOLIVAR,BOLIVAR,Botadero Miskiyaku,False,Recuperación,2018
+LA LIBERTAD,BOLIVAR,BOLIVAR,Botadero Sector Ullachi,False,Recuperación,2023
+LA LIBERTAD,BOLIVAR,LONGOTEA,Botadero Sector El Horno,True,Recuperación,2018
+LA LIBERTAD,BOLIVAR,LONGOTEA,Botadero Sector Liván,True,Recuperación,2018
+LA LIBERTAD,BOLIVAR,UCUNCHA,Botadero Sector Chururco,False,Recuperación,2018
+LA LIBERTAD,CHEPEN,CHEPEN,Botadero Talambo,True,Recuperación,2018
+LA LIBERTAD,CHEPEN,PACANGA,Botadero Sector Cerro Blanco,True,Recuperación,2018
+LA LIBERTAD,CHEPEN,PUEBLO NUEVO,Botadero Sector El Tablazo,True,Recuperación,2018
+LA LIBERTAD,GRAN CHIMU,CASCAS,Botadero Palo Santo,True,Recuperación,2018
+LA LIBERTAD,GRAN CHIMU,LUCMA,Botadero Sector Los Pulites,True,Recuperación,2018
+LA LIBERTAD,GRAN CHIMU,MARMOT,Botadero Sector El Choloque,True,Recuperación,2018
+LA LIBERTAD,GRAN CHIMU,SAYAPULLO,Botadero Sector Higuspampa,True,Recuperación,2018
+LA LIBERTAD,JULCAN,CALAMARCA,Botadero Municipal Sector Mexico,True,Recuperación,2025
+LA LIBERTAD,JULCAN,CALAMARCA,Botadero Calamarca 2,True,Recuperación,2024
+LA LIBERTAD,JULCAN,CARABAMBA,Botadero Sector Cruz Amarilla,False,Recuperación,2018
+LA LIBERTAD,JULCAN,HUASO,Botadero S/N,False,Recuperación,2018
+LA LIBERTAD,JULCAN,HUASO,Botadero Calamarca,False,Recuperación,2018
+LA LIBERTAD,JULCAN,JULCAN,Botadero Caserios de San Pedro y Chuan,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,AGALLPAMPA,Botadero Sector Llamobamba,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,AGALLPAMPA,Botadero Sector Quisday,False,Recuperación,2024
+LA LIBERTAD,OTUZCO,CHARAT,Botadero La Gacha,True,Recuperación,2018
+LA LIBERTAD,OTUZCO,HUARANCHAL,Botadero Sector El Huayco,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,LA CUESTA,Botadero Sector El Arco,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,LA CUESTA,Botadero Sector El Arco 2,True,Recuperación,2025
+LA LIBERTAD,OTUZCO,MACHE,Botadero Sector La Soledad,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,OTUZCO,Botadero Sector Nanday Mejico,True,Recuperación,2018
+LA LIBERTAD,OTUZCO,PARANDAY,Botadero Paranday,True,Recuperación,2018
+LA LIBERTAD,OTUZCO,SALPO,Botadero Sector Piedras Quemadas,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,SALPO,Botadero Sector Los Ushcos,False,Recuperación,2025
+LA LIBERTAD,OTUZCO,SINSICAP,Botadero Rivera del Rio Sinsicap,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,SINSICAP,Botadero Sector Caysharin,False,Recuperación,2025
+LA LIBERTAD,OTUZCO,SINSICAP,Botadero Caysharin,True,Recuperación,2026
+LA LIBERTAD,OTUZCO,USQUIL,Botadero El Horcon,False,Recuperación,2018
+LA LIBERTAD,OTUZCO,USQUIL,Botadero El Conil,True,Recuperación,2022
+LA LIBERTAD,PACASMAYO,GUADALUPE,Botadero Sector El Portachuelo,True,Recuperación,2018
+LA LIBERTAD,PACASMAYO,GUADALUPE,Botadero Nuevo portachuelo,False,Recuperación,2025
+LA LIBERTAD,PACASMAYO,JEQUETEPEQUE,Botadero Sector Las Palmeras,True,Recuperación,2018
+LA LIBERTAD,PACASMAYO,JEQUETEPEQUE,Botadero Sector Alto Jequetepeque,True,Recuperación,2018
+LA LIBERTAD,PACASMAYO,SAN JOSE,Botadero Sector Cerro San José,True,Recuperación,2018
+LA LIBERTAD,PACASMAYO,SAN JOSE,Botadero Cerro San José,True,Recuperación,2018
+LA LIBERTAD,PACASMAYO,SAN PEDRO DE LLOC,Botadero Cebruna,True,Recuperación,2018
+LA LIBERTAD,PATAZ,BULDIBUYO,Botadero Palomar,True,Recuperación,2018
+LA LIBERTAD,PATAZ,CHILLIA,Botadero Sector Taulish,True,Recuperación,2018
+LA LIBERTAD,PATAZ,CHILLIA,Botadero Sector Rago,False,Recuperación,2025
+LA LIBERTAD,PATAZ,HUANCASPATA,Botadero Sector Murmuncho,True,Recuperación,2018
+LA LIBERTAD,PATAZ,HUAYLILLAS,Botadero Sector La Plata,False,Recuperación,2018
+LA LIBERTAD,PATAZ,HUAYLILLAS,Botadero Macull,True,Recuperación,2024
+LA LIBERTAD,PATAZ,HUAYO,Botadero Anexo Santa Cruz,False,Recuperación,2018
+LA LIBERTAD,PATAZ,PARCOY,Botadero Sector Llaupa,True,Recuperación,2018
+LA LIBERTAD,PATAZ,PARCOY,Botadero Collona,False,Recuperación,2025
+LA LIBERTAD,PATAZ,PATAZ,Botadero Sector Pushgil,True,Recuperación,2018
+LA LIBERTAD,PATAZ,PATAZ,Botadero Calquiche,False,Reconversión,2022
+LA LIBERTAD,PATAZ,PIAS,Botadero Sector Quebrada Trancahuayco,False,Recuperación,2018
+LA LIBERTAD,PATAZ,PIAS,Botadero Quizancruz,True,Recuperación,2023
+LA LIBERTAD,PATAZ,SANTIAGO DE CHALLAS,Botadero Sector Pumya,True,Recuperación,2018
+LA LIBERTAD,PATAZ,TAURIJA,Botadero Sector Los Sharpos,False,Recuperación,2018
+LA LIBERTAD,PATAZ,TAYABAMBA,Botadero Urpaycito,False,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,CHUGAY,Botadero Sector Chogollpaque,True,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,CHUGAY,Botadero Huaguil,False,Recuperación,2026
+LA LIBERTAD,SANCHEZ CARRION,COCHORCO,Botadero Sector Lucma,True,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,CURGOS,Botadero Sector Cruz Verde-la Conga,False,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,HUAMACHUCO,Botadero Coipín,False,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,MARCABAL,Botadero Sector El Minyo,True,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,SANAGORAN,Botadero Sanagoran,True,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,SANAGORAN,Botadero Sector Shilomas,False,Recuperación,2025
+LA LIBERTAD,SANCHEZ CARRION,SANAGORAN,Botadero Sector Agopampa,False,Recuperación,2025
+LA LIBERTAD,SANCHEZ CARRION,SARIN,Botadero Sector El Tunel,False,Recuperación,2018
+LA LIBERTAD,SANCHEZ CARRION,SARIN,Botadero Sector El Alizo,False,Recuperación,2025
+LA LIBERTAD,SANCHEZ CARRION,SARTIMBAMBA,Botadero Palo Redondo,False,Recuperación,2022
+LA LIBERTAD,SANCHEZ CARRION,SARTIMBAMBA,Botadero Sector Blanquillo,True,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,ANGASMARCA,Botadero Sector El Totoropampa,True,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,CACHICADAN,Botadero Sector La Concepción,True,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,MOLLEBAMBA,Botadero Sector Charrapampa,True,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,MOLLEBAMBA,Botadero de la Municipalidad distrital de Mollebamba,True,Recuperación,2024
+LA LIBERTAD,SANTIAGO DE CHUCO,MOLLEPATA,Botadero Sector Paccha,False,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,QUIRUVILCA,Botadero Sector Graciela,False,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,SANTA CRUZ DE CHUCA,Botadero Sector Chorobal,False,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,SANTIAGO DE CHUCO,Botadero Ñuñuma,False,Recuperación,2018
+LA LIBERTAD,SANTIAGO DE CHUCO,SITABAMBA,Botadero Rivera del Rio San Sebastián,False,Recuperación,2018
+LA LIBERTAD,TRUJILLO,EL PORVENIR,Botadero El Murallón-Inoperativo,False,Recuperación,2018
+LA LIBERTAD,TRUJILLO,HUANCHACO,Botadero El Milagro,True,Recuperación,2018
+LA LIBERTAD,TRUJILLO,HUANCHACO,El Rellenito,True,Recuperación,2021
+LA LIBERTAD,TRUJILLO,LAREDO,Botadero San Idelfonso,True,Recuperación,2018
+LA LIBERTAD,TRUJILLO,POROTO,Botadero Sector Tres Cruces,True,Recuperación,2018
+LA LIBERTAD,TRUJILLO,POROTO,Botadero Compartición,False,Recuperación,2023
+LA LIBERTAD,TRUJILLO,SIMBAL,Botadero Sector Playa Ñary,True,Recuperación,2018
+LA LIBERTAD,VIRU,CHAO,Botadero Sector El Tizal,True,Recuperación,2018
+LA LIBERTAD,VIRU,GUADALUPITO,Botadero Sector Proyecto Chavimochic,True,Recuperación,2018
+LA LIBERTAD,VIRU,VIRU,Botadero Zaraque,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,CAYALTI,Botadero Municipal Sector Pampas de Songoy,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,CHONGOYAPE,Botadero Municipal Chongoyape-Cerro Racarrumi,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,LAGUNAS,Botadero Sector Cerro La Guitarra,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,LAGUNAS,Botadero Cerro La Guitarra II,True,Recuperación,2025
+LAMBAYEQUE,CHICLAYO,NUEVA ARICA,Botadero Municipal Nueva Arica-Leque Leque,True,Recuperación,2021
+LAMBAYEQUE,CHICLAYO,NUEVA ARICA,Botadero Municipal de Nueva Arica,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,OYOTUN,Botadero Municipal Nueva Esperanza,False,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,OYOTUN,Botadero Municipal San Juan,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PATAPO,Botadero Posope Alto,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PICSI,Botadero Sector Medano,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PIMENTEL,Botadero Municipal Santa Rosa Sector Laguna Chica,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PIMENTEL,Botadero Municipal Monsefú-Sorrocote,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PIMENTEL,Botadero Municipal Pimentel,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,POMALCA,Botadero Municipal Pomalca-Carretera al C.P San Luis,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,PUCALA,Botadero Huacachina,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,SANA,Botadero Pampas de Reque,True,Recuperación,2018
+LAMBAYEQUE,CHICLAYO,TUMAN,Botadero Campo Pavillas,False,Recuperación,2018
+LAMBAYEQUE,FERRENAFE,CANARIS,Botadero Sector Alisal,True,Recuperación,2018
+LAMBAYEQUE,FERRENAFE,CANARIS,Botadero Sector Densilde,False,Recuperación,2023
+LAMBAYEQUE,FERRENAFE,INCAHUASI,Botadero Sector Danzana,False,Recuperación,2018
+LAMBAYEQUE,FERRENAFE,MANUEL ANTONIO MESONES MURO,Botadero Canteras de Santa Lucia,True,Recuperación,2018
+LAMBAYEQUE,FERRENAFE,PITIPO,Botadero Sector Tamborreal,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,CHOCHOPE,Botadero Huaca Colorada,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,ILLIMO,Botadero Sector Culpón,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,JAYANCA,Botadero del Sector Zurita de la Viña,True,Recuperación,2023
+LAMBAYEQUE,LAMBAYEQUE,LAMBAYEQUE,Botadero Municipal de Lambayeque,False,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,MOCHUMI,Botadero Municipal Sector Huaca Quemada,False,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,MORROPE,Botadero Municipal Morrope,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,MOTUPE,Botadero Sector Salitral,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,MOTUPE,Botadero Sector Los Tres Cerritos,True,Recuperación,2022
+LAMBAYEQUE,LAMBAYEQUE,OLMOS,Botadero Sector La Juliana,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,PACORA,Botadero Caserío Casa Embarrada,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,SALAS,Botadero Asentamiento Humano-José Olaya,True,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,SAN JOSE,Botadero Sector Huaca Blanca,False,Recuperación,2018
+LAMBAYEQUE,LAMBAYEQUE,SAN JOSE,Botadero Sector Huaca Blanca-Pampa de Perros,False,Recuperación,2023
+LAMBAYEQUE,LAMBAYEQUE,TUCUME,Botadero Caserío Torromotal,False,Recuperación,2018
+LIMA,BARRANCA,PARAMONGA,Botadero Pararín,True,Recuperación,2018
+LIMA,BARRANCA,PARAMONGA,Botadero Cerro la Horca,True,Recuperación,2021
+LIMA,CAJATAMBO,CAJATAMBO,Botadero Sector Ayajilca,False,Recuperación,2018
+LIMA,CAJATAMBO,CAJATAMBO,Botadero Tupiac,True,Recuperación,2025
+LIMA,CAJATAMBO,COPA,Botadero Churcaparumi,True,Recuperación,2025
+LIMA,CAJATAMBO,COPA,Botadero Pueblo Viejo,True,Recuperación,2025
+LIMA,CAJATAMBO,HUANCAPON,Botadero Quebrada Murpa,False,Recuperación,2018
+LIMA,CANTA,ARAHUAY,Botadero La Tranca,False,Recuperación,2018
+LIMA,CANTA,CANTA,Botadero Pachacamac,False,Recuperación,2018
+LIMA,CANTA,HUAMANTANGA,Botadero Piscocoto,True,Recuperación,2018
+LIMA,CANTA,HUAMANTANGA,Botadero Quipan,False,Recuperación,2025
+LIMA,CANTA,HUAMANTANGA,Botadero Marco,False,Recuperación,2025
+LIMA,CANTA,HUAROS,Botadero Chaucruz,True,Recuperación,2018
+LIMA,CANTA,HUAROS,Botadero Sector Pachachaca,True,Recuperación,2025
+LIMA,CANTA,LACHAQUI,Botadero Sector Parcaqui,False,Recuperación,2018
+LIMA,CANTA,SANTA ROSA DE QUIVES,Botadero Quilca,False,Recuperación,2018
+LIMA,CANETE,ASIA,Botadero de Sarapampa,False,Recuperación,2018
+LIMA,CANETE,CALANGO,Botadero San Juan de Correviento,False,Recuperación,2022
+LIMA,CANETE,CERRO AZUL,Botadero Cerro Azul,True,Recuperación,2018
+LIMA,CANETE,CHILCA,Botadero Pampa Calanguillo,True,Recuperación,2018
+LIMA,CANETE,COAYLLO,Botadero Piedra Hueca,True,Recuperación,2021
+LIMA,CANETE,IMPERIAL,Botadero Cerro Candela,True,Recuperación,2018
+LIMA,CANETE,IMPERIAL,Botadero Cerro Gallito,False,Recuperación,2018
+LIMA,CANETE,LUNAHUANA,Botadero Santa Rosa,False,Recuperación,2018
+LIMA,CANETE,MALA,Botadero Zona de Calicanto,True,Recuperación,2018
+LIMA,CANETE,MALA,Botadero Pampa Lumbreras,False,Recuperación,2021
+LIMA,CANETE,NUEVO IMPERIAL,Botadero Municipal Centro Poblado Augusto B. Leguia,False,Recuperación,2018
+LIMA,CANETE,NUEVO IMPERIAL,Botadero Municipal Centro Poblado Carmen Alto,True,Recuperación,2018
+LIMA,CANETE,QUILMANA,Botadero Pampas de Quilmana,False,Recuperación,2018
+LIMA,CANETE,SAN ANTONIO,Botadero de San Antonio-Cañete,False,Recuperación,2022
+LIMA,CANETE,SAN VICENTE DE CANETE,Botadero de Pampa Clarita,False,Recuperación,2021
+LIMA,CANETE,SANTA CRUZ DE FLORES,Botadero Quebrada Jaboncillo-Cañete,False,Recuperación,2023
+LIMA,CANETE,ZUNIGA,Botadero Municipal de Zuñiga,False,Recuperación,2022
+LIMA,HUARAL,ATAVILLOS ALTO,Botadero Pasac,True,Recuperación,2025
+LIMA,HUARAL,ATAVILLOS ALTO,Botadero Calera,False,Recuperación,2025
+LIMA,HUARAL,ATAVILLOS ALTO,Botadero Maranio,False,Recuperación,2018
+LIMA,HUARAL,ATAVILLOS BAJO,Botadero Sector Callao,True,Recuperación,2025
+LIMA,HUARAL,ATAVILLOS BAJO,Botadero Culluti Rumi,False,Recuperación,2025
+LIMA,HUARAL,ATAVILLOS BAJO,Botadero Sococoto,False,Recuperación,2018
+LIMA,HUARAL,ATAVILLOS BAJO,Botadero Ucana,False,Recuperación,2018
+LIMA,HUARAL,ATAVILLOS BAJO,Botadero Quinchiura,False,Recuperación,2018
+LIMA,HUARAL,CHANCAY,Botadero Grita Lobos,True,Recuperación,2018
+LIMA,HUARAL,CHANCAY,Botadero El Cascajo,False,Recuperación,2018
+LIMA,HUARAL,HUARAL,Botadero Pampa de Los Perros,True,Recuperación,2018
+LIMA,HUARAL,IHUARI,Botadero Mitochupa,False,Recuperación,2018
+LIMA,HUARAL,LAMPIAN,Botadero La Cruz,False,Recuperación,2018
+LIMA,HUARAL,LAMPIAN,Botadero Sector Acay,False,Reconversión,2025
+LIMA,HUARAL,PACARAOS,Botadero Hualish,False,Recuperación,2018
+LIMA,HUARAL,PACARAOS,Botadero Chiraparca,False,Recuperación,2018
+LIMA,HUARAL,PACARAOS,Botadero Tampoquiro,False,Recuperación,2025
+LIMA,HUARAL,SAN MIGUEL DE ACOS,Botadero Sector Palca,True,Recuperación,2018
+LIMA,HUARAL,SAN MIGUEL DE ACOS,Botadero Palca II (Botadero Municipal Palca 2),True,Recuperación,2025
+LIMA,HUARAL,SANTA CRUZ DE ANDAMARCA,Botadero Sector Huancayo,False,Recuperación,2018
+LIMA,HUARAL,SANTA CRUZ DE ANDAMARCA,Botadero Yargyacu,False,Recuperación,2025
+LIMA,HUARAL,SUMBILCA,Botadero Sector Tuctucancha,False,Recuperación,2018
+LIMA,HUARAL,SUMBILCA,Botadero Sector Huayrumpampa,False,Recuperación,2018
+LIMA,HUARAL,VEINTISIETE DE NOVIEMBRE,Botadero Sector Pishcahuana,False,Recuperación,2018
+LIMA,HUAROCHIRI,ANTIOQUIA,Botadero de Antioquia,False,Recuperación,2018
+LIMA,HUAROCHIRI,CHICLA,Botadero Municipal de Chicla,False,Reconversión,2021
+LIMA,HUAROCHIRI,HUACHUPAMPA,Botadero Huaylilpo,False,Recuperación,2024
+LIMA,HUAROCHIRI,HUANZA,Botadero Chicla,False,Recuperación,2018
+LIMA,HUAROCHIRI,HUANZA,Botadero Sector Aulincha,False,Reconversión,2025
+LIMA,HUAROCHIRI,HUAROCHIRI,Botadero Sector Agua Pampa,False,Recuperación,2018
+LIMA,HUAROCHIRI,MATUCANA,Botadero Sector Eduardo de Habich,False,Recuperación,2018
+LIMA,HUAROCHIRI,SAN ANDRES DE TUPICOCHA,Botadero Tupicocha,False,Recuperación,2018
+LIMA,HUAROCHIRI,SAN BARTOLOME,Botadero Municipal,False,Recuperación,2018
+LIMA,HUAROCHIRI,SAN JUAN DE IRIS,Botadero Huiticocha,True,Recuperación,2018
+LIMA,HUAROCHIRI,SAN JUAN DE TANTARANCHE,Botadero Mandagua,False,Recuperación,2021
+LIMA,HUAROCHIRI,SAN MATEO,Botadero Sector Ayar Alto,True,Recuperación,2018
+LIMA,HUAROCHIRI,SAN PEDRO DE CASTA,Botadero Tomanguía,False,Recuperación,2018
+LIMA,HUAROCHIRI,SAN PEDRO DE LARAOS,Botadero Cerro Culipampa,True,Recuperación,2018
+LIMA,HUAROCHIRI,SANGALLAYA,Botadero Sangallaya,False,Recuperación,2018
+LIMA,HUAROCHIRI,SANTA CRUZ DE COCACHACRA,Botadero Sector Agua Salada,False,Recuperación,2018
+LIMA,HUAROCHIRI,SANTIAGO DE TUNA,Botadero Cervamtes,False,Recuperación,2018
+LIMA,HUAURA,AMBAR,Botadero Sector Somsa,True,Recuperación,2018
+LIMA,HUAURA,HUACHO,Botadero Pampa Salinas,True,Recuperación,2018
+LIMA,HUAURA,LEONCIO PRADO,Botadero Sector Crucirca,True,Recuperación,2018
+LIMA,HUAURA,PACCHO,Botadero Municipal,False,Recuperación,2018
+LIMA,HUAURA,SAYAN,Botadero Pampa Maní,True,Recuperación,2018
+LIMA,LIMA,ANCON,Botadero La Vizcacha,True,Recuperación,2021
+LIMA,LIMA,CARABAYLLO,Nueva Jerusalén,False,Recuperación,2021
+LIMA,LIMA,CHACLACAYO,Botadero Municipal,False,Recuperación,2021
+LIMA,LIMA,LIMA,El Montón,True,Recuperación,2021
+LIMA,LIMA,LURIGANCHO,Botadero La Vizcachera,False,Recuperación,2025
+LIMA,OYON,ANDAJES,Botadero Pilcahuay,True,Recuperación,2018
+LIMA,OYON,CAUJUL,Botadero Comín,True,Recuperación,2018
+LIMA,OYON,COCHAMARCA,Botadero Agopununan,True,Recuperación,2022
+LIMA,OYON,COCHAMARCA,Botadero Quiquis,False,Recuperación,2026
+LIMA,OYON,OYON,Botadero Sector de Yanapacza,False,Recuperación,2018
+LIMA,OYON,OYON,Botadero Sector Moroc,True,Recuperación,2018
+LIMA,OYON,OYON,Botadero de Rumari,False,Recuperación,2021
+LIMA,YAUYOS,AYAVIRI,Botadero Huayllasi,False,Recuperación,2021
+LIMA,YAUYOS,AZANGARO,Botadero Marcocancha,False,Recuperación,2018
+LIMA,YAUYOS,CACRA,Botadero La Peña,False,Recuperación,2018
+LIMA,YAUYOS,CARANIA,Botadero Carania,False,Recuperación,2025
+LIMA,YAUYOS,CATAHUASI,Botadero detrás del Cementerio,False,Recuperación,2018
+LIMA,YAUYOS,CHOCOS,Botadero Tupe,False,Recuperación,2018
+LIMA,YAUYOS,HONGOS,Botadero Pampachacra,False,Recuperación,2018
+LIMA,YAUYOS,HUAMPARA,Botadero Huampará,False,Recuperación,2021
+LIMA,YAUYOS,HUANCAYA,Botadero Huancaya,False,Recuperación,2018
+LIMA,YAUYOS,HUANGASCAR,Botadero Huchucurume,False,Recuperación,2021
+LIMA,YAUYOS,LARAOS,Botadero Municipal,False,Recuperación,2018
+LIMA,YAUYOS,MADEAN,Botadero Quebrada Uyru Rume,False,Recuperación,2021
+LIMA,YAUYOS,MIRAFLORES,Botadero Miraflores,False,Recuperación,2025
+LIMA,YAUYOS,OMAS,Botadero Pan de Azúcar,True,Recuperación,2018
+LIMA,YAUYOS,PUTINZA,Botadero Putinza,True,Recuperación,2022
+LIMA,YAUYOS,QUINCHES,Botadero Paraje de Urcos,False,Recuperación,2018
+LIMA,YAUYOS,QUINOCAY,Botadero Astacocha,False,Recuperación,2018
+LIMA,YAUYOS,QUINOCAY,Botadero Cacaito,True,Recuperación,2026
+LIMA,YAUYOS,SAN PEDRO DE PILAS,Botadero Piedra Cilindro,False,Recuperación,2018
+LIMA,YAUYOS,VINAC,Botadero Huchurume,False,Recuperación,2021
+LIMA,YAUYOS,VITIS,Botadero Vitis,False,Recuperación,2025
+LIMA,YAUYOS,YAUYOS,Botadero Huayñia,True,Recuperación,2018
+LIMA,YAUYOS,YAUYOS,Botadero Huayñia 2,False,Reconversión,2023
+LORETO,ALTO AMAZONAS,BALSAPUERTO,Botadero ubicado en el Centro Poblado de Balsapuerto,False,Recuperación,2018
+LORETO,ALTO AMAZONAS,JEBEROS,Botadero margén izquierda de la trocha carrozable Jeberos-Yurimaguas,False,Recuperación,2018
+LORETO,ALTO AMAZONAS,LAGUNAS,Botadero ubicado en la localidad de Lagunas,False,Recuperación,2018
+LORETO,ALTO AMAZONAS,SANTA CRUZ,Botadero ubicado en la localidad de Santa Cruz,False,Recuperación,2018
+LORETO,ALTO AMAZONAS,TENIENTE CESAR LOPEZ ROJAS,Botadero ubicado en la carretera Shucush Yacu 1.5,False,Recuperación,2018
+LORETO,ALTO AMAZONAS,YURIMAGUAS,Botadero ubicado a la altura del Km 8 de la vía Yurimaguas Tarapoto,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,ANDOAS,Botadero S/N,True,Recuperación,2018
+LORETO,DATEM DEL MARANON,ANDOAS,Botadero KM.1,False,Recuperación,2023
+LORETO,DATEM DEL MARANON,ANDOAS,Botadero KM.7,True,Recuperación,2023
+LORETO,DATEM DEL MARANON,BARRANCA,Botadero CC.NN. Nueva Esperanza,False,Recuperación,2025
+LORETO,DATEM DEL MARANON,CAHUAPANAS,Botadero S/N,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,MANSERICHE,Botadero S/N,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,MANSERICHE,Botadero Caserío Félix Flores,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,MORONA,Botadero Barrio San Juan,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,MORONA,Botadero Barrio Centro,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,MORONA,Botadero Barrio San Ignacio,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,PASTAZA,Botadero S/N,False,Recuperación,2018
+LORETO,DATEM DEL MARANON,PASTAZA,Botadero S/N,True,Recuperación,2018
+LORETO,LORETO,PARINARI,Botadero S/N,True,Recuperación,2018
+LORETO,LORETO,TIGRE,Botadero ubicado en la Localidad de Intuto,True,Recuperación,2018
+LORETO,LORETO,TROMPETEROS,Botadero Ubicadao en la localidad de Villa Trompeteros,True,Recuperación,2018
+LORETO,LORETO,URARINAS,Botadero ubicado en la calle Helbecio Bardales,False,Recuperación,2018
+LORETO,LORETO,URARINAS,Botadero S/N (Urarinas),False,Recuperación,2023
+LORETO,MARISCAL RAMON CASTILLA,PEBAS,Botadero ubicado en la localidad de Pebas,True,Recuperación,2018
+LORETO,MARISCAL RAMON CASTILLA,RAMON CASTILLA,Botadero ubicado en la carretera Caballococha-Cushillo Cocha,False,Recuperación,2018
+LORETO,MARISCAL RAMON CASTILLA,SAN PABLO,Botadero ubicado en la localidad de San Pablo,False,Recuperación,2018
+LORETO,MARISCAL RAMON CASTILLA,YAVARI,Botadero ubicado en la Localidad de Islandia,True,Recuperación,2018
+LORETO,MAYNAS,ALTO NANAY,Botadero ubicado a la altura del Km 1 de la carretera San Juan de Raya,False,Recuperación,2018
+LORETO,MAYNAS,ALTO NANAY,Botadero de la localidad de Santa Maria de Nanay,False,Recuperación,2025
+LORETO,MAYNAS,FERNANDO LORES,Botadero ubicado en el Centro Poblado Tamshiyacu,False,Recuperación,2018
+LORETO,MAYNAS,LAS AMAZONAS,Botadero S/N,False,Recuperación,2018
+LORETO,MAYNAS,MAZAN,Botadero S/N,False,Recuperación,2018
+LORETO,MAYNAS,MAZAN,Botadero ubicado en la localidad de Indiana,False,Recuperación,2018
+LORETO,MAYNAS,NAPO,Botadero ubicado en la localidad de Santa Clotilde,False,Recuperación,2018
+LORETO,MAYNAS,PUNCHANA,Botadero S/N (Punchana),False,Recuperación,2023
+LORETO,MAYNAS,TORRES CAUSANA,Botadero ubicado en el centro poblado de Cabo Pantoja,False,Recuperación,2018
+LORETO,PUTUMAYO,PUTUMAYO,Botadero ubicado en la localidad de San Antonio de El Estrecho,True,Recuperación,2018
+LORETO,PUTUMAYO,ROSA PANDURO,Botadero Municipal Comunidad Santa Mercedes-Rosa Panduro,False,Recuperación,2022
+LORETO,PUTUMAYO,TENIENTE MANUEL CLAVERO,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,ALTO TAPICHE,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,CAPELO,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,EMILIO SAN MARTIN,Botadero carretera Tamanco-28 de Julio,False,Recuperación,2018
+LORETO,REQUENA,JENARO HERRERA,Botadero ubicado en la localidad de Jenaro Herrera,True,Recuperación,2018
+LORETO,REQUENA,MAQUIA,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,MAQUIA,Botadero Municipal San Roque,False,Recuperación,2025
+LORETO,REQUENA,PUINAHUA,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,PUINAHUA,Botadero Municipal Bretaña,True,Recuperación,2025
+LORETO,REQUENA,REQUENA,Botadero carretera Requena-Yaquerana,True,Recuperación,2018
+LORETO,REQUENA,REQUENA,Botadero carretera Requena-Yaquerana,True,Recuperación,2018
+LORETO,REQUENA,SAQUENA,Botadero ubicado en la localidad de Bagazan,True,Recuperación,2018
+LORETO,REQUENA,SOPLIN,Botadero S/N,False,Recuperación,2018
+LORETO,REQUENA,TAPICHE,Botadero ubicado en la localidado de Iberia,False,Recuperación,2018
+LORETO,REQUENA,YAQUERANA,Botadero ubicado en la localidad de Colonia Angamos,True,Recuperación,2018
+LORETO,UCAYALI,CONTAMANA,Botadero Sector San Salvador (Km 1 de la Carretera Contamana Aguas-Calientes),True,Recuperación,2018
+LORETO,UCAYALI,CONTAMANA,Lugar Alterno Temporal De La Disposición Final De Residuos Sólido Municipales,False,Recuperación,2021
+LORETO,UCAYALI,INAHUAYA,Botadero carretera Inahuaya-Ipuano,True,Recuperación,2018
+LORETO,UCAYALI,PADRE MARQUEZ,Botadero carretera Tiruntan-Maiscal Castilla,True,Recuperación,2018
+LORETO,UCAYALI,PAMPA HERMOSA,Botadero del Centro Poblado de Pampa Hermosa,True,Recuperación,2018
+LORETO,UCAYALI,SARAYACU,Botadero carretera Juancito-Santa Rita,False,Recuperación,2025
+LORETO,UCAYALI,VARGAS GUERRA,Botadero ubicado en el ramal Izquierdo de la Carretera Orellana-Inuruya,True,Recuperación,2018
+LORETO,UCAYALI,VARGAS GUERRA,Botadero ubicado en la carretera Orellana / Catalina KM 4,False,Recuperación,2022
+MADRE DE DIOS,MANU,FITZCARRALD,Botadero Municipal de Boca Manu,False,Recuperación,2018
+MADRE DE DIOS,MANU,HUEPETUHE,Botadero Municipal de Huepetuhe,True,Recuperación,2018
+MADRE DE DIOS,MANU,MADRE DE DIOS,Botadero de Salvación,False,Recuperación,2018
+MADRE DE DIOS,MANU,MADRE DE DIOS,Botadero Municipal de Colorado,False,Recuperación,2018
+MADRE DE DIOS,MANU,MADRE DE DIOS,Botadero Municipal de Colorado II,True,Recuperación,2023
+MADRE DE DIOS,MANU,MANU,Botadero Municipal Salvacion,False,Recuperación,2022
+MADRE DE DIOS,TAHUAMANU,IBERIA,Botadero Municipal de Iberia,True,Recuperación,2018
+MADRE DE DIOS,TAHUAMANU,IBERIA,Botadero Municipal de Iberia II,True,Recuperación,2025
+MADRE DE DIOS,TAHUAMANU,INAPARI,Botadero de Iñapari,True,Recuperación,2018
+MADRE DE DIOS,TAHUAMANU,TAHUAMANU,Botadero Municipal (Tahuamanu),False,Recuperación,2023
+MADRE DE DIOS,TAMBOPATA,INAMBARI,Botadero Municipal de Mazuko,True,Recuperación,2018
+MADRE DE DIOS,TAMBOPATA,LABERINTO,Botadero Municipal de Puerto Rosario,True,Recuperación,2018
+MADRE DE DIOS,TAMBOPATA,LAS PIEDRAS,Botadero Municipal Sector Varsovia,False,Recuperación,2018
+MADRE DE DIOS,TAMBOPATA,LAS PIEDRAS,Botadero Municipal Botijon,False,Recuperación,2023
+MADRE DE DIOS,TAMBOPATA,LAS PIEDRAS,Botadero Municipal Alegria,False,Recuperación,2023
+MADRE DE DIOS,TAMBOPATA,TAMBOPATA,Botadero del Prado,False,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,CHOJATA,Botadero de Qoraypampa,False,Recuperación,2022
+MOQUEGUA,GENERAL SANCHEZ CERRO,CHOJATA,Botadero Hiluhuya,False,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,ICHUNA,Botadero Amahuani,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,ICHUNA,Botadero Yanacancha Q’ucho-Huancuni,False,Recuperación,2023
+MOQUEGUA,GENERAL SANCHEZ CERRO,LA CAPILLA,Botadero Layanque,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,LLOQUE,Botadero Huanule,False,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,LLOQUE,Botadero Tucac,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,LLOQUE,Botadero de Tucac 2,True,Recuperación,2022
+MOQUEGUA,GENERAL SANCHEZ CERRO,MATALAQUE,Botadero Trigomonte,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,OMATE,Botadero Cerro Blanco (Tamaña),False,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,PUQUINA,Botadero Santa Rosa,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,QUINISTAQUILLAS,Botadero La Laja,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,QUINISTAQUILLAS,Botadero La Laja 2,False,Recuperación,2023
+MOQUEGUA,GENERAL SANCHEZ CERRO,UBINAS,Botadero S/N,True,Recuperación,2018
+MOQUEGUA,GENERAL SANCHEZ CERRO,UBINAS,Botadero Corahuaya (Q’orawaya),True,Recuperación,2025
+MOQUEGUA,ILO,ILO,Botadero Pampa de Palo,False,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,MOQUEGUA,Botadero Quebrada Cementerio N°02,True,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,MOQUEGUA,Botadero Quebrada Cementerio N°01,True,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,SAN CRISTOBAL,Botadero Challapatja,False,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,TORATA,Botadero Chuvilaque,False,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,TORATA,Botadero Chilligua,True,Recuperación,2018
+MOQUEGUA,MARISCAL NIETO,TORATA,Botadero distrital de Torata,False,Reconversión,2022
+PASCO,DANIEL ALCIDES CARRION,CHACAYAN,Botadero Ricachacuna,True,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,GOYLLARISQUIZGA,Botadero La Gasha,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,PAUCAR,Botadero Jamama,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,SAN PEDRO DE PILLAO,Botadero Vizcacha,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,SAN PEDRO DE PILLAO,Botadero Jamana,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,SANTA ANA DE TUSI,Botadero Almarumi,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,SANTA ANA DE TUSI,Botadero Shegshin,False,Recuperación,2023
+PASCO,DANIEL ALCIDES CARRION,TAPUC,Botadero Capillajirca,False,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,VILCABAMBA,Botadero Jeriragra,True,Recuperación,2018
+PASCO,DANIEL ALCIDES CARRION,YANAHUANCA,Botadero Huaychaumarca,False,Recuperación,2018
+PASCO,OXAPAMPA,CONSTITUCION,Botadero costado de la Carretera Belaunde Terry,True,Recuperación,2018
+PASCO,OXAPAMPA,HUANCABAMBA,Botadero San Jorge Gramazo,False,Recuperación,2018
+PASCO,OXAPAMPA,HUANCABAMBA,Botadero Mallampampa,False,Recuperación,2018
+PASCO,OXAPAMPA,PALCAZU,Botadero Av. 18 de Julio,False,Recuperación,2018
+PASCO,OXAPAMPA,POZUZO,Botadero Prusia,False,Recuperación,2018
+PASCO,OXAPAMPA,PUERTO BERMUDEZ,Botadero Santa Rosa de Chivis,False,Recuperación,2018
+PASCO,OXAPAMPA,VILLA RICA,Botadero San José,False,Recuperación,2018
+PASCO,PASCO,HUARIACA,Botadero Cashamachay,False,Reconversión,2018
+PASCO,PASCO,HUAYLLAY,Botadero Rauyhuana,False,Recuperación,2018
+PASCO,PASCO,NINACACA,Botadero Pichausacancha,False,Recuperación,2018
+PASCO,PASCO,NINACACA,Botadero Gallahuari-Quiparacra,False,Recuperación,2018
+PASCO,PASCO,PALLANCHACRA,Botadero Carhuacayan,False,Recuperación,2018
+PASCO,PASCO,PAUCARTAMBO,Botadero Santa Cruz,False,Recuperación,2018
+PASCO,PASCO,SAN FRANCISCO DE ASIS DE YARUSYACAN,Botadero Huarmi Ishpanan,False,Recuperación,2018
+PASCO,PASCO,TICLACAYAN,Botadero Luquiakuna,False,Recuperación,2018
+PASCO,PASCO,VICCO,Botadero Tomachishga,False,Recuperación,2018
+PIURA,AYABACA,AYABACA,Botadero Municipal,False,Recuperación,2018
+PIURA,AYABACA,AYABACA,Botadero Municipal,True,Recuperación,2018
+PIURA,AYABACA,AYABACA,Botadero Culuguero,False,Recuperación,2024
+PIURA,AYABACA,FRIAS,Botadero Municipal de Mastrante,True,Recuperación,2024
+PIURA,AYABACA,JILILI,Botadero Municipal,False,Recuperación,2018
+PIURA,AYABACA,LAGUNAS,Botadero Municipal de Lagunas,True,Recuperación,2022
+PIURA,AYABACA,MONTERO,Botadero Municipal,False,Recuperación,2018
+PIURA,AYABACA,PACAIPAMPA,Botadero Parque de Tratamiento Las Juntas,True,Recuperación,2018
+PIURA,AYABACA,PAIMAS,Botadero Sector Hogueron,True,Recuperación,2018
+PIURA,AYABACA,PAIMAS,Botadero Tomapampa de Jambur,True,Recuperación,2023
+PIURA,AYABACA,SAPILLICA,Botadero Municipal,True,Recuperación,2018
+PIURA,AYABACA,SICCHEZ,Botadero Municipal,True,Recuperación,2018
+PIURA,AYABACA,SICCHEZ,Botadero El Noque,False,Recuperación,2018
+PIURA,AYABACA,SUYO,Botadero Municipal,False,Recuperación,2018
+PIURA,AYABACA,SUYO,Botadero de Suyo,True,Recuperación,2023
+PIURA,HUANCABAMBA,CANCHAQUE,Botadero Municipal del Sector Hualtacal,False,Recuperación,2021
+PIURA,HUANCABAMBA,HUANCABAMBA,Botadero Parque de Tratamiento de Residuos Solidos,False,Recuperación,2018
+PIURA,HUANCABAMBA,HUANCABAMBA,Botadero Municipal Caserio El Tambo,False,Recuperación,2023
+PIURA,HUANCABAMBA,HUARMACA,Botadero Municipal,True,Recuperación,2018
+PIURA,HUANCABAMBA,HUARMACA,Botadero Municipal de Huarmaca,False,Recuperación,2023
+PIURA,HUANCABAMBA,LALAQUIZ,Botadero Municipal,False,Recuperación,2018
+PIURA,HUANCABAMBA,SAN MIGUEL DE EL FAIQUE,Botadero Municipal de Los Corrales,False,Recuperación,2023
+PIURA,HUANCABAMBA,SONDOR,Botadero Municipal,False,Recuperación,2018
+PIURA,HUANCABAMBA,SONDORILLO,Botadero Municipal,False,Recuperación,2018
+PIURA,MORROPON,BUENOS AIRES,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,CHALACO,Botadero Municipal,False,Recuperación,2018
+PIURA,MORROPON,CHALACO,Botadero Municipal de Chalaco,False,Recuperación,2023
+PIURA,MORROPON,CHULUCANAS,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,LA MATANZA,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,MORROPON,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,SALITRAL,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,SALITRAL,Botadero Municipal,True,Recuperación,2018
+PIURA,MORROPON,SALITRAL,Botadero Municipal de El Faique,False,Recuperación,2023
+PIURA,MORROPON,SALITRAL,Botadero de Malacasí,True,Recuperación,2023
+PIURA,MORROPON,SAN JUAN DE BIGOTE,Botadero Municipal,False,Recuperación,2018
+PIURA,MORROPON,SANTA CATALINA DE MOSSA,Botadero S/N,True,Recuperación,2018
+PIURA,MORROPON,SANTO DOMINGO,Botadero Municipal,False,Recuperación,2018
+PIURA,MORROPON,SANTO DOMINGO,Botadero del Caserío Ñoma,False,Recuperación,2021
+PIURA,MORROPON,YAMANGO,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,AMOTAPE,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,ARENAL,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,COLAN,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,LA HUACA,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,LA HUACA,Botadero Municipal La Huaca,True,Recuperación,2023
+PIURA,PAITA,PAITA,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,PAITA,Botadero del Centro Poblado de La Islilla,True,Recuperación,2022
+PIURA,PAITA,PAITA,Botadero del Centro Poblado de La Tortuga,True,Recuperación,2022
+PIURA,PAITA,PAITA,Botadero 2 La Islilla,True,Recuperación,2025
+PIURA,PAITA,PAITA,Botadero 3 La Islilla,True,Recuperación,2025
+PIURA,PAITA,PAITA,Botadero 2 La Tortuga,True,Recuperación,2025
+PIURA,PAITA,TAMARINDO,Botadero Municipal,False,Recuperación,2018
+PIURA,PAITA,VICHAYAL,Botadero Municipal,True,Recuperación,2018
+PIURA,PAITA,VICHAYAL,Botadero La Chivera,False,Recuperación,2021
+PIURA,PIURA,BELLAVISTA DE LA UNION,Botadero S/N,True,Recuperación,2021
+PIURA,PIURA,CASTILLA,Botadero Municipal,True,Recuperación,2018
+PIURA,PIURA,CATACAOS,Botadero Loma de los Zorros,True,Recuperación,2021
+PIURA,PIURA,CURA MORI,Botadero S/N,True,Recuperación,2018
+PIURA,PIURA,EL TALLAN,Botadero Sector Panamericana,True,Recuperación,2021
+PIURA,PIURA,LA ARENA,Botadero Sinchao Grande,True,Recuperación,2018
+PIURA,PIURA,LA ARENA,Botadero Municipal,True,Recuperación,2018
+PIURA,PIURA,LA UNION,Botadero S/N,True,Recuperación,2018
+PIURA,PIURA,LA UNION,Botadero Municipal,True,Recuperación,2018
+PIURA,PIURA,LAS LOMAS,Botadero Municipal,False,Recuperación,2018
+PIURA,PIURA,TAMBO GRANDE,Botadero S/N,True,Recuperación,2018
+PIURA,PIURA,TAMBO GRANDE,Botadero del Centro Poblado de Malingas,True,Recuperación,2021
+PIURA,SECHURA,BERNAL,Botadero Municipal,True,Recuperación,2018
+PIURA,SECHURA,CRISTO NOS VALGA,Botadero Municipal,True,Recuperación,2018
+PIURA,SECHURA,SECHURA,Botadero de Residuos Sólidos de Parachique,True,Recuperación,2022
+PIURA,SECHURA,VICE,Botadero Municipal Sector La Antena,True,Recuperación,2021
+PIURA,SULLANA,IGNACIO ESCUDERO,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,IGNACIO ESCUDERO,Botadero Temporal de Ignacio Escudero,False,Recuperación,2023
+PIURA,SULLANA,IGNACIO ESCUDERO,Botadero Ignacio Escudero,False,Recuperación,2023
+PIURA,SULLANA,LANCONES,Botadero Alamor-Lancones,False,Recuperación,2023
+PIURA,SULLANA,MARCAVELICA,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,MARCAVELICA,Botadero Salitral,True,Recuperación,2018
+PIURA,SULLANA,MARCAVELICA,Botadero Monterón,True,Recuperación,2022
+PIURA,SULLANA,MIGUEL CHECA,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,QUERECOTILLO,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,QUERECOTILLO,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,SALITRAL,Botadero Salitral 2,True,Recuperación,2022
+PIURA,SULLANA,SULLANA,Botadero Municipal,True,Recuperación,2018
+PIURA,SULLANA,SULLANA,Botadero Zona Industrial I,True,Recuperación,2022
+PIURA,TALARA,EL ALTO,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,LA BREA,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,LA BREA,Botadero El Acholado,True,Recuperación,2022
+PIURA,TALARA,LOBITOS,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,LOS ORGANOS,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,MANCORA,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,PARINAS,Botadero Municipal,True,Recuperación,2018
+PIURA,TALARA,PARINAS,Botadero El Patero,False,Recuperación,2022
+PUNO,AZANGARO,ACHAYA,Botadero salida a la Comunidad Collana,False,Recuperación,2018
+PUNO,AZANGARO,ARAPA,Botadero Comunidad de Yanico Cutiri,False,Recuperación,2018
+PUNO,AZANGARO,ARAPA,Botadero centro poblado de Villa Betanzos,False,Recuperación,2018
+PUNO,AZANGARO,ASILLO,Botadero Sector San Luis,True,Recuperación,2018
+PUNO,AZANGARO,AZANGARO,Botadero Huayrapata Cruz Cunca,False,Recuperación,2018
+PUNO,AZANGARO,AZANGARO,Botadero Pinayani,False,Recuperación,2022
+PUNO,AZANGARO,CAMINACA,Botadero C.C. Pilhuani,False,Recuperación,2018
+PUNO,AZANGARO,CHUPA,Botadero Taller-Garaje Municipal en el barrio Chipinta,True,Recuperación,2018
+PUNO,AZANGARO,CHUPA,Botadero Choco / Sector Cala Cruz,False,Recuperación,2022
+PUNO,AZANGARO,CHUPA,Botadero Sinticunca,False,Recuperación,2024
+PUNO,AZANGARO,JOSE DOMINGO CHOQUEHUANCA,Botadero Osocco,False,Recuperación,2018
+PUNO,AZANGARO,MUNANI,Botadero Mayupampa,True,Recuperación,2018
+PUNO,AZANGARO,MUNANI,Botadero Ichoccollo pampa-Muñani,False,Recuperación,2024
+PUNO,AZANGARO,POTONI,Botadero C.C. Huayrapata,False,Recuperación,2018
+PUNO,AZANGARO,POTONI,Botadero Carccantira,False,Recuperación,2018
+PUNO,AZANGARO,POTONI,Botadero Sojapata,False,Recuperación,2026
+PUNO,AZANGARO,SAMAN,Botadero Surajachi,False,Recuperación,2018
+PUNO,AZANGARO,SAN ANTON,Botadero Sector Yahuasi,False,Recuperación,2018
+PUNO,AZANGARO,SAN ANTON,Botadero Canllipata,False,Recuperación,2022
+PUNO,AZANGARO,SAN JOSE,Botadero Pampa Pajonal de San José,False,Recuperación,2018
+PUNO,AZANGARO,SAN JUAN DE SALINAS,Botadero C.C. Primer Orurillo,False,Recuperación,2018
+PUNO,AZANGARO,SANTIAGO DE PUPUJA,Botadero C.C. Pupuja,True,Recuperación,2018
+PUNO,AZANGARO,TIRAPATA,Botadero Sector Porkepata,True,Recuperación,2018
+PUNO,CARABAYA,AJOYANI,Botadero Tijerachupa-Aurora,False,Reconversión,2018
+PUNO,CARABAYA,AYAPATA,Botadero Apacheta,False,Recuperación,2018
+PUNO,CARABAYA,COASA,Botadero Cuticarca,False,Recuperación,2018
+PUNO,CARABAYA,CORANI,Botadero Quisinipata,False,Recuperación,2018
+PUNO,CARABAYA,CRUCERO,Botadero Pilcopampa (Ichu Qullohuata),False,Recuperación,2018
+PUNO,CARABAYA,CRUCERO,Botadero Sector Cayconi,False,Reconversión,2022
+PUNO,CARABAYA,ITUATA,Botadero Collpa Pata,False,Recuperación,2018
+PUNO,CARABAYA,MACUSANI,Botadero Quenchi,True,Recuperación,2018
+PUNO,CARABAYA,MACUSANI,Botadero Conchatanca,False,Recuperación,2022
+PUNO,CARABAYA,OLLACHEA,Botadero Accopampa,False,Recuperación,2018
+PUNO,CARABAYA,SAN GABAN,Botadero Llojllamayo,False,Recuperación,2018
+PUNO,CARABAYA,USICAYOS,Botadero Cruzkunca,True,Recuperación,2018
+PUNO,CHUCUITO,DESAGUADERO,Botadero Miñani Guitarrani,False,Recuperación,2018
+PUNO,CHUCUITO,DESAGUADERO,Botadero Collana-Sector Ancacollo,False,Recuperación,2026
+PUNO,CHUCUITO,HUACULLANI,Botadero Quimbalita,False,Recuperación,2018
+PUNO,CHUCUITO,JULI,Botadero Nayranaque,False,Recuperación,2018
+PUNO,CHUCUITO,KELLUYO,Botadero Jacha Kelluyo,True,Recuperación,2018
+PUNO,CHUCUITO,PISACOMA,Botadero Granja Municipal,False,Recuperación,2018
+PUNO,CHUCUITO,POMATA,Botadero Cerro Utiraya,False,Recuperación,2018
+PUNO,CHUCUITO,ZEPITA,Botadero Cotaña,False,Recuperación,2018
+PUNO,EL COLLAO,CAPAZO,Botadero Cerro Llovecco,False,Recuperación,2018
+PUNO,EL COLLAO,CONDURIRI,Botadero complejo deportivo municipal Conduriri,False,Recuperación,2018
+PUNO,EL COLLAO,ILAVE,Botadero Chiarjake Apacheta,False,Recuperación,2018
+PUNO,EL COLLAO,PILCUYO,Botadero Plaza de Ganado,False,Recuperación,2018
+PUNO,EL COLLAO,SANTA ROSA,Botadero Laramani,False,Recuperación,2018
+PUNO,HUANCANE,COJATA,Botadero Cementerio,True,Recuperación,2018
+PUNO,HUANCANE,HUANCANE,Botadero Quebrada Jisra Llachi-C.C. Taurahuta,False,Recuperación,2022
+PUNO,HUANCANE,HUANCANE,Botadero Catahuichinquilla,False,Recuperación,2018
+PUNO,HUANCANE,HUANCANE,Botadero Chuquiaguillo,False,Recuperación,2021
+PUNO,HUANCANE,HUANCANE,Botadero Taurahuta,False,Recuperación,2025
+PUNO,HUANCANE,HUATASANI,Botadero Huaylli Cuyo,False,Recuperación,2018
+PUNO,HUANCANE,INCHUPALLA,Botadero costado Parque Recreacional-Barrio Santa Cruz,False,Recuperación,2018
+PUNO,HUANCANE,PUSI,Botadero Pampilla,False,Recuperación,2018
+PUNO,HUANCANE,ROSASPATA,Botadero salida a Juliaca,False,Recuperación,2018
+PUNO,HUANCANE,TARACO,Botadero Taraco,False,Recuperación,2022
+PUNO,HUANCANE,TARACO,Botadero en zona urbana barrio Pentecostes,True,Recuperación,2018
+PUNO,HUANCANE,VILQUE CHICO,Botadero Carretera Vilquechico-Huancarani,True,Recuperación,2018
+PUNO,LAMPA,CABANILLA,Botadero Cojje Pata,False,Recuperación,2018
+PUNO,LAMPA,CALAPUJA,Botadero Mayupunta,False,Recuperación,2018
+PUNO,LAMPA,LAMPA,Botadero Campo Ferial,False,Recuperación,2018
+PUNO,LAMPA,NICASIO,Botadero Sector Fernando Belón,True,Recuperación,2018
+PUNO,LAMPA,OCUVIRI,Botadero Pucachupa-Cutipampa,False,Recuperación,2018
+PUNO,LAMPA,OCUVIRI,Botadero Cutipampa,False,Reconversión,2018
+PUNO,LAMPA,PALCA,Botadero Campo Ferial de Palca,False,Recuperación,2018
+PUNO,LAMPA,PARATIA,Botadero Santa Lomani,False,Recuperación,2018
+PUNO,LAMPA,PUCARA,Botadero Comunidad Senccata,False,Recuperación,2018
+PUNO,LAMPA,SANTA LUCIA,Botadero S/N,True,Recuperación,2018
+PUNO,LAMPA,VILAVILA,Botadero S/N,True,Recuperación,2018
+PUNO,MELGAR,AYAVIRI,Botadero Santa Rita,False,Recuperación,2018
+PUNO,MELGAR,CUPI,Botadero Zona Estadio,False,Recuperación,2018
+PUNO,MELGAR,LLALLI,Botadero Waitawacho,False,Recuperación,2018
+PUNO,MELGAR,MACARI,Botadero Cruz Ajja,False,Recuperación,2018
+PUNO,MELGAR,NUNOA,Botadero C.C. Orccorara Pampa,False,Recuperación,2018
+PUNO,MELGAR,NUNOA,Botadero C.C. Juan Velasco Alvarado,False,Recuperación,2025
+PUNO,MELGAR,ORURILLO,Botadero Muromuro,False,Recuperación,2018
+PUNO,MELGAR,SANTA ROSA,Botadero Tambopata,False,Recuperación,2018
+PUNO,MELGAR,UMACHIRI,Botadero C.C. Umachiri-Sur Paylla,False,Recuperación,2018
+PUNO,MELGAR,AYAVIRI,Botadero Huerta Viluyo,False,Recuperación,2022
+PUNO,MOHO,CONIMA,Botadero Toccarcani Queuta,False,Recuperación,2018
+PUNO,MOHO,HUAYRAPATA,Botadero Pulvani Pampa,False,Recuperación,2018
+PUNO,MOHO,HUAYRAPATA,Botadero Tajos de Vilakarka,True,Recuperación,2025
+PUNO,MOHO,MOHO,Botadero Viluyo Punco,True,Recuperación,2018
+PUNO,MOHO,TILALI,Botadero Cruz Cunca,False,Recuperación,2018
+PUNO,MOHO,TILALI,Botadero Sejchote,True,Recuperación,2023
+PUNO,PUNO,ACORA,Botadero Yanamuni Apacheta,True,Recuperación,2018
+PUNO,PUNO,AMANTANI,Botadero Ayllaris,False,Recuperación,2018
+PUNO,PUNO,ATUNCOLLA,Botadero Estadio,False,Recuperación,2018
+PUNO,PUNO,CAPACHICA,Botadero Huarejon,True,Recuperación,2018
+PUNO,PUNO,CHUCUITO,Botadero Luricruz,True,Recuperación,2018
+PUNO,PUNO,CHUCUITO,Botadero sector Barco,True,Recuperación,2026
+PUNO,PUNO,COATA,Botadero Qarapampa,False,Recuperación,2018
+PUNO,PUNO,HUATA,Botadero Cerro Kapise,False,Recuperación,2018
+PUNO,PUNO,MANAZO,Botadero Hatun Mayu,True,Recuperación,2018
+PUNO,PUNO,PAUCARCOLLA,Botadero Sipi Sipi,False,Recuperación,2018
+PUNO,PUNO,PICHACANI,Botadero Catacorani,False,Recuperación,2018
+PUNO,PUNO,PLATERIA,Botadero Cementerio,False,Recuperación,2018
+PUNO,PUNO,PUNO,Botadero Cancharani,True,Recuperación,2018
+PUNO,PUNO,SAN ANTONIO,Botadero ubicado a 0.5 Km de la población de San Antonio,False,Recuperación,2018
+PUNO,PUNO,SAN ANTONIO,Botadero Jukunipata,False,Recuperación,2025
+PUNO,PUNO,TIQUILLACA,Botadero C.C. Arboleda,False,Recuperación,2018
+PUNO,PUNO,VILQUE,Botadero Chejollani,False,Recuperación,2018
+PUNO,SAN ANTONIO DE PUTINA,ANANEA,Botadero Pampilla,True,Recuperación,2018
+PUNO,SAN ANTONIO DE PUTINA,PEDRO VILCA APAZA,Botadero Cala Cala,False,Recuperación,2018
+PUNO,SAN ANTONIO DE PUTINA,PUTINA,Botadero Parque Pino,False,Recuperación,2018
+PUNO,SAN ANTONIO DE PUTINA,PUTINA,Botadero Ticani,False,Recuperación,2018
+PUNO,SAN ANTONIO DE PUTINA,SINA,Botadero Cruz Mayo,False,Recuperación,2018
+PUNO,SAN ROMAN,CABANA,Botadero Accohuisina,False,Recuperación,2018
+PUNO,SAN ROMAN,CABANILLAS,Botadero Jorge Chupa,False,Recuperación,2018
+PUNO,SAN ROMAN,CARACOTO,Botadero ubicado en la cantera de Cemento Sur,False,Recuperación,2018
+PUNO,SAN ROMAN,CARACOTO,Botadero Chuncanique,False,Recuperación,2022
+PUNO,SAN ROMAN,JULIACA,Botadero de Chilla,True,Recuperación,2018
+PUNO,SAN ROMAN,SAN MIGUEL,Botadero de Mucra,True,Recuperación,2021
+PUNO,SANDIA,ALTO INAMBARI,Botadero Dos de Mayo,False,Recuperación,2018
+PUNO,SANDIA,ALTO INAMBARI,Botadero Sillacunca,False,Recuperación,2026
+PUNO,SANDIA,CUYOCUYO,Botadero C.C. Cojene Rotojani,False,Recuperación,2018
+PUNO,SANDIA,LIMBANI,Botadero Jatun Huyco,False,Recuperación,2018
+PUNO,SANDIA,PATAMBUCO,Botadero Muruayahuasi,True,Recuperación,2018
+PUNO,SANDIA,PATAMBUCO,Botadero Cruz Sencca,False,Recuperación,2026
+PUNO,SANDIA,PHARA,Botadero Khani,False,Recuperación,2018
+PUNO,SANDIA,QUIACA,Botadero Carretera a Sandia-Ccapumpuli,True,Recuperación,2018
+PUNO,SANDIA,SAN JUAN DEL ORO,Botadero Challochuma,False,Recuperación,2018
+PUNO,SANDIA,SAN JUAN DEL ORO,Botadero Quebrada Belén,False,Recuperación,2018
+PUNO,SANDIA,SAN JUAN DEL ORO,Botadero Campo Santo,False,Recuperación,2024
+PUNO,SANDIA,SAN PEDRO DE PUTINA PUNCO,Botadero Bajo Tunquimayo,False,Recuperación,2018
+PUNO,SANDIA,SANDIA,Botadero Laqueque Llamani-Repisa,False,Recuperación,2018
+PUNO,SANDIA,SANDIA,Botadero Ccapuna-Ayo,False,Recuperación,2022
+PUNO,SANDIA,YANAHUAYA,Botadero Cruzpata,True,Recuperación,2018
+PUNO,YUNGUYO,ANAPIA,Botadero Qqeli Patja,False,Recuperación,2018
+PUNO,YUNGUYO,COPANI,Botadero Ccala Quellamaya,False,Recuperación,2018
+PUNO,YUNGUYO,CUTURAPI,Botadero ubicado en Ocolloni Whinto,False,Recuperación,2018
+PUNO,YUNGUYO,OLLARAYA,Botadero Vilurcuni,False,Recuperación,2018
+PUNO,YUNGUYO,UNICACHI,Botadero Punta Hermosa,False,Recuperación,2018
+PUNO,YUNGUYO,YUNGUYO,Botadero Unumani,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,ALTO BIAVO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,BAJO BIAVO,Botadero Cantera,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,BAJO BIAVO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,BELLAVISTA,Botadero Municipal-Carretera San Pablo,True,Recuperación,2018
+SAN MARTIN,BELLAVISTA,HUALLAGA,Botadero Shinguillo Bajo,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,SAN PABLO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,BELLAVISTA,SAN RAFAEL,Botadero Municipal San Rafael,True,Recuperación,2023
+SAN MARTIN,EL DORADO,AGUA BLANCA,Botadero Yanayacu,False,Recuperación,2018
+SAN MARTIN,EL DORADO,AGUA BLANCA,Botadero San Martín,False,Recuperación,2018
+SAN MARTIN,EL DORADO,SAN MARTIN,Botadero Punto Rojo,False,Reconversión,2018
+SAN MARTIN,EL DORADO,SAN MARTIN,Botadero Punto Rojo,False,Reconversión,2018
+SAN MARTIN,EL DORADO,SAN MARTIN,Botadero S/N,False,Recuperación,2021
+SAN MARTIN,EL DORADO,SANTA ROSA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,EL DORADO,SHATOJA,Botadero Ex Aeropuerto,False,Recuperación,2018
+SAN MARTIN,HUALLAGA,EL ESLABON,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,HUALLAGA,EL ESLABON,Botadero Eslabón,False,Recuperación,2018
+SAN MARTIN,HUALLAGA,SACANCHE,Botadero Municipal-Sector Situllal,True,Recuperación,2018
+SAN MARTIN,HUALLAGA,SACANCHE,Botadero La Punta,False,Recuperación,2018
+SAN MARTIN,LAMAS,ALONSO DE ALVARADO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,BARRANQUITA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,CAYNARACHI,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,CUNUMBUQUI,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,LAMAS,Botadero de la Municipalidad provincial de Lamas,False,Recuperación,2025
+SAN MARTIN,LAMAS,PINTO RECODO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,RUMISAPA,Botadero Sector Fananga,True,Recuperación,2018
+SAN MARTIN,LAMAS,SAN ROQUE DE CUMBAZA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,SHANAO,Botadero Sector Pucuca,True,Recuperación,2018
+SAN MARTIN,LAMAS,TABALOSOS,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,LAMAS,ZAPATERO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,CAMPANILLA,Botadero Sector La Bola,False,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,HUICUNGO,Botadero La Unión,False,Recuperación,2025
+SAN MARTIN,MARISCAL CACERES,HUICUNGO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,HUICUNGO,Botadero Municipal,False,Reconversión,2018
+SAN MARTIN,MARISCAL CACERES,JUANJUI,Botadero El Naranjal,True,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,JUANJUI,Botadero Sector Zanja Onda,False,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,PACHIZA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,MARISCAL CACERES,PAJARILLO,Botadero Sector Mariche,True,Recuperación,2018
+SAN MARTIN,MOYOBAMBA,HABANA,Botadero Sector Calora,True,Recuperación,2018
+SAN MARTIN,MOYOBAMBA,HABANA,Botadero La Almendra,False,Recuperación,2025
+SAN MARTIN,MOYOBAMBA,JEPELACIO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,MOYOBAMBA,MOYOBAMBA,Botadero Tunchiyacu,False,Recuperación,2018
+SAN MARTIN,MOYOBAMBA,SORITOR,Botadero Alfaro,False,Recuperación,2018
+SAN MARTIN,PICOTA,BUENOS AIRES,Botadero Valle Paujilzapa,False,Recuperación,2018
+SAN MARTIN,PICOTA,CASPISAPA,Botadero Sector Urreleico,False,Recuperación,2018
+SAN MARTIN,PICOTA,PICOTA,Botadero Wuinge,False,Recuperación,2018
+SAN MARTIN,PICOTA,PUCACACA,Botadero Sector Chirapilla,True,Recuperación,2018
+SAN MARTIN,PICOTA,PUCACACA,Botadero Sector Ojo de Agua,True,Recuperación,2018
+SAN MARTIN,PICOTA,SAN CRISTOBAL,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,PICOTA,SHAMBOYACU,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,PICOTA,TINGO DE PONASA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,PICOTA,TINGO DE PONASA,Botadero Cupushcayacu,False,Recuperación,2018
+SAN MARTIN,PICOTA,TRES UNIDOS,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,RIOJA,PARDO MIGUEL,Botadero Sector Villa Rica,False,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero Sector Ocho,True,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero Sector Ramiro Prialé,True,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero Sector Vacapasana,False,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero Cantera Pósic,False,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero Sector Caserío Ramiro Prialé,False,Recuperación,2018
+SAN MARTIN,RIOJA,RIOJA,Botadero ubicado en el Sector Ramiro Priale,False,Recuperación,2021
+SAN MARTIN,RIOJA,SAN FERNANDO,Botadero Sector Polopunta,True,Recuperación,2018
+SAN MARTIN,RIOJA,YORONGOS,Botadero Sector Vista Alegre,True,Recuperación,2018
+SAN MARTIN,SAN MARTIN,ALBERTO LEVEAU,Botadero Municipal El Sauce,False,Recuperación,2022
+SAN MARTIN,SAN MARTIN,CHAZUTA,Botadero Municipal Camino Centro Poblado Tununtunumba,False,Recuperación,2018
+SAN MARTIN,SAN MARTIN,EL PORVENIR,Botadero Sector Cordesam,False,Recuperación,2018
+SAN MARTIN,SAN MARTIN,HUIMBAYOC,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,SAN MARTIN,HUIMBAYOC,Botadero Municipal,True,Recuperación,2018
+SAN MARTIN,SAN MARTIN,JUAN GUERRA,Botadero Yacucatina,True,Recuperación,2018
+SAN MARTIN,SAN MARTIN,LA BANDA DE SHILCAYO,Botadero S/N (Shilcayo),False,Recuperación,2024
+SAN MARTIN,SAN MARTIN,SAN ANTONIO,Botadero Sector Águano,True,Recuperación,2018
+SAN MARTIN,SAN MARTIN,SAUCE,Botadero Sauce,False,Recuperación,2023
+SAN MARTIN,SAN MARTIN,SHAPAJA,"Botadero Km. 12.5 de la carretera Shapaja-Chazuta, Sector Estero",True,Recuperación,2018
+SAN MARTIN,SAN MARTIN,SHAPAJA,Botadero Churo Quebrada,False,Recuperación,2018
+SAN MARTIN,TOCACHE,NUEVO PROGRESO,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,TOCACHE,POLVORA,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,TOCACHE,SANTA LUCIA,Botadero La Parcela,False,Recuperación,2023
+SAN MARTIN,TOCACHE,SHUNTE,Botadero Municipal,False,Recuperación,2018
+SAN MARTIN,TOCACHE,TOCACHE,Botadero La Charapita,True,Recuperación,2018
+SAN MARTIN,TOCACHE,UCHIZA,Botadero Túpac Amaru,False,Recuperación,2018
+SAN MARTIN,TOCACHE,UCHIZA,Botadero de Uchiza,False,Recuperación,2018
+TACNA,CANDARAVE,CAIRANI,Botadero de Cairani,True,Recuperación,2018
+TACNA,CANDARAVE,CAMILACA,Botadero de Camilaca,True,Recuperación,2018
+TACNA,CANDARAVE,CAMILACA,Botadero de Borogueña,False,Recuperación,2018
+TACNA,CANDARAVE,CAMILACA,Botadero de Coraguaya,False,Recuperación,2018
+TACNA,CANDARAVE,CAMILACA,Botadero del Centro Poblado de Cambaya y Vilalaca,False,Recuperación,2018
+TACNA,CANDARAVE,CURIBAYA,Botadero de Curibaya,False,Recuperación,2018
+TACNA,CANDARAVE,CURIBAYA,Botadero Curibaya 2,False,Recuperación,2023
+TACNA,CANDARAVE,HUANUARA,Botadero de Huanuara,False,Recuperación,2018
+TACNA,CANDARAVE,HUANUARA,Botadero Huanuara 2,False,Recuperación,2022
+TACNA,CANDARAVE,HUANUARA,Botadero Huanuara 3,False,Recuperación,2022
+TACNA,CANDARAVE,QUILAHUANI,Botadero Rodado,False,Recuperación,2018
+TACNA,JORGE BASADRE,ILABAYA,Botadero de Ticapampa,False,Recuperación,2018
+TACNA,JORGE BASADRE,ILABAYA,"Botadero del Centro Poblado Mirave, Caoña, Chulibaya, Poquera, Iguerani, Ticapampa E Ilabaya Capital",False,Recuperación,2018
+TACNA,JORGE BASADRE,ILABAYA,Botadero Anterior Botadero del Centro Poblado Mirave,False,Recuperación,2018
+TACNA,JORGE BASADRE,ITE,Botadero de Cantera Sur II,False,Recuperación,2018
+TACNA,JORGE BASADRE,ITE,"Botadero de Ite Capital, Pampa Alta, Nuevo Ite, Mirador, San Isidro y Las Vilcas",False,Recuperación,2018
+TACNA,JORGE BASADRE,ITE,Botadero de Cantera Sur I,False,Recuperación,2018
+TACNA,JORGE BASADRE,ITE,Área degradada ubicada en el proyecto de mejoramiento del servicio de gestión integral de residuos solidos del distrito de Ite,False,Reconversión,2023
+TACNA,JORGE BASADRE,LOCUMBA,Botadero Conostoco,False,Recuperación,2018
+TACNA,JORGE BASADRE,LOCUMBA,Botadero Conostoco II,False,Reconversión,2022
+TACNA,TACNA,CIUDAD NUEVA,Botadero Alto Intiorko,True,Recuperación,2018
+TACNA,TACNA,INCLAN,Botadero de Inclán,True,Recuperación,2018
+TACNA,TACNA,PACHIA,Botadero Sector Challata,True,Recuperación,2018
+TACNA,TACNA,PACHIA,Botadero Sector Caplina,True,Recuperación,2018
+TACNA,TACNA,PACHIA,Botadero Sector Miculla,True,Recuperación,2018
+TACNA,TACNA,PALCA,Botadero del distrito de Palca capital,False,Recuperación,2018
+TACNA,TACNA,PALCA,Botadero Sector Vila Vilani,True,Recuperación,2018
+TACNA,TACNA,PALCA,Botadero Sector Ancomarca,True,Recuperación,2018
+TACNA,TACNA,PALCA,Botadero Ataspaca,True,Recuperación,2023
+TACNA,TACNA,SAMA,Botadero Anexo Miraflores y Sama Capital,False,Recuperación,2018
+TACNA,TACNA,SAMA,Botadero Anexo Buena Vista,True,Recuperación,2018
+TACNA,TACNA,SAMA,Botadero CP Boca del Rio,False,Recuperación,2021
+TACNA,TACNA,SAMA,Botadero Morro Sama,True,Recuperación,2021
+TACNA,TACNA,SAMA,Botadero Vila Vila,True,Recuperación,2021
+TACNA,TARATA,ESTIQUE-PAMPA,Botadero de Estique Pampa,False,Recuperación,2018
+TACNA,TARATA,HEROES ALBARRACIN,Botadero de Chucapamani Capital,True,Recuperación,2018
+TACNA,TARATA,SITAJARA,Botadero de Sitajara,True,Recuperación,2018
+TACNA,TARATA,SITAJARA,Botadero de Quilahuani,True,Recuperación,2018
+TACNA,TARATA,SITAJARA,Botadero frente a Jirata,True,Recuperación,2023
+TACNA,TARATA,SUSAPAYA,Botadero de Susapaya 01,True,Recuperación,2018
+TACNA,TARATA,SUSAPAYA,Botadero de Susapaya 03,True,Recuperación,2018
+TACNA,TARATA,SUSAPAYA,Botadero de Susapaya 02,True,Recuperación,2018
+TACNA,TARATA,TARATA,Botadero Tasabaya,True,Recuperación,2018
+TACNA,TARATA,TARUCACHI,Botadero de Tarucachi,True,Recuperación,2018
+TACNA,TARATA,TICACO,Botadero Anterior de Ticaco,True,Recuperación,2018
+TACNA,TARATA,TICACO,Botadero de Ticaco,False,Recuperación,2018
+TUMBES,CONTRALMIRANTE VILLAR,CANOAS DE PUNTA SAL,Botadero Municipal,True,Recuperación,2018
+TUMBES,CONTRALMIRANTE VILLAR,CASITAS,Botadero Municipal,False,Recuperación,2018
+TUMBES,CONTRALMIRANTE VILLAR,ZORRITOS,Botadero Bocapan,False,Recuperación,2018
+TUMBES,TUMBES,CORRALES,Botadero Municipal (Sector Cerro Colorado),True,Recuperación,2018
+TUMBES,TUMBES,CORRALES,Botadero Municipal (Quebrada Corrales),True,Recuperación,2018
+TUMBES,TUMBES,LA CRUZ,Botadero Municipal Sector Trujillo 4,False,Recuperación,2018
+TUMBES,TUMBES,SAN JACINTO,Botadero Municipal Loma El Jabon,False,Recuperación,2018
+TUMBES,TUMBES,SAN JUAN DE LA VIRGEN,Botadero Cerro Blanco,False,Recuperación,2018
+TUMBES,TUMBES,SAN JUAN DE LA VIRGEN,Botadero Cementerio,False,Recuperación,2018
+TUMBES,TUMBES,TUMBES,Botadero Pampa del Toro,True,Recuperación,2018
+TUMBES,ZARUMILLA,AGUAS VERDES,Botadero Playa Sur,True,Recuperación,2018
+TUMBES,ZARUMILLA,MATAPALO,Botadero Municipal Sector El Algarrobal,False,Recuperación,2018
+TUMBES,ZARUMILLA,ZARUMILLA,Botadero Municipal,True,Recuperación,2018
+UCAYALI,ATALAYA,RAYMONDI,Botadero Fundo San Cristóbal,False,Recuperación,2018
+UCAYALI,ATALAYA,SEPAHUA,Botadero de Sepahua,True,Recuperación,2018
+UCAYALI,ATALAYA,SEPAHUA,Botadero Sector Shambuyacu,False,Recuperación,2021
+UCAYALI,ATALAYA,TAHUANIA,Botadero de Bolognesi,True,Recuperación,2018
+UCAYALI,ATALAYA,YURUA,Botadero Municipal,False,Recuperación,2018
+UCAYALI,CORONEL PORTILLO,CAMPOVERDE,Botadero Km 22 Carretera Federico Basadre,False,Recuperación,2018
+UCAYALI,CORONEL PORTILLO,IPARIA,Botadero Municipal,False,Recuperación,2018
+UCAYALI,CORONEL PORTILLO,IPARIA,Botadero Municipal 2,False,Recuperación,2024
+UCAYALI,CORONEL PORTILLO,IPARIA,Botadero Municipal de Iparia,False,Recuperación,2025
+UCAYALI,CORONEL PORTILLO,MASISEA,Botadero Municipal,False,Recuperación,2018
+UCAYALI,CORONEL PORTILLO,MASISEA,Botadero Municipal Masisea 2,False,Recuperación,2024
+UCAYALI,CORONEL PORTILLO,NUEVA REQUENA,Botadero de Requena,True,Recuperación,2018
+UCAYALI,PADRE ABAD,ALEXANDER VON HUMBOLDT,Botadero Villa Herodita,False,Recuperación,2018
+UCAYALI,PADRE ABAD,CURIMANA,Botadero de Curimana,True,Recuperación,2018
+UCAYALI,PADRE ABAD,IRAZOLA,Botadero de Irazola,True,Recuperación,2018
+UCAYALI,PADRE ABAD,IRAZOLA,Botadero Sector Caserío Nuevo Huánuco,True,Recuperación,2024
+UCAYALI,PADRE ABAD,NESHUYA,Botadero Municipal,False,Recuperación,2018
+UCAYALI,PADRE ABAD,PADRE ABAD,Botadero Municipal Erika,False,Recuperación,2018
+UCAYALI,PURUS,PURUS,Botadero ubicado en el ex estadio,True,Recuperación,2018

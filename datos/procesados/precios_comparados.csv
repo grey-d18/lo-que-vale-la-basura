@@ -1,0 +1,5 @@
+material,actor_que_vende,precio_min_soles_kg,precio_max_soles_kg,partida_hs,contexto,usd_por_kg,tipo_cambio,exportacion_soles_kg,pct_min_del_precio_exportacion,pct_max_del_precio_exportacion
+Fierro (chatarra),reciclador y chatarrero,0.4,0.5,7204,Lo que paga el acopiador cuando el intermediario le compra la tonelada de chatarra a S/ 800,0.4414176107627175,3.7525,1.6564195843870975,24.14847082045378,30.185588525567223
+Fierro (chatarra) - precio bajo,reciclador y chatarrero,0.3,0.35,7204,Lo que paga el acopiador cuando el intermediario baja la tonelada a S/ 600,0.4414176107627175,3.7525,1.6564195843870975,18.111353115340336,21.12991196789706
+Aluminio,reciclador y chatarrero,4.0,4.0,7602,"Precio del kilo de aluminio en el local de acopio, frente a S/ 0.40 el kilo de fierro",1.7909251086872229,3.7525,6.720446470348803,59.519855081776925,59.519855081776925
+Botella (PET),reciclador,0.4,1.0,3915,Precio del kilo de botella: baja a S/ 0.40 en verano y sube hasta S/ 1.00 en la segunda mitad del año,0.6157929027292155,3.7525,2.310762867491381,17.31030066422391,43.27575166055978

@@ -1,0 +1,188 @@
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 11,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2025",
+   "value": 3.56706380329909,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2024",
+   "value": 3.7525,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2023",
+   "value": 3.74382620959376,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2022",
+   "value": 3.83518137473542,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2021",
+   "value": 3.88055413137587,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2020",
+   "value": 3.4949411976912,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2019",
+   "value": 3.33726554653679,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2018",
+   "value": 3.28660269803296,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2017",
+   "value": 3.26048849083209,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2016",
+   "value": 3.37506158720665,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  },
+  {
+   "indicator": {
+    "id": "PA.NUS.FCRF",
+    "value": "Official exchange rate (LCU per US$, period average)"
+   },
+   "country": {
+    "id": "PE",
+    "value": "Peru"
+   },
+   "countryiso3code": "PER",
+   "date": "2015",
+   "value": 3.18443924152236,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 2
+  }
+ ]
+]
