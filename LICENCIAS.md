@@ -30,4 +30,4 @@ Los archivos descargados en `datos/originales/` y sus versiones procesadas manti
 |---|---|
 | Banco Mundial, What a Waste 3.0 y WDI | [Creative Commons Atribución 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | MINAM / SIGERSOL y OEFA (Plataforma Nacional de Datos Abiertos) | [Términos de la Plataforma Nacional de Datos Abiertos](https://www.datosabiertos.gob.pe/) |
-| UN Comtrade | [Términos de uso de UN Comtrade](https://uncomtrade.org/docs/terms-of-use/) |
+| UN Comtrade | [Policy on Comtrade Data Use](https://uncomtrade.org/docs/policy-on-comtrade-data-use/). Se publican solo tablas y gráficos procesados, que la política permite sin licencia ([Re-dissemination of data](https://uncomtrade.org/docs/re-dissemination-of-data/)); el extracto crudo no se sube y se obtiene con `scripts/obtener_datos.py`. Fuente: "UN Comtrade". |

@@ -1,3 +1,5 @@
 .venv/
 __pycache__/
 .DS_Store
+# Extracto crudo de UN Comtrade: no se republica (ver LICENCIAS.md); lo descarga scripts/obtener_datos.py
+datos/originales/comtrade_peru_reciclables.json
