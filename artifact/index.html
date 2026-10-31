@@ -114,6 +114,22 @@
 .lv .lv-filters label { display: flex; flex-direction: column; gap: .2rem; font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; min-width: 0; }
 .lv select { font: inherit; font-size: var(--cds-font-size-body); font-weight: 400; color: var(--lv-ink); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 8px; padding: .4rem .6rem; min-width: 12rem; max-width: 100%; cursor: pointer; }
 
+.lv .lv-filters .lv-ctl { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
+.lv .lv-ctl-label { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; }
+.lv .lv-seg { display: flex; flex-wrap: wrap; gap: .35rem; }
+.lv .lv-seg button, .lv .lv-btn { font: inherit; font-size: var(--cds-font-size-caption); font-weight: 600; color: var(--lv-ink-2); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 999px; padding: .4rem .9rem; cursor: pointer; }
+.lv .lv-seg button:hover, .lv .lv-btn:hover { background: var(--lv-yellow-soft); color: var(--lv-ink); }
+.lv .lv-seg button[aria-pressed="true"] { background: var(--lv-green); border-color: var(--lv-green); color: var(--lv-on-accent); }
+.lv .lv-seg.is-scale button[aria-pressed="true"] { background: var(--lv-mustard); border-color: var(--lv-mustard); color: var(--lv-on-mustard); }
+.lv .lv-seg button:focus-visible, .lv .lv-btn:focus-visible { outline: 3px solid var(--lv-mustard); outline-offset: 1px; }
+.lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: start; }
+.lv .lv-below { margin-top: var(--cds-gap-md); }
+.lv .lv-chart.is-map { min-height: 22rem; }
+.lv .lv-chart.is-rank { min-height: 22rem; }
+.lv .lv-rank-head { margin: var(--cds-gap-sm) 0 .2rem; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: var(--lv-green); }
+.lv .lv-rank-note { margin: .2rem 0 0; font-size: var(--cds-font-size-caption); color: var(--lv-muted); }
+.lv .lv-rank-pin { margin: var(--cds-gap-sm) 0 0; padding-top: var(--cds-gap-sm); border-top: 1px dashed var(--lv-line); font-size: var(--cds-font-size-body); }
+@media (max-width: 56rem) { .lv .lv-explore { grid-template-columns: minmax(0, 1fr); } }
 .lv .lv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .lv .lv-wide { grid-column: 1 / -1; }
 .lv .lv-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
@@ -246,53 +262,99 @@
       <div class="lv-act-head">
         <span class="lv-act-num" aria-hidden="true">1</span>
         <div>
-          <p class="lv-scale">Escala mundial</p>
+          <p class="lv-scale">Del mundo al Perú</p>
           <h2 class="lv-act-title">A dónde va la basura</h2>
-          <p class="lv-intro">Cada país reporta qué parte de su basura se recoge para reciclar, se entierra en rellenos o deja en botaderos a cielo abierto, y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal.</p>
+          <p class="lv-intro">Cuánta basura genera cada persona, qué parte se recoge para reciclar, qué parte termina en botaderos y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal. El mismo mapa cambia de escala: el mundo, una región o los departamentos del Perú.</p>
         </div>
       </div>
       <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
-        <p>El mundo recicla el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de su basura municipal para reciclarla, según los países que reportan el dato. América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: el promedio más bajo entre las regiones. El Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
+        <p>En el mundo se recoge para reciclar el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de la basura municipal, según los países que reportan el dato. En América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: el promedio más bajo entre las regiones. En el Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
       </div>
-      <div class="lv-filters" role="group" aria-label="Filtros del mundo">
-        <span class="lv-filters-tag">Explora</span>
-        <label>Indicador
-          <select class="lv-ctl-ind-mundo" id="f-ind-mundo">
-            <option value="reciclaje">Recogido para reciclar (% de la basura)</option>
-            <option value="botadero">Botaderos a cielo abierto (%)</option>
-            <option value="comp_plastico">Plástico en la basura (%)</option>
-            <option value="comp_papel_carton">Papel y cartón en la basura (%)</option>
-            <option value="comp_metal">Metal en la basura (%)</option>
-            <option value="kg_persona_dia">Basura por persona (kg al día)</option>
+
+      <div class="lv-filters lv-explore-bar" role="group" aria-label="Explorador del mapa">
+        <div class="lv-ctl"><span class="lv-ctl-label">Escala</span>
+          <div class="lv-seg is-scale" role="group" aria-label="Escala del mapa">
+            <button type="button" data-escala="mundo">Mundo</button>
+            <button type="button" data-escala="region">Región</button>
+            <button type="button" data-escala="peru">Perú</button>
+          </div>
+        </div>
+        <label data-show-escala="region">Región
+          <select id="f-region" data-draw="ctl-region" data-source="mundo_paises" aria-label="Región"></select>
+        </label>
+        <label data-show-escala="peru">Año
+          <select id="f-anio-mapa" data-draw="ctl-anio" data-source="peru_nacional" aria-label="Año"></select>
+        </label>
+        <div class="lv-ctl lv-ctl-wide" data-show-escala="mundo region"><span class="lv-ctl-label">Indicador</span>
+          <div class="lv-seg" role="group" aria-label="Indicador">
+            <button type="button" data-ind-mundo="kg_persona_dia">Basura por persona</button>
+            <button type="button" data-ind-mundo="reciclaje">% que se recoge para reciclar</button>
+            <button type="button" data-ind-mundo="botadero">% que va a botaderos</button>
+            <button type="button" data-ind-mundo="comp">Composición</button>
+          </div>
+        </div>
+        <label class="lv-comp-ctl">Material
+          <select class="lv-ctl-comp" aria-label="Material de la composición">
+            <option value="comp_plastico">Plástico</option>
+            <option value="comp_papel_carton">Papel y cartón</option>
+            <option value="comp_metal">Metal</option>
+            <option value="comp_vidrio">Vidrio</option>
+            <option value="comp_organico">Restos de comida</option>
           </select>
         </label>
-        <label>Región del ranking
-          <select id="f-region" data-draw="ctl-region" data-source="mundo_paises" aria-label="Región del ranking"></select>
-        </label>
+        <div class="lv-ctl lv-ctl-wide" data-show-escala="peru"><span class="lv-ctl-label">Indicador</span>
+          <div class="lv-seg" role="group" aria-label="Indicador del Perú">
+            <button type="button" data-ind-peru="kg_persona_dia">Basura por persona</button>
+            <button type="button" data-ind-peru="pct_valorizado">% que se valoriza</button>
+            <button type="button" data-ind-peru="pct_dispuesto_adecuado">% con disposición adecuada</button>
+            <button type="button" data-ind-peru="botaderos">Áreas degradadas (número)</button>
+            <button type="button" data-ind-peru="pct_distritos_que_valorizan">% de distritos que reportan</button>
+          </div>
+        </div>
       </div>
-      <div class="lv-grid">
-        <figure class="lv-card lv-wide" id="mapa-mundo">
-          <h3 class="lv-card-title"><span class="lv-ind-name" data-ind="reciclaje">Basura recogida para reciclar</span><span class="lv-ind-name" data-ind="botadero" hidden>Botaderos a cielo abierto</span><span class="lv-ind-name" data-ind="comp_plastico" hidden>Plástico en la basura</span><span class="lv-ind-name" data-ind="comp_papel_carton" hidden>Papel y cartón en la basura</span><span class="lv-ind-name" data-ind="comp_metal" hidden>Metal en la basura</span><span class="lv-ind-name" data-ind="kg_persona_dia" hidden>Basura por persona</span> por país</h3>
-          <p class="lv-card-note">Último año que reporta cada país. En gris, países sin dato.</p>
-          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-mundo" data-source="mundo_paises mundo_mapa"></div>
-          <figcaption class="lv-ind-name lv-source" data-ind="reciclaje"><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Treatment - recycling (% weight MSW generated)”: basura municipal recogida para reciclar. Cada país con su último año y su fuente nacional (detalle en la hoja “Codebook”).</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-ind="botadero" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Treatment - open dump (% weight MSW generated)”. Pocos países reportan este dato; el Perú no.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-ind="comp_plastico" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - plastic (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-ind="comp_papel_carton" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - paper &amp; cardboard (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-ind="comp_metal" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - metal (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “MSW generation (kg/capita/day)”, en el último año que reporta cada país.</figcaption>
+
+      <div class="lv-explore">
+        <figure class="lv-card" id="mapa">
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="kg_persona_dia"><h3 class="lv-card-title">Basura por persona (kg al día)</h3><p class="lv-card-note">Kilos de basura municipal que genera cada habitante al día, en el último año que reporta cada país.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="reciclaje" hidden><h3 class="lv-card-title">% de la basura que se recoge para reciclar</h3><p class="lv-card-note">De cada 100 kg de basura municipal que genera un país, cuántos se recogen para reciclar. No dice cuánto se termina reciclando.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="botadero" hidden><h3 class="lv-card-title">% de la basura que va a botaderos a cielo abierto</h3><p class="lv-card-note">De cada 100 kg de basura municipal que genera un país, cuántos terminan en botaderos sin control: sin cubrir, sin cerco, a veces con quema.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="comp_plastico" hidden><h3 class="lv-card-title">Plástico en la basura (% del peso)</h3><p class="lv-card-note">De cada 100 kg de basura municipal, cuántos son plástico.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="comp_papel_carton" hidden><h3 class="lv-card-title">Papel y cartón en la basura (% del peso)</h3><p class="lv-card-note">De cada 100 kg de basura municipal, cuántos son papel y cartón.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="comp_metal" hidden><h3 class="lv-card-title">Metal en la basura (% del peso)</h3><p class="lv-card-note">De cada 100 kg de basura municipal, cuántos son metal.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="comp_vidrio" hidden><h3 class="lv-card-title">Vidrio en la basura (% del peso)</h3><p class="lv-card-note">De cada 100 kg de basura municipal, cuántos son vidrio.</p></div>
+          <div class="lv-ind-name" data-grupo="mundo" data-ind="comp_organico" hidden><h3 class="lv-card-title">Restos de comida en la basura (% del peso)</h3><p class="lv-card-note">De cada 100 kg de basura municipal, cuántos son restos de comida.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="kg_persona_dia" hidden><h3 class="lv-card-title">Basura por persona (kg al día), por departamento</h3><p class="lv-card-note">Residuos municipales generados entre la población urbana del departamento, por día. Haz clic en un departamento para ver su detalle más abajo.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_valorizado" hidden><h3 class="lv-card-title">% de la basura que se valoriza, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos se valorizaron. Solo se registran inorgánicos: papel, cartón, vidrio, plástico, tetra brik y metales. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><h3 class="lv-card-title">% de la basura con disposición final adecuada, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos llegaron a un relleno sanitario u otra infraestructura segura. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="botaderos" hidden><h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3><p class="lv-card-note">Número de lugares que OEFA registra como degradados por residuos municipales. Es la misma cifra todos los años. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><h3 class="lv-card-title">% de distritos que reportan valorización, por departamento</h3><p class="lv-card-note">Distritos que reportaron alguna tonelada valorizada, entre todos los distritos del departamento. Haz clic en un departamento para ver su detalle.</p></div>
+          <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
+          <div class="lv-chart is-map dash-skeleton" data-draw="mapa" data-source="mundo_paises mundo_mapa peru_departamentos peru_mapa"></div>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="kg_persona_dia"><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “MSW generation (kg/capita/day)”. En gris rayado, países sin dato.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="reciclaje" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Treatment - recycling (% weight MSW generated)”. Cada país con su último año y su fuente nacional (hoja “Codebook”). En gris rayado, países sin dato.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="botadero" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Treatment - open dump (% weight MSW generated)”, con la clasificación de botaderos de ONU-Hábitat (Waste Wise Cities Tool). Pocos países reportan este dato; el Perú no. En gris rayado, países sin dato.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="comp_plastico" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Composition - plastic (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="comp_papel_carton" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Composition - paper &amp; cardboard (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="comp_metal" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Composition - metal (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="comp_vidrio" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Composition - glass (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="mundo" data-ind="comp_organico" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columna “Composition - food (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS_MUN entre POB_URBANA, dividido entre 365.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_valorizado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN. 2021 sin dato porque repite 2022.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
         </figure>
-        <figure class="lv-card" id="ranking">
-          <h3 class="lv-card-title">Ranking: <span data-draw="param-region">—</span></h3>
-          <p class="lv-card-note">Los 20 valores más altos de la región elegida. El Perú, en verde, cuando está en ella.</p>
-          <div class="lv-chart is-tall dash-skeleton" data-draw="ranking" data-source="mundo_paises"></div>
-        </figure>
-        <figure class="lv-card" id="regiones">
-          <h3 class="lv-card-title">Reciclaje por región</h3>
-          <p class="lv-card-note">Promedio ponderado por las toneladas que genera cada país. Entre paréntesis, cuántos países reportan el dato.</p>
-          <div class="lv-chart is-tall dash-skeleton" data-draw="regiones" data-source="mundo_regiones"></div>
-        </figure>
+        <aside class="lv-card" id="ranking" aria-label="Ranking">
+          <h3 class="lv-card-title">Ranking</h3>
+          <p class="lv-card-note" data-draw="cobertura" data-source="mundo_paises peru_departamentos">—</p>
+          <div class="lv-chart is-rank dash-skeleton" data-draw="ranking" data-source="mundo_paises peru_departamentos"></div>
+        </aside>
       </div>
+      <figure class="lv-card lv-below" id="regiones" data-show-escala="mundo region">
+        <h3 class="lv-card-title">Por región del mundo</h3>
+        <p class="lv-card-note">Mismo indicador, como promedio de cada región ponderado por las toneladas que genera cada país. Entre paréntesis, cuántos países reportan el dato.</p>
+        <div class="lv-chart dash-skeleton" data-draw="regiones" data-source="mundo_regiones"></div>
+      </figure>
     </section>
 
     <!-- ACTO 2 -->
@@ -313,30 +375,12 @@
         <label>Año
           <select id="f-anio" data-draw="ctl-anio" data-source="peru_nacional" aria-label="Año"></select>
         </label>
-        <label>Indicador del mapa
-          <select class="lv-ctl-ind-peru" id="f-ind-peru">
-            <option value="pct_valorizado">Valorizado (% de los residuos municipales)</option>
-            <option value="pct_distritos_que_valorizan">Distritos que reportan valorización (%)</option>
-            <option value="pct_dispuesto_adecuado">Disposición final adecuada (%)</option>
-            <option value="botaderos">Áreas degradadas por basura (OEFA)</option>
-          </select>
-        </label>
         <label>Departamento
           <select id="f-dep" data-draw="ctl-dep" data-source="peru_departamentos" aria-label="Departamento"></select>
         </label>
+        <button type="button" class="lv-btn" data-ver-peru>Ver el mapa del Perú</button>
       </div>
       <div class="lv-grid">
-        <figure class="lv-card" id="mapa-peru">
-          <h3 class="lv-card-title"><span class="lv-indp-name" data-ind="pct_valorizado">Residuos municipales valorizados</span><span class="lv-indp-name" data-ind="pct_distritos_que_valorizan" hidden>Distritos que reportan valorización</span><span class="lv-indp-name" data-ind="pct_dispuesto_adecuado" hidden>Disposición final adecuada</span><span class="lv-indp-name" data-ind="botaderos" hidden>Áreas degradadas por basura</span> por departamento</h3>
-          <p class="lv-card-note">Haz clic en un departamento para ver su detalle.</p>
-          <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
-          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-peru" data-source="peru_departamentos peru_mapa"></div>
-          <figcaption class="lv-indp-name lv-source" data-ind="pct_valorizado"><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
-          <figcaption class="lv-indp-name lv-source" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero, entre todos los distritos del departamento.</figcaption>
-          <figcaption class="lv-indp-name lv-source" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada de residuos sólidos</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN del <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>. 2021 sin dato porque repite 2022.</figcaption>
-          <figcaption class="lv-indp-name lv-source" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024. Es la misma cifra todos los años.</figcaption>
-        </figure>
-        <div class="lv-stack">
           <article class="lv-card lv-detail" id="detalle">
             <div class="lv-detail-head"><span class="lv-detail-name" data-draw="param-dep">—</span><span class="lv-card-note">en <span data-draw="param-anio">—</span></span></div>
             <dl>
@@ -353,7 +397,6 @@
             <p class="lv-card-note">Porcentaje de los residuos municipales generados. El departamento elegido frente al promedio del Perú.</p>
             <div class="lv-chart dash-skeleton" data-draw="serie" data-source="peru_nacional peru_departamentos"></div>
           </figure>
-        </div>
         <figure class="lv-card lv-wide" id="botaderos">
           <h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3>
           <p class="lv-card-note">Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
@@ -461,6 +504,7 @@
           <h3 class="lv-card-title">Cómo se construyeron los indicadores</h3>
           <ul>
             <li><b>Porcentaje valorizado:</b> residuos inorgánicos valorizados (papel, cartón, vidrio, plástico, tetra brik y metales, según los metadatos de MINAM) entre todos los residuos municipales generados, sumando los distritos de cada departamento. Los orgánicos valorizados no entran, así que el porcentaje es un piso.</li>
+            <li><b>Basura por persona en el Perú:</b> residuos municipales generados (QRESIDUOS_MUN) entre la población urbana (POB_URBANA), porque MINAM asocia esa generación a la población urbana; dividido entre 365. En el mundo, la columna “MSW generation (kg/capita/day)” de What a Waste; por región, toneladas entre población de los países con ambos datos.</li>
             <li><b>Disposición final adecuada:</b> columna DISPOSICION_FINAL_ADECUADA (toneladas llevadas a rellenos sanitarios u otra infraestructura ambientalmente segura) entre residuos municipales generados. Los valores de 2021 son idénticos a los de 2022 en los 1890 distritos, así que 2021 se trató como dato faltante.</li>
             <li><b>Promedios regionales del mundo:</b> ponderados por las toneladas que genera cada país.</li>
             <li><b>Precio de exportación:</b> valor entre peso neto de lo que exporta el Perú en cada partida arancelaria (cobre 7404, aluminio 7602, hierro y acero 7204, papel y cartón 4707, plástico 3915, vidrio 7001).</li>
@@ -523,7 +567,8 @@ const P = () => {
   const p = dash.params();
   return {
     anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Hierro y acero',
-    indMundo: p.ind_mundo ?? 'reciclaje', region: p.region ?? 'América Latina y el Caribe', indPeru: p.ind_peru ?? 'pct_valorizado',
+    indMundo: p.ind_mundo ?? 'reciclaje', region: p.region && p.region !== 'Mundo' ? p.region : 'América Latina y el Caribe',
+    indPeru: p.ind_peru ?? 'pct_valorizado', escala: p.escala ?? 'mundo',
   };
 };
 const num = (v) => (v === null || v === undefined || v === '' ? null : Number(v));
@@ -538,12 +583,13 @@ const F = {
   tc: (v) => d3.format('.2f')(v),
 };
 const IND_MUNDO = {
-  reciclaje: { label: 'Recogido para reciclar', unit: '%' }, botadero: { label: 'Botaderos a cielo abierto', unit: '%' },
-  comp_plastico: { label: 'Plástico', unit: '%' }, comp_papel_carton: { label: 'Papel y cartón', unit: '%' },
-  comp_metal: { label: 'Metal', unit: '%' }, kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' },
+  kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' }, reciclaje: { label: 'Se recoge para reciclar', unit: '%' },
+  botadero: { label: 'Va a botaderos a cielo abierto', unit: '%' }, comp_plastico: { label: 'Plástico', unit: '%' },
+  comp_papel_carton: { label: 'Papel y cartón', unit: '%' }, comp_metal: { label: 'Metal', unit: '%' },
+  comp_vidrio: { label: 'Vidrio', unit: '%' }, comp_organico: { label: 'Restos de comida', unit: '%' },
 };
 const IND_PERU = {
-  pct_valorizado: { label: 'Valorizado', unit: '%' }, pct_distritos_que_valorizan: { label: 'Distritos que reportan', unit: '%' },
+  kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' }, pct_valorizado: { label: 'Se valoriza', unit: '%' }, pct_distritos_que_valorizan: { label: 'Distritos que reportan', unit: '%' },
   pct_dispuesto_adecuado: { label: 'Disposición final adecuada', unit: '%' }, botaderos: { label: 'Áreas degradadas', unit: '' },
 };
 const fmtInd = (v, unit) => (v === null ? 'sin dato' : unit === '%' ? d3.format('.2f')(v) + '%' : unit === '' ? d3.format(',')(v) : d3.format('.2f')(v) + unit);
@@ -638,7 +684,7 @@ function hbars(el, rows, opts) {
   const right = d3.max(rows, (r) => textWidth(opts.fmt(r.value), size)) + 12;
   const rowH = opts.rowH ?? 22;
   const h = rows.length * rowH + 8;
-  const x = d3.scaleLinear([0, d3.max(rows, (r) => r.value) || 1], [left, w - right]);
+  const x = d3.scaleLinear([0, opts.max ?? (d3.max(rows, (r) => r.value) || 1)], [left, w - right]);
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
   const tip = makeTip(el);
   const g = svg.selectAll('g.r').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
@@ -720,7 +766,6 @@ dash.draw('valor', (el) => {
 dash.draw('param-anio', (el) => { el.textContent = String(P().anio); });
 dash.draw('param-dep', (el) => { el.textContent = capital(P().dep); });
 dash.draw('param-material', (el) => { el.textContent = P().material.toLowerCase(); });
-dash.draw('param-region', (el) => { el.textContent = P().region === 'Mundo' ? 'todo el mundo' : P().region; });
 
 // ---------- Controles cuyas opciones vienen de los datos ----------
 function fillSelect(sel, options, value, param) {
@@ -731,7 +776,7 @@ function fillSelect(sel, options, value, param) {
 dash.draw('ctl-region', (sel) => {
   const d = dash.data('mundo_paises');
   const regs = d.status === 'ok' ? [...new Set(d.data.map((r) => r.region))].sort() : [];
-  fillSelect(sel, [['Mundo', 'Todo el mundo'], ...regs.map((r) => [r, r])], P().region, 'region');
+  fillSelect(sel, regs.map((r) => [r, r]), P().region, 'region');
 });
 dash.draw('ctl-anio', (sel) => {
   const d = dash.data('peru_nacional');
@@ -749,95 +794,157 @@ dash.draw('ctl-material', (sel) => {
   fillSelect(sel, ms.map((m) => [m, m]), P().material, 'material');
 });
 
-// ---------- Acto 1 ----------
-dash.draw('mapa-mundo', (el) => {
+// ---------- Acto 1: un mapa con tres escalas (mundo, región, Perú) ----------
+const REGION_PERU = 'América Latina y el Caribe';
+// Filas que muestra el explorador según la escala: [{id, nombre, valor, destacado}]
+function scopeRows(p) {
+  if (p.escala === 'peru') {
+    const d = dash.data('peru_departamentos');
+    if (d.status !== 'ok') return null;
+    return d.data.filter((r) => Number(r.anio) === p.anio)
+      .map((r) => ({ id: r.departamento, nombre: capital(r.departamento), valor: num(r[p.indPeru]), destacado: r.departamento === p.dep, row: r }));
+  }
+  const d = dash.data('mundo_paises');
+  if (d.status !== 'ok') return null;
+  return d.data.filter((r) => p.escala === 'mundo' || r.region === p.region)
+    .map((r) => ({ id: r.iso3, nombre: r.pais, valor: num(r[p.indMundo]), destacado: r.iso3 === 'PER', row: r }));
+}
+const indOf = (p) => (p.escala === 'peru' ? IND_PERU[p.indPeru] : IND_MUNDO[p.indMundo]);
+// Para que una región no quede partida por el meridiano 180
+const CORRER_LON = {
+  'Asia oriental y Pacífico': (lon) => (lon < -30 ? lon + 360 : lon),
+  'Europa y Asia central': (lon) => (lon < -150 ? lon + 360 : lon),
+  'América del Norte': (lon) => (lon > 0 ? lon - 360 : lon),
+};
+
+dash.draw('mapa', (el) => {
   el.replaceChildren();
-  if (!chartState(el, ['mundo_paises', 'mundo_mapa'])) return;
   const p = P();
-  const ind = IND_MUNDO[p.indMundo];
-  const vals = new Map(dash.data('mundo_paises').data.map((r) => [r.iso3, r]));
-  const w = el.clientWidth || 800;
-  const h = Math.round(w * 0.5);
-  const shapes = geoPaths(dash.data('mundo_mapa').data.filter((r) => r.iso3 !== 'ATA'), equalEarth, [0, 4, w, h - 34])
-    .sort((a, b) => (a.row.iso3 === 'PER') - (b.row.iso3 === 'PER'));
-  const max = d3.max([...vals.values()], (r) => num(r[p.indMundo])) || 1;
-  const color = (v) => d3.interpolateRgb(tok('--lv-seq-lo'), tok('--lv-seq-hi'))(Math.sqrt(v / max));
+  const ids = p.escala === 'peru' ? ['peru_departamentos', 'peru_mapa'] : ['mundo_paises', 'mundo_mapa'];
+  if (!chartState(el, ids)) return;
+  const ind = indOf(p);
+  const rows = new Map(scopeRows(p).map((r) => [r.id, r]));
+  const w = el.clientWidth || 700;
+  let shapes, h;
+  if (p.escala === 'peru') {
+    h = Math.min(620, Math.round(w * 1.25));
+    shapes = geoPaths(dash.data('peru_mapa').data, mercator, [4, 4, w - 4, h - 40]).map((s) => ({ ...s, id: s.row.departamento }));
+  } else if (p.escala === 'region') {
+    const correr = CORRER_LON[p.region] || ((lon) => lon);
+    h = Math.round(w * 0.62);
+    shapes = geoPaths(dash.data('mundo_mapa').data.filter((r) => rows.has(r.iso3)), (lon, lat) => equalEarth(correr(lon), lat), [4, 4, w - 4, h - 40])
+      .map((s) => ({ ...s, id: s.row.iso3 }));
+  } else {
+    h = Math.round(w * 0.52);
+    shapes = geoPaths(dash.data('mundo_mapa').data.filter((r) => r.iso3 !== 'ATA'), equalEarth, [0, 4, w, h - 36]).map((s) => ({ ...s, id: s.row.iso3 }));
+  }
+  const max = d3.max([...rows.values()], (r) => r.valor) || 1;
+  const color = (v) => d3.interpolateRgb(tok('--lv-seq-lo'), tok('--lv-seq-hi'))(p.escala === 'peru' ? v / max : Math.sqrt(v / max));
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  // Rayado para "sin dato": se distingue del verde más claro aunque no se vea el color
+  const pat = 'lv-sin-dato-' + Math.random().toString(36).slice(2, 8);
+  const pt = svg.append('pattern').attr('id', pat).attr('width', 6).attr('height', 6).attr('patternUnits', 'userSpaceOnUse').attr('patternTransform', 'rotate(45)');
+  pt.append('rect').attr('width', 6).attr('height', 6).attr('fill', tok('--lv-nodata'));
+  pt.append('line').attr('y2', 6).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 1.5);
   const tip = makeTip(el);
+  const destacado = (s) => rows.get(s.id)?.destacado;
+  shapes.sort((a, b) => (destacado(a) ? 1 : 0) - (destacado(b) ? 1 : 0));
   svg.append('g').selectAll('path').data(shapes).join('path').attr('d', (s) => s.d).attr('fill-rule', 'evenodd')
-    .attr('fill', (s) => { const v = num(vals.get(s.row.iso3)?.[p.indMundo]); return v === null ? tok('--lv-nodata') : color(v); })
-    .attr('stroke', (s) => (s.row.iso3 === 'PER' ? tok('--lv-ink') : tok('--lv-panel'))).attr('stroke-width', (s) => (s.row.iso3 === 'PER' ? 1.6 : 0.5))
+    .attr('fill', (s) => { const v = rows.get(s.id)?.valor ?? null; return v === null ? `url(#${pat})` : color(v); })
+    .attr('stroke', (s) => (destacado(s) ? (p.escala === 'peru' ? tok('--lv-yellow') : tok('--lv-ink')) : tok('--lv-panel')))
+    .attr('stroke-width', (s) => (destacado(s) ? (p.escala === 'peru' ? 3 : 1.6) : 0.6))
+    .style('cursor', p.escala === 'peru' ? 'pointer' : 'default')
     .on('mousemove', (ev, s) => {
-      const r = vals.get(s.row.iso3);
-      const v = r ? num(r[p.indMundo]) : null;
-      tip.show(ev, s.row.nombre, [`${ind.label}: ${fmtInd(v, ind.unit)}`, r && r.anio_dato ? `Dato del año ${r.anio_dato}` : 'Sin dato en What a Waste']);
+      const r = rows.get(s.id);
+      const v = r ? r.valor : null;
+      const extra = p.escala === 'peru' ? 'Clic para ver el detalle' : r && r.row.anio_dato ? `Dato del año ${r.row.anio_dato}` : 'Sin dato en What a Waste';
+      tip.show(ev, r ? r.nombre : s.row.nombre ?? capital(s.id), [`${ind.label}: ${fmtInd(v, ind.unit)}`, extra]);
     })
-    .on('mouseleave', () => tip.hide());
-  legendRamp(svg, 8, h - 26, Math.min(220, w * 0.4), max, ind.unit, color);
+    .on('mouseleave', () => tip.hide())
+    .on('click', (ev, s) => { if (p.escala === 'peru') dash.setParams({ dep: s.id }); });
+  if ([...rows.values()].some((r) => r.valor !== null)) legendRamp(svg, 8, h - 30, Math.min(220, w * 0.45), max, ind.unit, color);
+});
+
+dash.draw('cobertura', (el) => {
+  const p = P();
+  const rows = scopeRows(p);
+  if (!rows) { el.textContent = '—'; return; }
+  const con = rows.filter((r) => r.valor !== null).length;
+  const unidad = p.escala === 'peru' ? 'departamentos' : 'países';
+  const donde = p.escala === 'peru' ? `Perú, ${p.anio}` : p.escala === 'region' ? p.region : 'Mundo';
+  el.textContent = `${donde} · ${con} de ${rows.length} ${unidad} tienen este dato`;
 });
 
 dash.draw('ranking', (el) => {
   el.replaceChildren();
-  if (!chartState(el, ['mundo_paises'])) return;
   const p = P();
-  const ind = IND_MUNDO[p.indMundo];
-  const rows = dash.data('mundo_paises').data
-    .filter((r) => num(r[p.indMundo]) !== null && (p.region === 'Mundo' || r.region === p.region))
-    .sort((a, b) => num(b[p.indMundo]) - num(a[p.indMundo])).slice(0, 20)
-    .map((r) => ({
-      label: r.pais, value: num(r[p.indMundo]), bold: r.iso3 === 'PER',
-      color: r.iso3 === 'PER' ? tok('--lv-green') : tok('--lv-bar-muted'),
-      tip: [r.pais, [`${ind.label}: ${fmtInd(num(r[p.indMundo]), ind.unit)}`, `Dato del año ${r.anio_dato ?? 's/f'}`]],
-    }));
-  hbars(el, rows, { fmt: (v) => fmtInd(v, ind.unit), rowH: 20 });
+  if (!chartState(el, [p.escala === 'peru' ? 'peru_departamentos' : 'mundo_paises'])) return;
+  const ind = indOf(p);
+  const fmt = (v) => fmtInd(v, ind.unit);
+  const conDato = scopeRows(p).filter((r) => r.valor !== null).sort((a, b) => b.valor - a.valor);
+  const todos = scopeRows(p);
+  const puesto = (r) => 1 + conDato.filter((q) => q.valor > r.valor).length;
+  const bar = (r) => ({
+    label: `${puesto(r)}. ${r.nombre}`, value: r.valor, bold: r.destacado,
+    color: r.destacado ? tok('--lv-green') : tok('--lv-bar-muted'),
+    tip: [r.nombre, [`${ind.label}: ${fmt(r.valor)}`, `Puesto ${puesto(r)} de ${conDato.length}`]],
+  });
+  const max = conDato.length ? conDato[0].valor : 1;
+  const block = (titulo, lista) => {
+    if (titulo) { const t = document.createElement('p'); t.className = 'lv-rank-head'; t.textContent = titulo; el.append(t); }
+    const box = document.createElement('div'); el.append(box);
+    hbars(box, lista.map(bar), { fmt, rowH: 24, max, onClick: p.escala === 'peru' ? (d) => dash.setParams({ dep: lista.find((r) => bar(r).label === d.label).id }) : null });
+  };
+  if (!conDato.length) {
+    const n = document.createElement('p'); n.className = 'lv-rank-note'; n.textContent = 'Nadie reporta este dato aquí.'; el.append(n); return;
+  }
+  let mostrados;
+  if (conDato.length <= 10) {
+    block('Todos, de mayor a menor', conDato);
+    mostrados = conDato;
+  } else {
+    const altos = conDato.slice(0, 5);
+    const bajos = conDato.slice(-5);
+    block('5 más altos', altos);
+    block('5 más bajos', bajos);
+    mostrados = altos.concat(bajos);
+    const minimo = conDato.at(-1).valor;
+    const empatados = conDato.filter((r) => r.valor === minimo).length;
+    if (empatados > 5) {
+      const n = document.createElement('p'); n.className = 'lv-rank-note';
+      n.textContent = `${empatados} ${p.escala === 'peru' ? 'departamentos' : 'países'} empatan en ${fmt(minimo)}; se muestran 5.`;
+      el.append(n);
+    }
+  }
+  // El Perú (o el departamento elegido) siempre visible
+  const foco = todos.find((r) => r.destacado);
+  if (foco && !mostrados.includes(foco)) {
+    const pin = document.createElement('p'); pin.className = 'lv-rank-pin';
+    const b = document.createElement('b'); b.textContent = foco.nombre;
+    pin.append(b, document.createTextNode(foco.valor === null ? ': no reporta este dato' : `: puesto ${puesto(foco)} de ${conDato.length} · ${fmt(foco.valor)}`));
+    el.append(pin);
+  }
 });
 
 dash.draw('regiones', (el) => {
   el.replaceChildren();
   if (!chartState(el, ['mundo_regiones'])) return;
-  const rows = dash.data('mundo_regiones').data.filter((r) => num(r.reciclaje) !== null)
-    .sort((a, b) => num(b.reciclaje) - num(a.reciclaje))
+  const p = P();
+  const ind = IND_MUNDO[p.indMundo];
+  const rows = dash.data('mundo_regiones').data.filter((r) => num(r[p.indMundo]) !== null && num(r['n_' + p.indMundo]) > 0)
+    .sort((a, b) => num(b[p.indMundo]) - num(a[p.indMundo]))
     .map((r) => {
-      const alc = r.region === 'América Latina y el Caribe';
+      const elegida = p.escala === 'region' ? r.region === p.region : r.region === REGION_PERU;
       return {
-        label: `${r.region} (${r.n_reciclaje})`, value: num(r.reciclaje), bold: alc || r.region === 'Mundo',
-        color: alc ? tok('--lv-yellow') : r.region === 'Mundo' ? tok('--lv-green') : tok('--lv-bar-muted'),
-        tip: [r.region, [`Reciclaje: ${d3.format('.1f')(num(r.reciclaje))}%`, `${r.n_reciclaje} países con dato`]],
+        label: `${r.region} (${r['n_' + p.indMundo]})`, value: num(r[p.indMundo]), bold: elegida || r.region === 'Mundo',
+        color: elegida ? tok('--lv-yellow') : r.region === 'Mundo' ? tok('--lv-green') : tok('--lv-bar-muted'),
+        tip: [r.region, [`${ind.label}: ${fmtInd(num(r[p.indMundo]), ind.unit)}`, `${r['n_' + p.indMundo]} países con dato`]],
       };
     });
-  hbars(el, rows, { fmt: (v) => d3.format('.1f')(v) + '%', rowH: 30 });
+  hbars(el, rows, { fmt: (v) => fmtInd(v, ind.unit), rowH: 28 });
 });
 
 // ---------- Acto 2 ----------
-dash.draw('mapa-peru', (el) => {
-  el.replaceChildren();
-  if (!chartState(el, ['peru_departamentos', 'peru_mapa'])) return;
-  const p = P();
-  const ind = IND_PERU[p.indPeru];
-  const rows = new Map(dash.data('peru_departamentos').data.filter((r) => Number(r.anio) === p.anio).map((r) => [r.departamento, r]));
-  const w = el.clientWidth || 500;
-  const h = Math.min(560, Math.round(w * 1.3));
-  const shapes = geoPaths(dash.data('peru_mapa').data, mercator, [4, 4, w - 4, h - 36])
-    .sort((a, b) => (a.row.departamento === p.dep) - (b.row.departamento === p.dep));
-  const max = d3.max([...rows.values()], (r) => num(r[p.indPeru])) || 1;
-  const color = (v) => d3.interpolateRgb(tok('--lv-seq-lo'), tok('--lv-seq-hi'))(v / max);
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
-  const tip = makeTip(el);
-  const dep = (s) => s.row.departamento;
-  svg.append('g').selectAll('path').data(shapes).join('path').attr('d', (s) => s.d).attr('fill-rule', 'evenodd')
-    .attr('fill', (s) => { const v = num(rows.get(dep(s))?.[p.indPeru]); return v === null ? tok('--lv-nodata') : color(v); })
-    .attr('stroke', (s) => (dep(s) === p.dep ? tok('--lv-yellow') : tok('--lv-panel')))
-    .attr('stroke-width', (s) => (dep(s) === p.dep ? 3 : 0.8))
-    .style('cursor', 'pointer')
-    .on('mousemove', (ev, s) => {
-      const r = rows.get(dep(s));
-      tip.show(ev, capital(dep(s)), [`${ind.label}: ${fmtInd(r ? num(r[p.indPeru]) : null, ind.unit)}`, 'Clic para ver el detalle']);
-    })
-    .on('mouseleave', () => tip.hide())
-    .on('click', (ev, s) => dash.setParams({ dep: dep(s) }));
-  if ([...rows.values()].some((r) => num(r[p.indPeru]) !== null)) legendRamp(svg, 8, h - 26, Math.min(200, w * 0.5), max, ind.unit, color);
-});
-
 dash.draw('serie', (el) => {
   el.replaceChildren();
   if (!chartState(el, ['peru_nacional', 'peru_departamentos'])) return;
@@ -984,8 +1091,18 @@ dash.draw('tabla-trujillo', (tbody) => {
 });
 
 // ---------- Controles fijos, nombres de indicador y navegación ----------
-document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
-document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_peru: s.value })));
+document.querySelectorAll('[data-escala]').forEach((b) => b.addEventListener('click', () => dash.setParams({ escala: b.dataset.escala })));
+document.querySelectorAll('[data-ind-peru]').forEach((b) => b.addEventListener('click', () => dash.setParams({ ind_peru: b.dataset.indPeru })));
+document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.addEventListener('click', () => {
+  const v = b.dataset.indMundo;
+  if (v !== 'comp') dash.setParams({ ind_mundo: v });
+  else if (!P().indMundo.startsWith('comp_')) dash.setParams({ ind_mundo: document.querySelector('.lv-ctl-comp').value });
+}));
+document.querySelectorAll('.lv-ctl-comp').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
+document.querySelectorAll('[data-ver-peru]').forEach((b) => b.addEventListener('click', () => {
+  dash.setParams({ escala: 'peru' });
+  document.getElementById('mapa').scrollIntoView({ behavior: 'smooth' });
+}));
 document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
   const target = document.getElementById(b.dataset.go);
   if (target) { target.scrollIntoView({ behavior: 'smooth' }); dash.setLink(target.id); }
@@ -993,12 +1110,17 @@ document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click'
 let lvLinked = false;
 dash.onData(() => {
   const p = P();
-  document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => { s.value = p.indMundo; });
-  document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => { s.value = p.indPeru; });
-  document.querySelectorAll('.lv-ind-name').forEach((s) => { s.hidden = s.dataset.ind !== p.indMundo; });
-  document.querySelectorAll('.lv-indp-name').forEach((s) => { s.hidden = s.dataset.ind !== p.indPeru; });
+  const grupo = p.escala === 'peru' ? 'peru' : 'mundo';
+  const esComp = p.indMundo.startsWith('comp_');
+  document.querySelectorAll('[data-escala]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.escala === p.escala)));
+  document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indMundo === p.indMundo || (b.dataset.indMundo === 'comp' && esComp))));
+  document.querySelectorAll('[data-ind-peru]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indPeru === p.indPeru)));
+  document.querySelectorAll('[data-show-escala]').forEach((n) => { n.hidden = !n.dataset.showEscala.split(' ').includes(p.escala); });
+  document.querySelectorAll('.lv-comp-ctl').forEach((n) => { n.hidden = grupo === 'peru' || !esComp; });
+  document.querySelectorAll('.lv-ctl-comp').forEach((s) => { if (esComp) s.value = p.indMundo; });
+  document.querySelectorAll('.lv-ind-name').forEach((s) => { s.hidden = s.dataset.grupo !== grupo || s.dataset.ind !== (grupo === 'peru' ? p.indPeru : p.indMundo); });
   const deps = dash.data('peru_departamentos');
-  const sinDato = deps.status === 'ok' && deps.data.filter((r) => Number(r.anio) === p.anio).every((r) => num(r[p.indPeru]) === null);
+  const sinDato = grupo === 'peru' && deps.status === 'ok' && deps.data.filter((r) => Number(r.anio) === p.anio).every((r) => num(r[p.indPeru]) === null);
   document.querySelectorAll('.lv-no-data-note').forEach((n) => { n.hidden = !sinDato; });
   if (!lvLinked && deps.status === 'ok') {
     lvLinked = true;

@@ -42,6 +42,7 @@ COLUMNAS_WAW = {
     "MSW generation - year reported": "anio_dato",
     "MSW generation (t/y)": "generacion_t",
     "MSW generation (kg/capita/day)": "kg_persona_dia",
+    "Population in waste generation year": "poblacion",
     "Treatment - open dump (% weight MSW generated)": "botadero",
     "Treatment - controlled landfill (% weight MSW generated)": "relleno_controlado",
     "Treatment - sanitary landfill (% weight MSW generated)": "relleno_sanitario",
@@ -74,8 +75,9 @@ waw = pd.read_excel(ORIGINALES / "waw3_paises.xlsx", sheet_name="Country dataset
 waw = waw[list(COLUMNAS_WAW)].rename(columns=COLUMNAS_WAW)
 waw = waw[waw.region.isin(REGIONES)]  # descarta la fila de códigos que sigue al encabezado
 porcentajes = [c for c in waw.columns if c not in ("iso3", "pais", "region", "ingreso", "anio_dato", "generacion_t",
-                                                   "kg_persona_dia", "recicladores_informales", "trabajadores_formales")]
-numericas = porcentajes + ["anio_dato", "generacion_t", "kg_persona_dia", "recicladores_informales",
+                                                   "kg_persona_dia", "poblacion", "recicladores_informales",
+                                                   "trabajadores_formales")]
+numericas = porcentajes + ["anio_dato", "generacion_t", "kg_persona_dia", "poblacion", "recicladores_informales",
                            "trabajadores_formales"]
 waw[numericas] = waw[numericas].apply(pd.to_numeric, errors="coerce")
 waw[porcentajes] = waw[porcentajes] * 100  # la fuente usa fracciones: 0.0093 -> 0.93 %
@@ -96,6 +98,10 @@ def ponderado(d, columna):
 regiones = []
 for nombre, d in [("Mundo", waw)] + list(waw.groupby("region")):
     fila = {"region": nombre, "generacion_t": d.generacion_t.sum()}
+    # Basura por persona de la región: toneladas entre población de los países con ambos datos
+    con_ambos = d.dropna(subset=["generacion_t", "poblacion"])
+    fila["kg_persona_dia"] = 1000 * con_ambos.generacion_t.sum() / con_ambos.poblacion.sum() / 365
+    fila["n_kg_persona_dia"] = len(con_ambos)
     for col in ["reciclaje", "botadero", "relleno", "compostaje", "incineracion", "comp_plastico", "comp_papel_carton",
                 "comp_metal", "comp_vidrio", "comp_organico"]:
         fila.update(ponderado(d, col).to_dict())
@@ -125,6 +131,7 @@ distritos = pd.DataFrame({
     "distrito": val.DISTRITO.map(sin_tildes),
     "reg_nat": val.reg_nat,
     "poblacion": val.POB_TOTAL,
+    "poblacion_urbana": val.POB_URBANA,  # QRESIDUOS_MUN se asocia a la población urbana (diccionario MINAM)
     "generado_t": val.QRESIDUOS_MUN,
     "valorizado_t": val["QRESIDUOS _VAL_INORGAN"],  # el nombre original trae un espacio
 })
@@ -155,6 +162,7 @@ def resumir(d):
         "distritos": len(d),
         "distritos_que_valorizan": int(d.reporta_valorizacion.sum()),
         "poblacion": d.poblacion.sum(),
+        "poblacion_urbana": d.poblacion_urbana.sum(),
     })
 
 
@@ -163,6 +171,7 @@ def indicadores(t):
     t["pct_dispuesto_adecuado"] = 100 * t.dispuesto_adecuado_t / t.generado_t
     t["pct_distritos_que_valorizan"] = 100 * t.distritos_que_valorizan / t.distritos
     t["kg_valorizado_por_persona"] = 1000 * t.valorizado_t / t.poblacion
+    t["kg_persona_dia"] = 1000 * t.generado_t / t.poblacion_urbana / 365
     return t
 
 
