@@ -114,13 +114,7 @@
 .lv .lv-filters label { display: flex; flex-direction: column; gap: .2rem; font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; min-width: 0; }
 .lv select { font: inherit; font-size: var(--cds-font-size-body); font-weight: 400; color: var(--lv-ink); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 8px; padding: .4rem .6rem; min-width: 12rem; max-width: 100%; cursor: pointer; }
 
-.lv .lv-filters .lv-ctl { display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
-.lv .lv-ctl-label { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); font-weight: 600; }
-.lv .lv-seg { display: flex; flex-wrap: wrap; gap: .35rem; }
-.lv .lv-seg button, .lv .lv-btn { font: inherit; font-size: var(--cds-font-size-caption); font-weight: 600; color: var(--lv-ink-2); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 999px; padding: .4rem .9rem; cursor: pointer; }
-.lv .lv-seg button:hover, .lv .lv-btn:hover { background: var(--lv-yellow-soft); color: var(--lv-ink); }
-.lv .lv-seg button[aria-pressed="true"] { background: var(--lv-green); border-color: var(--lv-green); color: var(--lv-on-accent); }
-.lv .lv-seg button:focus-visible, .lv .lv-btn:focus-visible { outline: 3px solid var(--lv-mustard); outline-offset: 1px; }
+.lv #f-anio { min-width: 6rem; }
 .lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: start; }
 .lv .lv-below { margin-top: var(--cds-gap-md); }
 .lv .lv-chart.is-map { min-height: 22rem; }
@@ -271,21 +265,19 @@
       </div>
 
       <div class="lv-filters lv-explore-bar" role="group" aria-label="Explorador del mapa">
-        <div class="lv-ctl lv-ctl-wide"><span class="lv-ctl-label">Indicador</span>
-          <div class="lv-seg" role="group" aria-label="Indicador">
-            <button type="button" data-ind-mundo="kg_persona_dia">Basura por persona</button>
-            <button type="button" data-ind-mundo="reciclaje">% que se recoge para reciclar</button>
-            <button type="button" data-ind-mundo="botadero">% que va a botaderos</button>
-            <button type="button" data-ind-mundo="comp">Composición</button>
-          </div>
-        </div>
-        <label class="lv-comp-ctl">Material
-          <select class="lv-ctl-comp" aria-label="Material de la composición">
-            <option value="comp_plastico">Plástico</option>
-            <option value="comp_papel_carton">Papel y cartón</option>
-            <option value="comp_metal">Metal</option>
-            <option value="comp_vidrio">Vidrio</option>
-            <option value="comp_organico">Restos de comida</option>
+        <span class="lv-filters-tag">Explora</span>
+        <label>Indicador
+          <select class="lv-ctl-ind-mundo" id="f-ind-mundo">
+            <option value="kg_persona_dia">Basura por persona (kg al día)</option>
+            <option value="reciclaje">% de la basura que se recoge para reciclar</option>
+            <option value="botadero">% de la basura que va a botaderos a cielo abierto</option>
+            <optgroup label="Composición de la basura (% del peso)">
+              <option value="comp_plastico">Plástico</option>
+              <option value="comp_papel_carton">Papel y cartón</option>
+              <option value="comp_metal">Metal</option>
+              <option value="comp_vidrio">Vidrio</option>
+              <option value="comp_organico">Restos de comida</option>
+            </optgroup>
           </select>
         </label>
       </div>
@@ -341,34 +333,20 @@
         <label>Año
           <select id="f-anio" data-draw="ctl-anio" data-source="peru_nacional" aria-label="Año"></select>
         </label>
-        <div class="lv-ctl lv-ctl-wide"><span class="lv-ctl-label">Indicador</span>
-          <div class="lv-seg" role="group" aria-label="Indicador del Perú">
-            <button type="button" data-ind-peru="kg_persona_dia">Basura por persona</button>
-            <button type="button" data-ind-peru="pct_valorizado">% que se valoriza</button>
-            <button type="button" data-ind-peru="pct_dispuesto_adecuado">% con disposición adecuada</button>
-            <button type="button" data-ind-peru="botaderos">Áreas degradadas (número)</button>
-            <button type="button" data-ind-peru="pct_distritos_que_valorizan">% de distritos que reportan</button>
-          </div>
-        </div>
         <label>Departamento
           <select id="f-dep" data-draw="ctl-dep" data-source="peru_departamentos" aria-label="Departamento"></select>
         </label>
+        <label>Indicador del mapa
+          <select class="lv-ctl-ind-peru" id="f-ind-peru">
+            <option value="kg_persona_dia">Basura por persona (kg al día)</option>
+            <option value="pct_valorizado">% de la basura que se valoriza</option>
+            <option value="pct_dispuesto_adecuado">% con disposición final adecuada</option>
+            <option value="botaderos">Áreas degradadas por basura (número)</option>
+            <option value="pct_distritos_que_valorizan">% de distritos que reportan valorización</option>
+          </select>
+        </label>
       </div>
       <div class="lv-grid">
-        <figure class="lv-card" id="mapa-peru">
-          <div class="lv-ind-name" data-grupo="peru" data-ind="kg_persona_dia" hidden><h3 class="lv-card-title">Basura por persona (kg al día), por departamento</h3><p class="lv-card-note">Residuos municipales generados entre la población urbana del departamento, por día. Haz clic en un departamento para ver su detalle.</p></div>
-          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_valorizado" hidden><h3 class="lv-card-title">% de la basura que se valoriza, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos se valorizaron. Solo se registran inorgánicos: papel, cartón, vidrio, plástico, tetra brik y metales. Haz clic en un departamento para ver su detalle.</p></div>
-          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><h3 class="lv-card-title">% de la basura con disposición final adecuada, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos llegaron a un relleno sanitario u otra infraestructura segura. Haz clic en un departamento para ver su detalle.</p></div>
-          <div class="lv-ind-name" data-grupo="peru" data-ind="botaderos" hidden><h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3><p class="lv-card-note">Número de lugares que OEFA registra como degradados por residuos municipales. Es la misma cifra todos los años. Haz clic en un departamento para ver su detalle.</p></div>
-          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><h3 class="lv-card-title">% de distritos que reportan valorización, por departamento</h3><p class="lv-card-note">Distritos que reportaron alguna tonelada valorizada, entre todos los distritos del departamento. Haz clic en un departamento para ver su detalle.</p></div>
-          <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
-          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa" data-scope="peru" data-source="peru_departamentos peru_mapa"></div>
-          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS_MUN entre POB_URBANA, dividido entre 365.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_valorizado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN. 2021 sin dato porque repite 2022.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024.</figcaption>
-          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
-        </figure>
         <div class="lv-stack">
           <article class="lv-card lv-detail" id="detalle">
             <div class="lv-detail-head"><span class="lv-detail-name" data-draw="param-dep">—</span><span class="lv-card-note">en <span data-draw="param-anio">—</span></span></div>
@@ -387,6 +365,20 @@
             <div class="lv-chart dash-skeleton" data-draw="serie" data-source="peru_nacional peru_departamentos"></div>
           </figure>
         </div>
+        <figure class="lv-card" id="mapa-peru">
+          <div class="lv-ind-name" data-grupo="peru" data-ind="kg_persona_dia" hidden><h3 class="lv-card-title">Basura por persona (kg al día), por departamento</h3><p class="lv-card-note">Residuos municipales generados entre la población urbana del departamento, por día. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_valorizado" hidden><h3 class="lv-card-title">% de la basura que se valoriza, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos se valorizaron. Solo se registran inorgánicos: papel, cartón, vidrio, plástico, tetra brik y metales. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><h3 class="lv-card-title">% de la basura con disposición final adecuada, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos llegaron a un relleno sanitario u otra infraestructura segura. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="botaderos" hidden><h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3><p class="lv-card-note">Número de lugares que OEFA registra como degradados por residuos municipales. Es la misma cifra todos los años. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><h3 class="lv-card-title">% de distritos que reportan valorización, por departamento</h3><p class="lv-card-note">Distritos que reportaron alguna tonelada valorizada, entre todos los distritos del departamento. Haz clic en un departamento para ver su detalle.</p></div>
+          <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
+          <div class="lv-chart is-tall dash-skeleton" data-draw="mapa" data-scope="peru" data-source="peru_departamentos peru_mapa"></div>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS_MUN entre POB_URBANA, dividido entre 365.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_valorizado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN. 2021 sin dato porque repite 2022.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
+        </figure>
         <figure class="lv-card lv-wide" id="botaderos">
           <h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3>
           <p class="lv-card-note">Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
@@ -698,10 +690,11 @@ function lines(el, series, opts) {
   const endW = d3.max(series, (s) => textWidth(s.name, 12)) + 14;
   const all = series.flatMap((s) => s.points);
   const yMax = d3.max(all, (p) => p.y) || 1;
-  const yTicks = d3.scaleLinear([0, yMax], [0, 1]).nice().ticks(4);
+  const yNice = d3.scaleLinear([0, yMax], [0, 1]).nice(4);
+  const yTicks = yNice.ticks(4);
   const left = d3.max(yTicks, (t) => textWidth(opts.fmtAxis(t), 11)) + 10;
   const x = d3.scaleLinear(d3.extent(all, (p) => p.x), [left, w - endW]);
-  const y = d3.scaleLinear([0, d3.max(yTicks)], [h - 28, 12]);
+  const y = d3.scaleLinear(yNice.domain(), [h - 28, 12]);
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
   svg.append('g').selectAll('line').data(yTicks).join('line').attr('x1', left).attr('x2', w - endW).attr('y1', y).attr('y2', y)
     .attr('stroke', tok('--lv-line'));
@@ -1064,13 +1057,8 @@ dash.draw('tabla-trujillo', (tbody) => {
 });
 
 // ---------- Controles fijos, nombres de indicador y navegación ----------
-document.querySelectorAll('[data-ind-peru]').forEach((b) => b.addEventListener('click', () => dash.setParams({ ind_peru: b.dataset.indPeru })));
-document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.addEventListener('click', () => {
-  const v = b.dataset.indMundo;
-  if (v !== 'comp') dash.setParams({ ind_mundo: v });
-  else if (!P().indMundo.startsWith('comp_')) dash.setParams({ ind_mundo: document.querySelector('.lv-ctl-comp').value });
-}));
-document.querySelectorAll('.lv-ctl-comp').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
+document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
+document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_peru: s.value })));
 document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
   const target = document.getElementById(b.dataset.go);
   if (target) { target.scrollIntoView({ behavior: 'smooth' }); dash.setLink(target.id); }
@@ -1078,11 +1066,8 @@ document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click'
 let lvLinked = false;
 dash.onData(() => {
   const p = P();
-  const esComp = p.indMundo.startsWith('comp_');
-  document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indMundo === p.indMundo || (b.dataset.indMundo === 'comp' && esComp))));
-  document.querySelectorAll('[data-ind-peru]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indPeru === p.indPeru)));
-  document.querySelectorAll('.lv-comp-ctl').forEach((n) => { n.hidden = !esComp; });
-  document.querySelectorAll('.lv-ctl-comp').forEach((s) => { if (esComp) s.value = p.indMundo; });
+  document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => { s.value = p.indMundo; });
+  document.querySelectorAll('.lv-ctl-ind-peru').forEach((s) => { s.value = p.indPeru; });
   document.querySelectorAll('.lv-ind-name').forEach((s) => { s.hidden = s.dataset.ind !== (s.dataset.grupo === 'peru' ? p.indPeru : p.indMundo); });
   const deps = dash.data('peru_departamentos');
   const sinDato = deps.status === 'ok' && deps.data.filter((r) => Number(r.anio) === p.anio).every((r) => num(r[p.indPeru]) === null);
