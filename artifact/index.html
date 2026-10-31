@@ -122,7 +122,7 @@
 
 .lv #f-anio { min-width: 6rem; }
 .lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: stretch; }
-.lv .lv-below { margin-top: var(--cds-gap-md); }
+
 .lv .lv-chart.is-map { min-height: 22rem; }
 .lv .lv-chart.is-rank { min-height: 22rem; }
 .lv .lv-rank-head { margin: var(--cds-gap-sm) 0 .2rem; font-size: var(--cds-font-size-caption); text-transform: uppercase; letter-spacing: .08em; font-weight: 800; color: var(--lv-green); }
@@ -136,6 +136,13 @@
 .lv .lv-stack > .lv-card:last-child .lv-chart { flex: 1; }
 /* Los gráficos de tarjetas a todo lo ancho no se estiran más allá de un ancho cómodo de leer */
 .lv .lv-wide .lv-chart, .lv .lv-below .lv-chart { max-width: 44rem; margin-inline: auto; }
+/* Separación con la fila de arriba (va después de .lv-card, que pone margin: 0) */
+.lv .lv-card.lv-below { margin-top: var(--cds-gap-md); }
+/* El alto mínimo solo sirve mientras carga; ya dibujado, el gráfico mide lo que mide */
+.lv .lv-chart:has(> svg), .lv .lv-chart:has(> div > svg) { min-height: 0; }
+/* Si una tarjeta queda más alta que su gráfico (por la de al lado), el gráfico se centra en el espacio libre */
+.lv .lv-grid > .lv-card { display: flex; flex-direction: column; }
+.lv .lv-grid > .lv-card > .lv-chart { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 .lv .lv-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
 .lv .lv-card { background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin: 0; min-width: 0; }
 .lv .lv-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
