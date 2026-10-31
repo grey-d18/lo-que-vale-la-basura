@@ -146,6 +146,8 @@
 .lv .lv-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
 .lv .lv-card { background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin: 0; min-width: 0; }
 .lv .lv-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
+.lv .lv-card-lead { margin: .5rem 0 .6rem; max-width: 46rem; color: var(--lv-ink); }
+.lv .lv-card-lead b { font-weight: 700; }
 .lv .lv-card-note { margin: .2rem 0 var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--lv-muted); }
 .lv .lv-chart { position: relative; width: 100%; min-height: 18rem; }
 .lv .lv-chart.is-tall { min-height: 26rem; }
@@ -399,6 +401,7 @@
         </figure>
         <figure class="lv-card lv-wide" id="botaderos">
           <h3 class="lv-card-title">Número de áreas degradadas por basura, por departamento</h3>
+          <p class="lv-card-lead">Con corte al 27 de agosto de 2026, OEFA tiene inventariadas <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="botaderos" data-fmt="int">—</b> áreas degradadas por basura en el Perú, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="con_quema" data-fmt="int">—</b> de ellas (<b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="pct_quema" data-fmt="pct0">—</b>) se quema basura. No se reparten por igual: <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_dep" data-fmt="nombre">—</b> encabeza la lista con <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_n" data-fmt="int">—</b>, y los cuatro primeros departamentos suman <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_n" data-fmt="int">—</b>, el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_pct" data-fmt="pct0">—</b> del total. La quema pesa más en la costa: en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_dep" data-fmt="nombre">—</b> se quema basura en el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_pct" data-fmt="pct0">—</b> de sus áreas degradadas, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="deps_mitad_quema" data-fmt="int">—</b> departamentos, todos con costa, en la mitad o más.</p>
           <p class="lv-card-note">Cuenta lugares, no su tamaño: OEFA no publica la superficie en datos abiertos. Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
           <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
@@ -549,14 +552,28 @@
 // ---------- Cálculo: total de botaderos del país ----------
 dash.calc('botaderos_total', {
   title: 'Áreas degradadas por residuos en el Perú',
-  description: 'Suma de áreas degradadas y de las que tienen quema de residuos en todos los departamentos (inventario OEFA 2018–2024, igual cada año).',
+  description: 'Total de áreas degradadas y de las que tienen quema; el departamento con más áreas, lo que suman los cuatro primeros, y el departamento con mayor porcentaje de áreas con quema (inventario OEFA, igual cada año).',
   inputs: ['peru_departamentos'],
   fn: (peru_departamentos) => {
     const ultimo = Math.max(...peru_departamentos.map((d) => Number(d.anio)));
     const filas = peru_departamentos.filter((d) => Number(d.anio) === ultimo);
+    const total = filas.reduce((s, d) => s + Number(d.botaderos), 0);
+    const quema = filas.reduce((s, d) => s + Number(d.botaderos_con_quema), 0);
+    const porTotal = [...filas].sort((a, b) => Number(b.botaderos) - Number(a.botaderos));
+    const cuatro = porTotal.slice(0, 4).reduce((s, d) => s + Number(d.botaderos), 0);
+    const conAreas = filas.filter((d) => Number(d.botaderos) > 0).map((d) => ({ dep: d.departamento, pct: (100 * Number(d.botaderos_con_quema)) / Number(d.botaderos) }));
+    const masQuema = conAreas.sort((a, b) => b.pct - a.pct)[0];
     return [{
-      botaderos: filas.reduce((s, d) => s + Number(d.botaderos), 0),
-      con_quema: filas.reduce((s, d) => s + Number(d.botaderos_con_quema), 0),
+      botaderos: total,
+      con_quema: quema,
+      pct_quema: (100 * quema) / total,
+      primer_dep: porTotal[0].departamento,
+      primer_n: Number(porTotal[0].botaderos),
+      cuatro_n: cuatro,
+      cuatro_pct: (100 * cuatro) / total,
+      quema_dep: masQuema.dep,
+      quema_pct: masQuema.pct,
+      deps_mitad_quema: conAreas.filter((d) => d.pct >= 50).length,
     }];
   },
 });
@@ -785,6 +802,7 @@ dash.draw('valor', (el) => {
   const d = dash.data(src);
   if (d.status !== 'ok') { el.textContent = '—'; return; }
   const row = el.dataset.row !== undefined ? d.data[Number(el.dataset.row)] : matchRow(d.data, parseWhere(el.getAttribute('data-where')));
+  if (el.dataset.fmt === 'nombre') { el.textContent = row ? capital(row[el.dataset.field]) : '—'; return; }
   const v = row ? num(row[el.dataset.field]) : null;
   el.textContent = v === null || Number.isNaN(v) ? 'sin dato' : F[el.dataset.fmt](v);
 });
