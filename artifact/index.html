@@ -172,6 +172,8 @@
 .lv .lv-foot { border-top: 1px solid var(--lv-line); padding-top: var(--cds-pad-md); font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); }
 .lv .lv-foot p { margin: .2rem 0; }
 .lv a { color: var(--lv-green); }
+.lv .lv-source { margin: var(--cds-gap-sm) 0 0; padding-top: var(--cds-gap-sm); border-top: 1px solid var(--lv-line); font-size: var(--cds-font-size-caption); color: var(--lv-muted); }
+.lv .lv-source b { color: var(--lv-ink); }
 .lv .lv-hero a { color: var(--lv-mustard); }
 
 .lv .lv-fail { display: flex; align-items: center; justify-content: center; gap: .4rem; min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
@@ -270,9 +272,15 @@
       </div>
       <div class="lv-grid">
         <figure class="lv-card lv-wide" id="mapa-mundo">
-          <h3 class="lv-card-title"><span class="lv-ind-name" data-ind="reciclaje">Reciclaje</span><span class="lv-ind-name" data-ind="botadero" hidden>Botaderos a cielo abierto</span><span class="lv-ind-name" data-ind="comp_plastico" hidden>Plástico en la basura</span><span class="lv-ind-name" data-ind="comp_papel_carton" hidden>Papel y cartón en la basura</span><span class="lv-ind-name" data-ind="comp_metal" hidden>Metal en la basura</span><span class="lv-ind-name" data-ind="kg_persona_dia" hidden>Basura por persona</span> por país</h3>
+          <h3 class="lv-card-title"><span class="lv-ind-name" data-ind="reciclaje">Basura recogida para reciclar</span><span class="lv-ind-name" data-ind="botadero" hidden>Botaderos a cielo abierto</span><span class="lv-ind-name" data-ind="comp_plastico" hidden>Plástico en la basura</span><span class="lv-ind-name" data-ind="comp_papel_carton" hidden>Papel y cartón en la basura</span><span class="lv-ind-name" data-ind="comp_metal" hidden>Metal en la basura</span><span class="lv-ind-name" data-ind="kg_persona_dia" hidden>Basura por persona</span> por país</h3>
           <p class="lv-card-note">Último año que reporta cada país. En gris, países sin dato.</p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-mundo" data-source="mundo_paises mundo_mapa"></div>
+          <figcaption class="lv-ind-name lv-source" data-ind="reciclaje"><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Treatment - recycling (% weight MSW generated)”: basura municipal recogida para reciclar. Cada país con su último año y su fuente nacional (detalle en la hoja “Codebook”).</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-ind="botadero" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Treatment - open dump (% weight MSW generated)”. Pocos países reportan este dato; el Perú no.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-ind="comp_plastico" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - plastic (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-ind="comp_papel_carton" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - paper &amp; cardboard (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-ind="comp_metal" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “Composition - metal (% weight MSW)”. Para el Perú: SIGERSOL 2023, solo basura domiciliaria.</figcaption>
+          <figcaption class="lv-ind-name lv-source" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, hoja “Country dataset”, columna “MSW generation (kg/capita/day)”, en el último año que reporta cada país.</figcaption>
         </figure>
         <figure class="lv-card" id="ranking">
           <h3 class="lv-card-title">Ranking: <span data-draw="param-region">—</span></h3>
@@ -323,6 +331,10 @@
           <p class="lv-card-note">Haz clic en un departamento para ver su detalle.</p>
           <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="mapa-peru" data-source="peru_departamentos peru_mapa"></div>
+          <figcaption class="lv-indp-name lv-source" data-ind="pct_valorizado"><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
+          <figcaption class="lv-indp-name lv-source" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero, entre todos los distritos del departamento.</figcaption>
+          <figcaption class="lv-indp-name lv-source" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada de residuos sólidos</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN del <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>. 2021 sin dato porque repite 2022.</figcaption>
+          <figcaption class="lv-indp-name lv-source" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024. Es la misma cifra todos los años.</figcaption>
         </figure>
         <div class="lv-stack">
           <article class="lv-card lv-detail" id="detalle">
