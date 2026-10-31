@@ -138,6 +138,11 @@
 .lv .lv-wide .lv-chart, .lv .lv-below .lv-chart { max-width: 44rem; margin-inline: auto; }
 /* Separación con la fila de arriba (va después de .lv-card, que pone margin: 0) */
 .lv .lv-card.lv-below { margin-top: var(--cds-gap-md); }
+/* Tarjeta partida: texto a la izquierda, gráfico a la derecha */
+.lv .lv-grid > .lv-card.lv-split { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(0, 1.7fr); gap: var(--cds-gap-lg); align-items: center; }
+.lv .lv-split .lv-chart { max-width: none; margin-inline: 0; }
+.lv .lv-split-text .lv-card-lead { font-size: 1.05rem; }
+@media (max-width: 52rem) { .lv .lv-grid > .lv-card.lv-split { grid-template-columns: minmax(0, 1fr); } }
 /* El alto mínimo solo sirve mientras carga; ya dibujado, el gráfico mide lo que mide */
 .lv .lv-chart:has(> svg), .lv .lv-chart:has(> div > svg) { min-height: 0; }
 /* Si una tarjeta queda más alta que su gráfico (por la de al lado), el gráfico se centra en el espacio libre */
@@ -399,11 +404,13 @@
           <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024.</figcaption>
           <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
         </figure>
-        <figure class="lv-card lv-wide" id="botaderos">
-          <h3 class="lv-card-title">Número de áreas degradadas por basura, por departamento</h3>
-          <p class="lv-card-lead">Con corte al 27 de agosto de 2026, OEFA tiene inventariadas <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="botaderos" data-fmt="int">—</b> áreas degradadas por basura en el Perú, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="con_quema" data-fmt="int">—</b> de ellas (<b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="pct_quema" data-fmt="pct0">—</b>) se quema basura. No se reparten por igual: <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_dep" data-fmt="nombre">—</b> encabeza la lista con <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_n" data-fmt="int">—</b>, y los cuatro primeros departamentos suman <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_n" data-fmt="int">—</b>, el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_pct" data-fmt="pct0">—</b> del total. La quema pesa más en la costa: en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_dep" data-fmt="nombre">—</b> se quema basura en el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_pct" data-fmt="pct0">—</b> de sus áreas degradadas, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="deps_mitad_quema" data-fmt="int">—</b> departamentos, todos con costa, en la mitad o más.</p>
-          <p class="lv-card-note">Cuenta lugares, no su tamaño: OEFA no publica la superficie en datos abiertos. Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
-          <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
+        <figure class="lv-card lv-wide lv-split" id="botaderos">
+          <div class="lv-split-text">
+            <h3 class="lv-card-title">Número de áreas degradadas por basura, por departamento</h3>
+            <p class="lv-card-lead">Con corte al 27 de agosto de 2026, OEFA tiene inventariadas <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="botaderos" data-fmt="int">—</b> áreas degradadas por basura en el Perú, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="con_quema" data-fmt="int">—</b> de ellas (<b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="pct_quema" data-fmt="pct0">—</b>) se quema basura. No se reparten por igual: <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_dep" data-fmt="nombre">—</b> encabeza la lista con <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="primer_n" data-fmt="int">—</b>, y los cuatro primeros departamentos suman <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_n" data-fmt="int">—</b>, el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="cuatro_pct" data-fmt="pct0">—</b> del total. La quema pesa más en la costa: en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_dep" data-fmt="nombre">—</b> se quema basura en el <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="quema_pct" data-fmt="pct0">—</b> de sus áreas degradadas, y en <b data-draw="valor" data-source="botaderos_total" data-row="0" data-field="deps_mitad_quema" data-fmt="int">—</b> departamentos, todos con costa, en la mitad o más.</p>
+            <p class="lv-card-note">Cuenta lugares, no su tamaño: OEFA no publica la superficie en datos abiertos. Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
+            <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
+          </div>
           <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
         </figure>
       </div>
