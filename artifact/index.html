@@ -141,7 +141,8 @@
 /* Tarjeta partida: texto a la izquierda, gráfico a la derecha */
 .lv .lv-grid > .lv-card.lv-split { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(0, 1.7fr); gap: var(--cds-gap-lg); align-items: center; }
 .lv .lv-split .lv-chart, .lv #precios .lv-chart { max-width: none; margin-inline: 0; }
-.lv .lv-split-text .lv-card-lead { font-size: 1.05rem; }
+.lv .lv-split-text .lv-card-title { font-size: 1.35rem; font-weight: 600; line-height: 1.25; margin-bottom: .6rem; text-wrap: balance; }
+.lv .lv-split-text .lv-card-lead { font-size: var(--cds-font-size-body); color: var(--lv-ink-2); }
 @media (max-width: 52rem) { .lv .lv-grid > .lv-card.lv-split { grid-template-columns: minmax(0, 1fr); } }
 /* El alto mínimo solo sirve mientras carga; ya dibujado, el gráfico mide lo que mide */
 .lv .lv-chart:has(> svg), .lv .lv-chart:has(> div > svg) { min-height: 0; }
