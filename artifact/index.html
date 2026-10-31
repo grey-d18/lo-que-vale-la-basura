@@ -121,7 +121,7 @@
 .lv select { font: inherit; font-size: var(--cds-font-size-body); font-weight: 400; color: var(--lv-ink); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 8px; padding: .4rem .6rem; min-width: 12rem; max-width: 100%; cursor: pointer; }
 
 .lv #f-anio { min-width: 6rem; }
-.lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: start; }
+.lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: stretch; }
 .lv .lv-below { margin-top: var(--cds-gap-md); }
 .lv .lv-chart.is-map { min-height: 22rem; }
 .lv .lv-chart.is-rank { min-height: 22rem; }
@@ -131,6 +131,11 @@
 @media (max-width: 56rem) { .lv .lv-explore { grid-template-columns: minmax(0, 1fr); } }
 .lv .lv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .lv .lv-wide { grid-column: 1 / -1; }
+/* La columna de datos mide lo mismo que el mapa de al lado: la última tarjeta crece y su gráfico la llena */
+.lv .lv-stack > .lv-card:last-child { flex: 1; display: flex; flex-direction: column; }
+.lv .lv-stack > .lv-card:last-child .lv-chart { flex: 1; }
+/* Los gráficos de tarjetas a todo lo ancho no se estiran más allá de un ancho cómodo de leer */
+.lv .lv-wide .lv-chart, .lv .lv-below .lv-chart { max-width: 44rem; margin-inline: auto; }
 .lv .lv-stack { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
 .lv .lv-card { background: var(--lv-panel); border: 1px solid var(--lv-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); margin: 0; min-width: 0; }
 .lv .lv-card-title { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); line-height: 1.3; }
@@ -693,7 +698,7 @@ function hbars(el, rows, opts) {
 function lines(el, series, opts) {
   // Líneas: series = [{name, color, points: [{x, y}], strong}]
   const w = el.clientWidth || 500;
-  const h = 260;
+  const h = Math.max(260, Math.floor(el.clientHeight) - 4); // llena el alto disponible cuando la tarjeta crece
   const endW = d3.max(series, (s) => textWidth(s.name, 12)) + 14;
   const all = series.flatMap((s) => s.points);
   const yMax = d3.max(all, (p) => p.y) || 1;
@@ -919,6 +924,18 @@ dash.draw('regiones', (el) => {
 
 // ---------- Acto 2 ----------
 dash.draw('serie', (el) => {
+  // Si la tarjeta cambia de alto (por ejemplo, cuando termina de dibujarse el mapa), se vuelve a dibujar
+  if (!el.lvObservado) {
+    el.lvObservado = true;
+    let previo = '';
+    new ResizeObserver(() => {
+      const tam = `${Math.round(el.clientWidth)}x${Math.round(el.clientHeight)}`;
+      if (tam !== previo && el.querySelector('svg')) { previo = tam; dibujarSerie(el); }
+    }).observe(el);
+  }
+  dibujarSerie(el);
+});
+function dibujarSerie(el) {
   el.replaceChildren();
   if (!chartState(el, ['peru_nacional', 'peru_departamentos'])) return;
   const p = P();
@@ -929,7 +946,7 @@ dash.draw('serie', (el) => {
     { name: 'Perú', color: tok('--lv-bar-muted'), points: nac },
     { name: capital(p.dep), color: tok('--lv-green'), points: dep, strong: true },
   ], { fmtAxis: (v) => d3.format('.1f')(v) + '%', fmtTip: (v) => d3.format('.2f')(v) + '%' });
-});
+}
 
 dash.draw('botaderos', (el) => {
   el.replaceChildren();
