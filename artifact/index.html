@@ -140,7 +140,7 @@
 .lv .lv-card.lv-below { margin-top: var(--cds-gap-md); }
 /* Tarjeta partida: texto a la izquierda, gráfico a la derecha */
 .lv .lv-grid > .lv-card.lv-split { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(0, 1.7fr); gap: var(--cds-gap-lg); align-items: center; }
-.lv .lv-split .lv-chart { max-width: none; margin-inline: 0; }
+.lv .lv-split .lv-chart, .lv #precios .lv-chart { max-width: none; margin-inline: 0; }
 .lv .lv-split-text .lv-card-lead { font-size: 1.05rem; }
 @media (max-width: 52rem) { .lv .lv-grid > .lv-card.lv-split { grid-template-columns: minmax(0, 1fr); } }
 /* El alto mínimo solo sirve mientras carga; ya dibujado, el gráfico mide lo que mide */
@@ -163,6 +163,7 @@
 .lv .lv-sw.is-yellow { background: var(--lv-yellow); }
 .lv .lv-sw.is-muted { background: var(--lv-bar-muted); }
 .lv .lv-sw.is-dot { border-radius: 50%; }
+.lv .lv-sw.is-pill { width: 1.1rem; height: .5rem; border-radius: 999px; vertical-align: .05rem; }
 .lv .lv-sw.is-diamond { transform: rotate(45deg) scale(.85); border-radius: 1px; }
 .lv .lv-hint { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); margin: var(--cds-gap-sm) 0 0; }
 .lv .lv-warn { font-size: var(--cds-font-size-caption); color: var(--lv-ink-2); background: var(--lv-yellow-soft); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); margin: var(--cds-gap-sm) 0 0; }
@@ -470,7 +471,7 @@
         <figure class="lv-card lv-wide" id="precios">
           <h3 class="lv-card-title">¿Cuánto recibe quien recolecta?</h3>
           <p class="lv-card-note">Precio que paga el acopiador en Trujillo frente al precio de exportación de 2024, en soles por kilo (tipo de cambio <span data-draw="valor" data-source="precios_comparados" data-field="tipo_cambio" data-row="0" data-fmt="tc">—</span>).</p>
-          <p class="lv-legend"><span><span class="lv-sw is-green is-dot"></span>Lo que paga el acopiador (mínimo y máximo)</span><span><span class="lv-sw is-yellow is-diamond"></span>Precio de exportación</span></p>
+          <p class="lv-legend"><span><span class="lv-sw is-green is-pill"></span>Lo que paga el acopiador (de mínimo a máximo)</span><span><span class="lv-sw is-yellow is-diamond"></span>Precio de exportación</span></p>
           <div class="lv-chart dash-skeleton" data-draw="precios" data-source="precios_comparados"></div>
           <p class="lv-warn">Esta comparación es una pista, no una conclusión. El precio de exportación es de material ya clasificado y embalado, incluye transporte e intermediarios y es de otro año. La tesis estudió la parte informal del circuito, no la cadena de valor completa: queda como invitación a investigar y a compartir información.</p>
         </figure>
@@ -1089,10 +1090,9 @@ dash.draw('precios', (el) => {
   const g = svg.selectAll('g.r').data(rows).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * rowH + rowH / 2})`);
   g.append('text').attr('x', left - 10).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', tok('--lv-ink-2')).text((d) => d.material);
   g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.exportacion_soles_kg))).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 2);
-  g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.precio_max_soles_kg))).attr('stroke', tok('--lv-green')).attr('stroke-width', 6).attr('stroke-linecap', 'round');
-  g.append('circle').attr('cx', (d) => x(num(d.precio_min_soles_kg))).attr('r', 6).attr('fill', tok('--lv-green')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
-  g.append('circle').attr('cx', (d) => x(num(d.precio_max_soles_kg))).attr('r', 6).attr('fill', tok('--lv-green')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
-  g.append('path').attr('d', d3.symbol(d3.symbolDiamond, 110)).attr('transform', (d) => `translate(${x(num(d.exportacion_soles_kg))},0)`)
+  // El rango del acopiador es una sola cápsula de mínimo a máximo: dos puntos casi iguales no se montan uno sobre otro
+  g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.precio_max_soles_kg))).attr('stroke', tok('--lv-green')).attr('stroke-width', 8).attr('stroke-linecap', 'round');
+  g.append('path').attr('d', d3.symbol(d3.symbolDiamond, 80)).attr('transform', (d) => `translate(${x(num(d.exportacion_soles_kg))},0)`)
     .attr('fill', tok('--lv-yellow')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
   g.append('text').attr('x', (d) => x(num(d.exportacion_soles_kg)) + 10).attr('dy', '0.35em').attr('font-size', 12).attr('fill', tok('--lv-ink'))
     .text((d) => 'S/ ' + d3.format('.2f')(num(d.exportacion_soles_kg)));
