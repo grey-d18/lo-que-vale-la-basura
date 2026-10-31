@@ -120,7 +120,6 @@
 .lv .lv-seg button, .lv .lv-btn { font: inherit; font-size: var(--cds-font-size-caption); font-weight: 600; color: var(--lv-ink-2); background: var(--lv-page); border: 1px solid var(--lv-line); border-radius: 999px; padding: .4rem .9rem; cursor: pointer; }
 .lv .lv-seg button:hover, .lv .lv-btn:hover { background: var(--lv-yellow-soft); color: var(--lv-ink); }
 .lv .lv-seg button[aria-pressed="true"] { background: var(--lv-green); border-color: var(--lv-green); color: var(--lv-on-accent); }
-.lv .lv-seg.is-scale button[aria-pressed="true"] { background: var(--lv-mustard); border-color: var(--lv-mustard); color: var(--lv-on-mustard); }
 .lv .lv-seg button:focus-visible, .lv .lv-btn:focus-visible { outline: 3px solid var(--lv-mustard); outline-offset: 1px; }
 .lv .lv-explore { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: var(--cds-gap-md); align-items: start; }
 .lv .lv-below { margin-top: var(--cds-gap-md); }
@@ -264,7 +263,7 @@
         <div>
           <p class="lv-scale">Escala mundial</p>
           <h2 class="lv-act-title">A dónde va la basura</h2>
-          <p class="lv-intro">Cuánta basura genera cada persona, qué parte se recoge para reciclar, qué parte termina en botaderos y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal. Puedes ver el mundo entero o acercarte a una región.</p>
+          <p class="lv-intro">Cuánta basura genera cada persona, qué parte se recoge para reciclar, qué parte termina en botaderos y de qué está hecha. Buena parte se podría recuperar: plástico, papel, cartón y metal.</p>
         </div>
       </div>
       <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
@@ -272,15 +271,6 @@
       </div>
 
       <div class="lv-filters lv-explore-bar" role="group" aria-label="Explorador del mapa">
-        <div class="lv-ctl"><span class="lv-ctl-label">Escala</span>
-          <div class="lv-seg is-scale" role="group" aria-label="Escala del mapa">
-            <button type="button" data-escala="mundo">Mundo</button>
-            <button type="button" data-escala="region">Región</button>
-          </div>
-        </div>
-        <label data-show-escala="region">Región
-          <select id="f-region" data-draw="ctl-region" data-source="mundo_paises" aria-label="Región"></select>
-        </label>
         <div class="lv-ctl lv-ctl-wide"><span class="lv-ctl-label">Indicador</span>
           <div class="lv-seg" role="group" aria-label="Indicador">
             <button type="button" data-ind-mundo="kg_persona_dia">Basura por persona</button>
@@ -567,8 +557,8 @@ const P = () => {
   const p = dash.params();
   return {
     anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Hierro y acero',
-    indMundo: p.ind_mundo ?? 'reciclaje', region: p.region && p.region !== 'Mundo' ? p.region : 'América Latina y el Caribe',
-    indPeru: p.ind_peru ?? 'pct_valorizado', escala: p.escala === 'region' ? 'region' : 'mundo',
+    indMundo: p.ind_mundo ?? 'reciclaje',
+    indPeru: p.ind_peru ?? 'pct_valorizado', escala: 'mundo',
   };
 };
 const num = (v) => (v === null || v === undefined || v === '' ? null : Number(v));
@@ -773,11 +763,6 @@ function fillSelect(sel, options, value, param) {
   sel.value = String(value);
   sel.onchange = () => dash.setParams({ [param]: param === 'anio' ? Number(sel.value) : sel.value });
 }
-dash.draw('ctl-region', (sel) => {
-  const d = dash.data('mundo_paises');
-  const regs = d.status === 'ok' ? [...new Set(d.data.map((r) => r.region))].sort() : [];
-  fillSelect(sel, regs.map((r) => [r, r]), P().region, 'region');
-});
 dash.draw('ctl-anio', (sel) => {
   const d = dash.data('peru_nacional');
   const ys = d.status === 'ok' ? d.data.map((r) => Number(r.anio)).sort((a, b) => b - a) : [];
@@ -794,9 +779,9 @@ dash.draw('ctl-material', (sel) => {
   fillSelect(sel, ms.map((m) => [m, m]), P().material, 'material');
 });
 
-// ---------- Mapas: el mundial (mundo o una región) y el del Perú comparten el mismo dibujo ----------
+// ---------- Mapas: el mundial y el del Perú comparten el mismo dibujo ----------
 const REGION_PERU = 'América Latina y el Caribe';
-// Filas que muestra el explorador según la escala: [{id, nombre, valor, destacado}]
+// Filas de cada mapa: [{id, nombre, valor, destacado}]
 function scopeRows(p) {
   if (p.escala === 'peru') {
     const d = dash.data('peru_departamentos');
@@ -806,17 +791,10 @@ function scopeRows(p) {
   }
   const d = dash.data('mundo_paises');
   if (d.status !== 'ok') return null;
-  return d.data.filter((r) => p.escala === 'mundo' || r.region === p.region)
+  return d.data
     .map((r) => ({ id: r.iso3, nombre: r.pais, valor: num(r[p.indMundo]), destacado: r.iso3 === 'PER', row: r }));
 }
 const indOf = (p) => (p.escala === 'peru' ? IND_PERU[p.indPeru] : IND_MUNDO[p.indMundo]);
-// Para que una región no quede partida por el meridiano 180
-const CORRER_LON = {
-  'Asia oriental y Pacífico': (lon) => (lon < -30 ? lon + 360 : lon),
-  'Europa y Asia central': (lon) => (lon < -150 ? lon + 360 : lon),
-  'América del Norte': (lon) => (lon > 0 ? lon - 360 : lon),
-};
-
 dash.draw('mapa', (el) => {
   el.replaceChildren();
   const p = el.dataset.scope === 'peru' ? { ...P(), escala: 'peru' } : P();
@@ -829,11 +807,6 @@ dash.draw('mapa', (el) => {
   if (p.escala === 'peru') {
     h = Math.min(620, Math.round(w * 1.25));
     shapes = geoPaths(dash.data('peru_mapa').data, mercator, [4, 4, w - 4, h - 40]).map((s) => ({ ...s, id: s.row.departamento }));
-  } else if (p.escala === 'region') {
-    const correr = CORRER_LON[p.region] || ((lon) => lon);
-    h = Math.round(w * 0.62);
-    shapes = geoPaths(dash.data('mundo_mapa').data.filter((r) => rows.has(r.iso3)), (lon, lat) => equalEarth(correr(lon), lat), [4, 4, w - 4, h - 40])
-      .map((s) => ({ ...s, id: s.row.iso3 }));
   } else {
     h = Math.round(w * 0.52);
     shapes = geoPaths(dash.data('mundo_mapa').data.filter((r) => r.iso3 !== 'ATA'), equalEarth, [0, 4, w, h - 36]).map((s) => ({ ...s, id: s.row.iso3 }));
@@ -871,7 +844,7 @@ dash.draw('cobertura', (el) => {
   if (!rows) { el.textContent = '—'; return; }
   const con = rows.filter((r) => r.valor !== null).length;
   const unidad = p.escala === 'peru' ? 'departamentos' : 'países';
-  const donde = p.escala === 'peru' ? `Perú, ${p.anio}` : p.escala === 'region' ? p.region : 'Mundo';
+  const donde = p.escala === 'peru' ? `Perú, ${p.anio}` : 'Mundo';
   el.textContent = `${donde} · ${con} de ${rows.length} ${unidad} tienen este dato`;
 });
 
@@ -934,7 +907,7 @@ dash.draw('regiones', (el) => {
   const rows = dash.data('mundo_regiones').data.filter((r) => num(r[p.indMundo]) !== null && num(r['n_' + p.indMundo]) > 0)
     .sort((a, b) => num(b[p.indMundo]) - num(a[p.indMundo]))
     .map((r) => {
-      const elegida = p.escala === 'region' ? r.region === p.region : r.region === REGION_PERU;
+      const elegida = r.region === REGION_PERU;
       return {
         label: `${r.region} (${r['n_' + p.indMundo]})`, value: num(r[p.indMundo]), bold: elegida || r.region === 'Mundo',
         color: elegida ? tok('--lv-yellow') : r.region === 'Mundo' ? tok('--lv-green') : tok('--lv-bar-muted'),
@@ -1091,7 +1064,6 @@ dash.draw('tabla-trujillo', (tbody) => {
 });
 
 // ---------- Controles fijos, nombres de indicador y navegación ----------
-document.querySelectorAll('[data-escala]').forEach((b) => b.addEventListener('click', () => dash.setParams({ escala: b.dataset.escala })));
 document.querySelectorAll('[data-ind-peru]').forEach((b) => b.addEventListener('click', () => dash.setParams({ ind_peru: b.dataset.indPeru })));
 document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.addEventListener('click', () => {
   const v = b.dataset.indMundo;
@@ -1107,10 +1079,8 @@ let lvLinked = false;
 dash.onData(() => {
   const p = P();
   const esComp = p.indMundo.startsWith('comp_');
-  document.querySelectorAll('[data-escala]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.escala === p.escala)));
   document.querySelectorAll('[data-ind-mundo]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indMundo === p.indMundo || (b.dataset.indMundo === 'comp' && esComp))));
   document.querySelectorAll('[data-ind-peru]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.indPeru === p.indPeru)));
-  document.querySelectorAll('[data-show-escala]').forEach((n) => { n.hidden = !n.dataset.showEscala.split(' ').includes(p.escala); });
   document.querySelectorAll('.lv-comp-ctl').forEach((n) => { n.hidden = !esComp; });
   document.querySelectorAll('.lv-ctl-comp').forEach((s) => { if (esComp) s.value = p.indMundo; });
   document.querySelectorAll('.lv-ind-name').forEach((s) => { s.hidden = s.dataset.ind !== (s.dataset.grupo === 'peru' ? p.indPeru : p.indMundo); });

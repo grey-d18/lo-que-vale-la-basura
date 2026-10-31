@@ -84,7 +84,26 @@ waw[porcentajes] = waw[porcentajes] * 100  # la fuente usa fracciones: 0.0093 ->
 waw["relleno"] = waw[["relleno_controlado", "relleno_sanitario", "relleno_sin_especificar"]].sum(axis=1, min_count=1)
 waw["region"] = waw.region.map(REGIONES)
 waw["ingreso"] = waw.ingreso.map(INGRESOS)
-waw["pais"] = waw.pais.str.strip()
+# Nombres en español: los de Natural Earth y, para los países pequeños que ese mapa no trae, esta lista
+NOMBRES_ES = {
+    "ASM": "Samoa Americana", "AND": "Andorra", "ATG": "Antigua y Barbuda", "ABW": "Aruba", "BHR": "Baréin",
+    "BRB": "Barbados", "BMU": "Bermudas", "VGB": "Islas Vírgenes Británicas", "CPV": "Cabo Verde",
+    "CYM": "Islas Caimán", "CHI": "Islas del Canal", "COM": "Comoras", "CUW": "Curazao", "DMA": "Dominica",
+    "FRO": "Islas Feroe", "PYF": "Polinesia Francesa", "GIB": "Gibraltar", "GRD": "Granada", "GUM": "Guam",
+    "HKG": "Hong Kong (China)", "IMN": "Isla de Man", "KIR": "Kiribati", "LIE": "Liechtenstein",
+    "MAC": "Macao (China)", "MDV": "Maldivas", "MLT": "Malta", "MHL": "Islas Marshall", "MUS": "Mauricio",
+    "FSM": "Micronesia", "MCO": "Mónaco", "NRU": "Nauru", "MNP": "Islas Marianas del Norte", "PLW": "Palaos",
+    "WSM": "Samoa", "SMR": "San Marino", "STP": "Santo Tomé y Príncipe", "SYC": "Seychelles", "SGP": "Singapur",
+    "SXM": "San Martín (Países Bajos)", "SSD": "Sudán del Sur", "KNA": "San Cristóbal y Nieves",
+    "LCA": "Santa Lucía", "MAF": "San Martín (Francia)", "VCT": "San Vicente y las Granadinas", "TON": "Tonga",
+    "TCA": "Islas Turcas y Caicos", "TUV": "Tuvalu", "VIR": "Islas Vírgenes de los Estados Unidos",
+}
+mapa_mundo = json.loads((ORIGINALES / "mundo_paises_110m.geojson").read_text())["features"]
+CODIGOS_NE = {"KOS": "XKX", "PSX": "PSE", "SDS": "SSD"}  # Natural Earth usa otros códigos para estos
+NOMBRES_ES |= {CODIGOS_NE.get(f["properties"]["ADM0_A3"], f["properties"]["ADM0_A3"]): f["properties"]["NAME_ES"]
+               for f in mapa_mundo}
+NOMBRES_ES |= {"SWZ": "Esuatini", "TWN": "Taiwán (China)", "MMR": "Myanmar"}  # Natural Earth usa nombres antiguos
+waw["pais"] = waw.iso3.map(NOMBRES_ES).fillna(waw.pais.str.strip())
 guardar(waw.drop(columns=["relleno_controlado", "relleno_sanitario", "relleno_sin_especificar"]), "mundo_paises")
 
 

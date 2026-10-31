@@ -38,7 +38,7 @@ for nombre in ["mundo_paises", "mundo_regiones", "peru_nacional", "peru_departam
 
 # Mapa mundial: Natural Earth 1:110m (dominio público), una fila por país con su código ISO3
 mundo = json.loads((ORIGINALES / "mundo_paises_110m.geojson").read_text())
-CODIGOS_BANCO_MUNDIAL = {"KOS": "XKX", "PSX": "PSE"}  # Natural Earth usa otro código para estos dos
+CODIGOS_BANCO_MUNDIAL = {"KOS": "XKX", "PSX": "PSE", "SDS": "SSD"}  # Natural Earth usa otro código para estos dos
 escribir("mundo_mapa", [
     {"iso3": CODIGOS_BANCO_MUNDIAL.get(f["properties"]["ADM0_A3"], f["properties"]["ADM0_A3"]),
      "nombre": f["properties"]["NAME_ES"],
