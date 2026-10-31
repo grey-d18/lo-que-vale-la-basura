@@ -683,16 +683,27 @@ function hbars(el, rows, opts) {
   const size = 12;
   const left = Math.min(w * 0.45, d3.max(rows, (r) => textWidth(r.label, size)) + 10);
   const right = d3.max(rows, (r) => textWidth(opts.fmt(r.value), size)) + 12;
-  const rowH = opts.rowH ?? 22;
-  const h = rows.length * rowH + 8;
+  const axisH = opts.axis ? 24 : 0;
+  // Con opts.fill las filas se reparten el alto disponible, para que el gráfico no quede flotando en la tarjeta
+  const rowH = opts.fill ? Math.max(opts.rowH ?? 22, Math.floor((el.clientHeight - 12 - axisH) / rows.length)) : (opts.rowH ?? 22);
+  const barH = Math.min(rowH - 6, opts.barMax ?? rowH);
+  const h = rows.length * rowH + 8 + axisH;
   const x = d3.scaleLinear([0, opts.max ?? (d3.max(rows, (r) => r.value) || 1)], [left, w - right]);
+  if (opts.axis) x.nice();
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  if (opts.axis) {
+    const ticks = x.ticks(Math.max(2, Math.floor((w - left - right) / 90)));
+    svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', 4).attr('y2', h - axisH)
+      .attr('stroke', tok('--lv-line'));
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('x', x).attr('y', h - 6).attr('text-anchor', 'middle')
+      .attr('font-size', 11).attr('fill', tok('--lv-muted')).text(opts.fmtAxis ?? opts.fmt);
+  }
   const tip = makeTip(el);
   const g = svg.selectAll('g.r').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
   g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
     .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', (d) => (d.bold ? tok('--lv-ink') : tok('--lv-ink-2')))
     .text((d) => d.label);
-  g.append('rect').attr('x', left).attr('y', 3).attr('height', rowH - 6).attr('rx', 3)
+  g.append('rect').attr('x', left).attr('y', (rowH - barH) / 2).attr('height', barH).attr('rx', 3)
     .attr('width', (d) => Math.max(1, x(d.value) - left)).attr('fill', (d) => d.color);
   g.append('text').attr('x', (d) => x(d.value) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', size)
     .attr('fill', tok('--lv-ink')).attr('font-weight', (d) => (d.bold ? 700 : 400)).text((d) => opts.fmt(d.value));
@@ -701,6 +712,18 @@ function hbars(el, rows, opts) {
     .on('mousemove', (ev, d) => tip.show(ev, d.tip[0], d.tip[1]))
     .on('mouseleave', () => tip.hide())
     .on('click', (ev, d) => opts.onClick && opts.onClick(d));
+}
+// Dibuja y vuelve a dibujar cuando el espacio del gráfico cambia (por ejemplo, al terminar de cargar la tarjeta vecina)
+function conAlto(el, dibujar) {
+  if (!el.lvObservado) {
+    el.lvObservado = true;
+    let previo = '';
+    new ResizeObserver(() => {
+      const tam = `${Math.round(el.clientWidth)}x${Math.round(el.clientHeight)}`;
+      if (tam !== previo && el.querySelector('svg')) { previo = tam; dibujar(el); }
+    }).observe(el);
+  }
+  dibujar(el);
 }
 function lines(el, series, opts) {
   // Líneas: series = [{name, color, points: [{x, y}], strong}]
@@ -930,18 +953,7 @@ dash.draw('regiones', (el) => {
 });
 
 // ---------- Acto 2 ----------
-dash.draw('serie', (el) => {
-  // Si la tarjeta cambia de alto (por ejemplo, cuando termina de dibujarse el mapa), se vuelve a dibujar
-  if (!el.lvObservado) {
-    el.lvObservado = true;
-    let previo = '';
-    new ResizeObserver(() => {
-      const tam = `${Math.round(el.clientWidth)}x${Math.round(el.clientHeight)}`;
-      if (tam !== previo && el.querySelector('svg')) { previo = tam; dibujarSerie(el); }
-    }).observe(el);
-  }
-  dibujarSerie(el);
-});
+dash.draw('serie', (el) => conAlto(el, dibujarSerie));
 function dibujarSerie(el) {
   el.replaceChildren();
   if (!chartState(el, ['peru_nacional', 'peru_departamentos'])) return;
@@ -987,7 +999,8 @@ dash.draw('botaderos', (el) => {
 });
 
 // ---------- Acto 3 ----------
-dash.draw('informales', (el) => {
+dash.draw('informales', (el) => conAlto(el, dibujarInformales));
+function dibujarInformales(el) {
   el.replaceChildren();
   if (!chartState(el, ['mundo_paises'])) return;
   const rows = dash.data('mundo_paises').data
@@ -998,10 +1011,11 @@ dash.draw('informales', (el) => {
       color: r.iso3 === 'PER' ? tok('--lv-green') : tok('--lv-bar-muted'),
       tip: [r.pais, [`${d3.format(',')(num(r.recicladores_informales))} recicladores informales`].concat(num(r.trabajadores_formales) !== null ? [`${d3.format(',')(num(r.trabajadores_formales))} trabajadores formales`] : [])],
     }));
-  hbars(el, rows, { fmt: (v) => d3.format(',')(v), rowH: 32 });
-});
+  hbars(el, rows, { fmt: (v) => d3.format(',')(v), fmtAxis: (v) => d3.format('~s')(v), rowH: 32, barMax: 30, fill: true, axis: true });
+}
 
-dash.draw('precio-material', (el) => {
+dash.draw('precio-material', (el) => conAlto(el, dibujarPrecioMaterial));
+function dibujarPrecioMaterial(el) {
   el.replaceChildren();
   if (!chartState(el, ['peru_comercio_reciclables'])) return;
   const p = P();
@@ -1011,11 +1025,12 @@ dash.draw('precio-material', (el) => {
     .sort((a, b) => num(b.usd_por_kg) - num(a.usd_por_kg))
     .map((r) => ({
       label: r.material, value: num(r.usd_por_kg), bold: r.material === p.material,
-      color: r.material === p.material ? tok('--lv-green') : tok('--lv-seq-lo'),
+      color: r.material === p.material ? tok('--lv-green') : tok('--lv-bar-muted'),
       tip: [r.material, [`US$ ${d3.format('.2f')(num(r.usd_por_kg))} por kilo`, `${d3.format(',.0f')(num(r.toneladas))} toneladas exportadas en ${ultimo}`]],
     }));
-  hbars(el, rows, { fmt: (v) => 'US$ ' + d3.format('.2f')(v), rowH: 36, onClick: (d) => dash.setParams({ material: d.label }) });
-});
+  hbars(el, rows, { fmt: (v) => 'US$ ' + d3.format('.2f')(v), fmtAxis: (v) => 'US$ ' + d3.format('.0f')(v), rowH: 36, barMax: 30, fill: true, axis: true,
+    onClick: (d) => dash.setParams({ material: d.label }) });
+}
 
 dash.draw('comercio', (el) => {
   el.replaceChildren();
