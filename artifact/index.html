@@ -27,7 +27,13 @@
   line-height: 1.6;
   border-radius: var(--cds-radius);
   overflow: hidden;
+  /* Ancho de lectura fijo: en pantallas grandes queda centrado como una hoja sobre el fondo */
+  max-width: 64rem;
+  margin: var(--cds-pad-lg) auto;
+  border: 1px solid var(--lv-line);
+  box-shadow: 0 6px 28px rgba(23, 35, 27, .10);
 }
+@media (max-width: 66rem) { .lv { margin: 0 auto; border: 0; box-shadow: none; } }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .lv {
     --lv-ink: #eef0e6;
