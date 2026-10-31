@@ -226,7 +226,7 @@
         <p class="lv-kpi-note"><b data-draw="valor" data-source="peru_nacional" data-field="distritos_que_valorizan" data-where-tpl="anio={anio}" data-fmt="int">—</b> de <b data-draw="valor" data-source="peru_nacional" data-field="distritos" data-where-tpl="anio={anio}" data-fmt="int">—</b> distritos</p>
       </article>
       <article class="lv-kpi is-yellow">
-        <p class="lv-kpi-label">Áreas degradadas por basura</p>
+        <p class="lv-kpi-label">Número de áreas degradadas por basura</p>
         <p class="lv-kpi-value"><span data-draw="valor" data-source="botaderos_total" data-field="botaderos" data-fmt="int">—</span></p>
         <p class="lv-kpi-note"><b data-draw="valor" data-source="botaderos_total" data-field="con_quema" data-fmt="int">—</b> con quema de residuos (inventario OEFA)</p>
       </article>
@@ -341,7 +341,7 @@
             <option value="kg_persona_dia">Basura por persona (kg al día)</option>
             <option value="pct_valorizado">% de la basura que se valoriza</option>
             <option value="pct_dispuesto_adecuado">% con disposición final adecuada</option>
-            <option value="botaderos">Áreas degradadas por basura (número)</option>
+            <option value="botaderos">Número de áreas degradadas por basura</option>
             <option value="pct_distritos_que_valorizan">% de distritos que reportan valorización</option>
           </select>
         </label>
@@ -356,7 +356,7 @@
               <dt>Porcentaje valorizado</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_valorizado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct2">—</span></dd>
               <dt>Distritos que reportan valorización</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="distritos_que_valorizan" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> de <span data-draw="valor" data-source="peru_departamentos" data-field="distritos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span></dd>
               <dt>Disposición final adecuada</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="pct_dispuesto_adecuado" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="pct1">—</span></dd>
-              <dt>Áreas degradadas (OEFA)</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="botaderos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> (<span data-draw="valor" data-source="peru_departamentos" data-field="botaderos_con_quema" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> con quema)</dd>
+              <dt>Número de áreas degradadas (OEFA)</dt><dd><span data-draw="valor" data-source="peru_departamentos" data-field="botaderos" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> (<span data-draw="valor" data-source="peru_departamentos" data-field="botaderos_con_quema" data-where-tpl="departamento={dep}&amp;anio={anio}" data-fmt="int">—</span> con quema)</dd>
             </dl>
           </article>
           <figure class="lv-card" id="serie">
@@ -369,7 +369,7 @@
           <div class="lv-ind-name" data-grupo="peru" data-ind="kg_persona_dia" hidden><h3 class="lv-card-title">Basura por persona (kg al día), por departamento</h3><p class="lv-card-note">Residuos municipales generados entre la población urbana del departamento, por día. Haz clic en un departamento para ver su detalle.</p></div>
           <div class="lv-ind-name" data-grupo="peru" data-ind="pct_valorizado" hidden><h3 class="lv-card-title">% de la basura que se valoriza, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos se valorizaron. Solo se registran inorgánicos: papel, cartón, vidrio, plástico, tetra brik y metales. Haz clic en un departamento para ver su detalle.</p></div>
           <div class="lv-ind-name" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><h3 class="lv-card-title">% de la basura con disposición final adecuada, por departamento</h3><p class="lv-card-note">De cada 100 kg de residuos municipales, cuántos llegaron a un relleno sanitario u otra infraestructura segura. Haz clic en un departamento para ver su detalle.</p></div>
-          <div class="lv-ind-name" data-grupo="peru" data-ind="botaderos" hidden><h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3><p class="lv-card-note">Número de lugares que OEFA registra como degradados por residuos municipales. Es la misma cifra todos los años. Haz clic en un departamento para ver su detalle.</p></div>
+          <div class="lv-ind-name" data-grupo="peru" data-ind="botaderos" hidden><h3 class="lv-card-title">Número de áreas degradadas por basura, por departamento</h3><p class="lv-card-note">Número de lugares que OEFA registra como degradados por residuos municipales. Es la misma cifra todos los años. Haz clic en un departamento para ver su detalle.</p></div>
           <div class="lv-ind-name" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><h3 class="lv-card-title">% de distritos que reportan valorización, por departamento</h3><p class="lv-card-note">Distritos que reportaron alguna tonelada valorizada, entre todos los distritos del departamento. Haz clic en un departamento para ver su detalle.</p></div>
           <p class="lv-warn lv-no-data-note" hidden>La fuente no tiene este dato para el año elegido: prueba con otro año.</p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="mapa" data-scope="peru" data-source="peru_departamentos peru_mapa"></div>
@@ -380,8 +380,8 @@
           <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
         </figure>
         <figure class="lv-card lv-wide" id="botaderos">
-          <h3 class="lv-card-title">Áreas degradadas por basura, por departamento</h3>
-          <p class="lv-card-note">Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
+          <h3 class="lv-card-title">Número de áreas degradadas por basura, por departamento</h3>
+          <p class="lv-card-note">Cuenta lugares, no su tamaño: OEFA no publica la superficie en datos abiertos. Inventario nacional de áreas degradadas por residuos sólidos municipales (OEFA, corte de agosto de 2026).</p>
           <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
         </figure>
@@ -509,6 +509,7 @@
         <article class="lv-card lv-wide">
           <h3 class="lv-card-title">Limitaciones</h3>
           <ul>
+            <li>Las áreas degradadas se cuentan como número de lugares, no por su tamaño: el diccionario de OEFA define el área en m² y en hectáreas, pero esas columnas vienen vacías en el archivo de datos abiertos.</li>
             <li>El inventario de OEFA reúne áreas degradadas por residuos para recuperarlas o reconvertirlas, incorporadas entre 2018 y 2024; no dice cuáles siguen recibiendo basura hoy.</li>
             <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
             <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Su “reciclaje” es lo que se recoge para reciclar, no lo que se termina reciclando. Pocos países reportan botaderos o recicladores informales, así que los promedios regionales dependen de pocos países (se indica cuántos). El dato del Perú (0,93 %, 2022) viene de SIGERSOL, la misma fuente que los datos de MINAM; la cifra de 53 000 recicladores informales es de WIEGO (2021).</li>
@@ -572,7 +573,7 @@ const IND_MUNDO = {
 };
 const IND_PERU = {
   kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' }, pct_valorizado: { label: 'Se valoriza', unit: '%' }, pct_distritos_que_valorizan: { label: 'Distritos que reportan', unit: '%' },
-  pct_dispuesto_adecuado: { label: 'Disposición final adecuada', unit: '%' }, botaderos: { label: 'Áreas degradadas', unit: '' },
+  pct_dispuesto_adecuado: { label: 'Disposición final adecuada', unit: '%' }, botaderos: { label: 'Número de áreas degradadas', unit: '' },
 };
 const fmtInd = (v, unit) => (v === null ? 'sin dato' : unit === '%' ? d3.format('.2f')(v) + '%' : unit === '' ? d3.format(',')(v) : d3.format('.2f')(v) + unit);
 const parseWhere = (w) => (w || '').split('&').filter(Boolean).map((kv) => kv.split('=').map(decodeURIComponent));
