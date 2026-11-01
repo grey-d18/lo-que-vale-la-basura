@@ -491,7 +491,7 @@
       </div>
 
       <h3 class="lv-sub">Precios que suben y bajan</h3>
-      <p class="lv-par">No todo material vale lo mismo: un kilo de chatarra de cobre se exporta a un precio muchas veces mayor que un kilo de cartón. Y ese precio no se queda quieto: en el mercado internacional, el valor de los metales, el plástico y el papel sube y baja de un mes a otro. En los locales de acopio de Trujillo esto se siente. Los acopiadores hablan de precios que cambian todo el tiempo, pero cada vez que el precio baja, ellos ajustan lo que pagan por el kilo y conservan su margen. Quienes absorben la caída son los que están más abajo en el circuito: el reciclador y el chatarrero.</p>
+      <p class="lv-par">Los materiales reciclables tienen valores muy distintos y sus precios fluctúan con el tiempo. En los circuitos de reciclaje de Trujillo, estos cambios no afectan a todos por igual: mientras algunos comerciantes pueden almacenar materiales y esperar mejores precios, otros dependen de vender lo recolectado cada día.</p>
       <div class="lv-filters" role="group" aria-label="Filtros de precios">
         <span class="lv-filters-tag">Explora</span>
         <label>Material
@@ -500,13 +500,15 @@
       </div>
       <div class="lv-grid">
         <figure class="lv-card" id="precio-material">
-          <h3 class="lv-card-title">Precio de exportación por material, <span data-draw="anio-exportacion" data-source="peru_comercio_reciclables">—</span></h3>
+          <h3 class="lv-card-title">No todos los residuos valen lo mismo</h3>
+          <p class="lv-card-lead">En <span data-draw="anio-exportacion" data-source="peru_comercio_reciclables">—</span>, el valor unitario de exportación de la chatarra de cobre fue muy superior al del hierro, el plástico o el papel. Estas diferencias ayudan a entender por qué ciertos materiales son más valorados en los circuitos de reciclaje.</p>
           <p class="lv-card-note">Dólares por kilo de material reciclable exportado desde el Perú. El material elegido, en verde.</p>
           <div class="lv-chart dash-skeleton" data-draw="precio-material" data-source="peru_comercio_reciclables"></div>
           <figcaption class="lv-source"><b>Fuente:</b> <a href="https://comtradeplus.un.org/">UN Comtrade</a>, exportaciones anuales del Perú al mundo (partidas HS 7404 cobre, 7602 aluminio, 7204 hierro y acero, 3915 plástico, 4707 papel y cartón, 7001 vidrio): valor FOB entre peso neto.</figcaption>
         </figure>
         <figure class="lv-card" id="fluctuacion">
-          <h3 class="lv-card-title">¿Cómo cambia el precio <span data-draw="fluct-nombre">—</span>?</h3>
+          <h3 class="lv-card-title">El precio <span data-draw="fluct-nombre">—</span> fluctúa a lo largo del año</h3>
+          <p class="lv-card-lead" data-draw="fluct-texto">—</p>
           <p class="lv-card-note" data-draw="fluct-resumen" data-source="precios_mensuales">—</p>
           <div class="lv-chart dash-skeleton" data-draw="fluctuacion" data-source="precios_mensuales"></div>
           <figcaption class="lv-source" data-draw="fluct-fuente" data-source="precios_mensuales">—</figcaption>
@@ -639,7 +641,7 @@ const tok = (name) => getComputedStyle(lvRoot()).getPropertyValue(name).trim();
 const P = () => {
   const p = dash.params();
   return {
-    anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Cobre',
+    anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Hierro y acero',
     indMundo: p.ind_mundo ?? 'reciclaje',
     indPeru: p.ind_peru ?? 'pct_valorizado', escala: 'mundo',
   };
@@ -908,7 +910,7 @@ dash.draw('ctl-dep', (sel) => {
 const FLUCT = {
   'Cobre': 'del cobre',
   'Aluminio': 'del aluminio',
-  'Hierro y acero': 'del mineral de hierro',
+  'Hierro y acero': 'del hierro',
   'Plástico': 'del plástico para reciclar',
   'Papel y cartón': 'del papel y cartón para reciclar',
 };
@@ -1154,6 +1156,11 @@ function serieMensual() {
   return d.data.filter((r) => r.material === P().material && num(r.usd_por_kg) !== null).sort((a, b) => (a.mes < b.mes ? -1 : 1));
 }
 dash.draw('fluct-nombre', (el) => { el.textContent = FLUCT[P().material] ?? ''; });
+// El texto de la autora es sobre el hierro; con otro material el párrafo no se muestra
+dash.draw('fluct-texto', (el) => {
+  el.hidden = P().material !== 'Hierro y acero';
+  el.textContent = 'El hierro es uno de los principales materiales comercializados por los chatarreros de Trujillo. Las variaciones de su precio son especialmente relevantes para quienes dependen de su recolección y venta cotidiana.';
+});
 dash.draw('fluct-resumen', (el) => {
   const rows = serieMensual();
   if (!rows || !rows.length) { el.textContent = '—'; return; }
