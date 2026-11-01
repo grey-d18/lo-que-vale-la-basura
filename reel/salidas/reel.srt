@@ -7,134 +7,130 @@ La basura es un problema que muchas
 veces dejamos de lado.
 
 3
-00:00:04,086 --> 00:00:04,880
+00:00:04,086 --> 00:00:04,920
 En dos mil veintidós,
 
 4
-00:00:04,880 --> 00:00:06,640
+00:00:04,920 --> 00:00:07,240
 el mundo generó más de dos mil
 
 5
-00:00:06,640 --> 00:00:08,060
-millones de toneladas de basura,
+00:00:07,240 --> 00:00:09,040
+millones de toneladas de basura.
 
 6
-00:00:08,060 --> 00:00:09,940
-y la cifra seguirá creciendo para dos
-
-7
-00:00:09,940 --> 00:00:10,440
-mil cincuenta.
-
-8
-00:00:11,488 --> 00:00:12,580
+00:00:09,754 --> 00:00:10,840
 De todo ese volumen,
 
-9
-00:00:12,860 --> 00:00:14,540
+7
+00:00:11,120 --> 00:00:12,800
 solo el dieciocho por ciento se recoge
 
-10
-00:00:14,540 --> 00:00:16,740
+8
+00:00:12,800 --> 00:00:15,000
 para destinarse al reciclaje.
 
-11
-00:00:16,740 --> 00:00:18,120
+9
+00:00:15,000 --> 00:00:16,380
 Y en Latinoamérica,
 
-12
-00:00:18,120 --> 00:00:19,600
+10
+00:00:16,380 --> 00:00:18,320
 la cifra baja a menos del cinco
 
-13
-00:00:19,600 --> 00:00:20,356
+11
+00:00:18,320 --> 00:00:18,622
 por ciento.
 
-14
-00:00:20,856 --> 00:00:21,540
+12
+00:00:19,122 --> 00:00:19,960
 En el Perú,
 
+13
+00:00:20,100 --> 00:00:22,400
+los residuos inorgánicos que se valorizaron en
+
+14
+00:00:22,400 --> 00:00:24,540
+dos mil veinticuatro equivalen apenas al uno
+
 15
-00:00:21,540 --> 00:00:23,580
-apenas se valoriza el uno coma tres
+00:00:24,540 --> 00:00:26,000
+coma tres por ciento de toda la
 
 16
-00:00:23,580 --> 00:00:24,620
-por ciento de la basura,
+00:00:26,000 --> 00:00:26,820
+basura municipal.
 
 17
-00:00:24,620 --> 00:00:26,780
-y solo se cuentan los desechos inorgánicos.
-
-18
-00:00:28,040 --> 00:00:30,280
+00:00:27,660 --> 00:00:29,900
 Las deficiencias en la gestión de residuos
 
-19
-00:00:30,280 --> 00:00:31,780
+18
+00:00:29,900 --> 00:00:31,400
 resultan en más de dos mil áreas
 
-20
-00:00:31,780 --> 00:00:33,140
+19
+00:00:31,400 --> 00:00:32,660
 degradadas por basura,
 
-21
-00:00:33,160 --> 00:00:34,320
+20
+00:00:32,660 --> 00:00:33,940
 de acuerdo con el Oefa.
 
-22
-00:00:34,927 --> 00:00:36,560
+21
+00:00:34,537 --> 00:00:36,180
 Pero eso no significa que los materiales
 
-23
-00:00:36,560 --> 00:00:38,380
+22
+00:00:36,180 --> 00:00:37,980
 inorgánicos no se reciclen.
 
-24
-00:00:38,700 --> 00:00:40,260
+23
+00:00:38,320 --> 00:00:39,880
 Gran parte de ellos no se registra
 
-25
-00:00:40,260 --> 00:00:41,360
+24
+00:00:39,880 --> 00:00:40,980
 en las cifras oficiales,
 
-26
-00:00:41,360 --> 00:00:43,180
+25
+00:00:40,980 --> 00:00:42,800
 pero se moviliza por circuitos informales de
 
-27
-00:00:43,180 --> 00:00:43,860
+26
+00:00:42,800 --> 00:00:43,460
 reciclaje.
 
-28
-00:00:44,060 --> 00:00:45,420
+27
+00:00:43,760 --> 00:00:45,020
 En el Perú hay cincuenta y tres
 
-29
-00:00:45,420 --> 00:00:47,260
+28
+00:00:45,020 --> 00:00:46,880
 mil recicladores informales,
 
-30
-00:00:47,260 --> 00:00:49,740
+29
+00:00:46,880 --> 00:00:49,340
 frente a menos de catorce mil trabajadores
 
-31
-00:00:49,740 --> 00:00:50,320
+30
+00:00:49,340 --> 00:00:49,940
 formales.
 
-32
-00:00:51,051 --> 00:00:54,180
+31
+00:00:50,661 --> 00:00:53,840
 Este tablero busca complementar una investigación etnográfica
 
-33
-00:00:54,180 --> 00:00:57,500
+32
+00:00:53,840 --> 00:00:57,120
 sobre circuitos informales de reciclaje en la
 
-34
-00:00:57,500 --> 00:00:58,440
+33
+00:00:57,120 --> 00:00:58,140
 ciudad de Trujillo.
 
-35
-00:00:58,440 --> 00:01:00,240
+34
+00:00:58,220 --> 00:00:59,880
 Te invito a revisarlo completo.
 

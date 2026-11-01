@@ -323,28 +323,22 @@ class Visuales:
         return img
 
     def barras_generacion(self, t, dur):
+        """Basura generada por región en 2022 (sin proyecciones), con América Latina resaltada."""
         img, d = self.lienzo()
-        self.titulo(d, "Basura que genera el mundo", "Millones de toneladas de basura municipal al año")
-        m = self.mundo_reg["Mundo"]
-        filas = [("2022 · estimación", float(m["generacion_2022_t"]) / 1e6, VERDE, False),
-                 ("2050 · proyección", float(m["generacion_2050_t"]) / 1e6, BARRA, True)]
-        maximo = filas[1][1]
-        for i, (txt, v, color, punteada) in enumerate(filas):
-            a = suave((t - 0.3 - 0.6 * i) / 1.4)
-            y = 220 + i * 230
-            d.text((32, y), txt, font=fuente("semi", 36), fill=TINTA)
-            largo = max(10, int((self.w - 64) * 0.72 * v / maximo * a))
-            d.rounded_rectangle((32, y + 60, 32 + largo, y + 150), radius=10, fill=color)
-            if punteada:  # la proyección se distingue del dato con rayas
-                for x in range(32 - 90, 32 + largo, 22):
-                    d.line([(max(32, x), y + 60 + max(0, 32 - x)), (min(32 + largo, x + 90), y + 150 - max(0, x + 90 - 32 - largo))],
-                           fill=PANEL, width=4)
-            d.text((32 + largo + 16, y + 70), f"{v * a:,.0f}", font=fuente("num", 64), fill=TINTA)
-        b = suave((t - 2.0) / 0.6)
-        if b > 0:
-            crece = float(m["crecimiento_2050_pct"])
-            d.text((32, 640), f"Se proyecta un {crece:.0f}% más hacia 2050.", font=fuente("semi", 32),
-                   fill=mezclar(PANEL, TINTA_2, b))
+        total = float(self.mundo_reg["Mundo"]["generacion_2022_t"]) / 1e6
+        self.titulo(d, "Basura generada por región, 2022", f"Millones de toneladas · total mundial: {total:,.0f}")
+        filas = sorted(((r, float(v["generacion_2022_t"]) / 1e6) for r, v in self.mundo_reg.items() if r != "Mundo"),
+                       key=lambda x: -x[1])
+        maximo = filas[0][1]
+        f = fuente("semi", 28)
+        for i, (region, v) in enumerate(filas):
+            a = suave((t - 0.2 - 0.15 * i) / 0.9)
+            y = 160 + i * 82
+            latam = region == "América Latina y el Caribe"
+            d.text((32, y), region, font=f, fill=TINTA if latam else TINTA_2)
+            largo = max(8, int((self.w - 64 - 110) * v / maximo * a))
+            d.rounded_rectangle((32, y + 38, 32 + largo, y + 70), radius=6, fill=AMARILLO if latam else BARRA)
+            d.text((32 + largo + 12, y + 34), f"{v * a:,.0f}", font=fuente("num", 36), fill=TINTA)
         return img
 
     def barras_recicladores(self, t, dur):

@@ -9,9 +9,9 @@
       "fuente": "Tablero «Lo que vale la basura» (Claude Artifact)"
     },
     {
-      "frase": "En dos mil veintidós, el mundo generó más de dos mil millones de toneladas de basura, y la cifra seguirá creciendo para dos mil cincuenta.",
+      "frase": "En dos mil veintidós, el mundo generó más de dos mil millones de toneladas de basura.",
       "cifra": "2,335 millones de t",
-      "etiqueta": "de basura municipal en 2022 · +49% proyectado a 2050",
+      "etiqueta": "de basura municipal generada en el mundo en 2022",
       "visual": "barras_generacion",
       "fuente": "Banco Mundial, What a Waste 3.0"
     },
@@ -23,9 +23,9 @@
       "fuente": "Banco Mundial, What a Waste 3.0"
     },
     {
-      "frase": "En el Perú, apenas se valoriza el uno coma tres por ciento de la basura, y solo se cuentan los desechos inorgánicos.",
+      "frase": "En el Perú, los residuos inorgánicos que se valorizaron en dos mil veinticuatro equivalen apenas al uno coma tres por ciento de toda la basura municipal.",
       "cifra": "1.3%",
-      "etiqueta": "de los residuos municipales se valorizó en 2024",
+      "etiqueta": "inorgánicos valorizados, sobre toda la basura municipal (2024)",
       "visual": "mapa_peru_valorizado",
       "fuente": "MINAM–SIGERSOL"
     },

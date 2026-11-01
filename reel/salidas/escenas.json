@@ -10,14 +10,14 @@
     "wer": 0.0
   },
   {
-    "frase": "En dos mil veintidós, el mundo generó más de dos mil millones de toneladas de basura, y la cifra seguirá creciendo para dos mil cincuenta.",
+    "frase": "En dos mil veintidós, el mundo generó más de dos mil millones de toneladas de basura.",
     "cifra": "2,335 millones de t",
-    "etiqueta": "de basura municipal en 2022 · +49% proyectado a 2050",
+    "etiqueta": "de basura municipal generada en el mundo en 2022",
     "visual": "barras_generacion",
     "fuente": "Banco Mundial, What a Waste 3.0",
     "inicio": 4.086,
-    "fin": 10.888,
-    "wer": 0.04
+    "fin": 9.154,
+    "wer": 0.062
   },
   {
     "frase": "De todo ese volumen, solo el dieciocho por ciento se recoge para destinarse al reciclaje. Y en Latinoamérica, la cifra baja a menos del cinco por ciento.",
@@ -25,19 +25,19 @@
     "etiqueta": "se recoge para reciclar: mundo · América Latina",
     "visual": "mapa_mundo_reciclaje",
     "fuente": "Banco Mundial, What a Waste 3.0",
-    "inicio": 11.488,
-    "fin": 20.256,
+    "inicio": 9.754,
+    "fin": 18.522,
     "wer": 0.148
   },
   {
-    "frase": "En el Perú, apenas se valoriza el uno coma tres por ciento de la basura, y solo se cuentan los desechos inorgánicos.",
+    "frase": "En el Perú, los residuos inorgánicos que se valorizaron en dos mil veinticuatro equivalen apenas al uno coma tres por ciento de toda la basura municipal.",
     "cifra": "1.3%",
-    "etiqueta": "de los residuos municipales se valorizó en 2024",
+    "etiqueta": "inorgánicos valorizados, sobre toda la basura municipal (2024)",
     "visual": "mapa_peru_valorizado",
     "fuente": "MINAM–SIGERSOL",
-    "inicio": 20.856,
-    "fin": 27.417,
-    "wer": 0.136
+    "inicio": 19.122,
+    "fin": 27.027,
+    "wer": 0.115
   },
   {
     "frase": "Las deficiencias en la gestión de residuos resultan en más de dos mil áreas degradadas por basura, de acuerdo con el Oefa.",
@@ -45,8 +45,8 @@
     "etiqueta": "áreas degradadas por basura · 619 con quema",
     "visual": "mapa_peru_botaderos",
     "fuente": "OEFA, inventario de áreas degradadas",
-    "inicio": 28.017,
-    "fin": 34.327,
+    "inicio": 27.627,
+    "fin": 33.937,
     "wer": 0.045
   },
   {
@@ -55,8 +55,8 @@
     "etiqueta": "recicladores informales · 13,788 formales",
     "visual": "barras_recicladores",
     "fuente": "Banco Mundial, What a Waste 3.0",
-    "inicio": 34.927,
-    "fin": 50.451,
+    "inicio": 34.537,
+    "fin": 50.061,
     "wer": 0.042
   },
   {
@@ -65,8 +65,8 @@
     "etiqueta": "",
     "visual": "cierre",
     "fuente": "",
-    "inicio": 51.051,
-    "fin": 60.331,
+    "inicio": 50.661,
+    "fin": 59.941,
     "wer": 0.0
   }
 ]
