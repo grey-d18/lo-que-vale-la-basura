@@ -649,7 +649,7 @@ def main():
         "-i", reel_wav, "-i", "recursos/musica.wav",
         "-filter_complex", f"{voz};{musica};{mezcla}", "-map", "0:v", "-map", "[a]", "-t", f"{total:.3f}",
         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "20",
-        "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", f"{s}/reel.mp4"], stdin=subprocess.PIPE)
+        "-c:a", "aac", "-b:a", "192k", "-ac", "2", "-movflags", "+faststart", f"{s}/reel.mp4"], stdin=subprocess.PIPE)
 
     for n in range(int(total * FPS)):
         t = n / FPS
