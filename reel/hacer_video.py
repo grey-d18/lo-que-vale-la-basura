@@ -29,7 +29,7 @@ FUENTES = os.path.join(AQUI, "recursos", "fuentes")
 
 ANCHO, ALTO, FPS = 1080, 1920, 30
 MARGEN = 60
-CIERRE = 2.5  # segundos de la tarjeta final después de la narración: un final breve, sin música sola
+CIERRE = 1.0  # segundos después de la narración: la música se apaga y termina
 DURACION_MAX = 74.5  # el reel debe durar entre 45 y 75 s
 URL_TABLERO = "claude.ai/artifact/6bTVbbocVNX5enTreJr638"
 
@@ -586,7 +586,7 @@ def main():
     reel_wav = f"{s}/reel.wav"
     dur_audio = sf.info(reel_wav).duration
     # La tarjeta final se acorta si hace falta para no pasar de DURACION_MAX (mínimo 2.5 s)
-    total = dur_audio + max(2.5, min(CIERRE, DURACION_MAX - dur_audio))
+    total = dur_audio + max(0.5, min(CIERRE, DURACION_MAX - dur_audio))
 
     palabras = tiempos_de_palabras(guion, escenas, reel_wav)
     escribir_srt(agrupar(palabras, 7), f"{s}/reel.srt")
@@ -648,7 +648,7 @@ def main():
     musica = "[2:a]volume=0.22,aresample=48000[mus]"
     mezcla = ("[mus][guia]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[musb];"
               "[voz][musb]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89,"
-              f"afade=t=out:st={total - 1.5:.3f}:d=1.5[a]")
+              f"afade=t=out:st={total - 1.2:.3f}:d=1.2[a]")
     ffmpeg = subprocess.Popen([
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{ANCHO}x{ALTO}", "-r", str(FPS), "-i", "-",
