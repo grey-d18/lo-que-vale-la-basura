@@ -544,7 +544,7 @@
     </section>
 
     <section class="lv-act lv-method" id="metodo">
-      <div class="lv-act-head"><div><p class="lv-scale">Cómo se hizo</p><h2 class="lv-act-title">Metodología, fuentes y limitaciones</h2></div></div>
+      <div class="lv-act-head"><div><p class="lv-scale">Cómo se hizo</p><h2 class="lv-act-title">Metodología, limitaciones y fuentes</h2></div></div>
       <div class="lv-grid">
         <article class="lv-card">
           <h3 class="lv-card-title">Cómo se construyeron los indicadores</h3>
@@ -560,6 +560,18 @@
           </ul>
         </article>
         <article class="lv-card">
+          <h3 class="lv-card-title">Limitaciones</h3>
+          <ul>
+            <li>Las áreas degradadas se cuentan como número de lugares, no por su tamaño: el diccionario de OEFA define el área en m² y en hectáreas, pero esas columnas vienen vacías en el archivo de datos abiertos.</li>
+            <li>El inventario de OEFA reúne áreas degradadas por residuos para recuperarlas o reconvertirlas, incorporadas entre 2018 y 2024; no dice cuáles siguen recibiendo basura hoy.</li>
+            <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
+            <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Su “reciclaje” es lo que se recoge para reciclar, no lo que se termina reciclando. Pocos países reportan botaderos o recicladores informales, así que los promedios regionales dependen de pocos países (se indica cuántos). El dato del Perú (0,93 %, 2022) viene de SIGERSOL, la misma fuente que los datos de MINAM; la cifra de 53 000 recicladores informales es de WIEGO (2021).</li>
+            <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros. Sus precios son valor entre peso de lo exportado en el año, no cotizaciones.</li>
+            <li>Los precios mensuales sirven para ver cómo se mueve el mercado internacional, no para compararlos con lo que paga el acopiador: el Pink Sheet cotiza metal primario y mineral de hierro, no chatarra, y el plástico y el papel son exportaciones del Japón.</li>
+            <li>Los precios de campo vienen de dos locales de una zona de Trujillo y no representan a todo el país. Además, son de 2026, y Comtrade todavía no publica las exportaciones del Perú de ese año (los datos mensuales llegan a abril de 2025), así que se comparan con 2025. El precio de exportación corresponde a material ya clasificado y embalado, con transporte e intermediarios de por medio: la comparación sirve como referencia de la distancia entre ambos precios, no como medida del margen.</li>
+          </ul>
+        </article>
+        <article class="lv-card lv-wide">
           <h3 class="lv-card-title">Fuentes</h3>
           <ul>
             <li><a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, licencia CC BY 4.0</li>
@@ -571,18 +583,6 @@
             <li><a href="https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=PE">Banco Mundial, tipo de cambio oficial</a></li>
             <li>Rodriguez Coronel, G. Tesis de licenciatura en Antropología, PUCP (en curso): trabajo de campo en El Porvenir, Trujillo. Los nombres son seudónimos.</li>
             <li>Mapas: <a href="https://www.naturalearthdata.com/">Natural Earth</a> y <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a></li>
-          </ul>
-        </article>
-        <article class="lv-card lv-wide">
-          <h3 class="lv-card-title">Limitaciones</h3>
-          <ul>
-            <li>Las áreas degradadas se cuentan como número de lugares, no por su tamaño: el diccionario de OEFA define el área en m² y en hectáreas, pero esas columnas vienen vacías en el archivo de datos abiertos.</li>
-            <li>El inventario de OEFA reúne áreas degradadas por residuos para recuperarlas o reconvertirlas, incorporadas entre 2018 y 2024; no dice cuáles siguen recibiendo basura hoy.</li>
-            <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
-            <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Su “reciclaje” es lo que se recoge para reciclar, no lo que se termina reciclando. Pocos países reportan botaderos o recicladores informales, así que los promedios regionales dependen de pocos países (se indica cuántos). El dato del Perú (0,93 %, 2022) viene de SIGERSOL, la misma fuente que los datos de MINAM; la cifra de 53 000 recicladores informales es de WIEGO (2021).</li>
-            <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros. Sus precios son valor entre peso de lo exportado en el año, no cotizaciones.</li>
-            <li>Los precios mensuales sirven para ver cómo se mueve el mercado internacional, no para compararlos con lo que paga el acopiador: el Pink Sheet cotiza metal primario y mineral de hierro, no chatarra, y el plástico y el papel son exportaciones del Japón.</li>
-            <li>Los precios de campo vienen de dos locales de una zona de Trujillo y no representan a todo el país. Además, son de 2026, y Comtrade todavía no publica las exportaciones del Perú de ese año (los datos mensuales llegan a abril de 2025), así que se comparan con 2025. El precio de exportación corresponde a material ya clasificado y embalado, con transporte e intermediarios de por medio: la comparación sirve como referencia de la distancia entre ambos precios, no como medida del margen.</li>
           </ul>
         </article>
       </div>
