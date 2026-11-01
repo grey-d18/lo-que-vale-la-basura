@@ -16,7 +16,7 @@ WEB = RAIZ / "web" / "data"
 PROCESADOS.mkdir(parents=True, exist_ok=True)
 WEB.mkdir(parents=True, exist_ok=True)
 
-ANIO_PRECIOS = 2024  # último año completo de Comtrade y del tipo de cambio
+ANIO_PRECIOS = 2025  # último año completo de Comtrade y del tipo de cambio
 
 
 def sin_tildes(texto):
@@ -246,7 +246,38 @@ precios = pd.read_csv(ORIGINALES / "precios_tesis.csv", dtype={"partida_hs": str
 exportacion = comercio[(comercio.flujo == "Exportación") & (comercio.anio == ANIO_PRECIOS)]
 precios = precios.merge(exportacion[["partida_hs", "usd_por_kg"]], on="partida_hs", how="left")
 precios["tipo_cambio"] = tipo_cambio
+precios["anio_exportacion"] = ANIO_PRECIOS
 precios["exportacion_soles_kg"] = precios.usd_por_kg * tipo_cambio
 precios["pct_min_del_precio_exportacion"] = 100 * precios.precio_min_soles_kg / precios.exportacion_soles_kg
 precios["pct_max_del_precio_exportacion"] = 100 * precios.precio_max_soles_kg / precios.exportacion_soles_kg
 guardar(precios, "precios_comparados")
+
+
+# 5. Cómo cambian los precios en el mercado internacional, mes a mes ---------------------------------------------
+# Metales: Pink Sheet del Banco Mundial (metal primario o mineral, no chatarra), en US$ por tonelada.
+# Plástico y papel: no están en el Pink Sheet; se usa el valor unitario de las exportaciones del Japón (Comtrade).
+
+pink = pd.read_excel(ORIGINALES / "wb_pink_sheet_mensual.xlsx", sheet_name="Monthly Prices", header=4)
+pink = pink.rename(columns={pink.columns[0]: "mes"}).iloc[1:]  # la primera fila son las unidades
+SERIES_PINK = {"Copper": ("Cobre", "Cobre refinado, Bolsa de Metales de Londres (LME)"),
+               "Aluminum": ("Aluminio", "Aluminio primario, LME"),
+               "Iron ore, cfr spot": ("Hierro y acero", "Mineral de hierro, entregado en China (no es chatarra)")}
+mensual = []
+for columna, (material, serie) in SERIES_PINK.items():
+    m = pink[["mes", columna]].dropna()
+    mensual.append(pd.DataFrame({"material": material, "serie": serie, "fuente": "Banco Mundial, Pink Sheet",
+                                 "mes": m.mes.str.replace("M", "-"), "usd_por_kg": m[columna].astype(float) / 1000}))
+japon = pd.DataFrame(json.loads((ORIGINALES / "comtrade_japon_mensual.json").read_text()))
+japon = japon[japon.netWgt > 0]
+mensual.append(pd.DataFrame({
+    "material": japon.cmdCode.astype(str).map({"3915": "Plástico", "4707": "Papel y cartón"}),
+    "serie": japon.cmdCode.astype(str).map({"3915": "Desechos de plástico exportados por el Japón (HS 3915)",
+                                            "4707": "Papel y cartón para reciclar exportados por el Japón (HS 4707)"}),
+    "fuente": "UN Comtrade",
+    "mes": japon.period.astype(str).str[:4] + "-" + japon.period.astype(str).str[4:],
+    "usd_por_kg": japon.primaryValue / japon.netWgt,
+}))
+mensual = pd.concat(mensual)
+mensual = mensual[mensual.mes >= "2024-01"].sort_values(["material", "mes"])
+guardar(mensual, "precios_mensuales")
+

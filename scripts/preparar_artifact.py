@@ -33,7 +33,7 @@ def escribir(nombre, filas):
 
 # Tablas ya procesadas
 for nombre in ["mundo_paises", "mundo_regiones", "peru_nacional", "peru_departamentos", "trujillo_distritos",
-               "peru_comercio_reciclables", "precios_comparados"]:
+               "peru_comercio_reciclables", "precios_comparados", "precios_mensuales"]:
     escribir(nombre, json.loads((WEB / f"{nombre}.json").read_text()))
 
 # Mapa mundial: Natural Earth 1:110m (dominio público), una fila por país con su código ISO3

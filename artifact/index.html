@@ -154,6 +154,7 @@
 /* Tarjeta partida: texto a la izquierda, gráfico a la derecha */
 .lv .lv-grid > .lv-card.lv-split { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(0, 1.7fr); gap: var(--cds-gap-lg); align-items: center; }
 .lv .lv-split .lv-chart, .lv #precios .lv-chart { max-width: none; margin-inline: 0; }
+.lv .lv-split > .lv-source { grid-column: 1 / -1; }
 .lv .lv-split-text .lv-card-title { font-size: 1.35rem; font-weight: 600; line-height: 1.25; margin-bottom: .6rem; text-wrap: balance; }
 .lv .lv-split-text .lv-card-lead { font-size: var(--cds-font-size-body); color: var(--lv-ink-2); }
 @media (max-width: 52rem) { .lv .lv-grid > .lv-card.lv-split { grid-template-columns: minmax(0, 1fr); } }
@@ -371,6 +372,7 @@
         <h3 class="lv-card-title">Por región del mundo</h3>
         <p class="lv-card-note">Mismo indicador, como promedio de cada región ponderado por las toneladas que genera cada país. Entre paréntesis, cuántos países reportan el dato.</p>
         <div class="lv-chart dash-skeleton" data-draw="regiones" data-source="mundo_regiones"></div>
+        <figcaption class="lv-source"><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>. Promedios regionales calculados para este tablero, ponderados por las toneladas que genera cada país; la basura por persona es el total de toneladas entre la población de los países con ambos datos.</figcaption>
       </figure>
     </section>
 
@@ -422,6 +424,11 @@
             <h3 class="lv-card-title">Residuos valorizados, 2019–2024</h3>
             <p class="lv-card-note">Porcentaje de los residuos municipales generados. El departamento elegido frente al promedio del Perú.</p>
             <div class="lv-chart dash-skeleton" data-draw="serie" data-source="peru_nacional peru_departamentos"></div>
+            <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="kg_persona_dia" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS_MUN entre POB_URBANA, dividido entre 365.</figcaption>
+            <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_valorizado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: QRESIDUOS _VAL_INORGAN (inorgánicos valorizados) entre QRESIDUOS_MUN (residuos municipales generados).</figcaption>
+            <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_dispuesto_adecuado" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM–SIGERSOL, disposición final adecuada</a>: DISPOSICION_FINAL_ADECUADA entre QRESIDUOS_MUN. 2021 sin dato porque repite 2022.</figcaption>
+            <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="botaderos" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, áreas incorporadas entre 2018 y 2024.</figcaption>
+            <figcaption class="lv-ind-name lv-source" data-grupo="peru" data-ind="pct_distritos_que_valorizan" hidden><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización de residuos sólidos por distrito</a>: distritos con QRESIDUOS _VAL_INORGAN mayor que cero.</figcaption>
           </figure>
         </div>
         <figure class="lv-card" id="mapa-peru">
@@ -446,6 +453,7 @@
             <p class="lv-legend"><span><span class="lv-sw is-green"></span>Sin quema registrada</span><span><span class="lv-sw is-yellow"></span>Con quema de basura</span></p>
           </div>
           <div class="lv-chart is-tall dash-skeleton" data-draw="botaderos" data-source="peru_departamentos"></div>
+          <figcaption class="lv-source"><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos sólidos municipales</a>, corte del 27 de agosto de 2026.</figcaption>
         </figure>
       </div>
     </section>
@@ -478,35 +486,38 @@
           <h3 class="lv-card-title">Recicladores informales en América Latina</h3>
           <p class="lv-card-note">Países con dato en What a Waste 3.0: muy pocos países lo reportan en todo el mundo.</p>
           <div class="lv-chart is-tall dash-skeleton" data-draw="informales" data-source="mundo_paises"></div>
+          <figcaption class="lv-source"><b>Fuente:</b> <a href="https://datacatalog.worldbank.org/search/dataset/0039597">Banco Mundial, What a Waste 3.0 (2026)</a>, columnas “Informal waste workers” y “Formal waste workers”.</figcaption>
         </figure>
       </div>
 
-      <h3 class="lv-sub">Los metales, el material del chatarrero</h3>
-      <p class="lv-par">No todo material vale lo mismo. Un kilo de chatarra de cobre se exporta a un precio muchas veces mayor que un kilo de cartón. Por eso los metales se mueven sobre todo por los chatarreros, que además saben desarmar un artefacto para vender cada metal por separado.</p>
-      <div class="lv-filters" role="group" aria-label="Filtros de comercio">
+      <h3 class="lv-sub">Precios que suben y bajan</h3>
+      <p class="lv-par">No todo material vale lo mismo: un kilo de chatarra de cobre se exporta a un precio muchas veces mayor que un kilo de cartón. Y ese precio tampoco se queda quieto. En el mercado internacional, el valor de los metales, el plástico y el papel cambia de un mes a otro. No sabemos con exactitud cómo llegan esas subidas y bajadas a los locales de acopio de Trujillo, pero es el mercado del que, al final, forma parte el circuito informal.</p>
+      <div class="lv-filters" role="group" aria-label="Filtros de precios">
         <span class="lv-filters-tag">Explora</span>
         <label>Material
-          <select id="f-material" data-draw="ctl-material" data-source="peru_comercio_reciclables" aria-label="Material"></select>
+          <select id="f-material" data-draw="ctl-material" data-source="precios_mensuales" aria-label="Material"></select>
         </label>
       </div>
       <div class="lv-grid">
         <figure class="lv-card" id="precio-material">
-          <h3 class="lv-card-title">Precio de exportación por material, 2024</h3>
+          <h3 class="lv-card-title">Precio de exportación por material, <span data-draw="anio-exportacion" data-source="peru_comercio_reciclables">—</span></h3>
           <p class="lv-card-note">Dólares por kilo de material reciclable exportado desde el Perú. El material elegido, en verde.</p>
           <div class="lv-chart dash-skeleton" data-draw="precio-material" data-source="peru_comercio_reciclables"></div>
+          <figcaption class="lv-source"><b>Fuente:</b> <a href="https://comtradeplus.un.org/">UN Comtrade</a>, exportaciones anuales del Perú al mundo (partidas HS 7404 cobre, 7602 aluminio, 7204 hierro y acero, 3915 plástico, 4707 papel y cartón, 7001 vidrio): valor FOB entre peso neto.</figcaption>
         </figure>
-        <figure class="lv-card" id="comercio">
-          <h3 class="lv-card-title">Comercio de <span data-draw="param-material">—</span> reciclable</h3>
-          <p class="lv-card-note">Millones de dólares por año, exportaciones e importaciones del Perú.</p>
-          <p class="lv-legend"><span><span class="lv-sw is-green"></span>Exportación</span><span><span class="lv-sw is-yellow"></span>Importación</span></p>
-          <div class="lv-chart dash-skeleton" data-draw="comercio" data-source="peru_comercio_reciclables"></div>
+        <figure class="lv-card" id="fluctuacion">
+          <h3 class="lv-card-title">¿Cómo cambia el precio <span data-draw="fluct-nombre">—</span>?</h3>
+          <p class="lv-card-note" data-draw="fluct-resumen" data-source="precios_mensuales">—</p>
+          <div class="lv-chart dash-skeleton" data-draw="fluctuacion" data-source="precios_mensuales"></div>
+          <figcaption class="lv-source" data-draw="fluct-fuente" data-source="precios_mensuales">—</figcaption>
         </figure>
         <figure class="lv-card lv-wide" id="precios">
           <h3 class="lv-card-title">¿Cuánto recibe quien recolecta?</h3>
-          <p class="lv-card-note">Precio que paga el acopiador en Trujillo frente al precio de exportación de 2024, en soles por kilo (tipo de cambio <span data-draw="valor" data-source="precios_comparados" data-field="tipo_cambio" data-row="0" data-fmt="tc">—</span>).</p>
+          <p class="lv-card-note">Precio que paga el acopiador en Trujillo frente al precio de exportación de <span data-draw="valor" data-source="precios_comparados" data-field="anio_exportacion" data-row="0" data-fmt="anio">—</span>, en soles por kilo (tipo de cambio <span data-draw="valor" data-source="precios_comparados" data-field="tipo_cambio" data-row="0" data-fmt="tc">—</span>). Escala logarítmica: así caben en el mismo eje los céntimos de la botella y los S/ 30 del cobre.</p>
           <p class="lv-legend"><span><span class="lv-sw is-green is-pill"></span>Lo que paga el acopiador (de mínimo a máximo)</span><span><span class="lv-sw is-yellow is-diamond"></span>Precio de exportación</span></p>
           <div class="lv-chart dash-skeleton" data-draw="precios" data-source="precios_comparados"></div>
           <p class="lv-warn">Esta comparación es una pista, no una conclusión. El precio de exportación es de material ya clasificado y embalado, incluye transporte e intermediarios y es de otro año. La tesis estudió la parte informal del circuito, no la cadena de valor completa: queda como invitación a investigar y a compartir información.</p>
+          <figcaption class="lv-source"><b>Fuente:</b> trabajo de campo de la tesis en El Porvenir (precios del acopiador); <a href="https://comtradeplus.un.org/">UN Comtrade</a>, exportaciones del Perú (valor FOB entre peso neto; el plástico duro y la botella comparten la partida HS 3915); <a href="https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=PE">Banco Mundial, tipo de cambio oficial</a>.</figcaption>
         </figure>
       </div>
 
@@ -521,6 +532,7 @@
           </table>
         </div>
         <p class="lv-hint">El botadero El Milagro (Huanchaco), que recibía la basura de la ciudad, figura en el inventario de OEFA como botadero con quema de residuos. En 2023 la población que SIGERSOL asigna a El Porvenir cae a casi la mitad y la de Florencia de Mora casi se duplica: es un cambio de la fuente, no de la realidad.</p>
+        <p class="lv-source"><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización</a> y <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">disposición final adecuada</a> por distrito; OEFA, inventario de áreas degradadas.</p>
       </figure>
     </section>
 
@@ -562,7 +574,8 @@
             <li><a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM, valorización de residuos sólidos por distrito</a></li>
             <li><a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">MINAM, disposición final adecuada de residuos sólidos</a></li>
             <li><a href="https://www.datosabiertos.gob.pe/dataset/inventario-nacional-de-%C3%A1reas-degradadas-por-residuos-s%C3%B3lidos-municipales-organismo-de">OEFA, inventario nacional de áreas degradadas por residuos</a></li>
-            <li><a href="https://comtradeplus.un.org/">UN Comtrade</a>, comercio exterior del Perú</li>
+            <li><a href="https://comtradeplus.un.org/">UN Comtrade</a>, comercio exterior del Perú (anual) y exportaciones mensuales del Japón de plástico y papel para reciclar</li>
+            <li><a href="https://www.worldbank.org/en/research/commodity-markets">Banco Mundial, Pink Sheet</a>: precios mensuales del cobre, el aluminio y el mineral de hierro</li>
             <li><a href="https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=PE">Banco Mundial, tipo de cambio oficial</a></li>
             <li>Rodriguez Coronel, G. Tesis de licenciatura en Antropología, PUCP (en curso).</li>
             <li>Mapas: <a href="https://www.naturalearthdata.com/">Natural Earth</a> y <a href="https://github.com/juaneladio/peru-geojson">juaneladio/peru-geojson</a></li>
@@ -575,7 +588,8 @@
             <li>El inventario de OEFA reúne áreas degradadas por residuos para recuperarlas o reconvertirlas, incorporadas entre 2018 y 2024; no dice cuáles siguen recibiendo basura hoy.</li>
             <li>Las cifras oficiales solo cuentan lo que reportan las municipalidades. El reciclaje informal no aparece, así que el reciclaje real es mayor que el oficial.</li>
             <li>What a Waste compara países con datos de años distintos: es una foto, no una serie de tiempo. Su “reciclaje” es lo que se recoge para reciclar, no lo que se termina reciclando. Pocos países reportan botaderos o recicladores informales, así que los promedios regionales dependen de pocos países (se indica cuántos). El dato del Perú (0,93 %, 2022) viene de SIGERSOL, la misma fuente que los datos de MINAM; la cifra de 53 000 recicladores informales es de WIEGO (2021).</li>
-            <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros.</li>
+            <li>Comtrade mide comercio formal: muestra el tamaño del mercado de chatarra, no cuánto de ella recolectan los chatarreros. Sus precios son valor entre peso de lo exportado en el año, no cotizaciones.</li>
+            <li>Los precios mensuales sirven para ver cómo se mueve el mercado internacional, no para compararlos con lo que paga el acopiador: el Pink Sheet cotiza metal primario y mineral de hierro, no chatarra, y el plástico y el papel son exportaciones del Japón.</li>
             <li>Los precios de campo vienen de dos locales de una zona de Trujillo y no representan a todo el país.</li>
           </ul>
         </article>
@@ -625,7 +639,7 @@ const tok = (name) => getComputedStyle(lvRoot()).getPropertyValue(name).trim();
 const P = () => {
   const p = dash.params();
   return {
-    anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Hierro y acero',
+    anio: Number(p.anio ?? 2024), dep: p.dep ?? 'LA LIBERTAD', material: p.material ?? 'Cobre',
     indMundo: p.ind_mundo ?? 'reciclaje',
     indPeru: p.ind_peru ?? 'pct_valorizado', escala: 'mundo',
   };
@@ -640,6 +654,7 @@ const F = {
   tons: (v) => d3.format(',.0f')(v) + ' t',
   musd: (v) => 'US$ ' + d3.format(',.0f')(v / 1e6) + ' millones',
   tc: (v) => d3.format('.2f')(v),
+  anio: (v) => String(v),
 };
 const IND_MUNDO = {
   kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' }, reciclaje: { label: 'Se recoge para reciclar', unit: '%' },
@@ -872,7 +887,6 @@ dash.draw('valor', (el) => {
 });
 dash.draw('param-anio', (el) => { el.textContent = String(P().anio); });
 dash.draw('param-dep', (el) => { el.textContent = capital(P().dep); });
-dash.draw('param-material', (el) => { el.textContent = P().material.toLowerCase(); });
 
 // ---------- Controles cuyas opciones vienen de los datos ----------
 function fillSelect(sel, options, value, param) {
@@ -890,10 +904,18 @@ dash.draw('ctl-dep', (sel) => {
   const deps = d.status === 'ok' ? [...new Set(d.data.map((r) => r.departamento))].sort() : [];
   fillSelect(sel, deps.map((x) => [x, capital(x)]), P().dep, 'dep');
 });
+// Materiales con precio mensual, en este orden; el nombre dice qué serie se grafica para cada uno
+const FLUCT = {
+  'Cobre': 'del cobre',
+  'Aluminio': 'del aluminio',
+  'Hierro y acero': 'del mineral de hierro',
+  'Plástico': 'del plástico para reciclar',
+  'Papel y cartón': 'del papel y cartón para reciclar',
+};
 dash.draw('ctl-material', (sel) => {
-  const d = dash.data('peru_comercio_reciclables');
-  const ms = d.status === 'ok' ? [...new Set(d.data.map((r) => r.material))].sort() : [];
-  fillSelect(sel, ms.map((m) => [m, m]), P().material, 'material');
+  const d = dash.data('precios_mensuales');
+  const ms = d.status === 'ok' ? Object.keys(FLUCT).filter((m) => d.data.some((r) => r.material === m)) : [];
+  fillSelect(sel, ms.map((m) => [m, m === 'Hierro y acero' ? 'Hierro (mineral)' : m]), P().material, 'material');
 });
 
 // ---------- Mapas: el mundial y el del Perú comparten el mismo dibujo ----------
@@ -1114,20 +1136,86 @@ function dibujarPrecioMaterial(el) {
       tip: [r.material, [`US$ ${d3.format('.2f')(num(r.usd_por_kg))} por kilo`, `${d3.format(',.0f')(num(r.toneladas))} toneladas exportadas en ${ultimo}`]],
     }));
   hbars(el, rows, { fmt: (v) => 'US$ ' + d3.format('.2f')(v), fmtAxis: (v) => 'US$ ' + d3.format('.0f')(v), rowH: 36, barMax: 30, fill: true, axis: true,
-    onClick: (d) => dash.setParams({ material: d.label }) });
+    onClick: (d) => { if (FLUCT[d.label]) dash.setParams({ material: d.label }); } });
 }
 
-dash.draw('comercio', (el) => {
-  el.replaceChildren();
-  if (!chartState(el, ['peru_comercio_reciclables'])) return;
-  const p = P();
-  const data = dash.data('peru_comercio_reciclables').data.filter((r) => r.material === p.material);
-  const serie = (flujo) => data.filter((r) => r.flujo === flujo).map((r) => ({ x: Number(r.anio), y: num(r.valor_usd) === null ? null : num(r.valor_usd) / 1e6 })).sort((a, b) => a.x - b.x);
-  lines(el, [
-    { name: 'Exportación', color: tok('--lv-green'), points: serie('Exportación'), strong: true },
-    { name: 'Importación', color: tok('--lv-yellow'), points: serie('Importación'), strong: true },
-  ].filter((s) => s.points.length), { fmtAxis: (v) => 'US$ ' + d3.format(',.0f')(v) + ' M', fmtTip: (v) => 'US$ ' + d3.format(',.1f')(v) + ' millones' });
+dash.draw('anio-exportacion', (el) => {
+  const d = dash.data('peru_comercio_reciclables');
+  el.textContent = d.status === 'ok' ? String(d3.max(d.data, (r) => Number(r.anio))) : '—';
 });
+
+// ---------- Cómo cambian los precios, mes a mes ----------
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const fmtMes = (m, largo) => { const [a, n] = m.split('-'); return `${MESES[Number(n) - 1]} ${largo ? a : a.slice(2)}`; };
+const fmtUsdKg = (v) => 'US$ ' + d3.format(v < 1 ? '.3f' : '.2f')(v);
+function serieMensual() {
+  const d = dash.data('precios_mensuales');
+  if (d.status !== 'ok') return null;
+  return d.data.filter((r) => r.material === P().material && num(r.usd_por_kg) !== null).sort((a, b) => (a.mes < b.mes ? -1 : 1));
+}
+dash.draw('fluct-nombre', (el) => { el.textContent = FLUCT[P().material] ?? ''; });
+dash.draw('fluct-resumen', (el) => {
+  const rows = serieMensual();
+  if (!rows || !rows.length) { el.textContent = '—'; return; }
+  const min = d3.least(rows, (r) => num(r.usd_por_kg));
+  const max = d3.greatest(rows, (r) => num(r.usd_por_kg));
+  const sube = 100 * (num(max.usd_por_kg) / num(min.usd_por_kg) - 1);
+  el.textContent = `Dólares por kilo, cada mes. Entre ${fmtMes(rows[0].mes, true)} y ${fmtMes(rows.at(-1).mes, true)}, el mes más caro (${fmtMes(max.mes, true)}, ${fmtUsdKg(num(max.usd_por_kg))}) superó en ${d3.format('.0f')(sube)}% al más barato (${fmtMes(min.mes, true)}, ${fmtUsdKg(num(min.usd_por_kg))}).`;
+});
+dash.draw('fluct-fuente', (el) => {
+  const rows = serieMensual();
+  el.replaceChildren();
+  if (!rows || !rows.length) return;
+  const b = document.createElement('b'); b.textContent = 'Fuente:';
+  const a = document.createElement('a');
+  const pink = rows[0].fuente === 'Banco Mundial, Pink Sheet';
+  a.href = pink ? 'https://www.worldbank.org/en/research/commodity-markets' : 'https://comtradeplus.un.org/';
+  a.textContent = pink ? 'Banco Mundial, Pink Sheet (precios mensuales de materias primas)' : 'UN Comtrade, datos mensuales';
+  const nota = pink
+    ? `. Serie: ${rows[0].serie}. Es el precio internacional del metal o del mineral, no de la chatarra, y sirve para ver cómo se mueve el mercado.`
+    : `. Serie: ${rows[0].serie}; valor de exportación entre peso neto. El Perú no publica datos mensuales recientes en Comtrade, por eso se usa un gran exportador.`;
+  el.append(b, ' ', a, nota);
+});
+dash.draw('fluctuacion', (el) => conAlto(el, dibujarFluctuacion));
+function dibujarFluctuacion(el) {
+  el.replaceChildren();
+  if (!chartState(el, ['precios_mensuales'])) return;
+  const rows = serieMensual();
+  if (!rows.length) return;
+  const pts = rows.map((r) => ({ mes: r.mes, y: num(r.usd_por_kg) }));
+  const w = el.clientWidth || 500;
+  const h = Math.max(260, Math.floor(el.clientHeight) - 4);
+  const yNice = d3.scaleLinear(d3.extent(pts, (p) => p.y), [0, 1]).nice(4);
+  const yTicks = yNice.ticks(4);
+  const left = d3.max(yTicks, (t) => textWidth(fmtUsdKg(t), 11)) + 10;
+  const right = 12;
+  const x = d3.scalePoint(pts.map((p) => p.mes), [left + 4, w - right - 4]);
+  const y = d3.scaleLinear(yNice.domain(), [h - 28, 12]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+  svg.append('g').selectAll('line').data(yTicks).join('line').attr('x1', left).attr('x2', w - right).attr('y1', y).attr('y2', y)
+    .attr('stroke', tok('--lv-line'));
+  svg.append('g').selectAll('text').data(yTicks).join('text').attr('x', left - 6).attr('y', y).attr('dy', '0.35em').attr('text-anchor', 'end')
+    .attr('font-size', 11).attr('fill', tok('--lv-muted')).text(fmtUsdKg);
+  // Una etiqueta cada tantos meses como quepan, siempre en enero o julio
+  const cada = Math.max(6, Math.ceil(pts.length / Math.max(2, Math.floor((w - left - right) / 56)) / 6) * 6);
+  const marcas = pts.filter((p) => (Number(p.mes.slice(5)) - 1) % cada === 0);
+  svg.append('g').selectAll('text').data(marcas).join('text').attr('x', (p) => x(p.mes)).attr('y', h - 8).attr('text-anchor', 'middle')
+    .attr('font-size', 11).attr('fill', tok('--lv-muted')).text((p) => fmtMes(p.mes));
+  svg.append('path').attr('d', d3.line().x((p) => x(p.mes)).y((p) => y(p.y))(pts)).attr('fill', 'none')
+    .attr('stroke', tok('--lv-green')).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+  svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (p) => x(p.mes)).attr('cy', (p) => y(p.y)).attr('r', 3)
+    .attr('fill', tok('--lv-green')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 1.5);
+  const tip = makeTip(el);
+  const rule = svg.append('line').attr('y1', 12).attr('y2', h - 28).attr('stroke', tok('--lv-bar-muted')).attr('stroke-dasharray', '3 3').attr('opacity', 0);
+  svg.append('rect').attr('x', left).attr('y', 0).attr('width', Math.max(1, w - right - left)).attr('height', h).attr('fill', 'transparent')
+    .on('mousemove', (ev) => {
+      const [mx] = d3.pointer(ev);
+      const p = pts.reduce((a, b) => (Math.abs(x(b.mes) - mx) < Math.abs(x(a.mes) - mx) ? b : a));
+      rule.attr('x1', x(p.mes)).attr('x2', x(p.mes)).attr('opacity', 1);
+      tip.show(ev, fmtMes(p.mes, true), [`${fmtUsdKg(p.y)} por kilo`, `US$ ${d3.format(',.0f')(p.y * 1000)} por tonelada`]);
+    })
+    .on('mouseleave', () => { rule.attr('opacity', 0); tip.hide(); });
+}
 
 dash.draw('precios', (el) => {
   el.replaceChildren();
@@ -1138,28 +1226,34 @@ dash.draw('precios', (el) => {
   const left = Math.min(w * 0.4, d3.max(rows, (r) => textWidth(r.material, 12)) + 12);
   const right = 70;
   const h = rows.length * rowH + 30;
-  const max = d3.max(rows, (r) => Math.max(num(r.exportacion_soles_kg), num(r.precio_max_soles_kg)));
-  const x = d3.scaleLinear([0, max], [left, w - right]).nice();
+  // Escala logarítmica: el cobre vale decenas de soles y la botella céntimos; en escala lineal la botella no se vería
+  const vals = rows.flatMap((r) => [num(r.exportacion_soles_kg), num(r.precio_min_soles_kg), num(r.precio_max_soles_kg)]);
+  const x = d3.scaleLog([d3.min(vals) / 1.4, d3.max(vals) * 1.15], [left, w - right]);
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
-  const ticks = x.ticks(Math.max(2, Math.floor((w - left - right) / 70)));
+  const ticks = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100].filter((t) => t >= x.domain()[0] && t <= x.domain()[1]);
   svg.append('g').selectAll('line').data(ticks).join('line').attr('x1', x).attr('x2', x).attr('y1', 0).attr('y2', h - 22).attr('stroke', tok('--lv-line'));
   svg.append('g').selectAll('text').data(ticks).join('text').attr('x', x).attr('y', h - 6).attr('text-anchor', 'middle').attr('font-size', 11)
-    .attr('fill', tok('--lv-muted')).text((t) => 'S/ ' + d3.format('.0f')(t));
+    .attr('fill', tok('--lv-muted')).text((t) => 'S/ ' + (t < 1 ? d3.format('.1f')(t) : d3.format('.0f')(t)));
   const tip = makeTip(el);
   const g = svg.selectAll('g.r').data(rows).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * rowH + rowH / 2})`);
   g.append('text').attr('x', left - 10).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', tok('--lv-ink-2')).text((d) => recortar(d.material, left - 14));
-  g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.exportacion_soles_kg))).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 2);
+  const extremo = (d) => Math.max(num(d.exportacion_soles_kg), num(d.precio_max_soles_kg));
+  g.append('line').attr('x1', (d) => x(Math.min(num(d.precio_min_soles_kg), num(d.exportacion_soles_kg)))).attr('x2', (d) => x(extremo(d))).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 2);
   // El rango del acopiador es una sola cápsula de mínimo a máximo: dos puntos casi iguales no se montan uno sobre otro
   g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.precio_max_soles_kg))).attr('stroke', tok('--lv-green')).attr('stroke-width', 8).attr('stroke-linecap', 'round');
   g.append('path').attr('d', d3.symbol(d3.symbolDiamond, 80)).attr('transform', (d) => `translate(${x(num(d.exportacion_soles_kg))},0)`)
     .attr('fill', tok('--lv-yellow')).attr('stroke', tok('--lv-panel')).attr('stroke-width', 2);
-  g.append('text').attr('x', (d) => x(num(d.exportacion_soles_kg)) + 10).attr('dy', '0.35em').attr('font-size', 12).attr('fill', tok('--lv-ink'))
+  g.append('text').attr('x', (d) => x(extremo(d)) + 10).attr('dy', '0.35em').attr('font-size', 12).attr('fill', tok('--lv-ink'))
     .text((d) => 'S/ ' + d3.format('.2f')(num(d.exportacion_soles_kg)));
   g.append('rect').attr('x', 0).attr('y', -rowH / 2).attr('width', w).attr('height', rowH).attr('fill', 'transparent')
     .on('mousemove', (ev, d) => tip.show(ev, d.material, [
-      `Paga el acopiador: S/ ${d3.format('.2f')(num(d.precio_min_soles_kg))} a ${d3.format('.2f')(num(d.precio_max_soles_kg))} por kilo`,
-      `Exportación 2024: S/ ${d3.format('.2f')(num(d.exportacion_soles_kg))} (US$ ${d3.format('.2f')(num(d.usd_por_kg))})`,
-      `Quien recolecta recibe entre ${d3.format('.0f')(num(d.pct_min_del_precio_exportacion))}% y ${d3.format('.0f')(num(d.pct_max_del_precio_exportacion))}% de ese precio`,
+      num(d.precio_min_soles_kg) === num(d.precio_max_soles_kg)
+        ? `Paga el acopiador: S/ ${d3.format('.2f')(num(d.precio_min_soles_kg))} por kilo`
+        : `Paga el acopiador: S/ ${d3.format('.2f')(num(d.precio_min_soles_kg))} a ${d3.format('.2f')(num(d.precio_max_soles_kg))} por kilo`,
+      `Exportación ${d.anio_exportacion}: S/ ${d3.format('.2f')(num(d.exportacion_soles_kg))} (US$ ${d3.format('.2f')(num(d.usd_por_kg))})`,
+      num(d.pct_min_del_precio_exportacion) === num(d.pct_max_del_precio_exportacion)
+        ? `Equivale al ${d3.format('.0f')(num(d.pct_min_del_precio_exportacion))}% del precio de exportación`
+        : `Equivale a entre ${d3.format('.0f')(num(d.pct_min_del_precio_exportacion))}% y ${d3.format('.0f')(num(d.pct_max_del_precio_exportacion))}% del precio de exportación`,
     ]))
     .on('mouseleave', () => tip.hide());
 });
