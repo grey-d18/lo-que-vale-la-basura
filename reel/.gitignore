@@ -1,0 +1,6 @@
+# La voz de la autora y todo lo que la contiene no se publica
+*.m4a
+*.wav
+*.mp4
+salidas/escenas/
+salidas/voz_referencia.wav

@@ -1,0 +1,144 @@
+1
+00:00:00,500 --> 00:00:01,580
+¿Cuánto vale la basura?
+
+2
+00:00:02,120 --> 00:00:04,040
+Para responderlo hice un tablero de datos,
+
+3
+00:00:04,040 --> 00:00:05,860
+a partir de mi tesis sobre el
+
+4
+00:00:05,860 --> 00:00:07,580
+reciclaje informal en Trujillo.
+
+5
+00:00:07,879 --> 00:00:08,740
+Empieza en el mundo:
+
+6
+00:00:08,940 --> 00:00:11,580
+se recoge para reciclar casi el dieciocho
+
+7
+00:00:11,580 --> 00:00:12,820
+por ciento de la basura.
+
+8
+00:00:13,000 --> 00:00:13,940
+En América Latina,
+
+9
+00:00:13,940 --> 00:00:15,410
+menos del cinco por ciento.
+
+10
+00:00:15,581 --> 00:00:16,200
+En el Perú,
+
+11
+00:00:16,540 --> 00:00:17,360
+oficialmente,
+
+12
+00:00:17,360 --> 00:00:18,780
+casi nada se recicla:
+
+13
+00:00:19,000 --> 00:00:21,360
+en dos mil veinticuatro solo se valorizó
+
+14
+00:00:21,360 --> 00:00:23,100
+el uno coma tres por ciento de
+
+15
+00:00:23,100 --> 00:00:24,340
+los residuos municipales.
+
+16
+00:00:24,560 --> 00:00:25,960
+Y la basura que no se recupera
+
+17
+00:00:25,960 --> 00:00:26,620
+contamina:
+
+18
+00:00:26,740 --> 00:00:28,980
+OEFA registra dos mil ciento diecinueve áreas
+
+19
+00:00:28,980 --> 00:00:29,760
+degradadas,
+
+20
+00:00:29,820 --> 00:00:31,560
+seiscientas diecinueve con quema.
+
+21
+00:00:31,828 --> 00:00:33,300
+Pero el reciclaje sí ocurre.
+
+22
+00:00:33,560 --> 00:00:35,740
+Lo sostienen cincuenta y tres mil recicladores
+
+23
+00:00:35,740 --> 00:00:36,320
+informales,
+
+24
+00:00:36,320 --> 00:00:38,200
+frente a menos de catorce mil trabajadores
+
+25
+00:00:38,200 --> 00:00:38,840
+formales.
+
+26
+00:00:39,153 --> 00:00:40,580
+Y los precios suben y bajan.
+
+27
+00:00:41,320 --> 00:00:43,020
+En mi trabajo de campo estudié los
+
+28
+00:00:43,020 --> 00:00:45,400
+circuitos informales de reciclaje en Trujillo:
+
+29
+00:00:45,540 --> 00:00:47,540
+quien puede almacenar espera mejores precios;
+
+30
+00:00:47,680 --> 00:00:49,260
+quien vive de lo que recoge cada
+
+31
+00:00:49,260 --> 00:00:49,640
+día,
+
+32
+00:00:49,720 --> 00:00:50,920
+vende al precio del día.
+
+33
+00:00:51,192 --> 00:00:52,980
+El reciclaje no es una actividad marginal:
+
+34
+00:00:53,160 --> 00:00:55,700
+sostiene familias y abastece a la industria.
+
+35
+00:00:56,480 --> 00:00:58,200
+Explora el tablero completo:
+
+36
+00:00:58,260 --> 00:00:59,280
+Lo que vale la basura.
+
