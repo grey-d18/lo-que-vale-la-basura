@@ -36,7 +36,7 @@ MODELO_TTS = "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-8bit"
 MODELO_ASR = "mlx-community/whisper-large-v3-turbo"
 WER_MAX = 0.25
 INTENTOS = 3
-PAUSA = 0.3  # segundos de silencio entre escenas
+PAUSA = 0.6  # segundos de silencio entre escenas: con menos, el reel suena apurado
 SILENCIO_INICIO = 0.5  # segundos antes de la primera escena
 PRIMERA_PROB_MIN = 0.9  # Qwen3-TTS a veces se come el inicio de la primera palabra
 
@@ -56,8 +56,9 @@ def transcribir(ruta, palabras=False):
     return (r["text"].strip(), r["segments"]) if palabras else r["text"].strip()
 
 
-def recortar(audio, sr, umbral=0.02, margen=0.08, fundido=0.015):
-    """Quita el silencio del inicio y del final, y suaviza la entrada y la salida."""
+def recortar(audio, sr, umbral=0.01, margen=0.25, fundido=0.01):
+    """Quita el silencio del inicio y del final, y suaviza la entrada y la salida. El umbral bajo y el margen
+    amplio evitan comerse el comienzo de una palabra que empieza suave."""
     ventana = int(0.01 * sr)
     energia = np.sqrt(np.convolve(audio ** 2, np.ones(ventana) / ventana, mode="same"))
     voz = np.where(energia > umbral)[0]

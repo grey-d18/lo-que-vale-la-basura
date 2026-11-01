@@ -2,49 +2,49 @@
   "titulo": "Lo que vale la basura",
   "escenas": [
     {
-      "frase": "¿Cuánto vale la basura? Para responderlo hice un tablero de datos, a partir de mi tesis sobre el reciclaje informal en Trujillo.",
+      "frase": "La basura es un problema que muchas veces dejamos de lado.",
       "cifra": "",
-      "etiqueta": "Un tablero de datos a partir de mi tesis",
+      "etiqueta": "Un problema que muchas veces dejamos de lado",
       "visual": "portada_tablero",
       "fuente": "Tablero «Lo que vale la basura» (Claude Artifact)"
     },
     {
-      "frase": "Empieza en el mundo: se recoge para reciclar casi el dieciocho por ciento de la basura. En América Latina, menos del cinco por ciento.",
+      "frase": "En dos mil veintidós, el mundo generó más de dos mil millones de toneladas de basura, y la cifra seguirá creciendo.",
+      "cifra": "2,335 millones de t",
+      "etiqueta": "de basura municipal en 2022 · +49% proyectado a 2050",
+      "visual": "barras_generacion",
+      "fuente": "Banco Mundial, What a Waste 3.0"
+    },
+    {
+      "frase": "Pero solo se recoge para reciclar el dieciocho por ciento. En América Latina, menos del cinco por ciento.",
       "cifra": "17.8% · 4.8%",
       "etiqueta": "se recoge para reciclar: mundo · América Latina",
       "visual": "mapa_mundo_reciclaje",
       "fuente": "Banco Mundial, What a Waste 3.0"
     },
     {
-      "frase": "En el Perú, oficialmente, casi nada se recicla: en dos mil veinticuatro solo se valorizó el uno coma tres por ciento de los residuos municipales.",
+      "frase": "Y en el Perú, oficialmente, se valoriza apenas el uno coma tres por ciento.",
       "cifra": "1.3%",
       "etiqueta": "de los residuos municipales se valorizó en 2024",
       "visual": "mapa_peru_valorizado",
       "fuente": "MINAM–SIGERSOL"
     },
     {
-      "frase": "Y la basura que no se recupera contamina: OEFA registra dos mil ciento diecinueve áreas degradadas, seiscientas diecinueve con quema.",
+      "frase": "Mientras tanto, hay más de dos mil áreas degradadas por basura.",
       "cifra": "2119",
       "etiqueta": "áreas degradadas por basura · 619 con quema",
       "visual": "mapa_peru_botaderos",
       "fuente": "OEFA, inventario de áreas degradadas"
     },
     {
-      "frase": "Pero el reciclaje sí ocurre. Lo sostienen cincuenta y tres mil recicladores informales, frente a menos de catorce mil trabajadores formales.",
-      "cifra": "53 000",
-      "etiqueta": "recicladores informales · 13 788 formales",
+      "frase": "Pero el reciclaje sí ocurre: lo sostienen cincuenta y tres mil recicladores informales. Gran parte de ese reciclaje no aparece en los registros.",
+      "cifra": "53,000",
+      "etiqueta": "recicladores informales · 13,788 formales",
       "visual": "barras_recicladores",
       "fuente": "Banco Mundial, What a Waste 3.0"
     },
     {
-      "frase": "Y los precios suben y bajan. En mi trabajo de campo estudié los circuitos informales de reciclaje en Trujillo: quien puede almacenar espera mejores precios; quien vive de lo que recoge cada día, vende al precio del día.",
-      "cifra": "+47%",
-      "etiqueta": "precio del mineral de hierro: del mes más barato al más caro, 2024–2026",
-      "visual": "linea_hierro",
-      "fuente": "Banco Mundial, Pink Sheet · trabajo de campo de la tesis"
-    },
-    {
-      "frase": "El reciclaje no es una actividad marginal: sostiene familias y abastece a la industria. Explora el tablero completo: Lo que vale la basura.",
+      "frase": "Este tablero busca complementar una investigación etnográfica. Te invito a revisarlo completo.",
       "cifra": "",
       "etiqueta": "",
       "visual": "cierre",

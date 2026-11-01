@@ -29,7 +29,7 @@ FUENTES = os.path.join(AQUI, "recursos", "fuentes")
 
 ANCHO, ALTO, FPS = 1080, 1920, 30
 MARGEN = 60
-CIERRE = 3.5  # segundos de la tarjeta final después de la narración
+CIERRE = 5.5  # segundos de la tarjeta final después de la narración (el reel debe durar al menos 45 s)
 URL_TABLERO = "claude.ai/artifact/6bTVbbocVNX5enTreJr638"
 
 # Colores del tablero (tema claro)
@@ -229,6 +229,7 @@ class Visuales:
         self.top_bot = sorted(bot.items(), key=lambda kv: -kv[1])[:3]
         self.bot_total = int(sum(bot.values()))
         self.peru_pais = paises["PER"]
+        self.mundo_reg = {r["region"]: r for r in leer("mundo_regiones")}
         hierro = [r for r in leer("precios_mensuales") if r["material"] == "Hierro y acero"]
         self.hierro = sorted(((r["mes"], float(r["usd_por_kg"]) * 1000) for r in hierro))
 
@@ -258,7 +259,7 @@ class Visuales:
                fill=mezclar(VERDE_OSCURO, CREMA, a))
         # Tarjetas de indicadores del tablero, una tras otra
         kpis = [("1.3%", "se valorizó en el Perú, 2024"), ("15%", "de distritos valoriza"),
-                ("2119", "áreas degradadas"), ("53 000", "recicladores informales")]
+                ("2119", "áreas degradadas"), ("53,000", "recicladores informales")]
         cw, ch, gap = (self.w - 96 - 24) // 2, 132, 20
         for i, (v, txt) in enumerate(kpis):
             b = suave((t - 0.9 - 0.35 * i) / 0.5)
@@ -320,6 +321,31 @@ class Visuales:
                               self.top_bot, lambda v: f"{v:.0f}", self.bot_max, f"{self.bot_max:.0f}")
         return img
 
+    def barras_generacion(self, t, dur):
+        img, d = self.lienzo()
+        self.titulo(d, "Basura que genera el mundo", "Millones de toneladas de basura municipal al año")
+        m = self.mundo_reg["Mundo"]
+        filas = [("2022 · estimación", float(m["generacion_2022_t"]) / 1e6, VERDE, False),
+                 ("2050 · proyección", float(m["generacion_2050_t"]) / 1e6, BARRA, True)]
+        maximo = filas[1][1]
+        for i, (txt, v, color, punteada) in enumerate(filas):
+            a = suave((t - 0.3 - 0.6 * i) / 1.4)
+            y = 220 + i * 230
+            d.text((32, y), txt, font=fuente("semi", 36), fill=TINTA)
+            largo = max(10, int((self.w - 64) * 0.72 * v / maximo * a))
+            d.rounded_rectangle((32, y + 60, 32 + largo, y + 150), radius=10, fill=color)
+            if punteada:  # la proyección se distingue del dato con rayas
+                for x in range(32 - 90, 32 + largo, 22):
+                    d.line([(max(32, x), y + 60 + max(0, 32 - x)), (min(32 + largo, x + 90), y + 150 - max(0, x + 90 - 32 - largo))],
+                           fill=PANEL, width=4)
+            d.text((32 + largo + 16, y + 70), f"{v * a:,.0f}", font=fuente("num", 64), fill=TINTA)
+        b = suave((t - 2.0) / 0.6)
+        if b > 0:
+            crece = float(m["crecimiento_2050_pct"])
+            d.text((32, 640), f"Se proyecta un {crece:.0f}% más hacia 2050.", font=fuente("semi", 32),
+                   fill=mezclar(PANEL, TINTA_2, b))
+        return img
+
     def barras_recicladores(self, t, dur):
         img, d = self.lienzo()
         self.titulo(d, "¿Quién recicla en el Perú?", "Personas que trabajan en el reciclaje")
@@ -332,7 +358,7 @@ class Visuales:
             d.text((32, y), txt, font=fuente("semi", 36), fill=TINTA)
             largo = int((self.w - 64) * 0.78 * v / maximo * a)
             d.rounded_rectangle((32, y + 60, 32 + max(10, largo), y + 150), radius=10, fill=color)
-            d.text((32 + max(10, largo) + 16, y + 70), f"{v * a:,.0f}".replace(",", " "), font=fuente("num", 64),
+            d.text((32 + max(10, largo) + 16, y + 70), f"{v * a:,.0f}", font=fuente("num", 64),
                    fill=TINTA)
         b = suave((t - 2.0) / 0.6)
         if b > 0:
@@ -504,13 +530,19 @@ def capa_textos(escena, alfa):
     if escena["fuente"]:
         d.text((MARGEN, Y_FUENTE), f"Fuente: {escena['fuente']}", font=fuente("mono", 24), fill=TENUE + (a,))
     if escena["cifra"]:
-        d.text((MARGEN, Y_CIFRA), escena["cifra"], font=fuente("num", 150), fill=TINTA + (a,))
+        tam = 150  # la cifra se achica si no cabe en el ancho
+        while tam > 70 and d.textlength(escena["cifra"], font=fuente("num", tam)) > ANCHO - 2 * MARGEN:
+            tam -= 6
+        d.text((MARGEN, Y_CIFRA + (150 - tam)), escena["cifra"], font=fuente("num", tam), fill=TINTA + (a,))
         y = Y_CIFRA + 165
         for linea in envolver(d, escena["etiqueta"], fuente("semi", 40), ANCHO - 2 * MARGEN)[:2]:
             d.text((MARGEN, y), linea, font=fuente("semi", 40), fill=TINTA_2 + (a,))
             y += 50
     elif escena["etiqueta"]:
-        d.text((MARGEN, Y_CIFRA + 40), escena["etiqueta"], font=fuente("negrita", 56), fill=TINTA + (a,))
+        y = Y_CIFRA + 40
+        for linea in envolver(d, escena["etiqueta"], fuente("negrita", 56), ANCHO - 2 * MARGEN)[:2]:
+            d.text((MARGEN, y), linea, font=fuente("negrita", 56), fill=TINTA + (a,))
+            y += 68
     return img
 
 
@@ -544,6 +576,9 @@ def main():
 
     guion = json.load(open("guion.json", encoding="utf-8"))
     escenas = json.load(open(f"{s}/escenas.json", encoding="utf-8"))
+    # Los textos en pantalla se toman del guion actual: se pueden corregir sin volver a generar la voz
+    for e, g in zip(escenas, guion["escenas"]):
+        e.update({k: g[k] for k in ("cifra", "etiqueta", "visual", "fuente")})
     reel_wav = f"{s}/reel.wav"
     dur_audio = sf.info(reel_wav).duration
     total = dur_audio + CIERRE
