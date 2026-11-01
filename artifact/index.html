@@ -748,8 +748,12 @@ function hbars(el, rows, opts) {
   // Barras horizontales: rows = [{label, value, color, bold, tip: [head, lines]}]
   const w = el.clientWidth || 500;
   const size = 12;
-  const left = Math.min(w * 0.45, d3.max(rows, (r) => textWidth(r.label, size)) + 10);
-  const right = d3.max(rows, (r) => textWidth(opts.fmt(r.value), size)) + 12;
+  // Con opts.rankOf el puesto va en su propia columna y el nombre se alinea a la izquierda, como en una tabla.
+  // opts.labels permite que varios bloques compartan el mismo margen para que sus barras empiecen en el mismo punto.
+  const rankW = opts.rankOf ? d3.max(opts.labels ?? rows, (r) => textWidth(opts.rankOf(r), size)) : 0;
+  const nameX = rankW ? rankW + 8 : 0;
+  const left = Math.min(w * (opts.leftMax ?? 0.45), nameX + d3.max(opts.labels ?? rows, (r) => textWidth(r.label, size)) + 10);
+  const right = d3.max(opts.labels ?? rows, (r) => textWidth(opts.fmt(r.value), size)) + 12;
   const axisH = opts.axis ? 24 : 0;
   // Con opts.fill las filas se reparten el alto disponible, para que el gráfico no quede flotando en la tarjeta
   const rowH = opts.fill ? Math.max(opts.rowH ?? 22, Math.floor((el.clientHeight - 12 - axisH) / rows.length)) : (opts.rowH ?? 22);
@@ -767,9 +771,18 @@ function hbars(el, rows, opts) {
   }
   const tip = makeTip(el);
   const g = svg.selectAll('g.r').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
-  g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
-    .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', (d) => (d.bold ? tok('--lv-ink') : tok('--lv-ink-2')))
-    .text((d) => recortar(d.label, left - 10, size));
+  const ink = (d) => (d.bold ? tok('--lv-ink') : tok('--lv-ink-2'));
+  if (rankW) {
+    g.append('text').attr('x', rankW).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('font-size', size).attr('fill', tok('--lv-muted')).text((d) => opts.rankOf(d));
+    g.append('text').attr('x', nameX).attr('y', rowH / 2).attr('dy', '0.35em')
+      .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', ink)
+      .text((d) => recortar(d.label, left - nameX - 10, size));
+  } else {
+    g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', ink)
+      .text((d) => recortar(d.label, left - 10, size));
+  }
   g.append('rect').attr('x', left).attr('y', (rowH - barH) / 2).attr('height', barH).attr('rx', 3)
     .attr('width', (d) => Math.max(1, x(d.value) - left)).attr('fill', (d) => d.color);
   g.append('text').attr('x', (d) => x(d.value) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', size)
@@ -961,15 +974,18 @@ dash.draw('ranking', (el) => {
   const todos = scopeRows(p);
   const puesto = (r) => 1 + conDato.filter((q) => q.valor > r.valor).length;
   const bar = (r) => ({
-    label: `${puesto(r)}. ${r.nombre}`, value: r.valor, bold: r.destacado,
+    label: r.nombre, puesto: puesto(r), id: r.id, value: r.valor, bold: r.destacado,
     color: r.destacado ? tok('--lv-green') : tok('--lv-bar-muted'),
     tip: [r.nombre, [`${ind.label}: ${fmt(r.valor)}`, `Puesto ${puesto(r)} de ${conDato.length}`]],
   });
   const max = conDato.length ? conDato[0].valor : 1;
+  // Los dos bloques comparten márgenes (calculados con todas las filas visibles) para que las barras queden alineadas
+  const visibles = conDato.length <= 10 ? conDato : conDato.slice(0, 5).concat(conDato.slice(-5));
   const block = (titulo, lista) => {
     if (titulo) { const t = document.createElement('p'); t.className = 'lv-rank-head'; t.textContent = titulo; el.append(t); }
     const box = document.createElement('div'); el.append(box);
-    hbars(box, lista.map(bar), { fmt, rowH: 24, max, onClick: p.escala === 'peru' ? (d) => dash.setParams({ dep: lista.find((r) => bar(r).label === d.label).id }) : null });
+    hbars(box, lista.map(bar), { fmt, rowH: 24, max, labels: visibles.map(bar), rankOf: (d) => `${d.puesto}.`, leftMax: 0.55,
+      onClick: p.escala === 'peru' ? (d) => dash.setParams({ dep: d.id }) : null });
   };
   if (!conDato.length) {
     const n = document.createElement('p'); n.className = 'lv-rank-note'; n.textContent = 'Nadie reporta este dato aquí.'; el.append(n); return;
