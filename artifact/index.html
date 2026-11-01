@@ -523,19 +523,6 @@
         </figure>
       </div>
 
-      <h3 class="lv-sub">Trujillo en las cifras oficiales</h3>
-      <figure class="lv-card" id="trujillo">
-        <h3 class="lv-card-title">Distritos de la provincia de Trujillo en <span data-draw="param-anio">—</span></h3>
-        <p class="lv-card-note">Residuos municipales generados, valorizados y dispuestos en sitio adecuado según SIGERSOL. Resaltados, los distritos de la tesis.</p>
-        <div class="lv-table-box">
-          <table class="lv-table" data-source="trujillo_distritos" data-row-key="distrito,anio">
-            <thead><tr><th data-field="distrito">Distrito</th><th class="is-num" data-field="generado_t">Generado (t)</th><th class="is-num" data-field="valorizado_t">Valorizado (t)</th><th class="is-num" data-field="pct_valorizado">% valorizado</th><th class="is-num" data-field="dispuesto_adecuado_t">Disposición adecuada (t)</th></tr></thead>
-            <tbody data-draw="tabla-trujillo"></tbody>
-          </table>
-        </div>
-        <p class="lv-hint">El botadero El Milagro (Huanchaco), que recibía la basura de la ciudad, figura en el inventario de OEFA como botadero con quema de residuos. En 2023 la población que SIGERSOL asigna a El Porvenir cae a casi la mitad y la de Florencia de Mora casi se duplica: es un cambio de la fuente, no de la realidad.</p>
-        <p class="lv-source"><b>Fuente:</b> <a href="https://www.datosabiertos.gob.pe/dataset/valorizaci%C3%B3n-de-residuos-s%C3%B3lidos-nivel-distrital-ministerio-del-ambiente-minam">MINAM–SIGERSOL, valorización</a> y <a href="https://www.datosabiertos.gob.pe/dataset/disposici%C3%B3n-final-adecuada-de-residuos-s%C3%B3lidos-ministerio-del-ambiente-minam">disposición final adecuada</a> por distrito; OEFA, inventario de áreas degradadas.</p>
-      </figure>
     </section>
 
     <section class="lv-act" id="reflexion">
@@ -1265,27 +1252,6 @@ dash.draw('precios', (el) => {
     .on('mouseleave', () => tip.hide());
 });
 
-dash.draw('tabla-trujillo', (tbody) => {
-  tbody.replaceChildren();
-  const d = dash.data('trujillo_distritos');
-  if (d.status !== 'ok') return;
-  const p = P();
-  const tesis = ['EL PORVENIR', 'FLORENCIA DE MORA'];
-  d.data.filter((r) => Number(r.anio) === p.anio).sort((a, b) => num(b.generado_t) - num(a.generado_t)).forEach((r) => {
-    const tr = document.createElement('tr');
-    tr.dataset.key = `${enc(r.distrito)},${enc(r.anio)}`;
-    if (tesis.includes(r.distrito)) tr.className = 'is-thesis';
-    const cells = [
-      [capital(r.distrito), ''],
-      [d3.format(',.0f')(num(r.generado_t)), 'is-num'],
-      [d3.format(',.0f')(num(r.valorizado_t)), 'is-num'],
-      [num(r.pct_valorizado) === null ? 'sin dato' : d3.format('.2f')(num(r.pct_valorizado)) + '%', 'is-num'],
-      [num(r.dispuesto_adecuado_t) === null ? 'sin dato' : d3.format(',.0f')(num(r.dispuesto_adecuado_t)), 'is-num'],
-    ];
-    cells.forEach(([t, c]) => { const td = document.createElement('td'); td.textContent = t; if (c) td.className = c; tr.append(td); });
-    tbody.append(tr);
-  });
-});
 
 // ---------- Controles fijos, nombres de indicador y navegación ----------
 document.querySelectorAll('.lv-ctl-ind-mundo').forEach((s) => s.addEventListener('change', () => dash.setParams({ ind_mundo: s.value })));
