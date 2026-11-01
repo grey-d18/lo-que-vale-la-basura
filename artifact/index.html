@@ -244,10 +244,11 @@
 .lv { font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
 .lv p, .lv li, .lv dd, .lv dt, .lv td, .lv th, .lv select, .lv button, .lv label, .lv .lv-card-title, .lv .lv-question { font-family: var(--f-body); }
 .lv .lv-card-title { font-weight: 600; }
-/* Títulos de la página y del cierre */
-.lv h1, .lv h2, .lv .lv-title, .lv .lv-act-title, .lv .lv-sub, .lv .lv-detail-name, .lv .lv-reflect .lv-act-title { font-family: var(--f-display); font-weight: 600; }
-.lv .lv-split-text .lv-card-title { font-family: var(--f-display); font-weight: 600; }
-.lv .lv-reflect p { font-family: var(--f-display); font-weight: 400; }
+/* Fraunces solo abre y cierra la página: el título de portada y el de la reflexión */
+.lv .lv-title, .lv .lv-reflect .lv-act-title { font-family: var(--f-display); font-weight: 600; }
+/* Los demás títulos van en la misma familia que el texto, más gruesos: así toda la página se lee como una sola voz */
+.lv .lv-act-title, .lv .lv-sub, .lv .lv-detail-name, .lv .lv-split-text .lv-card-title { font-family: var(--f-body); font-weight: 700; letter-spacing: -0.01em; }
+.lv .lv-reflect p { font-family: var(--f-body); font-weight: 400; }
 /* Cifras grandes y números destacados */
 .lv .lv-kpi-value, .lv .lv-detail dd, .lv .lv-act-num, .lv .lv-find-num, .lv .lv-nav .lv-num { font-family: var(--f-num); font-weight: 600; font-variant-numeric: tabular-nums; }
 .lv .lv-kpi-value { font-size: 2.6rem; letter-spacing: 0; }
