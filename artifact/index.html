@@ -321,7 +321,7 @@
         </div>
       </div>
       <div class="lv-key"><span class="lv-key-tag">Idea clave</span>
-        <p>En el mundo se recoge para reciclar el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b> de la basura municipal, según los países que reportan el dato. En América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: el promedio más bajo entre las regiones. En el Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
+        <p>En 2022, el mundo generó unos <b data-draw="valor" data-source="mundo_regiones" data-field="generacion_2022_t" data-where="region=Mundo" data-fmt="millones_t">—</b> de basura municipal, y el Banco Mundial proyecta que la cifra seguirá creciendo: un <b data-draw="valor" data-source="mundo_regiones" data-field="crecimiento_2050_pct" data-where="region=Mundo" data-fmt="pct0">—</b> más hacia 2050. De toda esa basura, en el mundo se recoge para reciclar el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Mundo" data-fmt="pct1">—</b>, según los países que reportan el dato. En América Latina, solo el <b data-draw="valor" data-source="mundo_regiones" data-field="reciclaje" data-where="region=Am%C3%A9rica%20Latina%20y%20el%20Caribe" data-fmt="pct1">—</b>: el promedio más bajo entre las regiones. En el Perú, el <b data-draw="valor" data-source="mundo_paises" data-field="reciclaje" data-where="iso3=PER" data-fmt="pct2">—</b>.</p>
       </div>
 
       <div class="lv-filters lv-explore-bar" role="group" aria-label="Explorador del mapa">
@@ -553,6 +553,7 @@
             <li><b>Basura por persona en el Perú:</b> residuos municipales generados (QRESIDUOS_MUN) entre la población urbana (POB_URBANA), porque MINAM asocia esa generación a la población urbana; dividido entre 365. En el mundo, la columna “MSW generation (kg/capita/day)” de What a Waste; por región, toneladas entre población de los países con ambos datos.</li>
             <li><b>Disposición final adecuada:</b> columna DISPOSICION_FINAL_ADECUADA (toneladas llevadas a rellenos sanitarios u otra infraestructura ambientalmente segura) entre residuos municipales generados. Los valores de 2021 son idénticos a los de 2022 en los 1890 distritos, así que 2021 se trató como dato faltante.</li>
             <li><b>Promedios regionales del mundo:</b> ponderados por las toneladas que genera cada país.</li>
+            <li><b>Basura generada en el mundo:</b> suma de las estimaciones de What a Waste 3.0 para 2022 (“MSW generation - projected 2022”) y de sus proyecciones para 2050, de todos los países. No hay una serie anual mundial medida año a año.</li>
             <li><b>Precio de exportación:</b> valor FOB entre peso neto de lo que exportó el Perú en 2025, el último año completo en Comtrade, en cada partida arancelaria (cobre 7404, aluminio 7602, hierro y acero 7204, papel y cartón 4707, plástico 3915, vidrio 7001).</li>
             <li><b>Lo que recibe quien recolecta:</b> el precio que paga el acopiador (trabajo de campo de 2026) se compara con el de exportación de su partida, pasado a soles con el tipo de cambio oficial de 2025. El fierro es el promedio de dos momentos de precio registrados en campo; el plástico duro y la botella se comparan con la misma partida (3915). El gráfico usa escala logarítmica.</li>
             <li><b>Precios mensuales:</b> cobre, aluminio y mineral de hierro, del Pink Sheet del Banco Mundial (US$ por tonelada, pasado a kilos). El plástico y el papel no están en el Pink Sheet: se usa el valor entre peso de las exportaciones mensuales del Japón (partidas 3915 y 4707), porque el Perú no publica en Comtrade datos mensuales recientes. Desde enero de 2024 hasta el último mes publicado.</li>
@@ -647,6 +648,7 @@ const F = {
   musd: (v) => 'US$ ' + d3.format(',.0f')(v / 1e6) + ' millones',
   tc: (v) => d3.format('.2f')(v),
   anio: (v) => String(v),
+  millones_t: (v) => d3.format(',.0f')(v / 1e6) + ' millones de toneladas',
 };
 const IND_MUNDO = {
   kg_persona_dia: { label: 'Basura por persona', unit: ' kg/día' }, reciclaje: { label: 'Se recoge para reciclar', unit: '%' },

@@ -59,6 +59,9 @@ COLUMNAS_WAW = {
     "Composition - glass  (% weight MSW)": "comp_vidrio",
     "Informal waste workers ": "recicladores_informales",
     "Formal waste workers": "trabajadores_formales",
+    # Estimación de todos los países para un mismo año y proyecciones del Banco Mundial
+    "MSW generation - projected 2022 (t/year)": "generacion_2022_t",
+    "MSW generation - projected 2050 (t/y)": "generacion_2050_t",
 }
 REGIONES = {
     "E. Asia & Pacific": "Asia oriental y Pacífico",
@@ -76,8 +79,9 @@ waw = waw[list(COLUMNAS_WAW)].rename(columns=COLUMNAS_WAW)
 waw = waw[waw.region.isin(REGIONES)]  # descarta la fila de códigos que sigue al encabezado
 porcentajes = [c for c in waw.columns if c not in ("iso3", "pais", "region", "ingreso", "anio_dato", "generacion_t",
                                                    "kg_persona_dia", "poblacion", "recicladores_informales",
-                                                   "trabajadores_formales")]
-numericas = porcentajes + ["anio_dato", "generacion_t", "kg_persona_dia", "poblacion", "recicladores_informales",
+                                                   "trabajadores_formales", "generacion_2022_t", "generacion_2050_t")]
+numericas = porcentajes + ["anio_dato", "generacion_t", "generacion_2022_t", "generacion_2050_t", "kg_persona_dia",
+                           "poblacion", "recicladores_informales",
                            "trabajadores_formales"]
 waw[numericas] = waw[numericas].apply(pd.to_numeric, errors="coerce")
 waw[porcentajes] = waw[porcentajes] * 100  # la fuente usa fracciones: 0.0093 -> 0.93 %
@@ -116,7 +120,9 @@ def ponderado(d, columna):
 
 regiones = []
 for nombre, d in [("Mundo", waw)] + list(waw.groupby("region")):
-    fila = {"region": nombre, "generacion_t": d.generacion_t.sum()}
+    fila = {"region": nombre, "generacion_t": d.generacion_t.sum(),
+            "generacion_2022_t": d.generacion_2022_t.sum(), "generacion_2050_t": d.generacion_2050_t.sum()}
+    fila["crecimiento_2050_pct"] = 100 * (fila["generacion_2050_t"] / fila["generacion_2022_t"] - 1)
     # Basura por persona de la región: toneladas entre población de los países con ambos datos
     con_ambos = d.dropna(subset=["generacion_t", "poblacion"])
     fila["kg_persona_dia"] = 1000 * con_ambos.generacion_t.sum() / con_ambos.poblacion.sum() / 365
