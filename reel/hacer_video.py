@@ -29,7 +29,7 @@ FUENTES = os.path.join(AQUI, "recursos", "fuentes")
 
 ANCHO, ALTO, FPS = 1080, 1920, 30
 MARGEN = 60
-CIERRE = 5.5  # segundos de la tarjeta final después de la narración (el reel debe durar al menos 45 s)
+CIERRE = 2.5  # segundos de la tarjeta final después de la narración: un final breve, sin música sola
 DURACION_MAX = 74.5  # el reel debe durar entre 45 y 75 s
 URL_TABLERO = "claude.ai/artifact/6bTVbbocVNX5enTreJr638"
 
@@ -455,7 +455,16 @@ def tiempos_de_palabras(guion, escenas, reel_wav):
     for i, (_, esc) in enumerate(palabras):
         inicio[i] = max(inicio[i], escenas[esc]["inicio"])
         fin[i] = max(min(fin[i], escenas[esc]["fin"]), inicio[i])
-    return [{"palabra": p, "escena": e, "inicio": a, "fin": b} for (p, e), a, b in zip(palabras, inicio, fin)]
+    return [{"palabra": en_pantalla(p), "escena": e, "inicio": a, "fin": b} for (p, e), a, b in zip(palabras, inicio, fin)]
+
+
+SIGLAS = {"Oéfa": "OEFA", "Oefa": "OEFA"}  # en el guion van así para que la voz las pronuncie bien
+
+
+def en_pantalla(palabra):
+    for escrita, sigla in SIGLAS.items():
+        palabra = palabra.replace(escrita, sigla)
+    return palabra
 
 
 def agrupar(palabras, maximo):
@@ -638,7 +647,8 @@ def main():
            "linear=true,aresample=48000,asplit=2[voz][guia]")
     musica = "[2:a]volume=0.22,aresample=48000[mus]"
     mezcla = ("[mus][guia]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[musb];"
-              "[voz][musb]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89[a]")
+              "[voz][musb]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89,"
+              f"afade=t=out:st={total - 1.5:.3f}:d=1.5[a]")
     ffmpeg = subprocess.Popen([
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{ANCHO}x{ALTO}", "-r", str(FPS), "-i", "-",

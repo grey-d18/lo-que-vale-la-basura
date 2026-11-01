@@ -43,94 +43,94 @@ la cifra baja a menos del cinco
 por ciento.
 
 12
-00:00:19,122 --> 00:00:19,960
+00:00:19,122 --> 00:00:19,940
 En el Perú,
 
 13
-00:00:20,100 --> 00:00:22,400
+00:00:20,100 --> 00:00:22,380
 los residuos inorgánicos que se valorizaron en
 
 14
-00:00:22,400 --> 00:00:24,540
+00:00:22,380 --> 00:00:24,520
 dos mil veinticuatro equivalen apenas al uno
 
 15
-00:00:24,540 --> 00:00:26,000
+00:00:24,520 --> 00:00:25,980
 coma tres por ciento de toda la
 
 16
-00:00:26,000 --> 00:00:26,820
+00:00:25,980 --> 00:00:26,800
 basura municipal.
 
 17
-00:00:27,660 --> 00:00:29,900
+00:00:27,609 --> 00:00:29,560
 Las deficiencias en la gestión de residuos
 
 18
-00:00:29,900 --> 00:00:31,400
+00:00:29,560 --> 00:00:31,520
 resultan en más de dos mil áreas
 
 19
-00:00:31,400 --> 00:00:32,660
+00:00:31,520 --> 00:00:32,880
 degradadas por basura,
 
 20
-00:00:32,660 --> 00:00:33,940
-de acuerdo con el Oefa.
+00:00:32,940 --> 00:00:34,332
+de acuerdo con la OEFA.
 
 21
-00:00:34,537 --> 00:00:36,180
+00:00:34,832 --> 00:00:36,480
 Pero eso no significa que los materiales
 
 22
-00:00:36,180 --> 00:00:37,980
+00:00:36,480 --> 00:00:38,280
 inorgánicos no se reciclen.
 
 23
-00:00:38,320 --> 00:00:39,880
+00:00:38,620 --> 00:00:40,160
 Gran parte de ellos no se registra
 
 24
-00:00:39,880 --> 00:00:40,980
+00:00:40,160 --> 00:00:41,260
 en las cifras oficiales,
 
 25
-00:00:40,980 --> 00:00:42,800
+00:00:41,260 --> 00:00:43,080
 pero se moviliza por circuitos informales de
 
 26
-00:00:42,800 --> 00:00:43,460
+00:00:43,080 --> 00:00:43,760
 reciclaje.
 
 27
-00:00:43,760 --> 00:00:45,020
+00:00:43,940 --> 00:00:45,300
 En el Perú hay cincuenta y tres
 
 28
-00:00:45,020 --> 00:00:46,880
+00:00:45,300 --> 00:00:47,180
 mil recicladores informales,
 
 29
-00:00:46,880 --> 00:00:49,340
+00:00:47,180 --> 00:00:49,640
 frente a menos de catorce mil trabajadores
 
 30
-00:00:49,340 --> 00:00:49,940
+00:00:49,640 --> 00:00:50,260
 formales.
 
 31
-00:00:50,661 --> 00:00:53,840
+00:00:50,956 --> 00:00:54,120
 Este tablero busca complementar una investigación etnográfica
 
 32
-00:00:53,840 --> 00:00:57,120
+00:00:54,120 --> 00:00:57,420
 sobre circuitos informales de reciclaje en la
 
 33
-00:00:57,120 --> 00:00:58,140
+00:00:57,420 --> 00:00:58,440
 ciudad de Trujillo.
 
 34
-00:00:58,220 --> 00:00:59,880
+00:00:58,500 --> 00:01:00,180
 Te invito a revisarlo completo.
 

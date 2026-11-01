@@ -36,18 +36,18 @@
     "visual": "mapa_peru_valorizado",
     "fuente": "MINAM–SIGERSOL",
     "inicio": 19.122,
-    "fin": 27.027,
+    "fin": 27.009,
     "wer": 0.115
   },
   {
-    "frase": "Las deficiencias en la gestión de residuos resultan en más de dos mil áreas degradadas por basura, de acuerdo con el Oefa.",
+    "frase": "Las deficiencias en la gestión de residuos resultan en más de dos mil áreas degradadas por basura, de acuerdo con la Oéfa.",
     "cifra": "2119",
     "etiqueta": "áreas degradadas por basura · 619 con quema",
     "visual": "mapa_peru_botaderos",
     "fuente": "OEFA, inventario de áreas degradadas",
-    "inicio": 27.627,
-    "fin": 33.937,
-    "wer": 0.045
+    "inicio": 27.609,
+    "fin": 34.232,
+    "wer": 0.091
   },
   {
     "frase": "Pero eso no significa que los materiales inorgánicos no se reciclen. Gran parte de ellos no se registra en las cifras oficiales, pero se moviliza por circuitos informales de reciclaje. En el Perú hay cincuenta y tres mil recicladores informales, frente a menos de catorce mil trabajadores formales.",
@@ -55,8 +55,8 @@
     "etiqueta": "recicladores informales · 13,788 formales",
     "visual": "barras_recicladores",
     "fuente": "Banco Mundial, What a Waste 3.0",
-    "inicio": 34.537,
-    "fin": 50.061,
+    "inicio": 34.832,
+    "fin": 50.356,
     "wer": 0.042
   },
   {
@@ -65,8 +65,8 @@
     "etiqueta": "",
     "visual": "cierre",
     "fuente": "",
-    "inicio": 50.661,
-    "fin": 59.941,
+    "inicio": 50.956,
+    "fin": 60.236,
     "wer": 0.0
   }
 ]
