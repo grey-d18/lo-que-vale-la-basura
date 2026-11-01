@@ -660,6 +660,15 @@ const textWidth = (() => {
   return (t, size = 12) => { ctx.font = `${size}px "IBM Plex Mono", ui-monospace, monospace`; return ctx.measureText(String(t)).width * 1.04; };
 })();
 
+// Si una etiqueta no cabe en su columna se recorta con «…»; el nombre completo sigue en el tooltip
+function recortar(t, ancho, size = 12) {
+  t = String(t);
+  if (textWidth(t, size) <= ancho) return t;
+  let c = t;
+  while (c.length > 1 && textWidth(c + '…', size) > ancho) c = c.slice(0, -1);
+  return c.trimEnd() + '…';
+}
+
 function statusOf(ids) {
   const st = ids.map((id) => dash.data(id).status);
   if (st.every((s) => s === 'ok')) return 'ok';
@@ -760,7 +769,7 @@ function hbars(el, rows, opts) {
   const g = svg.selectAll('g.r').data(rows).join('g').attr('transform', (d, i) => `translate(0,${i * rowH + 4})`);
   g.append('text').attr('x', left - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
     .attr('font-size', size).attr('font-weight', (d) => (d.bold ? 700 : 400)).attr('fill', (d) => (d.bold ? tok('--lv-ink') : tok('--lv-ink-2')))
-    .text((d) => d.label);
+    .text((d) => recortar(d.label, left - 10, size));
   g.append('rect').attr('x', left).attr('y', (rowH - barH) / 2).attr('height', barH).attr('rx', 3)
     .attr('width', (d) => Math.max(1, x(d.value) - left)).attr('fill', (d) => d.color);
   g.append('text').attr('x', (d) => x(d.value) + 6).attr('y', rowH / 2).attr('dy', '0.35em').attr('font-size', size)
@@ -1121,7 +1130,7 @@ dash.draw('precios', (el) => {
     .attr('fill', tok('--lv-muted')).text((t) => 'S/ ' + d3.format('.0f')(t));
   const tip = makeTip(el);
   const g = svg.selectAll('g.r').data(rows).join('g').attr('class', 'r').attr('transform', (d, i) => `translate(0,${i * rowH + rowH / 2})`);
-  g.append('text').attr('x', left - 10).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', tok('--lv-ink-2')).text((d) => d.material);
+  g.append('text').attr('x', left - 10).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', tok('--lv-ink-2')).text((d) => recortar(d.material, left - 14));
   g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.exportacion_soles_kg))).attr('stroke', tok('--lv-bar-muted')).attr('stroke-width', 2);
   // El rango del acopiador es una sola cápsula de mínimo a máximo: dos puntos casi iguales no se montan uno sobre otro
   g.append('line').attr('x1', (d) => x(num(d.precio_min_soles_kg))).attr('x2', (d) => x(num(d.precio_max_soles_kg))).attr('stroke', tok('--lv-green')).attr('stroke-width', 8).attr('stroke-linecap', 'round');
