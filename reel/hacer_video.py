@@ -30,6 +30,7 @@ FUENTES = os.path.join(AQUI, "recursos", "fuentes")
 ANCHO, ALTO, FPS = 1080, 1920, 30
 MARGEN = 60
 CIERRE = 5.5  # segundos de la tarjeta final después de la narración (el reel debe durar al menos 45 s)
+DURACION_MAX = 74.5  # el reel debe durar entre 45 y 75 s
 URL_TABLERO = "claude.ai/artifact/6bTVbbocVNX5enTreJr638"
 
 # Colores del tablero (tema claro)
@@ -581,7 +582,8 @@ def main():
         e.update({k: g[k] for k in ("cifra", "etiqueta", "visual", "fuente")})
     reel_wav = f"{s}/reel.wav"
     dur_audio = sf.info(reel_wav).duration
-    total = dur_audio + CIERRE
+    # La tarjeta final se acorta si hace falta para no pasar de DURACION_MAX (mínimo 2.5 s)
+    total = dur_audio + max(2.5, min(CIERRE, DURACION_MAX - dur_audio))
 
     palabras = tiempos_de_palabras(guion, escenas, reel_wav)
     escribir_srt(agrupar(palabras, 7), f"{s}/reel.srt")

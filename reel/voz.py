@@ -155,8 +155,8 @@ def main():
     json.dump(escenas, open(os.path.join(args.salida, "escenas.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
     print(f"\n{args.salida}/reel.wav: {len(reel) / sr:.1f} s")
-    if len(reel) / sr > 60:
-        print("  ¡¡ Pasa de 60 s: acorten el guion")
+    if len(reel) / sr > 70:
+        print("  ¡¡ Pasa de 70 s: con la tarjeta final el reel superaría los 75 s")
 
 
 if __name__ == "__main__":

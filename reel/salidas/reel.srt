@@ -1,96 +1,140 @@
 1
-00:00:00,500 --> 00:00:02,040
+00:00:00,500 --> 00:00:02,220
 La basura es un problema que muchas
 
 2
-00:00:02,040 --> 00:00:03,220
+00:00:02,220 --> 00:00:03,320
 veces dejamos de lado.
 
 3
-00:00:04,041 --> 00:00:04,940
+00:00:04,086 --> 00:00:04,880
 En dos mil veintidós,
 
 4
-00:00:04,940 --> 00:00:06,560
+00:00:04,880 --> 00:00:06,640
 el mundo generó más de dos mil
 
 5
-00:00:06,560 --> 00:00:08,240
+00:00:06,640 --> 00:00:08,060
 millones de toneladas de basura,
 
 6
-00:00:08,240 --> 00:00:09,920
-y la cifra seguirá creciendo.
+00:00:08,060 --> 00:00:09,940
+y la cifra seguirá creciendo para dos
 
 7
-00:00:10,696 --> 00:00:12,360
-Pero solo se recoge para reciclar el
+00:00:09,940 --> 00:00:10,440
+mil cincuenta.
 
 8
-00:00:12,360 --> 00:00:13,100
-dieciocho por ciento.
+00:00:11,488 --> 00:00:12,580
+De todo ese volumen,
 
 9
-00:00:13,100 --> 00:00:14,760
-En América Latina,
+00:00:12,860 --> 00:00:14,540
+solo el dieciocho por ciento se recoge
 
 10
-00:00:14,760 --> 00:00:16,487
-menos del cinco por ciento.
+00:00:14,540 --> 00:00:16,740
+para destinarse al reciclaje.
 
 11
-00:00:16,987 --> 00:00:17,940
-Y en el Perú,
+00:00:16,740 --> 00:00:18,120
+Y en Latinoamérica,
 
 12
-00:00:17,940 --> 00:00:18,540
-oficialmente,
+00:00:18,120 --> 00:00:19,600
+la cifra baja a menos del cinco
 
 13
-00:00:18,540 --> 00:00:20,400
-se valoriza apenas el uno coma tres
-
-14
-00:00:20,400 --> 00:00:21,350
+00:00:19,600 --> 00:00:20,356
 por ciento.
 
+14
+00:00:20,856 --> 00:00:21,540
+En el Perú,
+
 15
-00:00:21,850 --> 00:00:22,400
-Mientras tanto,
+00:00:21,540 --> 00:00:23,580
+apenas se valoriza el uno coma tres
 
 16
-00:00:22,400 --> 00:00:23,960
-hay más de dos mil áreas degradadas
+00:00:23,580 --> 00:00:24,620
+por ciento de la basura,
 
 17
-00:00:23,960 --> 00:00:24,640
-por basura.
+00:00:24,620 --> 00:00:26,780
+y solo se cuentan los desechos inorgánicos.
 
 18
-00:00:25,373 --> 00:00:27,340
-Pero el reciclaje sí ocurre:
+00:00:28,040 --> 00:00:30,280
+Las deficiencias en la gestión de residuos
 
 19
-00:00:27,340 --> 00:00:29,740
-lo sostienen cincuenta y tres mil recicladores
+00:00:30,280 --> 00:00:31,780
+resultan en más de dos mil áreas
 
 20
-00:00:29,740 --> 00:00:30,540
-informales.
+00:00:31,780 --> 00:00:33,140
+degradadas por basura,
 
 21
-00:00:30,700 --> 00:00:33,020
-Gran parte de ese reciclaje no aparece
+00:00:33,160 --> 00:00:34,320
+de acuerdo con el Oefa.
 
 22
-00:00:33,020 --> 00:00:34,020
-en los registros.
+00:00:34,927 --> 00:00:36,560
+Pero eso no significa que los materiales
 
 23
-00:00:35,093 --> 00:00:38,240
-Este tablero busca complementar una investigación etnográfica.
+00:00:36,560 --> 00:00:38,380
+inorgánicos no se reciclen.
 
 24
-00:00:38,240 --> 00:00:40,260
+00:00:38,700 --> 00:00:40,260
+Gran parte de ellos no se registra
+
+25
+00:00:40,260 --> 00:00:41,360
+en las cifras oficiales,
+
+26
+00:00:41,360 --> 00:00:43,180
+pero se moviliza por circuitos informales de
+
+27
+00:00:43,180 --> 00:00:43,860
+reciclaje.
+
+28
+00:00:44,060 --> 00:00:45,420
+En el Perú hay cincuenta y tres
+
+29
+00:00:45,420 --> 00:00:47,260
+mil recicladores informales,
+
+30
+00:00:47,260 --> 00:00:49,740
+frente a menos de catorce mil trabajadores
+
+31
+00:00:49,740 --> 00:00:50,320
+formales.
+
+32
+00:00:51,051 --> 00:00:54,180
+Este tablero busca complementar una investigación etnográfica
+
+33
+00:00:54,180 --> 00:00:57,500
+sobre circuitos informales de reciclaje en la
+
+34
+00:00:57,500 --> 00:00:58,440
+ciudad de Trujillo.
+
+35
+00:00:58,440 --> 00:01:00,240
 Te invito a revisarlo completo.
 
