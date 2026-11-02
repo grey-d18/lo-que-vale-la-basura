@@ -12,6 +12,8 @@ Tarea 3 del curso Python Intermedio.
 
 **Pregunta:** ¿Cuánto de lo que se recicla en el Perú registran las cifras oficiales, y quiénes sostienen el reciclaje que no se ve?
 
+**Cobertura:** mundo (último dato de cada país en What a Waste 3.0 y proyección a 2050); Perú por departamento y distrito, 2019–2024, y áreas degradadas al corte de agosto de 2026; precios internacionales 2024–2026; trabajo de campo en El Porvenir, Trujillo, 2026.
+
 ## 2. Descripción
 
 Cada año se generan enormes cantidades de basura en el mundo, y gestionarlas es un desafío para los gobiernos. Pero los residuos también tienen valor: muchos materiales se recuperan, se venden y vuelven a la industria, y de ese trabajo viven muchas familias.
@@ -28,15 +30,17 @@ Tiene 5 indicadores clave, más de 10 visualizaciones (mapas del mundo y del Per
 
 ## 3. Fuentes y metodología
 
-| Fuente | Qué se usa |
-|---|---|
-| [Banco Mundial, What a Waste 3.0](https://datacatalog.worldbank.org/search/dataset/0039597) (CC BY 4.0) | Generación, tratamiento, composición y recicladores por país; proyecciones a 2050 |
-| [MINAM–SIGERSOL](https://www.datosabiertos.gob.pe/) | Generación, valorización de inorgánicos y disposición final por distrito, 2019–2024 |
-| [OEFA](https://www.datosabiertos.gob.pe/) | Inventario nacional de áreas degradadas por residuos |
-| [UN Comtrade](https://comtradeplus.un.org/) | Exportaciones del Perú por partida (anual, 2015–2025) y exportaciones mensuales del Japón de plástico y papel (2024–2026) |
-| [Banco Mundial, Pink Sheet](https://www.worldbank.org/en/research/commodity-markets) | Precios mensuales del cobre, el aluminio y el mineral de hierro (2024–2026) |
-| Banco Mundial, WDI | Tipo de cambio oficial (soles por dólar) |
-| Tesis de la autora (trabajo de campo, 2026) | Precios pagados por los acopiadores en El Porvenir; solo cifras agregadas y seudónimos |
+| Fuente | Qué se usa | Descarga |
+|---|---| :---: |
+| [Banco Mundial, What a Waste 3.0](https://datacatalog.worldbank.org/search/dataset/0039597) (CC BY 4.0) | Generación, tratamiento, composición y recicladores por país; proyecciones a 2050 | 30/10/2026 |
+| [MINAM–SIGERSOL](https://www.datosabiertos.gob.pe/) | Generación, valorización de inorgánicos y disposición final por distrito, 2019–2024 | 30/10/2026 |
+| [OEFA](https://www.datosabiertos.gob.pe/) | Inventario nacional de áreas degradadas por residuos | 30/10/2026 |
+| [UN Comtrade](https://comtradeplus.un.org/) | Exportaciones del Perú por partida (anual, 2015–2025) y exportaciones mensuales del Japón de plástico y papel (2024–2026) | 30/10 y 1/11/2026 |
+| [Banco Mundial, Pink Sheet](https://www.worldbank.org/en/research/commodity-markets) | Precios mensuales del cobre, el aluminio y el mineral de hierro (2024–2026) | 1/11/2026 |
+| Banco Mundial, WDI | Tipo de cambio oficial (soles por dólar) | 30/10/2026 |
+| Tesis de la autora (trabajo de campo, 2026) | Precios pagados por los acopiadores en El Porvenir; solo cifras agregadas y seudónimos | Campo: 2026 |
+
+Las fechas son las de descarga. `scripts/obtener_datos.py` vuelve a descargar todo desde las fuentes originales.
 
 **Indicadores principales:**
 
