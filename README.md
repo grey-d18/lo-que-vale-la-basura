@@ -4,7 +4,7 @@ Generación de residuos, reciclaje y circuitos informales de reciclaje: del mund
 Tarea 3 del curso Python Intermedio.
 
 - **Dashboard:** https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
-- **Publicación en LinkedIn (reel):** _pendiente_
+- **LinkedIn:** [reel](https://lnkd.in/p/dJ-H9EHH) · [imágenes del tablero](https://lnkd.in/p/dbGpZVSi)
 
 ## 1. Tema y pregunta de investigación
 
@@ -67,7 +67,9 @@ La metodología completa está al final del dashboard.
 ## 6. Enlaces
 
 - Dashboard: https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
-- Reel en LinkedIn: _pendiente_
+- Reel en LinkedIn: https://lnkd.in/p/dJ-H9EHH
+- Imágenes del tablero en LinkedIn: https://lnkd.in/p/dbGpZVSi
+- Repositorio: https://github.com/grey-d18/lo-que-vale-la-basura
 
 ## 7. Cómo reproducir
 
