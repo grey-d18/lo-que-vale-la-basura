@@ -3,7 +3,8 @@
 Generación de residuos, reciclaje y circuitos informales de reciclaje: del mundo al Perú y a Trujillo.
 Tarea 3 del curso Python Intermedio.
 
-- **Dashboard:** https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
+- **Dashboard:** https://grey-d18.github.io/lo-que-vale-la-basura/
+  (también como [Artifact de Claude](https://claude.ai/artifact/6bTVbbocVNX5enTreJr638), que pide iniciar sesión en Claude)
 - **LinkedIn:** [reel](https://lnkd.in/p/dJ-H9EHH) · [imágenes del tablero](https://lnkd.in/p/dbGpZVSi)
 
 ## 1. Tema y pregunta de investigación
@@ -70,7 +71,8 @@ La metodología completa está al final del dashboard.
 
 ## 6. Enlaces
 
-- Dashboard: https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
+- Dashboard: https://grey-d18.github.io/lo-que-vale-la-basura/
+- Dashboard como Artifact de Claude (pide iniciar sesión): https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
 - Reel en LinkedIn: https://lnkd.in/p/dJ-H9EHH
 - Imágenes del tablero en LinkedIn: https://lnkd.in/p/dbGpZVSi
 - Repositorio: https://github.com/grey-d18/lo-que-vale-la-basura
@@ -84,9 +86,10 @@ uv sync                                  # o: pip install -r requirements.txt
 uv run scripts/obtener_datos.py          # descarga las fuentes en datos/originales/
 uv run scripts/procesar_datos.py         # limpia y genera datos/procesados/ y web/data/
 uv run scripts/preparar_artifact.py      # genera artifact/datos/ para el dashboard
+uv run scripts/exportar_web.py           # genera web/index.html, el dashboard independiente
 ```
 
-El dashboard es `artifact/index.html`, publicado como Artifact de Claude y alimentado con los archivos de `artifact/datos/`.
+El dashboard es `artifact/index.html`, publicado como Artifact de Claude y alimentado con los archivos de `artifact/datos/`. Como el Artifact solo muestra sus datos a quien inició sesión en Claude, `exportar_web.py` arma `web/index.html` con los datos dentro de la página. Esa carpeta se publica en GitHub Pages desde la rama `gh-pages` (`git subtree push --prefix web origin gh-pages`).
 
 **Reel** (`reel/`, en Mac con Apple Silicon, con `mlx-audio` y `mlx-whisper` instalados):
 
@@ -103,7 +106,7 @@ La grabación de voz de la autora y los audios y videos generados con ella no se
 ├── scripts/            descarga, procesamiento y preparación de datos
 ├── datos/originales/   fuentes tal como se descargan
 ├── datos/procesados/   tablas limpias (CSV)
-├── web/data/           los mismos datos en JSON
+├── web/               dashboard independiente (GitHub Pages) y datos en JSON
 ├── artifact/           dashboard (index.html) y sus datos
 └── reel/               guion, voz, video y subtítulos
 ```
