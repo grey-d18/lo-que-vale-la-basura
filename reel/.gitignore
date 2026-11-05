@@ -2,5 +2,7 @@
 *.m4a
 *.wav
 *.mp4
+# Excepción: el reel final, que ya es público en LinkedIn, va en el repositorio para la entrega
+!/reel.mp4
 salidas/escenas/
 salidas/voz_referencia.wav

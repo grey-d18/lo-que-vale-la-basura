@@ -5,6 +5,7 @@ Tarea 3 del curso Python Intermedio.
 
 - **Dashboard:** https://grey-d18.github.io/lo-que-vale-la-basura/
   (también como [Artifact de Claude](https://claude.ai/artifact/6bTVbbocVNX5enTreJr638), que pide iniciar sesión en Claude)
+- **Reel (video final):** [`reel/reel.mp4`](reel/reel.mp4) · [subtítulos](reel/salidas/reel.srt) · [guion](reel/guion.json)
 - **LinkedIn:** [reel](https://lnkd.in/p/dJ-H9EHH) · [imágenes del tablero](https://lnkd.in/p/dbGpZVSi)
 
 ## 1. Tema y pregunta de investigación
@@ -73,6 +74,7 @@ La metodología completa está al final del dashboard.
 
 - Dashboard: https://grey-d18.github.io/lo-que-vale-la-basura/
 - Dashboard como Artifact de Claude (pide iniciar sesión): https://claude.ai/artifact/6bTVbbocVNX5enTreJr638
+- Reel, video final en el repositorio: [`reel/reel.mp4`](reel/reel.mp4) (61.8 s, 1080×1920, H.264 + AAC)
 - Reel en LinkedIn: https://lnkd.in/p/dJ-H9EHH
 - Imágenes del tablero en LinkedIn: https://lnkd.in/p/dbGpZVSi
 - Repositorio: https://github.com/grey-d18/lo-que-vale-la-basura
@@ -100,7 +102,7 @@ python3 voz.py --voz mi_voz.m4a --voz-texto mi_voz.txt # narra guion.json con la
 python3 hacer_video.py                                 # arma salidas/reel.mp4 y reel.srt
 ```
 
-La grabación de voz de la autora y los audios y videos generados con ella no se suben al repositorio. Para reproducir el reel hace falta una grabación de referencia propia. El reel se publica en LinkedIn.
+El video final está en [`reel/reel.mp4`](reel/reel.mp4), con sus subtítulos en [`reel/salidas/reel.srt`](reel/salidas/reel.srt) y la miniatura en [`reel/salidas/miniatura.png`](reel/salidas/miniatura.png). La grabación de referencia de la voz de la autora y los audios intermedios no se suben al repositorio: para reproducir el reel hace falta una grabación de referencia propia.
 
 ```
 ├── scripts/            descarga, procesamiento y preparación de datos
@@ -108,7 +110,7 @@ La grabación de voz de la autora y los audios y videos generados con ella no se
 ├── datos/procesados/   tablas limpias (CSV)
 ├── web/               dashboard independiente (GitHub Pages) y datos en JSON
 ├── artifact/           dashboard (index.html) y sus datos
-└── reel/               guion, voz, video y subtítulos
+└── reel/               guion, scripts, video final (reel.mp4) y subtítulos
 ```
 
 ## 8. Uso de inteligencia artificial
